@@ -12,10 +12,6 @@ export type SupportedLanguage = keyof typeof languages;
 export type TranslationKey = keyof (typeof ui)[typeof defaultLang];
 
 export const ui = {
-  en: {
-    
-  },
-  km: {
-
-  },
+  en: {},
+  km: {},
 } as const;

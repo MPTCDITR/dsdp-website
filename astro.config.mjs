@@ -11,7 +11,7 @@ export default defineConfig({
   },
   i18n: {
     defaultLocale: "km",
-    locales: ["en", "km"], 
+    locales: ["en", "km"],
     routing: {
       prefixDefaultLocale: false,
       redirectToDefaultLocale: true,
