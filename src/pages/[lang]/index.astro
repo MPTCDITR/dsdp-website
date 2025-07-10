@@ -1,8 +1,5 @@
 ---
-// src/pages/[lang]/index.astro
-
-import { languages, ui } from "@/i18n/ui";
-import { getLangFromUrl, useTranslations } from "@/i18n/util";
+import { languages } from "@/i18n/ui";
 import Layout from "@/layouts/layout.astro";
 
 export async function getStaticPaths() {
@@ -11,8 +8,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const lang = getLangFromUrl(Astro.url) as keyof typeof languages;
-const t = useTranslations(lang);
+const lang = Astro.params.lang as keyof typeof languages;
 ---
 
-<Layout title=" ទំព័រដើម - Home" ,lang={lang} />
+<Layout title={"ទំព័រដើម-Home"} lang={lang} />

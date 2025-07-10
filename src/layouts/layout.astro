@@ -1,20 +1,17 @@
 ---
-import Navbar from "@/components/layout/NavBar"; // Adjust path if needed
-
-import type { languages } from "@/i18n/ui";
+import Navbar from "@/components/layout/NavBar";
 
 import "@/styles/global.css";
 
+// Add 'lang' to the Props interface
 export interface Props {
   title: string;
+  lang: "en" | "km"; // Expect 'lang' to be passed directly
 }
-const { title } = Astro.props;
+
+const { title, lang } = Astro.props;
 
 const currentPath = Astro.url.pathname;
-let lang: "en" | "km" = "en";
-if (currentPath.startsWith("/km")) {
-  lang = "km";
-}
 ---
 
 <!doctype html>
@@ -26,5 +23,8 @@ if (currentPath.startsWith("/km")) {
   </head>
   <body class="flex min-h-screen flex-col">
     <Navbar lang={lang} currentPath={currentPath} client:load />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
