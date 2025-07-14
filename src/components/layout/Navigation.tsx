@@ -1,12 +1,12 @@
 import type { SupportedLanguage, TranslationKey } from "@/i18n/ui";
 
-export interface NavLink {
+export interface NavMenuProps {
   href: string;
   textKey: TranslationKey;
-  dropdown?: NavLink[];
+  dropdown?: NavMenuProps[];
 }
 
-export const getNavLinks = (lang: SupportedLanguage): NavLink[] => [
+export const getNavLinks = (lang: SupportedLanguage): NavMenuProps[] => [
   { href: `/${lang}/`, textKey: "nav.home" },
   {
     href: `/${lang}/about`,
@@ -22,8 +22,8 @@ export const getNavLinks = (lang: SupportedLanguage): NavLink[] => [
     href: `/${lang}/media`,
     textKey: "nav.media_hub",
     dropdown: [
-      { href: `/${lang}/news-and-events`, textKey: "nav.New&Event" },
-      { href: `/${lang}/video-and-media`, textKey: "nav.Video&Media" },
+      { href: `/${lang}/news_and-events`, textKey: "nav.news_and_events" },
+      { href: `/${lang}/video-and-media`, textKey: "nav.video_and_media" },
     ],
   },
   { href: `/${lang}/contact`, textKey: "nav.contact" },
