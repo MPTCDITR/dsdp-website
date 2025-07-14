@@ -1,5 +1,7 @@
 //scr/components/layout/Header.tsx
 
+// scr/components/layout/Header.tsx
+
 import { useState } from "react";
 
 import {
@@ -40,13 +42,15 @@ const isLinkActive = (link: NavLink, currentPath: string): boolean => {
 interface DesktopNavLinkProps {
   link: NavLink;
   currentPath: string;
+
   // eslint-disable-next-line no-unused-vars
   t: (key: TranslationKey) => string;
 }
 
 const DesktopNavLink = ({ link, currentPath, t }: DesktopNavLinkProps) => {
   const isActive = isLinkActive(link, currentPath);
-  const baseClasses = `rounded-md px-4 py-2 font-medium text-base ${
+
+  const baseClasses = `rounded-md px-4 py-2 font-medium lg:text-sm transition-colors hover:bg-accent/80 ${
     isActive ? "bg-accent" : ""
   }`;
   const desktopClasses = `flex items-center gap-1 ${baseClasses}`;
@@ -88,31 +92,29 @@ const DesktopNavLink = ({ link, currentPath, t }: DesktopNavLinkProps) => {
 const Header = ({ lang, currentPath }: HeaderProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const t = useTranslations(lang);
-
   const navLinks = getNavLinks(lang);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className=" sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <a href={`/${lang}/`} className="flex-shrink-0" title={t("nav.home")}>
           <img src={DSDP.src} alt="Logo" className="h-8 w-auto sm:h-12" />
         </a>
 
-        <div className="hidden items-center lg:flex lg:flex-grow lg:justify-center">
-          <div className="flex items-center gap-x-1">
-            {navLinks.map((link) => (
-              <DesktopNavLink
-                key={link.href}
-                link={link}
-                currentPath={currentPath}
-                t={t}
-              />
-            ))}
-          </div>
-        </div>
+        <nav className="hidden lg:flex items-center gap-x-1 flex-grow justify-center ">
+          {navLinks.map((link) => (
+            <DesktopNavLink
+              key={link.href}
+              link={link}
+              currentPath={currentPath}
+              t={t}
+            />
+          ))}
+        </nav>
 
         <div className="flex items-center gap-x-2">
           <LanguageSwitcher lang={lang} />
+
           <div className="lg:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -125,7 +127,7 @@ const Header = ({ lang, currentPath }: HeaderProps) => {
                   {isMobileMenuOpen ? (
                     <X className="h-6 w-6" />
                   ) : (
-                    <Menu className="h-7 w-7" />
+                    <Menu className="h-6 w-6" />
                   )}
                 </Button>
               </SheetTrigger>
@@ -136,6 +138,7 @@ const Header = ({ lang, currentPath }: HeaderProps) => {
                       href={`/${lang}/`}
                       className="flex-shrink-0"
                       title={t("nav.home")}
+                      onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <img
                         src={DSDP.src}
@@ -147,7 +150,7 @@ const Header = ({ lang, currentPath }: HeaderProps) => {
                   <div className="flex-grow space-y-1 px-2">
                     {navLinks.map((link) => {
                       const isActive = isLinkActive(link, currentPath);
-                      const mobileClasses = `flex items-center space-x-1 text-base rounded-md px-4 py-2 font-medium transition-colors ${
+                      const mobileClasses = `flex w-full items-center justify-between space-x-1 text-base rounded-md px-4 py-2 font-medium transition-colors hover:bg-accent/80 ${
                         isActive ? "bg-accent" : ""
                       }`;
                       if (link.dropdown) {
@@ -158,17 +161,24 @@ const Header = ({ lang, currentPath }: HeaderProps) => {
                             className="w-full"
                             key={link.href}
                           >
-                            <AccordionItem value={link.href}>
+                            <AccordionItem
+                              value={link.href}
+                              className="border-b-0"
+                            >
                               <AccordionTrigger className={mobileClasses}>
                                 {t(link.textKey)}
                               </AccordionTrigger>
-                              <AccordionContent className="ml-4 space-y-1">
+                              <AccordionContent className="ml-4 mt-1 space-y-1">
                                 {link.dropdown.map((item) => (
                                   <a
                                     key={item.href}
                                     href={item.href}
                                     title={t(item.textKey)}
-                                    className="block rounded-md px-4 py-2 text-base font-medium hover:bg-accent"
+                                    className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent ${
+                                      currentPath.startsWith(item.href)
+                                        ? "bg-accent"
+                                        : ""
+                                    }`}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                   >
                                     {t(item.textKey)}
@@ -199,7 +209,7 @@ const Header = ({ lang, currentPath }: HeaderProps) => {
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
