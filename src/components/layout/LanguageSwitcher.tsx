@@ -46,51 +46,46 @@ export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
   const currentLangAssets = languageAssets[lang];
 
   return (
-    <>
-      <div>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              variant="ghost"
-              className="flex items-center gap-2 text-base font-medium"
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          variant="ghost"
+          className="flex items-center gap-2 text-base font-medium"
+        >
+          <img
+            src={currentLangAssets?.mainFlag?.src}
+            width="23"
+            height="23"
+            alt={`${currentLangAssets?.label} flag`}
+          />
+          <span>{currentLangAssets?.label}</span>
+          <ChevronDown className="h-4 w-4" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent>
+        {Object.entries(languages).map(([langKey, label]) => {
+          const itemLangAssets = languageAssets[langKey as SupportedLanguage];
+          return (
+            <DropdownMenuItem
+              key={langKey}
+              onClick={() => switchLanguage(langKey as SupportedLanguage)}
+              className="text-base"
+              asChild
             >
-              <img
-                src={currentLangAssets?.mainFlag?.src}
-                width="23"
-                height="23"
-                alt={`${currentLangAssets?.label} flag`}
-              />
-              <span>{currentLangAssets?.label}</span>
-              <ChevronDown className="h-4 w-4" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            {Object.entries(languages).map(([langKey, label]) => {
-              const itemLangAssets =
-                languageAssets[langKey as SupportedLanguage];
-              return (
-                <DropdownMenuItem
-                  key={langKey}
-                  onClick={() => switchLanguage(langKey as SupportedLanguage)}
-                  className="text-base"
-                  asChild
-                >
-                  <a href={`/${langKey}/`}>
-                    <img
-                      src={itemLangAssets?.mainFlag?.src}
-                      width="23"
-                      height="23"
-                      alt={`${label} flag`}
-                      className="mr-2"
-                    />
-                    {label}
-                  </a>
-                </DropdownMenuItem>
-              );
-            })}
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </div>
-    </>
+              <a href={`/${langKey}/`}>
+                <img
+                  src={itemLangAssets?.mainFlag?.src}
+                  width="23"
+                  height="23"
+                  alt={`${label} flag`}
+                  className="mr-2"
+                />
+                {label}
+              </a>
+            </DropdownMenuItem>
+          );
+        })}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
