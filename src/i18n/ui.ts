@@ -1,23 +1,19 @@
-// src/i18n/ui.ts
-
 export const languages = {
   en: "English",
   km: "Khmer",
 };
 
-// The default language for the application
-export const defaultLang = "km";
-
-// A type representing the supported language codes: "en" | "km"
 export type SupportedLanguage = keyof typeof languages;
-
-export const ui = {
+export type Language = keyof typeof languages;
+export const defaultLang = "en";
+export const showDefaultLang = true;
+export const ui: Record<string, Record<string, string>> = {
   en: {
-    // ---Navbar---
     "nav.home": "Home",
     "nav.about": "About Us",
     "nav.about_us": "About DSDP",
     "nav.about_team": "DSDP Team",
+    "nav.about.question&answer": "Q&A",
     "nav.our_partners": "Our Partners",
     "nav.how_to_apply": "How to Apply",
     "nav.media_hub": "Media Hub",
@@ -26,11 +22,11 @@ export const ui = {
     "nav.contact": "Contact",
   },
   km: {
-    // ---Navbar---
     "nav.home": "ទំព័រដើម",
     "nav.about": "អំពីពួកយើង",
     "nav.about_us": "អំពីឌីអេសឌីធី",
     "nav.about_team": "អំពីក្រុមឌីអេសឌីធី",
+    "nav.about.question&answer": "សំណួរ​និងចម្លើយ",
     "nav.our_partners": "ដៃគូរបស់យើង",
     "nav.how_to_apply": "របៀបដាក់ពាក្យ",
     "nav.media_hub": "មជ្ឈមណ្ឌលព័ត៌មាន",
@@ -40,4 +36,17 @@ export const ui = {
   },
 } as const;
 
-export type TranslationKey = keyof (typeof ui)[typeof defaultLang];
+export const routes: {
+  [key: string]: { news: string; contact: string };
+  en: { news: string; contact: string };
+  km: { news: string; contact: string };
+} = {
+  en: {
+    news: "news",
+    contact: "contact",
+  },
+  km: {
+    news: "news",
+    contact: "contact",
+  },
+};

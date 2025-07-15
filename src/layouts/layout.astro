@@ -1,15 +1,22 @@
 ---
 import "@/styles/global.css";
 
+import { getLangFromUrl } from "@/lib/i18n";
+import { getLocalizedRoutes, navigation } from "@/lib/route";
+
 import Header from "@/components/layout/Header";
 
-// Add 'lang' to the Props interface
+import { defaultLang, ui } from "@/i18n/ui";
+
 export interface Props {
   title: string;
-  lang: "en" | "km"; // Expect 'lang' to be passed directly
+  lang: "en" | "km";
 }
-
-const { title, lang } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const translations = ui[lang];
+const { title } = Astro.props;
+const locale = Astro.currentLocale ?? defaultLang;
+const navigationItems = getLocalizedRoutes(navigation, locale);
 
 const currentPath = Astro.url.pathname;
 ---
@@ -22,7 +29,13 @@ const currentPath = Astro.url.pathname;
     <title>{title}</title>
   </head>
   <body class="flex min-h-screen flex-col">
-    <Header lang={lang} currentPath={currentPath} client:load />
+    <Header
+      translations={translations}
+      lang={lang}
+      navigationItems={navigationItems}
+      currentPath={currentPath}
+      client:load
+    />
     <main>
       <slot />
     </main>

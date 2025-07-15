@@ -10,33 +10,45 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
-import { getNavLinks, type NavMenuProps } from "@/components/layout/Navigation";
 
 import MobileNav from "./MobileNav";
 import DSDP from "@/assets/logo/dsdp-logo.svg";
 import type { SupportedLanguage } from "@/i18n/ui";
-import { useTranslations } from "@/i18n/util";
 import { ChevronDown } from "lucide-react";
 
+interface NavMenuProps {
+  href?: string;
+  label: string;
+  children?: NavMenuProps[];
+}
+
 interface HeaderProps {
+  translations: Record<string, string>;
   lang: SupportedLanguage;
+  navigationItems: NavMenuProps[];
   currentPath: string;
 }
 
-const isLinkActive = (item: NavMenuProps, currentPath: string): boolean => {
-  if (currentPath === item.href) {
-    return true;
-  }
-  if (item.dropdown) {
-    return item.dropdown.some((child) => currentPath === child.href);
-  }
-  return false;
-};
+export function Header({
+  translations,
+  lang,
+  navigationItems,
+  currentPath,
+}: HeaderProps) {
+  const isActive = (item: NavMenuProps) => {
+    if (!item.href) {
+      return item.children
+        ? item.children.some(
+            (child) => child.href && currentPath.startsWith(child.href),
+          )
+        : false;
+    }
+    if (item.href === `/${lang}` || item.href === `/${lang}/`) {
+      return currentPath === item.href;
+    }
 
-const Header = ({ lang, currentPath }: HeaderProps) => {
-  const t = useTranslations(lang);
-  const navLinks = getNavLinks(lang);
-  const isActive = (item: NavMenuProps) => isLinkActive(item, currentPath);
+    return currentPath.startsWith(item.href);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -44,11 +56,10 @@ const Header = ({ lang, currentPath }: HeaderProps) => {
         <a href={`/${lang}/`} className="flex-shrink-0">
           <img src={DSDP.src} alt="Logo" className="h-8 w-auto sm:h-12" />
         </a>
-
         <nav className="hidden lg:flex lg:gap-0 xl:gap-4 items-center">
-          {navLinks.map((item) =>
-            item.dropdown ? (
-              <DropdownMenu key={item.textKey}>
+          {navigationItems?.map((item) =>
+            item.children ? (
+              <DropdownMenu key={item.label}>
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
@@ -56,50 +67,51 @@ const Header = ({ lang, currentPath }: HeaderProps) => {
                       isActive(item) ? "active" : ""
                     } flex items-center gap-1 text-base lg:px-3 xl:px-4 font-medium transition-colors hover:text-primary nav-link`}
                   >
-                    {t(item.textKey)} <ChevronDown className="h-4 w-4" />
+                    {item.label} <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  {item.dropdown.map((child) => (
-                    <a key={child.href} href={child.href} className="text-base">
-                      <DropdownMenuItem
+                  {item.children?.map((child) => (
+                    <DropdownMenuItem key={child.href} asChild>
+                      <a
+                        href={child.href}
                         className={`${
                           isActive(child)
                             ? "nav-link text-secondary"
                             : "nav-link"
-                        } cursor-pointer focus:text-primary`}
+                        } cursor-pointer focus:text-primary text-base w-full`}
                       >
-                        {t(child.textKey)}
-                      </DropdownMenuItem>
-                    </a>
+                        {child.label}
+                      </a>
+                    </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
               <a
-                key={item.textKey}
+                key={item.href || item.label}
                 href={item.href}
                 className={`${
                   isActive(item) ? "active" : ""
                 } hover:text-primary lg:px-3 xl:px-4 font-medium transition-colors nav-link text-base`}
               >
-                {t(item.textKey)}
+                {item.label}
               </a>
             ),
           )}
         </nav>
-
         <div className="flex items-center gap-x-2">
           <LanguageSwitcher lang={lang} />
           <MobileNav
             lang={lang}
+            translations={translations}
             currentPath={currentPath}
-            navLinks={navLinks}
+            navigationItems={navigationItems}
           />
         </div>
       </div>
     </header>
   );
-};
+}
 
 export default Header;

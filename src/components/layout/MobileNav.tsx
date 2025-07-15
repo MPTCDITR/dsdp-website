@@ -1,6 +1,4 @@
-// scr/components/layout/MobileNav.tsx
-
-import React, { useState } from "react";
+import React from "react";
 
 import {
   Accordion,
@@ -9,102 +7,115 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-// Assuming these types and components are imported from your project
-import type { NavMenuProps } from "@/components/layout/Navigation";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
-import DSDP from "@/assets/logo/dsdp-logo.svg";
-import type { SupportedLanguage } from "@/i18n/ui";
-import { Menu, X } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 
-const isLinkActive = (link: NavMenuProps, currentPath: string): boolean => {
-  if (currentPath === link.href) return true;
-  return (
-    link.dropdown?.some((item) => currentPath.startsWith(item.href)) ?? false
-  );
-};
-
-interface MobileNavProps {
-  lang: SupportedLanguage;
-  currentPath: string;
-  navLinks: NavMenuProps[];
+interface NavMenuProps {
+  href?: string;
+  label: string;
+  children?: NavMenuProps[];
 }
 
-const MobileNav = ({ lang, currentPath, navLinks }: MobileNavProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+interface MobileNavProps {
+  translations: Record<string, string>;
+  lang: string;
+  navigationItems: NavMenuProps[];
+  currentPath: string;
+}
 
-  const MobileNavLink = ({
-    link,
-    closeMenu,
-  }: {
-    link: NavMenuProps;
-    closeMenu: () => void;
-  }) => {
-    const isActive = isLinkActive(link, currentPath);
-    const mobileClasses = `flex w-full items-center justify-between rounded-md px-4 py-2 font-medium transition-colors hover:bg-accent/80 text-base ${
-      isActive ? "bg-accent" : ""
-    }`;
-
-    if (link.dropdown) {
-      return (
-        <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value={link.href} className="border-b-0">
-            <AccordionTrigger className={mobileClasses}>
-              {link.textKey}
-            </AccordionTrigger>
-            <AccordionContent className="ml-4 mt-1 space-y-1">
-              {link.dropdown.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent ${
-                    currentPath.startsWith(item.href) ? "bg-accent" : ""
-                  }`}
-                  onClick={closeMenu}
-                >
-                  {item.textKey}
-                </a>
-              ))}
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      );
+export function MobileNav({ navigationItems, currentPath }: MobileNavProps) {
+  const isActive = (item: NavMenuProps) => {
+    if (!item.href) {
+      return item.children
+        ? item.children.some(
+            (child) => child.href && currentPath.startsWith(child.href),
+          )
+        : false;
     }
 
-    return (
-      <a href={link.href} className={mobileClasses} onClick={closeMenu}>
-        {link.textKey}
-      </a>
-    );
+    if (item.href === "/" || item.href === "") {
+      return currentPath === item.href;
+    }
+    return currentPath.startsWith(item.href);
   };
 
   return (
-    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+    <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon">
-          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="lg:hidden"
+          aria-label="Open menu"
+        >
+          <MenuIcon className="h-5 w-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-        <div className="flex h-full flex-col py-4">
-          <div className="mb-6 px-4">
-            <a href={`/${lang}/`} onClick={() => setIsOpen(false)}>
-              <img src={DSDP.src} alt="Logo" className="h-8 w-auto sm:h-12" />
-            </a>
-          </div>
-          <div className="flex-grow space-y-1 px-2">
-            {navLinks.map((link) => (
-              <MobileNavLink
-                key={link.href}
-                link={link}
-                closeMenu={() => setIsOpen(false)}
-              />
-            ))}
-          </div>
-        </div>
+      <SheetContent side="right" className="border-l-2 border-dashed">
+        <SheetHeader>
+          <SheetTitle>Menu</SheetTitle>
+        </SheetHeader>
+        <nav className="flex flex-col gap-4 mt-4">
+          {navigationItems?.map((item, index) =>
+            item.children ? (
+              <Accordion
+                type="single"
+                collapsible
+                className="border-0"
+                key={item.label}
+              >
+                <AccordionItem
+                  value={`item_${index}`}
+                  className="rounded border-0 data-[state=open]:bg-accent/50"
+                >
+                  <AccordionTrigger
+                    className={`${
+                      isActive(item) ? "active " : ""
+                    }rounded-md bg-transparent px-4 py-2 font-medium hover:bg-accent nav-link hover:text-primary hover:no-underline text-base`}
+                  >
+                    {item.label}
+                  </AccordionTrigger>
+                  <AccordionContent className="border-t bg-transparent">
+                    <ul>
+                      {item.children?.map((child) => (
+                        <li key={child.href}>
+                          <a
+                            href={child.href}
+                            className={`${
+                              isActive(child) ? "text-primary " : ""
+                            }block rounded-md px-6 py-2 font-medium hover:text-primary nav-link hover:bg-accent text-base`}
+                          >
+                            {child.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            ) : (
+              <a
+                key={item.href || item.label}
+                href={item.href}
+                className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent ${
+                  isActive(item) ? "bg-accent" : ""
+                }`}
+              >
+                {item.label}
+              </a>
+            ),
+          )}
+        </nav>
       </SheetContent>
     </Sheet>
   );
-};
+}
 
 export default MobileNav;
