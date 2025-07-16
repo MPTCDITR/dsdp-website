@@ -63,9 +63,9 @@ export function Header({
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
-                    className={`${
-                      isActive(item) ? "active" : ""
-                    } flex items-center gap-1 text-base lg:px-3 xl:px-4 font-medium transition-colors hover:text-primary nav-link`}
+                    className={`flex items-center gap-1 text-base lg:px-3 xl:px-4 font-medium nav-link text-black ${
+                      isActive(item) ? "active" : "hover:text-primary"
+                    }`}
                   >
                     {item.label} <ChevronDown className="h-4 w-4" />
                   </Button>
@@ -76,10 +76,8 @@ export function Header({
                       <a
                         href={child.href}
                         className={`${
-                          isActive(child)
-                            ? "nav-link text-secondary"
-                            : "nav-link"
-                        } cursor-pointer focus:text-primary text-base w-full`}
+                          isActive(child) ? "nav-link active" : "nav-link"
+                        } cursor-pointer  text-base w-full text-black`}
                       >
                         {child.label}
                       </a>
@@ -93,7 +91,7 @@ export function Header({
                 href={item.href}
                 className={`${
                   isActive(item) ? "active" : ""
-                } hover:text-primary lg:px-3 xl:px-4 font-medium transition-colors nav-link text-base`}
+                }  lg:px-3 xl:px-4 font-medium nav-link text-base text-black`}
               >
                 {item.label}
               </a>
