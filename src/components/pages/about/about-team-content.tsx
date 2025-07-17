@@ -36,19 +36,6 @@ export function AboutTeam({ translations }: AboutTeamContent) {
   
 
             </div>
-
-            
-
-
-
-
-
-            {/* <SectionHeader
-                title="លេខាធិការដ្ឋាន"
-                gradient="text-3xl md:text-3xl from-blue-700 to-cyan-400"
-                ribbonGradient="from-pink-400 to-red-500"
-            /> */}
-
         </div>
     )
 }

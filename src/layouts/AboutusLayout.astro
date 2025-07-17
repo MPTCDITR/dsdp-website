@@ -1,0 +1,57 @@
+---
+import "@/styles/global.css";
+
+import { getLangFromUrl } from "@/lib/i18n";
+import { getLocalizedRoutes, navigation } from "@/lib/route";
+
+import Header from "@/components/layout/Header";
+
+import backgorund_style from "@/assets/about/about-us/backgorund-style.svg";
+import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
+import { defaultLang, ui } from "@/i18n/ui";
+
+export interface Props {
+  title: string;
+  lang: "en" | "km";
+}
+const lang = getLangFromUrl(Astro.url);
+const translations = ui[lang];
+const { title } = Astro.props;
+const locale = Astro.currentLocale ?? defaultLang;
+const navigationItems = getLocalizedRoutes(navigation, locale);
+
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <Header
+      translations={translations}
+      lang={lang}
+      navigationItems={navigationItems}
+      currentPath={currentPath}
+      client:load
+    />
+    <main class="overflow-hidden relative">
+      <section id="main container" class="container">
+        <slot />
+      </section>
+      <img
+        src={backgorund_style.src}
+        alt="Top Background Decoration"
+        class="absolute top-1/9 right-2/3 w-auto h-auto z-0"
+      />
+      <img
+        src={background_svg_blob.src}
+        alt="Blob Decoration"
+        class="absolute top-2/3 left-2/4 w-auto rotate-[270deg] h-auto scale-x-[-1] z-0"
+      />
+    </main>
+  </body>
+</html>

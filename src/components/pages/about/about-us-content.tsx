@@ -3,6 +3,7 @@ import Finding_brilliant_ideas from "@/assets/about/about-us/Finding brilliant i
 import Business_mission from "@/assets/about/about-us/Business mission.gif";
 import return_money from "@/assets/about/about-us/return-money.png";
 
+
 interface AboutUsContent {
   translations: Record<string, string>;
 }
@@ -16,12 +17,12 @@ export function AboutUs({ translations }: AboutUsContent) {
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           {/* Page Title */}
           <h1 className="text-left text-3xl md:text-5xl font-bold text-primary leading-snug mt-12 mb-8">
-            អំពីកម្មវិធី
+            {t("about.title")}
           </h1>
         
           {/* Vision Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
               <img
                 src={Finding_brilliant_ideas.src}
                 className="w-full"
@@ -29,11 +30,13 @@ export function AboutUs({ translations }: AboutUsContent) {
               />
             </div>
 
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
               <h2 className="bg-gradient-to-r from-[#54A7F6] to-[#004282] text-transparent bg-clip-text text-4xl leading-relaxed md:text-4xl font-bold mb-4">
-                ចក្ខុវិស័យ៖
+                {t("about.visionTitle")}
               </h2>
-              <p className="text-base text-zinc-500 mb-4">{t("about.visionDescription")}</p>
+              <p className="text-base text-zinc-500 mb-4">
+                {t("about.visionDescription")}
+                </p>
               <ul className="list-disc pl-6 space-y-2 text-base text-foreground leading-relaxed">
                 <li>{t("about.vision1")}</li>
                 <li>{t("about.vision2")}</li>
@@ -44,26 +47,29 @@ export function AboutUs({ translations }: AboutUsContent) {
           </div>
 
           {/* Mission Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
-            <div className="w-full max-w-[508px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4 ">
+            <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
               <h2 className="bg-gradient-to-r from-[#54A7F6] to-[#004282] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
-                បេសកកម្ម៖
+                {t("about.mission.title")}
               </h2>
-              <p className="text-base text-zinc-500 mb-4">{t("about.missionDescription")}</p>
+              <p className="text-base text-zinc-500 mb-4">
+                {t("about.mission.description")}
+              </p>
               <ul className="list-disc pl-6 space-y-2 text-base leading-relaxed">
                 <li>{t("about.mission1")}</li>
                 <li>{t("about.mission2")}</li>
+                <li>{t("about.mission3")}</li>
               </ul>
             </div>
 
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-1 md:order-2 w-full max-w-[508px] mx-auto">
               <img src={Business_mission.src} className="w-full" alt="Mission" />
             </div>
           </div>
 
           {/* What is DSDP Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
               <img
                 src={benefits_more_than_money.src}
                 className="w-full"
@@ -71,9 +77,9 @@ export function AboutUs({ translations }: AboutUsContent) {
               />
             </div>
 
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
               <h2 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-4xl leading-snug  md:text-4xl font-bold mb-4">
-                កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.)
+                {t("about.whatIsDsdp.title")}
               </h2>
               <p className="text-base text-foreground leading-relaxed">
                 {t("about.whatIsDsdp.description")}
@@ -83,16 +89,16 @@ export function AboutUs({ translations }: AboutUsContent) {
 
           {/* Benefits Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
               <h2 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
-                តើ ក.អ.ជ.ឌ. ជួយដល់សិស្ស-និស្សិតដូចម្តេច?
+                {t("about.benefits.title")}
               </h2>
               <p className="text-base leading-relaxed">
                 {t("about.benefits.description")}
               </p>
             </div>
 
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-1 md:order-2 w-full max-w-[508px] mx-auto">
               <img
                 src={benefits_more_than_money.src}
                 className="w-full"
@@ -103,22 +109,22 @@ export function AboutUs({ translations }: AboutUsContent) {
 
           {/* Condition Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
               <img src={return_money.src} className="w-full" alt="Condition" />
             </div>
 
-            <div className="w-full max-w-[508px] mx-auto">
+            <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
               <h2 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
-                លក្ខខណ្ឌនៃការសងថវិកាមក ក.អ.ជ.ឌ. វិញ!
+                {t("about.conditionReturnMoney.title")}
               </h2>
               <p className="text-base leading-relaxed mb-4">
-                {t("about.conditionTitle1.description")}
+                {t("about.conditionReturnMoney.description")}
               </p>
               <h3 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-2xl leading-snug md:text-2xl font-bold mb-4">
-                តើត្រូវសងដោយរបៀបណា?
+                {t("about.howToReturnMoney.title")}
               </h3>
               <p className="text-base leading-relaxed">
-                {t("about.conditionTitle2.description")}
+                {t("about.howToReturnMoney.description")}
               </p>
           </div>
           </div>
