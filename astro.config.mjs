@@ -13,8 +13,8 @@ export default defineConfig({
     defaultLocale: "km",
     locales: ["en", "km"],
     routing: {
-      prefixDefaultLocale: false,
-      redirectToDefaultLocale: true,
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: false,
     },
   },
   vite: {

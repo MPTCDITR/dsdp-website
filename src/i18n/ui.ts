@@ -36,11 +36,7 @@ export const ui: Record<string, Record<string, string>> = {
   },
 } as const;
 
-export const routes: {
-  [key: string]: { news: string; contact: string };
-  en: { news: string; contact: string };
-  km: { news: string; contact: string };
-} = {
+export const routes: Record<string, Record<string, string>> = {
   en: {
     news: "news",
     contact: "contact",

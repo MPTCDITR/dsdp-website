@@ -29,21 +29,18 @@ const languageAssets = {
     squareFlag: KHSquareIcon,
   },
 };
-
 export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
-  const switchLanguage = (newLang: SupportedLanguage) => {
-    const currentPath = window.location.pathname;
-    const segments = currentPath.split("/").filter(Boolean);
-
-    const pathWithoutLang =
-      segments.length > 0 && languages[segments[0] as SupportedLanguage]
-        ? segments.slice(1).join("/")
-        : segments.join("/");
-
-    window.location.pathname = `/${newLang}/${pathWithoutLang}`;
-  };
-
   const currentLangAssets = languageAssets[lang];
+  const currentPath =
+    typeof window !== "undefined" ? window.location.pathname : "";
+
+  // Helper to replace the lang segment in the current path
+  const getLangPath = (newLang: SupportedLanguage) => {
+    const segments = currentPath.split("/").filter(Boolean);
+    if (segments.length === 0) return `/${newLang}/`;
+    segments[0] = newLang;
+    return "/" + segments.join("/") + (currentPath.endsWith("/") ? "/" : "");
+  };
 
   return (
     <DropdownMenu>
@@ -66,13 +63,8 @@ export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
         {Object.entries(languages).map(([langKey, label]) => {
           const itemLangAssets = languageAssets[langKey as SupportedLanguage];
           return (
-            <DropdownMenuItem
-              key={langKey}
-              onClick={() => switchLanguage(langKey as SupportedLanguage)}
-              className="text-base"
-              asChild
-            >
-              <a href={`/${langKey}/`}>
+            <DropdownMenuItem key={langKey} className="text-base" asChild>
+              <a href={getLangPath(langKey as SupportedLanguage)}>
                 <img
                   src={itemLangAssets?.mainFlag?.src}
                   width="23"

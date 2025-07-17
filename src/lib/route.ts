@@ -2,7 +2,7 @@ import { getTranslatedkey } from "@/i18n/utils";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
 export const navigation = [
-  { label: "nav.home", href: "nav.home" },
+  { label: "nav.home", href: "" },
   {
     label: "nav.about",
     children: [
