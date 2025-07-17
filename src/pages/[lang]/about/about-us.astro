@@ -1,0 +1,38 @@
+---
+import { AboutUs as AboutUsComponent } from "@/components/pages/about/about-us-content";
+import { ui, languages } from "@/i18n/ui";
+import { getLangFromUrl } from "@/lib/i18n";
+import Layout from "@/layouts/layout.astro";
+import backgorund_style from "@/assets/about/about-us/backgorund-style.svg";
+import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
+
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const translations = ui[lang];
+---
+
+<Layout title="អំពីឌីអេសឌីធី - About DSDP", lang={ lang }>
+  <div>
+    <img
+      src={backgorund_style.src}
+      alt="Top Background Decoration"
+      class="absolute top-[25%] right-[70%] w-auto h-auto z-0"
+      />
+      <img
+        src={background_svg_blob.src}
+        alt="Blob Decoration"
+        class="absolute top-[125%] left-[30%] w-auto rotate-[270deg] h-auto scale-x-[-1] z-0"
+      />
+  </div>
+
+  <main class="relative overflow-hidden">
+    <AboutUsComponent translations={translations} client:load />
+  </main>
+  
+</Layout>
