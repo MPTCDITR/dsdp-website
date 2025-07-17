@@ -1,3 +1,5 @@
+import type { ContentProps } from "@/components/pages/howToApply/ContentBlock";
+
 export const languages = {
   en: "English",
   km: "Khmer",
