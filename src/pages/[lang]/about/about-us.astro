@@ -16,6 +16,6 @@ const lang = getLangFromUrl(Astro.url);
 const translations = ui[lang];
 ---
 
-<AboutUsLayout title="អំពីឌីអេសឌីធី - About DSDP" , lang={lang}>
+<AboutUsLayout title="អំពីឌីអេសឌីធី - About DSDP" lang={lang}>
   <AboutUsComponent translations={translations} client:load />
 </AboutUsLayout>

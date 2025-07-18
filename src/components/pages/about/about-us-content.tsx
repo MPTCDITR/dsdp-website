@@ -1,8 +1,7 @@
 import benefits_more_than_money from "@/assets/about/about-us/benefits-more-than-money.png";
-import Finding_brilliant_ideas from "@/assets/about/about-us/Finding brilliant ideas.gif";
 import Business_mission from "@/assets/about/about-us/Business mission.gif";
+import Finding_brilliant_ideas from "@/assets/about/about-us/Finding brilliant ideas.gif";
 import return_money from "@/assets/about/about-us/return-money.png";
-
 
 interface AboutUsContent {
   translations: Record<string, string>;
@@ -13,13 +12,12 @@ export function AboutUs({ translations }: AboutUsContent) {
   return (
     <div className="w-auto container mx-auto">
       <section className="relative container mx-auto space-x-24 z-10">
-
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           {/* Page Title */}
           <h1 className="text-left text-3xl md:text-5xl font-bold text-primary leading-snug mt-12 mb-8">
             {t("about.title")}
           </h1>
-        
+
           {/* Vision Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
             <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
@@ -36,7 +34,7 @@ export function AboutUs({ translations }: AboutUsContent) {
               </h2>
               <p className="text-base text-zinc-500 mb-4">
                 {t("about.visionDescription")}
-                </p>
+              </p>
               <ul className="list-disc pl-6 space-y-2 text-base text-foreground leading-relaxed">
                 <li>{t("about.vision1")}</li>
                 <li>{t("about.vision2")}</li>
@@ -63,7 +61,11 @@ export function AboutUs({ translations }: AboutUsContent) {
             </div>
 
             <div className="order-1 md:order-2 w-full max-w-[508px] mx-auto">
-              <img src={Business_mission.src} className="w-full" alt="Mission" />
+              <img
+                src={Business_mission.src}
+                className="w-full"
+                alt="Mission"
+              />
             </div>
           </div>
 
@@ -126,11 +128,10 @@ export function AboutUs({ translations }: AboutUsContent) {
               <p className="text-base leading-relaxed">
                 {t("about.howToReturnMoney.description")}
               </p>
-          </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
-   
   );
 }
