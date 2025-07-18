@@ -52,10 +52,11 @@ export const ui: Record<string, Record<string, string>> = {
     "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
     "about.howToReturnMoney.description":
       "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
-  
+
     "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
     "about.team.title2": "ក្រុមការងារស្នូល",
-    "about.team.title2.description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "about.team.title2.description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     "about.team.card1.name": "H.E. Apsara",
     "about.team.card1.position": "Head of Finance",
     "about.team.card2.name": "H.E. Apsara",
@@ -64,10 +65,8 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card3.position": "Head of Finance",
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
+  },
 
-    },
-
-  
   km: {
     "nav.home": "ទំព័រដើម",
     "nav.about": "អំពីពួកយើង",
@@ -80,7 +79,7 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "វីឌីអូនិងប្រព័ន្ធផ្សព្វផ្សាយ",
     "nav.news_and_events": "ព័ត៌មាននិង​ព្រឹត្តិការណ៍",
     "nav.contact": "ទំនាក់ទំនង",
-    
+
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
     "about.visionDescription":
@@ -115,7 +114,8 @@ export const ui: Record<string, Record<string, string>> = {
 
     "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
     "about.team.title2": "ក្រុមការងារស្នូល",
-    "about.team.title2.description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "about.team.title2.description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     "about.team.card1.name": "H.E. Apsara",
     "about.team.card1.position": "Head of Finance",
     "about.team.card2.name": "H.E. Apsara",
