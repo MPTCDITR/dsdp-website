@@ -73,11 +73,7 @@ export function AboutUs({ translations }: AboutUsContent) {
           {/* What is DSDP Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
             <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
-              <img
-                src={what_is_dsdp.src}
-                className="w-full"
-                alt="DSDP"
-              />
+              <img src={what_is_dsdp.src} className="w-full" alt="DSDP" />
             </div>
 
             <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
