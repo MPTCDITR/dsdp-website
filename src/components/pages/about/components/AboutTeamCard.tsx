@@ -1,8 +1,8 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 interface TeamCardProps {
   img: string;
-  contacts: {
+  contacts?: {
     facebook?: string;
     linkedin?: string;
     instagram?: string;
@@ -19,45 +19,42 @@ export default function AboutTeamCard({
   position,
 }: TeamCardProps) {
   return (
-    <div className="flex flex-col items-center p-4 w-full max-w-xs mx-auto">
+    <div className="flex flex-col items-center w-auto max-w-xs mx-auto">
+      <div className="aspect-auto overflow-hidden rounded-2xl mb-4">
       <img
         src={img}
         alt={`${name}'s picture`}
-        className="w-full h-full object-cover rouned-full mb-4 rounded-2xl"
+        className="w-full h-full object-cover"
       />
-
-      {/* <div className="flex grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 "> */}
-      <div className="flex gap-4 mt-3 mb-4">
-        {contacts.facebook && (
-          <a href={contacts.facebook} target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="w-6 h-6 bg-primary text-black hover:text-blue-800 transition-colors" />
+      </div>
+      
+      <div className="flex gap-3 mb-4 ">
+        {contacts?.facebook && (
+          <a href={contacts.facebook} target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors">
+            <Facebook className="w-5 h-5 text-white" />
           </a>
         )}
 
-        {contacts.instagram && (
-          <a
-            href={contacts.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="w-6 h-6 text-yellow-600 hover:text-blue-800 transition-colors" />
+        {contacts?.instagram && (
+            <a href={contacts.instagram} target="_blank" rel="noopener noreferrer " className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors">
+              <Instagram className="w-5 h-5 text-white" />
+            </a>
+        )}
+
+        {contacts?.linkedin && (
+          <a href={contacts.linkedin} target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors">
+            <Linkedin className="w-5 h-5 text-white" />
           </a>
         )}
 
-        {contacts.linkedin && (
-          <a href={contacts.linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="w-6 h-6 text-blue-600 hover:text-blue-800 transition-colors" />
-          </a>
-        )}
-
-        {contacts.youtube && (
-          <a href={contacts.youtube} target="_blank" rel="noopener noreferrer">
-            <FaYoutube className="w-6 h-6 text-blue-600 hover:text-blue-800 transition-colors" />
+        {contacts?.youtube && (
+          <a href={contacts.youtube} target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors">
+            <Youtube className="w-5 h-5 text-white" />
           </a>
         )}
       </div>
 
-      <div className="mb-4">
+      <div>
         <h3 className="text-center text-2xl font-bold">{name}</h3>
         <p className="text-center text-sm">{position}</p>
       </div>
