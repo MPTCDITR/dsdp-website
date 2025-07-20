@@ -60,7 +60,7 @@ export function HeroCarousel({ translations, lang }: HeroCarouselProps) {
         opts={{ loop: true, duration: 50 }}
         className="h-full"
       >
-        <CarouselContent className="h-full -ml-0">
+        <CarouselContent className="h-full ">
           {slides.map((slide, index) => (
             <CarouselItem key={index} className="pl-0">
               <div className="relative w-full h-full">
