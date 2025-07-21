@@ -1,4 +1,15 @@
-export const styles = {
+export type StyleVariant =
+  | "heading"
+  | "title"
+  | "titleblog"
+  | "body"
+  | "small"
+  | "paragraph"
+  | "button";
+
+export type ElementStyles = Record<StyleVariant, string>;
+
+export const styles: ElementStyles = {
   heading:
     "scroll-m-20 text-base lg:text-4xl font-bold tracking-tight lg:text-5xl leading-normal text-md md:text-3xl lg:text-4xl text-pretty",
   title:

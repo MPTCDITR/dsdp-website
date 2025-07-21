@@ -1,9 +1,7 @@
 ---
-import "@/styles/global.css";
+import Hero from "@/components/home/Hero";
 
-import Hero from "@/components/home/Hero.astro";
-
-import { languages, ui } from "@/i18n/ui";
+import { languages } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 
@@ -14,9 +12,8 @@ export async function getStaticPaths() {
 }
 
 const lang = getLangFromUrl(Astro.url);
-const translations = ui[lang];
 ---
 
 <Layout title="ទំព័រដើម - Home">
-  <Hero lang={lang} translations={translations} />
+  <Hero lang={lang} client:visible />
 </Layout>
