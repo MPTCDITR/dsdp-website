@@ -1,0 +1,15 @@
+---
+import { getLangFromUrl } from "@/lib/i18n";
+
+import { HeroCarousel } from "./HeroCarousel.tsx";
+import { ui } from "@/i18n/ui";
+
+interface Props {
+  translations: Record<string, string>;
+  lang?: string;
+}
+const lang = getLangFromUrl(Astro.url);
+const translations = ui[lang];
+---
+
+<HeroCarousel translations={translations} lang={lang} client:visible />
