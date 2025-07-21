@@ -16,7 +16,7 @@ const ContentBlock: React.FC<ContentProps> = ({
   return (
     <section id="card" className="grid lg:grid-cols-5 md:flex-wrap  grid-cols-1 gap-6 justify-between items-end self-stretch w-full">
       <div className="flex flex-col items-start gap-3 lg:col-span-3 md:col-span-2 col-span-1">
-        <p className="text-8xl text-[#004282] font-semibold mt-6">
+        <p className="text-8xl text-gradient font-semibold mt-6">
           {titleNumber}
         </p>
         <h2 className="text-3xl leading-10 font-semibold mb-4">{title}</h2>
