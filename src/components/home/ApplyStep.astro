@@ -1,0 +1,115 @@
+---
+import { Button } from "../ui/button";
+import Guide from "./Guide.astro";
+
+const steps = [
+  {
+    stepNumber: "STEP 1",
+    title: "បំពេញពាក្យស្នើសុំ តាមប្រព័ន្ធអនឡាញ",
+    description: "ដោយភ្ជាប់មកជាមួយនូវឯកសារ ដែលតម្រូវដោយ ក.អ.ជ.ខ.",
+    imageUrl: "/src/assets/home/step_1.jpg",
+  },
+  {
+    stepNumber: "STEP 2",
+    title: "ពិនិត្យ និងវាយតម្លៃ",
+    description: "ពីក្រុមការងារត្រួតពិនិត្យ និងរាយតម្លៃ អំពីព័ត៌មានរបស់បេក្ខជន",
+    imageUrl: "/src/assets/home/step_2.jpg",
+  },
+  {
+    stepNumber: "STEP 3",
+    title: "ប្រកាសលទ្ធផល",
+    description: "លទ្ធផលនឹងត្រូវបានប្រកាសតាម ប្រព័ន្ធអនឡាញ & ទំនាក់ទំនងផ្ទាល់",
+    imageUrl: "/src/assets/home/step_3.jpg",
+  },
+  {
+    stepNumber: "STEP 4",
+    title: "បេក្ខជនបង្ហាញខ្លួន និងផ្តល់ឯកសារបន្ថែម",
+    description:
+      "ដល់ក្រុមការងារ ក.អ.ជ.ខ. ដើម្បី បញ្ជាក់ពីភាពពិតប្រាកដ និងត្រឹមត្រូវ",
+    imageUrl: "/src/assets/home/step_4.jpg",
+  },
+  {
+    stepNumber: "STEP 5",
+    title: "ទទួលថវិកាគម្រោង",
+    description:
+      "ក្រោមទម្រង់ជាអាហារូបករណ៍ ពេញលេញ និងអត្ថប្រយោជន៍ ផ្សេងៗជាច្រើនទៀត",
+    imageUrl: "/src/assets/home/step_5.jpg",
+  },
+];
+---
+
+<section class="container mx-auto my-12">
+  <div
+    class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8"
+  >
+    <div class="flex-1">
+      <h1 class="text-2xl text-primary font-bold mb-4">
+        ជំហានងាយៗនៃការដាក់ពាក្យ ស្នើសុំថវិកាគម្រោងរបស់ <span
+          class="text-secondary">ក.អ.ជ.ឌ.</span
+        >
+      </h1>
+      <p class="text-pretty text-muted-foreground inline">
+        សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ
+        មន្ត្រីរាជការស៊ីវិល
+        អាចបំពេញពាក្យស្នើសុំគម្រោងថវិកាជាមួយយើងខ្ញុំតាមជំហានងាយៗដូចខាងក្រោម៖
+      </p>
+    </div>
+
+    <div class="ml-2">
+      <Button
+        variant="link"
+        className="w-40 h-11 rounded-full bg-primary text-white text-sm font-medium text-center flex justify-center  hover:bg-primary/90"
+      >
+        <a
+          href="/${lang}/about/about-us"
+          class="w-full h-full flex items-center justify-center no-underline"
+        >
+          About Us
+        </a>
+      </Button>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-12 gap-6 sm:grid-rows-5">
+    <div class="md:col-span-12 lg:row-span-2 lg:col-span-7">
+      <Guide
+        stepNumber={steps[0].stepNumber}
+        title={steps[0].title}
+        description={steps[0].description}
+        imageUrl={steps[0].imageUrl}
+      />
+    </div>
+    <div class="md:col-span-5 lg:col-span-5">
+      <Guide
+        stepNumber={steps[1].stepNumber}
+        title={steps[1].title}
+        description={steps[1].description}
+        imageUrl={steps[1].imageUrl}
+      />
+    </div>
+    <div class="md:col-span-7 lg:col-span-5">
+      <Guide
+        stepNumber={steps[2].stepNumber}
+        title={steps[2].title}
+        description={steps[2].description}
+        imageUrl={steps[2].imageUrl}
+      />
+    </div>
+    <div class="md:col-span-6 lg:order-last">
+      <Guide
+        stepNumber={steps[3].stepNumber}
+        title={steps[3].title}
+        description={steps[3].description}
+        imageUrl={steps[3].imageUrl}
+      />
+    </div>
+    <div class="md:col-span-6">
+      <Guide
+        stepNumber={steps[4].stepNumber}
+        title={steps[4].title}
+        description={steps[4].description}
+        imageUrl={steps[4].imageUrl}
+      />
+    </div>
+  </div>
+</section>
