@@ -1,6 +1,7 @@
 ---
 import { Button } from "../ui/button";
 import Guide from "./Guide.astro";
+import { ChevronRight } from "lucide-react";
 
 const steps = [
   {
@@ -43,28 +44,29 @@ const steps = [
     class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8"
   >
     <div class="flex-1">
-      <h1 class="text-2xl text-primary font-bold mb-4">
-        ជំហានងាយៗនៃការដាក់ពាក្យ ស្នើសុំថវិកាគម្រោងរបស់ <span
-          class="text-secondary">ក.អ.ជ.ឌ.</span
-        >
+      <h1 class="text-4xl text-primary font-bold mb-4">
+        ជំហានងាយៗនៃការដាក់ពាក្យ
+        <br />
+        ស្នើសុំថវិកាគម្រោងរបស់ <span class="text-secondary">ក.អ.ជ.ឌ.</span>
       </h1>
-      <p class="text-pretty text-muted-foreground inline">
+      <p class="text-pretty text-muted-foreground">
         សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ
         មន្ត្រីរាជការស៊ីវិល
+        <br class="hidden md:block" />
         អាចបំពេញពាក្យស្នើសុំគម្រោងថវិកាជាមួយយើងខ្ញុំតាមជំហានងាយៗដូចខាងក្រោម៖
       </p>
     </div>
-
     <div class="ml-2">
       <Button
         variant="link"
-        className="w-40 h-11 rounded-full bg-primary text-white text-sm font-medium text-center flex justify-center  hover:bg-primary/90"
+        className="w-40 h-11 rounded-full bg-primary text-white text-sm font-medium text-center flex justify-center  hover:bg-primary/90"
       >
         <a
           href="/${lang}/about/about-us"
           class="w-full h-full flex items-center justify-center no-underline"
         >
           About Us
+          <ChevronRight className="size-4" />
         </a>
       </Button>
     </div>
