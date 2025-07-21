@@ -2,7 +2,6 @@
 import "@/styles/global.css";
 
 import ApplyStep from "@/components/home/ApplyStep.astro";
-import Hero from "@/components/home/Hero.astro";
 
 import { languages, ui } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -19,6 +18,5 @@ const translations = ui[lang];
 ---
 
 <Layout title="ទំព័រដើម - Home">
-  <Hero lang={lang} translations={translations} />
   <ApplyStep lang={lang} translations={translations} />
 </Layout>
