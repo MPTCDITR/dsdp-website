@@ -2,6 +2,7 @@ import benefits_more_than_money from "@/assets/about/about-us/benefits-more-than
 import Business_mission from "@/assets/about/about-us/Business mission.gif";
 import Finding_brilliant_ideas from "@/assets/about/about-us/Finding brilliant ideas.gif";
 import return_money from "@/assets/about/about-us/return-money.png";
+import what_is_dsdp from "@/assets/about/about-us/what_is_dsdp.png";
 
 interface AboutUsContent {
   translations: Record<string, string>;
@@ -19,7 +20,7 @@ export function AboutUs({ translations }: AboutUsContent) {
           </h1>
 
           {/* Vision Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
             <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
               <img
                 src={Finding_brilliant_ideas.src}
@@ -45,7 +46,7 @@ export function AboutUs({ translations }: AboutUsContent) {
           </div>
 
           {/* Mission Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
             <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
               <h2 className="bg-gradient-to-r from-[#54A7F6] to-[#004282] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
                 {t("about.mission.title")}
@@ -70,13 +71,9 @@ export function AboutUs({ translations }: AboutUsContent) {
           </div>
 
           {/* What is DSDP Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
             <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
-              <img
-                src={benefits_more_than_money.src}
-                className="w-full"
-                alt="DSDP"
-              />
+              <img src={what_is_dsdp.src} className="w-full" alt="DSDP" />
             </div>
 
             <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
@@ -90,7 +87,7 @@ export function AboutUs({ translations }: AboutUsContent) {
           </div>
 
           {/* Benefits Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
             <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
               <h2 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
                 {t("about.benefits.title")}
@@ -110,7 +107,7 @@ export function AboutUs({ translations }: AboutUsContent) {
           </div>
 
           {/* Condition Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
             <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
               <img src={return_money.src} className="w-full" alt="Condition" />
             </div>
