@@ -3,7 +3,14 @@ import { Button } from "../ui/button";
 import Guide from "./Guide.astro";
 import { ChevronRight } from "lucide-react";
 
-const steps = [
+type Step = {
+  stepNumber: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+};
+
+const steps: Step[] = [
   {
     stepNumber: "STEP 1",
     title: "បំពេញពាក្យស្នើសុំ តាមប្រព័ន្ធអនឡាញ",
@@ -73,45 +80,25 @@ const steps = [
   </div>
 
   <div class="grid md:grid-cols-12 gap-6 sm:grid-rows-5">
-    <div class="md:col-span-12 lg:row-span-2 lg:col-span-7">
-      <Guide
-        stepNumber={steps[0].stepNumber}
-        title={steps[0].title}
-        description={steps[0].description}
-        imageUrl={steps[0].imageUrl}
-      />
-    </div>
-    <div class="md:col-span-5 lg:col-span-5">
-      <Guide
-        stepNumber={steps[1].stepNumber}
-        title={steps[1].title}
-        description={steps[1].description}
-        imageUrl={steps[1].imageUrl}
-      />
-    </div>
-    <div class="md:col-span-7 lg:col-span-5">
-      <Guide
-        stepNumber={steps[2].stepNumber}
-        title={steps[2].title}
-        description={steps[2].description}
-        imageUrl={steps[2].imageUrl}
-      />
-    </div>
-    <div class="md:col-span-6 lg:order-last">
-      <Guide
-        stepNumber={steps[3].stepNumber}
-        title={steps[3].title}
-        description={steps[3].description}
-        imageUrl={steps[3].imageUrl}
-      />
-    </div>
-    <div class="md:col-span-6">
-      <Guide
-        stepNumber={steps[4].stepNumber}
-        title={steps[4].title}
-        description={steps[4].description}
-        imageUrl={steps[4].imageUrl}
-      />
-    </div>
+    {
+      steps.map((step, idx) => {
+        let gridClass = "";
+        if (idx === 0) gridClass = "md:col-span-12 lg:row-span-2 lg:col-span-7";
+        else if (idx === 1) gridClass = "md:col-span-5 lg:col-span-5";
+        else if (idx === 2) gridClass = "md:col-span-7 lg:col-span-5";
+        else if (idx === 3) gridClass = "md:col-span-6 lg:order-last";
+        else if (idx === 4) gridClass = "md:col-span-6";
+        return (
+          <div class={gridClass}>
+            <Guide
+              stepNumber={step.stepNumber}
+              title={step.title}
+              description={step.description}
+              imageUrl={step.imageUrl}
+            />
+          </div>
+        );
+      })
+    }
   </div>
 </section>
