@@ -75,9 +75,9 @@ export function Header({
                     <DropdownMenuItem key={child.href} asChild>
                       <a
                         href={child.href}
-                        className={`${
-                          isActive(child) ? "nav-link active" : "nav-link"
-                        } cursor-pointer  text-base w-full text-black`}
+                        className={`block rounded-md px-6 py-2 font-medium nav-link text-base transition-colors hover:bg-accent hover:text-primary text-black ${
+                          isActive(child) ? "text-primary bg-accent" : ""
+                        }`}
                       >
                         {child.label}
                       </a>
@@ -89,9 +89,9 @@ export function Header({
               <a
                 key={item.href || item.label}
                 href={item.href}
-                className={`${
-                  isActive(item) ? "active" : ""
-                }  lg:px-3 xl:px-4 font-medium nav-link text-base text-black`}
+                className={`block rounded-md px-4 py-2 text-base font-medium transition-colors nav-link text-black hover:bg-accent hover:text-primary ${
+                  isActive(item) ? "bg-accent text-primary" : ""
+                }`}
               >
                 {item.label}
               </a>
