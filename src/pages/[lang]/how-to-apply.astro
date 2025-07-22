@@ -1,7 +1,7 @@
 ---
 import { HowToApply as HowToApplyComponent } from "@/components/pages/howToApply/HowToApply";
 
-import { languages, ui } from "@/i18n/ui";
+import { languages } from "@/i18n/ui";
 import Layout from "@/layouts/layout.astro";
 
 export async function getStaticPaths() {
@@ -11,9 +11,8 @@ export async function getStaticPaths() {
 }
 
 const lang = Astro.params.lang as keyof typeof languages;
-const translations = ui[lang];
 ---
 
 <Layout title={"របៀបដាក់ពាក្យ-How To Apple"} lang={lang}>
-  <HowToApplyComponent translations={translations} lang={lang} client:load />
+  <HowToApplyComponent client:load/>
 </Layout>
