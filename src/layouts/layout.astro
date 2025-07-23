@@ -8,16 +8,16 @@ import Header from "@/components/layout/Header";
 
 import { defaultLang, ui } from "@/i18n/ui";
 
-export interface Props {
+interface Props {
   title: string;
-  lang: "en" | "km";
+  description?: string;
+  img?: string;
 }
 const lang = getLangFromUrl(Astro.url);
 const translations = ui[lang];
 const { title } = Astro.props;
 const locale = Astro.currentLocale ?? defaultLang;
 const navigationItems = getLocalizedRoutes(navigation, locale);
-
 const currentPath = Astro.url.pathname;
 ---
 
