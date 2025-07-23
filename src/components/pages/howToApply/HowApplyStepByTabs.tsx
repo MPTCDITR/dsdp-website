@@ -1,4 +1,4 @@
-import HowToApplyContent from "@/components/pages/howToApply/HowToApplyContent";
+import HowToApplySection from "@/components/pages/howToApply/HowToApplySection";
 
 import { HowToApplyData, type HowToApply } from "@/data/HowToApplyData";
 
@@ -13,7 +13,7 @@ export default function HowApplyStepByTabs(props: HowApplyStepByTabsProps) {
   return (
     <div>
       {data_student.map((item) => (
-        <HowToApplyContent key={item.header_number} item={item} />
+        <HowToApplySection key={item.header_number} item={item} />
       ))}
     </div>
   );

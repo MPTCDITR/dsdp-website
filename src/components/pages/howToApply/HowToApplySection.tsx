@@ -1,6 +1,6 @@
 import type { HowToApplyDataProps } from "@/data/HowToApplyData";
 
-export default function HowToApplyContent({
+export default function HowToApplySection({
   item,
 }: {
   item: HowToApplyDataProps;
