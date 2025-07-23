@@ -2,7 +2,7 @@ export function Content1() {
   return (
     <article>
       បេក្ខជនត្រូវមានលក្ខខណ្ឌតម្រូវដូចខាងក្រោម ៖
-      <ol className="list-decimal pl-5 leading-6">
+      <ol className="list-decimal pl-5 leading-8">
         <li>ត្រូវមានសញ្ជាតិខ្មែរ</li>
         <li>
           ទទួលបានសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល ដែលមាននិន្ទេសរួម
@@ -26,7 +26,7 @@ export function Content2() {
     <article>
       បេក្ខជនត្រូវស្កេនភ្ជាប់មកជាមួយនូវឯកសារយោងនៅពេលបំពេញពាក្យស្នើសុំតាមប្រព័ន្ធអនឡាញ
       រួមមាន ៖
-      <ol className="list-decimal pl-5 leading-6">
+      <ol className="list-decimal pl-5 leading-8">
         <li>រូបថត ៤x៦ ផ្ទៃស</li>
         <li>
           សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ
@@ -44,7 +44,7 @@ export function Content3() {
     <article>
       បេក្ខជនដែលត្រូវបានជ្រើសរើសជាប់ជាស្ថាពរត្រូវមកបង្ហាញខ្លួន
       និងភ្ជាប់មកជាមួយនូវឯកសារតម្រូវរួមមាន ៖
-      <table className="w-full">
+      <table className="w-full leading-8">
         <tr>
           <td className="sm:py-0 py-2">
             1. ជីវប្រវត្តិសង្ខេបមានបិទរូបថត(រូបថត ៤x៦ ផ្ទៃ២)

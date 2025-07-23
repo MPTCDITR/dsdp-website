@@ -117,7 +117,7 @@
 .text-gradient {
   background: var(
     --text-gradient,
-    linear-gradient(180deg, var(--Primary, #004282) 0%, #027dac 100%)
+    linear-gradient(180deg, var(--primary, #004282) 0%, #027dac 100%)
   );
   background-clip: text;
   -webkit-background-clip: text;
