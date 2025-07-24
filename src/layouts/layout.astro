@@ -4,6 +4,7 @@ import "@/styles/global.css";
 import { getLangFromUrl } from "@/lib/i18n";
 import { getLocalizedRoutes, navigation } from "@/lib/route";
 
+import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header";
 
 import { defaultLang, ui } from "@/i18n/ui";
@@ -39,5 +40,6 @@ const currentPath = Astro.url.pathname;
     <main class="container mx-auto my-4 px-4">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>

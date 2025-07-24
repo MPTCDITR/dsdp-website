@@ -1,0 +1,279 @@
+---
+import style from "@/assets/footer/backgorund-style.svg";
+import Cambodia from "@/assets/footer/footerbackground.svg";
+import dsdp from "@/assets/logo/dsdp-logo.png";
+import mptc from "@/assets/logo/mptc-logo.png";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPinned,
+  PhoneCall,
+  Youtube,
+} from "lucide-react";
+
+const year = new Date().getFullYear();
+---
+
+<footer class={`bg-primary text-white relative overflow-hidden`}>
+  <div>
+    <img
+      src={style.src}
+      alt="Background style"
+      class="object-fill absolute"
+      aria-hidden="true"
+    />
+  </div>
+
+  <div class="absolute md:left-0 sm:right-30 right-15 bottom-0 w-full">
+    <img
+      src={Cambodia.src}
+      alt=""
+      class="object-fill md:scale-100 scale-150 md:h-[452px] sm:h-[450px] h-[300px]"
+      loading="lazy"
+    />
+  </div>
+  <div>
+    <div class="container mt-16 mb-3 relative">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- About Us Section -->
+        <div>
+          <h1
+            class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
+          >
+            ABOUT US
+          </h1>
+          <ul class="space-y-3 text-base">
+            <li>
+              <a href="#" class="hover:text-white hover:underline">About DSDP</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white hover:underline"
+                >About DSDP Team</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white hover:underline">Q and A</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Programs Section -->
+        <div>
+          <h3
+            class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
+          >
+            PROGRAMS
+          </h3>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition-colors"
+                >How to apply</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition-colors"
+                >For students</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition-colors"
+                >For officer</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition-colors"
+                >For partnership</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Useful Links Section -->
+        <div>
+          <h3
+            class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
+          >
+            USEFUL LINKS
+          </h3>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition-colors"
+                >ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition-colors"
+                >បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition-colors"
+                >តំណបំពេញពាក្យស្នើសុំ</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Get in Touch Section -->
+        <div>
+          <h3 class="text-white font-semibold tracking-wider uppercase mb-6">
+            GET IN TOUCH
+          </h3>
+          <ul class="space-y-3" aria-labelledby="contact-us">
+            <li class="flex gap-4">
+              <MapPinned className="text-white flex-shrink-0" />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Building+%2313+Preah+Monivong+Blvd,+Srah+Chak,+Daun+Penh,+Phnom+Penh"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white transition-colors"
+              >
+                អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ
+                រាជធានីភ្នំពេញ Phnom Penh, Cambodia, 120210
+              </a>
+            </li>
+            <li class="flex gap-4">
+              <PhoneCall className="text-white flex-shrink-0" />
+              <a href="" class="hover:text-white transition-colors">
+                +855 98 94 777 | +855 12 94 777 | +855 90 94 777
+              </a>
+            </li>
+            <li class="flex gap-4">
+              <Mail className="text-white flex-shrink-0" />
+              <a
+                href="#"
+                class="leading-relaxed hover:text-white transition-colors"
+              >
+                info@dsdp.gov.kh | partners@dsdp.gov.kh
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 md:justify-between md:flex flex-row">
+        <div class="flex items-center gap-4">
+          <a href="#" aria-label="P.T.C. Homepage">
+            <img src={mptc.src} alt="P.T.C. Logo" class="h-20 w-20" />
+          </a>
+          <a href="#" aria-label="Second Logo Homepage">
+            <img
+              src={dsdp.src}
+              alt="Second Organization Logo"
+              class="h-20 w-20"
+            />
+          </a>
+        </div>
+        <div class="flex items-center gap-3.5">
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="bg-primary hover:bg-white/20 rounded-full p-3 flex items-center justify-center transition-colors"
+          >
+            <Facebook className="text-white w-4 h-4" />
+          </a>
+          <a
+            href="#"
+            aria-label="Linkedin"
+            class="bg-primary hover:bg-white/20
+            rounded-full p-3 flex items-center justify-center transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+          </a>
+          <a
+            href="#"
+            aria-label="Linkedin"
+            class="bg-primary hover:bg-white/20
+            rounded-full p-3 flex items-center justify-center transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+              class="w-4 h-4"
+            >
+              <path
+                fill="#ffffff"
+                d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"
+              ></path></svg
+            >
+          </a>
+          <a
+            href="#"
+            aria-label="Linkedin"
+            class="bg-primary hover:bg-white/20
+            rounded-full p-3 flex items-center justify-center transition-colors"
+          >
+            <Youtube className="w-4 h-4" />
+          </a>
+          <a
+            href="#"
+            aria-label="Linkedin"
+            class="bg-primary hover:bg-white/20
+            rounded-full p-3 flex items-center justify-center transition-colors"
+          >
+            <Instagram className="w-4 h-4" />
+          </a>
+
+          <a
+            href="#"
+            aria-label="Linkedin"
+            class="bg-primary hover:bg-white/20
+            rounded-full p-3 flex items-center justify-center transition-colors"
+            style="size-2"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+                  fill="#ffffff"></path>
+              </g></svg
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-t" />
+    <div
+      class="container flex flex-col-reverse md:flex-row items-center justify-between gap-6 text-sm my-8"
+    >
+      <p class="text-center md:text-left">
+        Copyright @{year} រក្សាសិទ្ធិគ្រប់យ៉ាង DSDP.GOV.KH
+      </p>
+      <nav class="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-2">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a
+        >
+        <span class="inline">|</span>
+        <a href="#" class="text-white transition-colors">Term of Use</a>
+        <span class="inline">|</span>
+        <a href="#" class="text-white transition-colors">Legal</a>
+        <span class="inline">|</span>
+        <a href="#" class="text-white transition-colors">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
