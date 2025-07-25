@@ -48,7 +48,7 @@ export function Hero({ lang }: HeroCarouselProps) {
   }, [api]);
 
   return (
-    <div className="relative w-full aspect-[1440/607] mx-auto">
+    <div className="relative w-full  mx-auto">
       <Carousel
         setApi={setApi}
         plugins={[plugin.current]}

@@ -114,11 +114,24 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.text-gradient {
+  background: var(
+    --text-gradient,
+    linear-gradient(180deg, var(--primary, #004282) 0%, #027dac 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
