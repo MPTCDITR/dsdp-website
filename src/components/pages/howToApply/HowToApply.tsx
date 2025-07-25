@@ -5,7 +5,7 @@ import { HOWTOAPPLY_TABS } from "@/data/HowToApplyData";
 
 export function HowToApply() {
   return (
-    <div className="bg-muted rounded-xl h-auto flex flex-col p-6 gap-7 mb-16">
+    <div className="container mx-auto my-4 px-4 bg-muted rounded-xl h-auto flex flex-col p-6 gap-7 mb-16">
       {/* <!-- Tabs --> */}
       <Tabs defaultValue={HOWTOAPPLY_TABS.STUDENT}>
         <TabsList>

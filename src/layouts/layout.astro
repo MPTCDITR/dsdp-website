@@ -1,12 +1,12 @@
 ---
 import "@/styles/global.css";
 
-import { getLangFromUrl } from "@/lib/i18n";
 import { getLocalizedRoutes, navigation } from "@/lib/route";
 
 import Header from "@/components/layout/Header";
 
 import { defaultLang, ui } from "@/i18n/ui";
+import { getLangFromUrl } from "@/i18n/utils";
 
 interface Props {
   title: string;
@@ -36,7 +36,7 @@ const currentPath = Astro.url.pathname;
       currentPath={currentPath}
       client:load
     />
-    <main class="container mx-auto my-4 px-4">
+    <main>
       <slot />
     </main>
   </body>

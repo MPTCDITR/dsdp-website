@@ -3,12 +3,13 @@ import {
   routes,
   showDefaultLang,
   ui,
+  type Language,
   type SupportedLanguage,
 } from "./ui";
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split("/");
-  if (lang in ui) return lang as keyof typeof ui;
+  if (lang in ui) return lang as Language;
   return defaultLang;
 }
 
