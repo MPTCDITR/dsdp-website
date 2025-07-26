@@ -21,7 +21,7 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "Video & Media",
     "nav.news_and_events": "News & Event",
     "nav.contact": "Contact",
-    
+
     // About Us
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
@@ -60,7 +60,6 @@ export const ui: Record<string, Record<string, string>> = {
     "howToApply.title-2": "for DSDP Project Funding",
     "howToApply.subTitle":
       "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
-
   },
   km: {
     // Navigation
@@ -114,7 +113,6 @@ export const ui: Record<string, Record<string, string>> = {
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និងមន្ត្រីរាជការ ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម៖",
-
   },
 } as const;
 
