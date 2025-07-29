@@ -12,13 +12,18 @@ const { stepNumber, title, description, imageUrl, className } = Astro.props;
 
 <article
   class:list={[
-    "relative flex flex-col justify-start min-h-[320px] w-full h-full p-6 rounded-2xl overflow-hidden text-white shadow-lg bg-cover bg-center group transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1",
+    "relative flex flex-col justify-start min-h-[320px] w-full h-full p-6 rounded-2xl overflow-hidden text-white shadow-lg group transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1",
     className,
   ]}
-  style={`background-image: url(${imageUrl})`}
 >
+  <img
+    src={imageUrl}
+    alt={title}
+    class="absolute inset-0 w-full h-full object-cover rounded-2xl z-0"
+    loading="lazy"
+  />
   <div
-    class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300"
+    class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300 rounded-2xl"
   >
   </div>
   <div class="relative z-10">
