@@ -1,15 +1,16 @@
 ---
 import "@/styles/global.css";
 
-import { getLangFromUrl } from "@/lib/i18n";
+import { getLangFromUrl, useTranslations } from "@/lib/i18n";
 import { getLocalizedRoutes, navigation } from "@/lib/route";
 
 import Header from "@/components/layout/Header";
 import { AboutUs as AboutUsComponent } from "@/components/pages/about/about-us-content";
 
-import backgorund_style from "@/assets/about/about-us/backgorund-style.svg";
+import background_style from "@/assets/about/about-us/backgorund-style.svg";
 import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, ui } from "@/i18n/ui";
+import Layout from "@/layouts/layout.astro";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -25,38 +26,22 @@ const navigationItems = getLocalizedRoutes(navigation, locale);
 const currentPath = Astro.url.pathname;
 ---
 
-<!doctype html>
-<html lang={lang}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>អំពីឌីអេសឌីធី - About DSDP</title>
-  </head>
-  <body class="flex min-h-screen flex-col relative">
-    <!-- Background  -->
-    <div class="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+<Layout title="អំពីឌីអេសឌីធី - About DSDP">
+  <!-- Background decorations -->
+  <section class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
+    <div class="absolute inset-0 -z-10 pointer-events-none">
       <img
-        src={backgorund_style.src}
-        alt="Top Background"
-        class="absolute top-[10%] right-[50%] w-full max-w-full h-auto"
+        src={background_style.src}
+        alt="top background"
+        class="absolute top-[5%] right-[60%] w-full max-w-full h-auto"
       />
       <img
         src={background_svg_blob.src}
-        alt="Bottom Background"
-        class="absolute bottom-[10%] left-[50%] w-full max-w-full rotate-[270deg] h-auto scale-x-[-1]"
+        alt="bottom background"
+        class="absolute bottom-[10%] left-[50%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1]"
       />
     </div>
 
-    <Header
-      translations={translations}
-      lang={lang}
-      navigationItems={navigationItems}
-      currentPath={currentPath}
-      client:load
-    />
-
-    <main class="relative z-10">
-      <AboutUsComponent translations={translations} client:load />
-    </main>
-  </body>
-</html>
+    <AboutUsComponent translations={translations} client:load />
+  </section>
+</Layout>

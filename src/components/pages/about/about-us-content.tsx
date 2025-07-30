@@ -30,10 +30,10 @@ export function AboutUs({ translations }: AboutUsContent) {
         </div>
 
         <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
-          <h2 className="bg-gradient-to-r from-[#54A7F6] to-[#004282] text-transparent bg-clip-text text-4xl leading-relaxed md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-r text-4xl leading-relaxed md:text-4xl font-bold mb-4">
             {t("about.visionTitle")}
           </h2>
-          <p className="text-base text-zinc-500 mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             {t("about.visionDescription")}
           </p>
           <ul className="list-disc pl-6 space-y-2 text-base text-foreground leading-relaxed">
@@ -48,13 +48,13 @@ export function AboutUs({ translations }: AboutUsContent) {
       {/* Mission Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
         <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
-          <h2 className="bg-gradient-to-r from-[#54A7F6] to-[#004282] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-r text-4xl leading-snug md:text-4xl font-bold mb-4">
             {t("about.mission.title")}
           </h2>
-          <p className="text-base text-zinc-500 mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             {t("about.mission.description")}
           </p>
-          <ul className="list-disc pl-6 space-y-2 text-base leading-relaxed">
+          <ul className="list-disc pl-6 space-y-2 text-base text-foreground leading-relaxed">
             <li>{t("about.mission1")}</li>
             <li>{t("about.mission2")}</li>
             <li>{t("about.mission3")}</li>
@@ -73,7 +73,7 @@ export function AboutUs({ translations }: AboutUsContent) {
         </div>
 
         <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
-          <h2 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-4xl leading-snug  md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-b text-4xl leading-snug  md:text-4xl font-bold mb-4">
             {t("about.whatIsDsdp.title")}
           </h2>
           <p className="text-base text-foreground leading-relaxed">
@@ -85,10 +85,10 @@ export function AboutUs({ translations }: AboutUsContent) {
       {/* Benefits Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
         <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
-          <h2 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-b text-4xl leading-snug md:text-4xl font-bold mb-4">
             {t("about.benefits.title")}
           </h2>
-          <p className="text-base leading-relaxed">
+          <p className="text-base text-foreground leading-relaxed">
             {t("about.benefits.description")}
           </p>
         </div>
@@ -109,16 +109,16 @@ export function AboutUs({ translations }: AboutUsContent) {
         </div>
 
         <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
-          <h2 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-4xl leading-snug md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-b text-4xl leading-snug md:text-4xl font-bold mb-4">
             {t("about.conditionReturnMoney.title")}
           </h2>
-          <p className="text-base leading-relaxed mb-4">
+          <p className="text-base text-foreground leading-relaxed mb-4">
             {t("about.conditionReturnMoney.description")}
           </p>
-          <h3 className="bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text text-2xl leading-snug md:text-2xl font-bold mb-4">
+          <h3 className="text-gradient-b text-2xl leading-snug md:text-2xl font-bold mb-4">
             {t("about.howToReturnMoney.title")}
           </h3>
-          <p className="text-base leading-relaxed">
+          <p className="text-base text-foreground leading-relaxed">
             {t("about.howToReturnMoney.description")}
           </p>
         </div>

@@ -135,5 +135,12 @@
 
     @apply mx-auto px-4 sm:px-6 lg:px-8;
   }
+  .text-gradient-b {
+    @apply bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text;
+  }
+
+  .text-gradient-r {
+    @apply bg-gradient-to-r from-[#54A7F6] to-[#004282] text-transparent bg-clip-text;
+  }
 }
 
