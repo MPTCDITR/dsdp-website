@@ -33,7 +33,7 @@ export function LatestBlogCard({
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/40 rounded-lg"></div>
+      <div className="absolute inset-0 bg-black/30 transition-colors duration-300 group-hover:bg-black/0 rounded-lg"></div>
 
       {/* Bottom content */}
       <div className="mt-auto relative z-10 bg-white/10 backdrop-blur-md px-4 py-3 w-full rounded-b-lg">

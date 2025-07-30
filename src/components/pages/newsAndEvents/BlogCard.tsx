@@ -37,30 +37,27 @@ export function BlogCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <a
-        href={`/${lang}/news-and-events/${urlSlug}`}
-        className="block hover:opacity-90 transition-opacity"
-      >
-        <Card className="overflow-hidden h-auto">
+      <a href={`/${lang}/news-and-events/${urlSlug}`}>
+        <Card className="overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
           <div
-            className={`grid md:grid-cols-5 grid-cols-1 gap-6 p-3 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+            className={`grid md:grid-cols-5 grid-cols-1 gap-6 p-3 h-auto duration-300 rounded-lg${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
           >
             {/* Image */}
             <div className=" md:col-span-2 aspect-auto relative rounded-lg overflow-hidden">
               <img
                 src={image?.src}
                 alt={title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover "
               />
             </div>
             {/* Content */}
-            <div className="space-y-3 md:col-span-3">
+            <div className="space-y-3 md:col-span-3 ">
               {/* Date */}
               <p className="font-bold text-secondary hover:underline">
                 <time dateTime={date}>{formatDate(date, lang)}</time>
               </p>
               {/* Blog Title */}
-              <h1 className="text-3xl font-bold text-primary line-clamp-2 leading-normal">
+              <h1 className="text-2xl font-bold text-primary line-clamp-2 leading-normal">
                 {title}
               </h1>
               {/* Short Description */}

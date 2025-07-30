@@ -31,10 +31,10 @@ export function BlogContent({
       />
 
       <div className="max-w-5xl mx-auto space-y-6">
-        <h1 className="text-xl lg:text-4xl font-bold text-primary leading-normal lg:leading-relaxed text-justify lg:text-start mt-8">
+        <h1 className="text-xl lg:text-4xl font-bold text-primary leading-snug text-justify lg:text-start mt-8">
           {title}
         </h1>
-        <p className="flex items-center gap-4 text-secondary">
+        <p className="flex items-center gap-4 text-secondary font-bold">
           <span>{author},</span>
           <span>
             <time>{formatDate(date.toISOString(), lang)}</time>
