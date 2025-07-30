@@ -1,9 +1,9 @@
 ---
-import { getLangFromUrl } from "@/lib/i18n";
+import { useTranslations } from "@/lib/i18n";
 
 import { AboutTeam as AboutTeamComponent } from "@/components/pages/about/about-team-content";
 
-import { languages, ui } from "@/i18n/ui";
+import { languages } from "@/i18n/ui";
 import Layout from "@/layouts/layout.astro";
 
 export async function getStaticPaths() {
@@ -12,12 +12,10 @@ export async function getStaticPaths() {
   }));
 }
 
-const lang = getLangFromUrl(Astro.url);
-const translations = ui[lang];
+const lang = Astro.params.lang as keyof typeof languages;
+const translations = useTranslations(lang);
 ---
 
-<Layout title="អំពីឌីអេសឌីធី - About DSDP" lang={lang}>
-  <main class="relative overflow-hidden">
-    <AboutTeamComponent translations={translations} client:load />
-  </main>
+<Layout title="អំពីឌីអេសឌីធី - About DSDP">
+  <AboutTeamComponent lang={lang} client:load />
 </Layout>

@@ -1,16 +1,21 @@
+import type { ReactNode } from "react";
+
+import type { ContactProps } from "../data/aboutTeamData";
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 interface TeamCardProps {
   img: string;
-  contacts?: {
-    facebook?: string;
-    linkedin?: string;
-    instagram?: string;
-    youtube?: string;
-  };
+  contacts?: Array<ContactProps>;
   name: string;
   position: string;
 }
+
+const iconMap = {
+  facebook: <Facebook className="w-5 h-5 text-white" />,
+  instagram: <Instagram className="w-5 h-5 text-white" />,
+  linkedin: <Linkedin className="w-5 h-5 text-white" />,
+  youtube: <Youtube className="w-5 h-5 text-white" />,
+};
 
 export default function AboutTeamCard({
   img,
@@ -28,50 +33,18 @@ export default function AboutTeamCard({
         />
       </div>
 
-      <div className="flex gap-3 mb-4 ">
-        {contacts?.facebook && (
+      <div className="flex flex-wrap gap-3 mb-4 ">
+        {contacts?.map((contact, index) => (
           <a
-            href={contacts.facebook}
+            key={index}
+            href={contact.href}
             target="_blank"
             rel="noopener noreferrer"
             className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors"
           >
-            <Facebook className="w-5 h-5 text-white" />
+            {iconMap[contact.type]}
           </a>
-        )}
-
-        {contacts?.instagram && (
-          <a
-            href={contacts.instagram}
-            target="_blank"
-            rel="noopener noreferrer "
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors"
-          >
-            <Instagram className="w-5 h-5 text-white" />
-          </a>
-        )}
-
-        {contacts?.linkedin && (
-          <a
-            href={contacts.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors"
-          >
-            <Linkedin className="w-5 h-5 text-white" />
-          </a>
-        )}
-
-        {contacts?.youtube && (
-          <a
-            href={contacts.youtube}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-primary hover:bg-blue-950 transition-colors"
-          >
-            <Youtube className="w-5 h-5 text-white" />
-          </a>
-        )}
+        ))}
       </div>
 
       <div>
