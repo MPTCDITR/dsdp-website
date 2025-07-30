@@ -41,12 +41,12 @@ export function BlogCard({
         href={`/${lang}/news-and-events/${urlSlug}`}
         className="block hover:opacity-90 transition-opacity"
       >
-        <Card className="overflow-hidden">
+        <Card className="overflow-hidden h-auto">
           <div
-            className={`grid md:grid-cols-2 gap-8 p-3 h-[320px] ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+            className={`grid md:grid-cols-5 grid-cols-1 gap-6 p-3 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
           >
             {/* Image */}
-            <div className=" aspect-auto relative rounded-lg overflow-hidden">
+            <div className=" md:col-span-2 aspect-auto relative rounded-lg overflow-hidden">
               <img
                 src={image?.src}
                 alt={title}
@@ -54,13 +54,13 @@ export function BlogCard({
               />
             </div>
             {/* Content */}
-            <div className="space-y-3">
+            <div className="space-y-3 md:col-span-3">
               {/* Date */}
               <p className="font-bold text-secondary hover:underline">
                 <time dateTime={date}>{formatDate(date, lang)}</time>
               </p>
               {/* Blog Title */}
-              <h1 className="text-4xl font-bold text-primary line-clamp-2 leading-normal">
+              <h1 className="text-3xl font-bold text-primary line-clamp-2 leading-normal">
                 {title}
               </h1>
               {/* Short Description */}

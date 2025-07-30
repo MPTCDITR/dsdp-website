@@ -31,7 +31,7 @@ export function BlogContent({
       />
 
       <div className="max-w-5xl mx-auto space-y-6">
-        <h1 className="text-xl lg:text-4xl font-bold text-primary leading-normal lg:leading-relaxed text-justify lg:text-start">
+        <h1 className="text-xl lg:text-4xl font-bold text-primary leading-normal lg:leading-relaxed text-justify lg:text-start mt-8">
           {title}
         </h1>
         <p className="flex items-center gap-4 text-secondary">
