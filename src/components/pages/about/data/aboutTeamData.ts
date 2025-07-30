@@ -1,3 +1,5 @@
+import React from "react";
+
 import teamCard1 from "@/assets/about/about-team/team-card1.jpeg";
 import teamCard2 from "@/assets/about/about-team/team-card2.jpeg";
 import teamCard3 from "@/assets/about/about-team/team-card3.jpeg";
