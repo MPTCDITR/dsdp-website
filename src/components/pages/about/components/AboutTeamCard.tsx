@@ -1,5 +1,3 @@
-import type { ReactNode } from "react";
-
 import type { ContactProps } from "../data/aboutTeamData";
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
