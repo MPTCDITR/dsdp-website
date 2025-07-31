@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/pagination";
 import { BlogCard } from "@/components/pages/newsAndEvents/BlogCard";
 
+import { useTranslations } from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -21,7 +22,7 @@ interface BlogListProps {
 }
 
 export function BlogList({ translations, posts, lang }: BlogListProps) {
-  const t = (key: string) => translations[key] || key;
+  const t = useTranslations(lang);
   // Error Handling
   if (!posts?.length) {
     return (

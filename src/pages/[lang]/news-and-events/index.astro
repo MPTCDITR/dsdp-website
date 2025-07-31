@@ -1,11 +1,9 @@
 ---
-import "@/styles/global.css";
-
 import { getLatestPosts, getRemainingBlogPosts } from "@/lib/blog";
 import { getLangFromUrl } from "@/lib/i18n";
 
 import { BlogList } from "@/components/pages/newsAndEvents/BlogList";
-import { LatestBlogList } from "@/components/pages/newsAndEvents/LatestBlogList";
+import LatestBlogList from "@/components/pages/newsAndEvents/LatestBlogList.astro";
 
 import { languages, ui } from "@/i18n/ui";
 import Layout from "@/layouts/layout.astro";
@@ -24,12 +22,7 @@ const remainingPosts = await getRemainingBlogPosts(lang);
 
 <Layout title={`អត្ថបទព័ត៌មាន និង ព្រឹត្តិការណ៍ - News and Events`}>
   <!-- Section 1 -->
-  <LatestBlogList
-    translations={translations}
-    posts={latestPosts}
-    lang={lang}
-    client:load
-  />
+  <LatestBlogList translations={translations} posts={latestPosts} lang={lang} />
   <!-- Section 2 -->
   <BlogList
     translations={translations}

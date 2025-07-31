@@ -1,9 +1,7 @@
 ---
-import "@/styles/global.css";
-
 import { getLangFromUrl } from "@/lib/i18n";
 
-import { BlogContent } from "@/components/pages/newsAndEvents/BlogContent";
+import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
 
 import Layout from "@/layouts/layout.astro";
 import { getCollection } from "astro:content";
@@ -38,7 +36,6 @@ const lang = getLangFromUrl(Astro.url);
     description={entry.data.description}
     image={entry.data.image}
     lang={lang}
-    client:load
   >
     <Content />
   </BlogContent>

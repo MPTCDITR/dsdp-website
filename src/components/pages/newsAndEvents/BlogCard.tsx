@@ -2,6 +2,7 @@ import { formatDate } from "@/lib/utils";
 
 import { Card } from "@/components/ui/card";
 
+import { useTranslations } from "@/i18n/utils";
 import type { ImageMetadata } from "astro";
 import { motion } from "framer-motion";
 
@@ -25,10 +26,9 @@ export function BlogCard({
   image,
   slug,
   lang,
-  translations,
 }: BlogCardProps) {
   const urlSlug = slug.split("/").slice(1).join("/");
-  const t = (key: string) => translations[key] || key;
+  const t = useTranslations(lang);
 
   return (
     <motion.div
@@ -37,7 +37,7 @@ export function BlogCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <a href={`/${lang}/news-and-events/${urlSlug}`}>
+      <div>
         <Card className="overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
           <div
             className={`grid md:grid-cols-5 grid-cols-1 gap-6 p-3 h-auto duration-300 rounded-lg${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
@@ -57,19 +57,22 @@ export function BlogCard({
                 <time dateTime={date}>{formatDate(date, lang)}</time>
               </p>
               {/* Blog Title */}
-              <h1 className="text-2xl font-bold text-primary line-clamp-2 leading-normal">
+              <h2 className="text-2xl font-bold text-primary line-clamp-2 leading-normal">
                 {title}
-              </h1>
+              </h2>
               {/* Short Description */}
               <p className="text-gray-600 line-clamp-2">{description}</p>
               {/* CTA Btn */}
-              <p className="bg-primary text-white hover:bg-secondary w-fit px-4 py-2 rounded-md">
+              <a
+                href={`/${lang}/news-and-events/${urlSlug}`}
+                className="bg-primary text-white hover:bg-secondary w-fit px-4 py-2 rounded-md"
+              >
                 {t("newsAndEvents.readmore")} →
-              </p>
+              </a>
             </div>
           </div>
         </Card>
-      </a>
+      </div>
     </motion.div>
   );
 }
