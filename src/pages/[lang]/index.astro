@@ -1,7 +1,8 @@
 ---
 import ApplyStep from "@/components/home/ApplyStep.astro";
+import Hero from "@/components/home/Hero";
 
-import { languages, ui } from "@/i18n/ui";
+import { languages } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 
@@ -12,9 +13,9 @@ export async function getStaticPaths() {
 }
 
 const lang = getLangFromUrl(Astro.url);
-const translations = ui[lang];
 ---
 
 <Layout title="ទំព័រដើម - Home">
-  <ApplyStep lang={lang} translations={translations} />
+  <Hero lang={lang} client:load />
+  <ApplyStep lang={lang} />
 </Layout>
