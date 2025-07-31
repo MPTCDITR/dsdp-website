@@ -1,18 +1,18 @@
 ---
-import step1Image from "../../assets/home/step_1.jpg";
-import step2Image from "../../assets/home/step_2.jpg";
-import step3Image from "../../assets/home/step_3.jpg";
-import step4Image from "../../assets/home/step_4.jpg";
-import step5Image from "../../assets/home/step_5.jpg";
 import { Button } from "../ui/button";
 import Guide from "./Guide.astro";
+import step1Image from "@/assets/home/step_1.jpg";
+import step2Image from "@/assets/home/step_2.jpg";
+import step3Image from "@/assets/home/step_3.jpg";
+import step4Image from "@/assets/home/step_4.jpg";
+import step5Image from "@/assets/home/step_5.jpg";
 import { ChevronRight } from "lucide-react";
 
 type Step = {
   stepNumber: string;
   title: string;
   description: string;
-  imageUrl: string; // This will now hold the processed URL string
+  imageUrl: string;
 };
 
 const steps: Step[] = [
