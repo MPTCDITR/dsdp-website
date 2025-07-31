@@ -1,11 +1,11 @@
 ---
 import { getLatestPosts, getRemainingBlogPosts } from "@/lib/blog";
-import { getLangFromUrl } from "@/lib/i18n";
 
 import { BlogList } from "@/components/pages/newsAndEvents/BlogList";
 import LatestBlogList from "@/components/pages/newsAndEvents/LatestBlogList.astro";
 
 import { languages, ui } from "@/i18n/ui";
+import { getLangFromUrl } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 
 export async function getStaticPaths() {
