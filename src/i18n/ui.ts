@@ -41,14 +41,16 @@ export const ui: Record<string, Record<string, string>> = {
     "howToApply.title-2": "for DSDP Project Funding",
     "howToApply.subTitle":
       "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
-    
+
     // Contact Page
     // Info section
     "contact.title.1": "Contact Information",
-    "contact.description.1": "Please complete the form on the right to contact the N.S.D.P Working Group. We will respond within 24 hours. Or contact us directly at the following phone number:",
+    "contact.description.1":
+      "Please complete the form on the right to contact the N.S.D.P Working Group. We will respond within 24 hours. Or contact us directly at the following phone number:",
     "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
     "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
-    "contact.description.4": "Building No. 13, Preah Monivong Boulevard, Sangkat Sra Chak, Khan Daun Penh Phnom Penh 120210, Cambodia",
+    "contact.description.4":
+      "Building No. 13, Preah Monivong Boulevard, Sangkat Sra Chak, Khan Daun Penh Phnom Penh 120210, Cambodia",
     // Media Part
     "contact.title.2": "Location in Google Map",
   },
@@ -87,12 +89,14 @@ export const ui: Record<string, Record<string, string>> = {
     // Contact Page
     // Info section
     "contact.title.1": "ព័ត៌មានទំនាក់ទំនង",
-    "contact.description.1": "សូមបំពេញទម្រង់ខាងស្តាំនេះ ដើម្បធ្វើទំនាក់ទំនងមកកាន់ក្រុមការ ងារ ក.អ.ជ.ឌ.។ យើងនឹងឆ្លើយតបទៅវិញក្នុងរយៈពេលមិនលើសពី ២៤ម៉ោង។ ឬទំនាក់ទំនងផ្ទាល់មកកាន់លេខទូរស័ព្ទខាងក្រោមនេះ ៖",
+    "contact.description.1":
+      "សូមបំពេញទម្រង់ខាងស្តាំនេះ ដើម្បធ្វើទំនាក់ទំនងមកកាន់ក្រុមការ ងារ ក.អ.ជ.ឌ.។ យើងនឹងឆ្លើយតបទៅវិញក្នុងរយៈពេលមិនលើសពី ២៤ម៉ោង។ ឬទំនាក់ទំនងផ្ទាល់មកកាន់លេខទូរស័ព្ទខាងក្រោមនេះ ៖",
     "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
     "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
-    "contact.description.4": "អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ 120210, កម្ពុជា",
+    "contact.description.4":
+      "អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ 120210, កម្ពុជា",
     // Media Part
-    "contact.title.2": "ទីតាំងលើ Google Map",  
+    "contact.title.2": "ទីតាំងលើ Google Map",
   },
 } as const;
 
