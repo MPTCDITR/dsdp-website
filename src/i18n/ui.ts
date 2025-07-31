@@ -55,6 +55,20 @@ export const ui: Record<string, Record<string, string>> = {
     "about.howToReturnMoney.description":
       "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
 
+    //About Team
+    "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
+    "about.team.title2": "ក្រុមការងារស្នូល",
+    "about.team.title2.description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "about.team.card1.name": "H.E. Apsara",
+    "about.team.card1.position": "Head of Finance",
+    "about.team.card2.name": "H.E. Apsara",
+    "about.team.card2.position": "Head of Finance",
+    "about.team.card3.name": "H.E. Apsara",
+    "about.team.card3.position": "Head of Finance",
+    "about.team.card4.name": "H.E. Apsara",
+    "about.team.card4.position": "Head of Finance",
+
     //Hero Carousel
     "home.hero.title":
       "Digital Skills Development Program (DSDP) - Empowering Human Resource Development",
@@ -69,8 +83,8 @@ export const ui: Record<string, Record<string, string>> = {
     "btn.moredetails": "More Details",
     "applyStep.step1.title": "Step 1: Register",
     // How to Apply Page
-    "howToApply.title-1": "Easy Steps to Apply",
-    "howToApply.title-2": "for DSDP Project Funding",
+    "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
+    "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
     // News and Events Page
@@ -85,6 +99,7 @@ export const ui: Record<string, Record<string, string>> = {
     "btn.previous": "Previous",
     "btn.next": "Next",
   },
+
   km: {
     // Navigation
     "nav.home": "ទំព័រដើម",
@@ -131,6 +146,20 @@ export const ui: Record<string, Record<string, string>> = {
     "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
     "about.howToReturnMoney.description":
       "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
+
+    //About Team
+    "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
+    "about.team.title2": "ក្រុមការងារស្នូល",
+    "about.team.title2.description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "about.team.card1.name": "H.E. Apsara",
+    "about.team.card1.position": "Head of Finance",
+    "about.team.card2.name": "H.E. Apsara",
+    "about.team.card2.position": "Head of Finance",
+    "about.team.card3.name": "H.E. Apsara",
+    "about.team.card3.position": "Head of Finance",
+    "about.team.card4.name": "H.E. Apsara",
+    "about.team.card4.position": "Head of Finance",
 
     //Hero Carousel
     "home.hero.title":
