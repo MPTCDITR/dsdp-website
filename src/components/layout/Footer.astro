@@ -1,6 +1,8 @@
 ---
 import style from "@/assets/footer/backgorund-style.svg";
 import Cambodia from "@/assets/footer/footerbackground.svg";
+import telegram from "@/assets/footer/telegram.svg";
+import X from "@/assets/footer/X.svg";
 import dsdp from "@/assets/logo/dsdp-logo.png";
 import mptc from "@/assets/logo/mptc-logo.png";
 import {
@@ -12,10 +14,17 @@ import {
   PhoneCall,
   Youtube,
 } from "lucide-react";
-import { FaTelegramPlane } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 const year = new Date().getFullYear();
+
+const socialLinks = [
+  { href: "#", label: "Facebook", icon: Facebook },
+  { href: "#", label: "Linkedin", icon: Linkedin },
+  { href: "#", label: "X", icon: X },
+  { href: "#", label: "Youtube", icon: Youtube },
+  { href: "#", label: "Instagram", icon: Instagram },
+  { href: "#", label: "Telegram", icon: telegram },
+];
 ---
 
 <footer class={`bg-primary text-white relative overflow-hidden`}>
@@ -153,9 +162,7 @@ const year = new Date().getFullYear();
             </li>
             <li class="flex gap-4">
               <PhoneCall className="text-white flex-shrink-0" />
-              <a href="" class="hover:text-white transition-colors">
-                +855 98 94 777 | +855 12 94 777 | +855 90 94 777
-              </a>
+              <a href="" class="hover:text-white transition-colors"> 1 2 3 </a>
             </li>
             <li class="flex gap-4">
               <Mail className="text-white flex-shrink-0" />
@@ -183,55 +190,17 @@ const year = new Date().getFullYear();
           </a>
         </div>
         <div class="flex items-center gap-3.5">
-          <a
-            href="#"
-            aria-label="Facebook"
-            class="bg-primary hover:bg-white/20 rounded-full p-3 flex items-center justify-center transition-colors"
-          >
-            <Facebook className="text-white w-4 h-4" />
-          </a>
-          <a
-            href="#"
-            aria-label="Linkedin"
-            class="bg-primary hover:bg-white/20
-            rounded-full p-3 flex items-center justify-center transition-colors"
-          >
-            <Linkedin className="w-4 h-4" />
-          </a>
-          <a
-            href="#"
-            aria-label="Twitter"
-            class="bg-primary hover:bg-white/20
-            rounded-full p-3 flex items-center justify-center transition-colors"
-          >
-            <FaXTwitter className="w-4 h-4" />
-          </a>
-          <a
-            href="#"
-            aria-label="Linkedin"
-            class="bg-primary hover:bg-white/20
-            rounded-full p-3 flex items-center justify-center transition-colors"
-          >
-            <Youtube className="w-4 h-4" />
-          </a>
-          <a
-            href="#"
-            aria-label="Linkedin"
-            class="bg-primary hover:bg-white/20
-            rounded-full p-3 flex items-center justify-center transition-colors"
-          >
-            <Instagram className="w-4 h-4" />
-          </a>
-
-          <a
-            href="#"
-            aria-label="Linkedin"
-            class="bg-primary hover:bg-white/20
-            rounded-full p-3 flex items-center justify-center transition-colors"
-            style="size-2"
-          >
-            <FaTelegramPlane className="w-4 h-4" />
-          </a>
+          {
+            socialLinks.map(({ href, label, icon: Icon }) => (
+              <a
+                href={href}
+                aria-label={label}
+                class="bg-primary hover:bg-white/20 rounded-full p-3 flex items-center justify-center transition-colors"
+              >
+                <Icon className="w-4 h-4" />
+              </a>
+            ))
+          }
         </div>
       </div>
     </div>
