@@ -34,6 +34,16 @@ export const ui: Record<string, Record<string, string>> = {
 
     "btn.moredetails": "More Details",
     "applyStep.step1.title": "Step 1: Register",
+    // Event Carousel
+    "home.event_1.title": "Signing Ceremony with DSDP",
+    "home.event_1.description":
+      "The DSDP is honored to announce to the public that, as decided by the Royal Government, the DSDP will organize the 'National Science, Technology, and Digital Day' annually. For the year 2023, it will be held at the Sokha Angkor Hotel in Siem Reap Province.",
+    "home.event_2.title": "Digital Exhibition by DSDP",
+    "home.event_2.description":
+      "The DSDP is honored to announce to the public that, as decided by the Royal Government, the DSDP will organize the 'National Science, Technology, and Digital Day' annually. For the year 2023, it will be held at the Sokha Angkor Hotel in Siem Reap Province.",
+    "home.event_3.title": "women for digital DSDP",
+    "home.event_3.description":
+      "The DSDP is honored to announce to the public that, as decided by the Royal Government, the DSDP will organize the 'National Science, Technology, and Digital Day' annually. For the year 2023, it will be held at the Sokha Angkor Hotel in Siem Reap Province.",
     // How to Apply Page
     "howToApply.title-1": "Easy Steps to Apply",
     "howToApply.title-2": "for DSDP Project Funding",
@@ -64,6 +74,16 @@ export const ui: Record<string, Record<string, string>> = {
       "ភ្នំពេញ៖ នាព្រឹកថ្ងៃទី១១ ខែមីនា ឆ្នាំ ២០២៤ សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្រ្តី នៃព្រះរាជាណាចក្រកម្ពុជា បានអញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និង ពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និង បច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១ នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ។ នៅក្នុងកម្មវិធីនេះផងដែរ សម្តេចធិបតីនាយករដ្ឋមន្ត្រី អញ្ជើញទស្សនាពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ ដោយក្នុងពិព័រណ៍នោះមានរួមមាន ស្តង់របស់មជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល និងកម្មវិធីបណ្តុះបណ្តាលផ្សេងទៀតរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ តាមរយៈទស្សនាកិច្ចនេះ ឯកឧត្តម ជា វ៉ាន់ដេត រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ បានទទួលបដិសណ្ឋារកិច្ច សម្តេចមហាបវរធិបតី ប្រកបដោយការស្វាគមន៍ និងគារវកិច្ចខ្ពង់ខ្ពស់។ ទន្ទឹមនេះ សម្តេចធិបតី បានចំណាយពេលវេលា ពិនិត្យស្វែងយល់បន្ថែម និងស្តាប់បទបង្ហាញដោយសង្ខេបអំពីមុខងារនិងគុណប្រយោជន៍ នៃមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ និងកម្មវិធីបណ្តុះបណ្តាល ដែលក្រសួងបាននឹងកំពុងអនុវត្ត ដែលវិធីសាស្ត្រមួយផ្នែកសម្រាប់បង្កើនសមត្ថភាពចាប់យកនិងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលរបស់មន្ត្រី និងប្រជាពលរដ្ឋក្នុងសហគមន៍ ព្រមទាំងកាត់បន្ថយគម្លាតឌីជីថល។",
     "btn.moredetails": "លម្អិតបន្ថែម",
     "applyStep.step1.title": "ជំហានទី ១៖ ចុះឈ្មោះ",
+    // Event Carousel
+    "home.event_1.title": "កម្មវិធីចុះអនុស្សរណៈជាមួយ",
+    "home.event_1.description":
+      "ក.អ.ជ.ឌ. មានកិត្តិយសសូមគោរពជម្រាបជូន ដំណឹងដល់សាធារណជនទូទៅមេត្តាជ្រាបថា៖ តាមការសម្រេចរបស់រាជរដ្ឋាភិបាល ក.អ.ជ.ឌ. នឹងកំណត់ការរៀបចំ «ទិវាជាតិវិទ្យាសាស្ត្រ បច្ចេកវិទ្យា និងឌីជីថល» ជាប្រចាំឆ្នាំ។ សម្រាប់ឆ្នាំ ២០២៣នេះនឹងត្រូវបានរៀបចំឡើងនៅសណ្ឋាគារ សុខាអង្គរ ខេត្តសៀមរាប",
+    "home.event_2.title": "កម្មវិធីពិព័រឌីជីថលរបស់ ក.អ.ជ.ឌ",
+    "home.event_2.description":
+      "ក.អ.ជ.ឌ. មានកិត្តិយសសូមគោរពជម្រាបជូន ដំណឹងដល់សាធារណជនទូទៅមេត្តាជ្រាបថា៖ តាមការសម្រេចរបស់រាជរដ្ឋាភិបាល ក.អ.ជ.ឌ. នឹងកំណត់ការរៀបចំ «ទិវាជាតិវិទ្យាសាស្ត្រ បច្ចេកវិទ្យា និងឌីជីថល» ជាប្រចាំឆ្នាំ។ សម្រាប់ឆ្នាំ ២០២៣នេះនឹងត្រូវបានរៀបចំឡើងនៅសណ្ឋាគារ សុខាអង្គរ ខេត្តសៀមរាប",
+    "home.event_3.title": "កម្មវិធីស្រ្តីដើម្បីជីជីថល ក.អ.ជ.ឌ",
+    "home.event_3.description":
+      "ក.អ.ជ.ឌ. មានកិត្តិយសសូមគោរពជម្រាបជូន ដំណឹងដល់សាធារណជនទូទៅមេត្តាជ្រាបថា៖ តាមការសម្រេចរបស់រាជរដ្ឋាភិបាល ក.អ.ជ.ឌ. នឹងកំណត់ការរៀបចំ «ទិវាជាតិវិទ្យាសាស្ត្រ បច្ចេកវិទ្យា និងឌីជីថល» ជាប្រចាំឆ្នាំ។ សម្រាប់ឆ្នាំ ២០២៣នេះនឹងត្រូវបានរៀបចំឡើងនៅសណ្ឋាគារ សុខាអង្គរ ខេត្តសៀមរាប",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
