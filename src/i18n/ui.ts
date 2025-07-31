@@ -21,12 +21,85 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "Video & Media",
     "nav.news_and_events": "News & Event",
     "nav.contact": "Contact",
+
+    // About Us
+    "about.title": "អំពីកម្មវិធី",
+    "about.visionTitle": "ចក្ខុវិស័យ៖",
+    "about.visionDescription":
+      "ក្នុងនាមជាសេនាធិកាផ្ទាល់របស់ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍ ក.អ.ជ.ឌ. មានចក្ខុវិស័យក្នុងការ៖",
+    "about.vision1":
+      "ចូលរួម​អនុវត្តយុទ្ធសាស្រ្តបញ្ចកោណដំណាក់កាលទី១ របស់រាជរដ្ឋាភិបាលកម្ពុជា នីតិកាលទី៧ នៃរដ្ឋសភា",
+    "about.vision2":
+      "ចូលរួមអនុវត្តក្របខណ្ឌគោលនយោបាយសេដ្ឋកិច្ច និងសង្គមឌីជីថល ២០២១-២០៣៥",
+    "about.vision3": "និងក្របខណ្ឌគោលនយោបាយរដ្ឋាភិបាលឌីជីថល ២០២២-២០៣៥",
+    "about.vision4":
+      "លើកកម្ពស់ស្តង់ដាការអប់រំលើជំនាញដែលពាក់ព័ន្ធនឹងបច្ចេកវិទ្យាឌីជីថល និងគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល",
+    "about.mission.title": "បេសកកម្ម៖",
+    "about.mission.description":
+      "ក.អ.ជ.ឌ. បានប្តេជ្ញាបំពេញនូវបេសកកម្មរបស់ខ្លួនយ៉ាងពេញទំហឹងជាអាទិ៍គឺ៖",
+    "about.mission1":
+      "ផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់លើជំនាញបច្ចេកវិទ្យាឌីជីថល",
+    "about.mission2":
+      "អភិវឌ្ឍន៍ និងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលសម្រាប់បម្រើដល់ការអប់រំ  និង",
+    "about.mission3": "បង្កើនធនធានមនុស្សដែលមានចំណេះដឹងផ្នែកបច្ចេកវិទ្យាឌីជីថល",
+    "about.whatIsDsdp.title": "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.)",
+    "about.whatIsDsdp.description":
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ដែលមានឈ្មោះជាភាសាអង់គ្លេស “Digital Skill Development Program (DSDP)” ក្រោមការផ្តួចផ្តើមគំនិតបង្កើត និងអភិវឌ្ឍឡើងដោយក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ តាមរយៈការប្រើប្រាស់ធនធានពី វិភាគទានប្រចាំឆ្នាំរបស់មូល និធិនៃការកសាងសមត្ថភាព និងស្រាវជ្រាវ និងការអភិវឌ្ឍលើវិស័យ ទូរគមនាគមន៍ និងបច្ចេកវិទ្យា គមនាគមន៍និងព័ត៌មាន(ស.អ.) និងវិភាគទានពីប្រភពស្របច្បាប់ផ្សេងៗទៀត ក្នុងគោលដៅគាំទ្រ ដល់ដំណើរការអភិវឌ្ឍមូលធន មនុស្សឌីជីថល ឆ្លើយតបទៅនឹង តម្រូវការនៃការអភិវឌ្ឍសេដ្ឋកិច្ច និងសង្គមឌីជីថល និងរដ្ឋាភិបាលឌីជីថល។​",
+    "about.benefits.title": "តើ ក.អ.ជ.ឌ. ជួយដល់សិស្ស-និស្សិត ដូចម្តេច?",
+    "about.benefits.description":
+      "កម្មវិធី ក.អ.ជ.ឌ. នឹងផ្តល់ ថវិកាសិក្សាដោយមិនគិតការប្រាក់ ជូនទៅដល់សិស្ស និស្សិត និងមន្ត្រីរាជការនៅតាមស្ថាប័ន សាធារណៈ និងឯកជន ដែលមានបំណងចង់បន្តការសិក្សាក្នុងកម្រិតសិក្សា ថ្នាក់បរិញ្ញាបត្រ បរិញ្ញាបត្រជាន់ខ្ពស់ បណ្ឌិត ឬក្នុងវគ្គបណ្តុះបណ្តាលកម្រិតវិញ្ញាបនបត្រលើជំនាញបច្ចេកវិទ្យាឌីជីថលផ្សេង នៅគ្រឹះស្ថានឧត្តមសិក្សាសាធារណៈ និងឯកជន។ បន្ថែមពីលើការផ្តល់ថវិកាសិក្សា កម្មវិធី ក.អ.ជ.ឌ. ក៏ផ្តល់ការប្រឹក្សាយោបល់ដល់សិស្ស និស្សិត និងមន្ត្រីរាជការគ្រប់រូប ព្រមទាំងជួយសម្របសម្រួលការស្នាក់នៅរបស់និស្សិតមកពីតាមខេត្តផងដែរ។",
+    "about.conditionReturnMoney.title": "លក្ខខណ្ឌនៃការសងថវិកាមក ក.អ.ជ.ឌ. វិញ!",
+    "about.conditionReturnMoney.description":
+      "កម្មវិធី ក.អ.ជ.ឌ. ផ្តល់លក្ខខណ្ឌងាយស្រួលសម្រាប់បេក្ខជន ដើម្បីធ្វើការសងប្រាក់ដល់កម្មវិធីក.អ.ជ.ឌ. វិញ បន្ទាប់ពីសិស្សនិស្សិតបញ្ចប់ការសិក្សា និងទទួលបានការងារធ្វើ។",
+    "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
+    "about.howToReturnMoney.description":
+      "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
+
+    //About Team
+    "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
+    "about.team.title2": "ក្រុមការងារស្នូល",
+    "about.team.title2.description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "about.team.card1.name": "H.E. Apsara",
+    "about.team.card1.position": "Head of Finance",
+    "about.team.card2.name": "H.E. Apsara",
+    "about.team.card2.position": "Head of Finance",
+    "about.team.card3.name": "H.E. Apsara",
+    "about.team.card3.position": "Head of Finance",
+    "about.team.card4.name": "H.E. Apsara",
+    "about.team.card4.position": "Head of Finance",
+
+    //Hero Carousel
+    "home.hero.title":
+      "Digital Skills Development Program (DSDP) - Empowering Human Resource Development",
+    "home.hero.description":
+      "The DSDP aims to develop digital human resources in response to the needs of the digital economy and society, as well as the digital government. The program provides interest-free scholarships to students, trainees, and civil servants in public and private institutions, along with free consultations!",
+
+    "home.hero.somdach":
+      "somdach Hun Manet presides over the opening ceremony of the Digital Government Forum and Cambodia-International Digital Government and Technology Exhibition",
+    "home.hero.somdach.description":
+      "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
+
+    "btn.moredetails": "More Details",
+    "applyStep.step1.title": "Step 1: Register",
     // How to Apply Page
-    "howToApply.title-1": "Easy Steps to Apply",
-    "howToApply.title-2": "for DSDP Project Funding",
+    "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
+    "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
+    // News and Events Page
+    "newsAndEvents.title":
+      "Latest Digital Events, Both Local and International",
+    "newsAndEvents.short_description":
+      "Discover the latest news, announcements, and upcoming events from our programs. From student success stories to application deadlines, workshops, and informational sessions, this is where you'll find everything happening in our mission to support digital education through interest-free student loans.",
+    "newsAndEvents.readmore": "Read More",
+    "newsAndEvents.no_posts": "There's no News & Events at the moment.",
+    "newsAndEvents.sub_title": "News & Events",
+    // CTA Buttons
+    "btn.previous": "Previous",
+    "btn.next": "Next",
   },
+
   km: {
     // Navigation
     "nav.home": "ទំព័រដើម",
@@ -40,11 +113,81 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "វីឌីអូនិងប្រព័ន្ធផ្សព្វផ្សាយ",
     "nav.news_and_events": "ព័ត៌មាននិង​ព្រឹត្តិការណ៍",
     "nav.contact": "ទំនាក់ទំនង",
+
+    // About Us
+    "about.title": "អំពីកម្មវិធី",
+    "about.visionTitle": "ចក្ខុវិស័យ៖",
+    "about.visionDescription":
+      "ក្នុងនាមជាសេនាធិកាផ្ទាល់របស់ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍ ក.អ.ជ.ឌ. មានចក្ខុវិស័យក្នុងការ៖",
+    "about.vision1":
+      "ចូលរួម​អនុវត្តយុទ្ធសាស្រ្តបញ្ចកោណដំណាក់កាលទី១ របស់រាជរដ្ឋាភិបាលកម្ពុជា នីតិកាលទី៧ នៃរដ្ឋសភា",
+    "about.vision2":
+      "ចូលរួមអនុវត្តក្របខណ្ឌគោលនយោបាយសេដ្ឋកិច្ច និងសង្គមឌីជីថល ២០២១-២០៣៥",
+    "about.vision3": "និងក្របខណ្ឌគោលនយោបាយរដ្ឋាភិបាលឌីជីថល ២០២២-២០៣៥",
+    "about.vision4":
+      "លើកកម្ពស់ស្តង់ដាការអប់រំលើជំនាញដែលពាក់ព័ន្ធនឹងបច្ចេកវិទ្យាឌីជីថល និងគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល",
+    "about.mission.title": "បេសកកម្ម៖",
+    "about.mission.description":
+      "ក.អ.ជ.ឌ. បានប្តេជ្ញាបំពេញនូវបេសកកម្មរបស់ខ្លួនយ៉ាងពេញទំហឹងជាអាទិ៍គឺ៖",
+    "about.mission1":
+      "ផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់លើជំនាញបច្ចេកវិទ្យាឌីជីថល",
+    "about.mission2":
+      "អភិវឌ្ឍន៍ និងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលសម្រាប់បម្រើដល់ការអប់រំ  និង",
+    "about.mission3": "បង្កើនធនធានមនុស្សដែលមានចំណេះដឹងផ្នែកបច្ចេកវិទ្យាឌីជីថល",
+    "about.whatIsDsdp.title": "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.)",
+    "about.whatIsDsdp.description":
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ដែលមានឈ្មោះជាភាសាអង់គ្លេស “Digital Skill Development Program (DSDP)” ក្រោមការផ្តួចផ្តើមគំនិតបង្កើត និងអភិវឌ្ឍឡើងដោយក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ តាមរយៈការប្រើប្រាស់ធនធានពី វិភាគទានប្រចាំឆ្នាំរបស់មូល និធិនៃការកសាងសមត្ថភាព និងស្រាវជ្រាវ និងការអភិវឌ្ឍលើវិស័យ ទូរគមនាគមន៍ និងបច្ចេកវិទ្យា គមនាគមន៍និងព័ត៌មាន(ស.អ.) និងវិភាគទានពីប្រភពស្របច្បាប់ផ្សេងៗទៀត ក្នុងគោលដៅគាំទ្រ ដល់ដំណើរការអភិវឌ្ឍមូលធន មនុស្សឌីជីថល ឆ្លើយតបទៅនឹង តម្រូវការនៃការអភិវឌ្ឍសេដ្ឋកិច្ច និងសង្គមឌីជីថល និងរដ្ឋាភិបាលឌីជីថល។​",
+    "about.benefits.title": "តើ ក.អ.ជ.ឌ. ជួយដល់សិស្ស-និស្សិត ដូចម្តេច?",
+    "about.benefits.description":
+      "កម្មវិធី ក.អ.ជ.ឌ. នឹងផ្តល់ ថវិកាសិក្សាដោយមិនគិតការប្រាក់ ជូនទៅដល់សិស្ស និស្សិត និងមន្ត្រីរាជការនៅតាមស្ថាប័ន សាធារណៈ និងឯកជន ដែលមានបំណងចង់បន្តការសិក្សាក្នុងកម្រិតសិក្សា ថ្នាក់បរិញ្ញាបត្រ បរិញ្ញាបត្រជាន់ខ្ពស់ បណ្ឌិត ឬក្នុងវគ្គបណ្តុះបណ្តាលកម្រិតវិញ្ញាបនបត្រលើជំនាញបច្ចេកវិទ្យាឌីជីថលផ្សេង នៅគ្រឹះស្ថានឧត្តមសិក្សាសាធារណៈ និងឯកជន។ បន្ថែមពីលើការផ្តល់ថវិកាសិក្សា កម្មវិធី ក.អ.ជ.ឌ. ក៏ផ្តល់ការប្រឹក្សាយោបល់ដល់សិស្ស និស្សិត និងមន្ត្រីរាជការគ្រប់រូប ព្រមទាំងជួយសម្របសម្រួលការស្នាក់នៅរបស់និស្សិតមកពីតាមខេត្តផងដែរ។",
+    "about.conditionReturnMoney.title": "លក្ខខណ្ឌនៃការសងថវិកាមក ក.អ.ជ.ឌ. វិញ!",
+    "about.conditionReturnMoney.description":
+      "កម្មវិធី ក.អ.ជ.ឌ. ផ្តល់លក្ខខណ្ឌងាយស្រួលសម្រាប់បេក្ខជន ដើម្បីធ្វើការសងប្រាក់ដល់កម្មវិធីក.អ.ជ.ឌ. វិញ បន្ទាប់ពីសិស្សនិស្សិតបញ្ចប់ការសិក្សា និងទទួលបានការងារធ្វើ។",
+    "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
+    "about.howToReturnMoney.description":
+      "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
+
+    //About Team
+    "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
+    "about.team.title2": "ក្រុមការងារស្នូល",
+    "about.team.title2.description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "about.team.card1.name": "H.E. Apsara",
+    "about.team.card1.position": "Head of Finance",
+    "about.team.card2.name": "H.E. Apsara",
+    "about.team.card2.position": "Head of Finance",
+    "about.team.card3.name": "H.E. Apsara",
+    "about.team.card3.position": "Head of Finance",
+    "about.team.card4.name": "H.E. Apsara",
+    "about.team.card4.position": "Head of Finance",
+
+    //Hero Carousel
+    "home.hero.title":
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ហៅកាត់ថា ក.អ.ជ.ឌ. គាំទ្រដល់ ដំណើរការអភិវឌ្ឍ មូលធនមនុស្ស",
+    "home.hero.description":
+      "គោលដៅចម្បងរបស់ ក.អ.ជ.ឌ. គឺចូលរួមអភិវឌ្ឍន៍មូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការនៃវឌ្ឍនាភាពសេដ្ឋកិច្ច និងសង្គមឌីជីថល និង រដ្ឋាភិបាលឌីជីថល។ កម្មវិធីនេះផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ជូន ទៅដល់សិស្ស និស្សិត និងមន្ត្រីរាជការតាមស្ថាប័នសាធារណៈ និងឯកជន គ្រប់រូប ព្រមជាមួយនឹងការប្រឹក្សាយោបល់នានាដោយឥតគិតថ្លៃផងដែរ!",
+    "home.hero.somdach":
+      "វិសម្តេចធិបតី ហ៊ុន ម៉ាណែត អញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និងពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១",
+    "home.hero.somdach.description":
+      "ភ្នំពេញ៖ នាព្រឹកថ្ងៃទី១១ ខែមីនា ឆ្នាំ ២០២៤ សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្រ្តី នៃព្រះរាជាណាចក្រកម្ពុជា បានអញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និង ពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និង បច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១ នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ។ នៅក្នុងកម្មវិធីនេះផងដែរ សម្តេចធិបតីនាយករដ្ឋមន្ត្រី អញ្ជើញទស្សនាពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ ដោយក្នុងពិព័រណ៍នោះមានរួមមាន ស្តង់របស់មជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល និងកម្មវិធីបណ្តុះបណ្តាលផ្សេងទៀតរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ តាមរយៈទស្សនាកិច្ចនេះ ឯកឧត្តម ជា វ៉ាន់ដេត រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ បានទទួលបដិសណ្ឋារកិច្ច សម្តេចមហាបវរធិបតី ប្រកបដោយការស្វាគមន៍ និងគារវកិច្ចខ្ពង់ខ្ពស់។ ទន្ទឹមនេះ សម្តេចធិបតី បានចំណាយពេលវេលា ពិនិត្យស្វែងយល់បន្ថែម និងស្តាប់បទបង្ហាញដោយសង្ខេបអំពីមុខងារនិងគុណប្រយោជន៍ នៃមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ និងកម្មវិធីបណ្តុះបណ្តាល ដែលក្រសួងបាននឹងកំពុងអនុវត្ត ដែលវិធីសាស្ត្រមួយផ្នែកសម្រាប់បង្កើនសមត្ថភាពចាប់យកនិងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលរបស់មន្ត្រី និងប្រជាពលរដ្ឋក្នុងសហគមន៍ ព្រមទាំងកាត់បន្ថយគម្លាតឌីជីថល។",
+    "btn.moredetails": "លម្អិតបន្ថែម",
+    "applyStep.step1.title": "ជំហានទី ១៖ ចុះឈ្មោះ",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និងមន្ត្រីរាជការ ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម៖",
+    // News and Events Page
+    "newsAndEvents.title": "ព្រឹត្តិការណ៍ឌីជីថលថ្មីៗ​ ទាំងក្នុងនិងក្រៅប្រទេស",
+    "newsAndEvents.short_description":
+      "ស្វែងយល់ពីព័ត៌មានថ្មីៗ សេចក្តីប្រកាស និងព្រឹត្តិការណ៍នាពេលខាងមុខពីកម្មវិធីរបស់យើង។ ចាប់ពី ការជោគជ័យរបស់សិស្ស រហូតដល់ ថ្ងៃផុតកំណត់នៃការដាក់ពាក្យ សិក្ខាសាលា និងវគ្គព័ត៌មាននានា នេះគឺជាកន្លែងដែលអ្នកនឹងស្វែងរកអ្វីគ្រប់យ៉ាងដែលកំពុងកើតឡើងនៅក្នុងបេសកកម្មរបស់យើងក្នុងការគាំទ្រការអប់រំឌីជីថលតាមរយៈ ប្រាក់កម្ចីនិស្សិតគ្មានការប្រាក់។",
+    "newsAndEvents.readmore": "អានបន្ថែម",
+    "newsAndEvents.no_posts":
+      "បច្ចុប្បន្ន មិនទាន់មានព័ត៌មាន ឬព្រឹត្តិការណ៍អ្វីទេ។",
+    "newsAndEvents.sub_title": "ព័ត៌មាន និងព្រឹត្តិការណ៍ថ្មីៗ",
+    // CTA Buttons
+    "btn.previous": "ទំព័រមុន",
+    "btn.next": "ទំព័របន្ទាប់",
   },
 } as const;
 
