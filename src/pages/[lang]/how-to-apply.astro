@@ -1,7 +1,8 @@
 ---
 import { HowToApply as HowToApplyComponent } from "@/components/pages/howToApply/HowToApply";
 
-import { languages, ui } from "@/i18n/ui";
+import { languages } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 
 export const prerender = true;
@@ -13,18 +14,19 @@ export async function getStaticPaths() {
 }
 
 const lang = Astro.params.lang as keyof typeof languages;
-const translations = ui[lang];
-const t = (key: string) => translations[key] || key;
+const t = useTranslations(lang);
 ---
 
 <Layout title={"របៀបដាក់ពាក្យ-How To Apply"}>
   <!-- Header -->
-  <h1 class="text-4xl font-bold text-center mb-4 mt-16 text-primary">
-    {t("howToApply.title-1")}
-    <br />
-    {t("howToApply.title-2")}
-  </h1>
-  <p class="text-center mb-8 opacity-60">{t("howToApply.subTitle")}</p>
-  <!-- Content -->
-  <HowToApplyComponent client:load />
+  <div class="container mx-auto my-4 px-4">
+    <h1 class="text-4xl font-bold text-center mb-4 mt-16 text-primary">
+      {t("howToApply.title-1")}
+      <br />
+      {t("howToApply.title-2")}
+    </h1>
+    <p class="text-center mb-8 opacity-60">{t("howToApply.subTitle")}</p>
+    <!-- Content -->
+    <HowToApplyComponent client:load />
+  </div>
 </Layout>

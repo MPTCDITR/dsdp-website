@@ -1,13 +1,12 @@
 ---
 import "@/styles/global.css";
 
-import { getLangFromUrl } from "@/lib/i18n";
-
 import { AboutUs as AboutUsComponent } from "@/components/pages/about/about-us-content";
 
 import background_style from "@/assets/about/about-us/backgorund-style.svg";
 import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, ui } from "@/i18n/ui";
+import { getLangFromUrl } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 
 export async function getStaticPaths() {
