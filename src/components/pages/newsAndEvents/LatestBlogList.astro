@@ -1,6 +1,6 @@
 ---
-import { useTranslations } from "@/i18n/utils";
 import LatestBlogCard from "./LatestBlogCard.astro"; // adjust if filename differs
+import { useTranslations } from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";
 
 export interface Props {
@@ -18,40 +18,41 @@ const gridClass = [
 ];
 ---
 
-{!posts?.length ? (
-  <div class="space-y-8">
-    <h1>{t("newsAndEvents.title")}</h1>
-    <p class="text-muted-foreground">{t("newsAndEvents.no_posts")}</p>
-  </div>
-) : (
-  <div class="container mx-auto my-12">
-    {/* Title */}
-    <!-- Title --> 
-    <h1 class="text-4xl font-bold text-center text-gradient leading-normal mb-4">
-      {t("newsAndEvents.title")}
-    </h1>
-
-    {/* Description */}
-    <p class="text-center text-muted-foreground max-w-8xl mx-auto mb-12">
-      {t("newsAndEvents.short_description")}
-    </p>
-    
-    {/* Blog Grid */}
-    <div class="grid md:grid-cols-5 md:grid-rows-2 gap-6 grid-cols-1 grid-rows-none">
-      {posts.map((post, index) => (
-        <div class={gridClass[index]}>
-          <LatestBlogCard
-            title={post.data.title}
-            description={post.data.description}
-            date={post.data.date.toISOString()}
-            author={post.data.author}
-            image={post.data.image}
-            slug={post.slug}
-            lang={lang}
-            translations={translations}
-          />
-        </div>
-      ))}
+{
+  !posts?.length ? (
+    <div class="space-y-8">
+      <h1>{t("newsAndEvents.title")}</h1>
+      <p class="text-muted-foreground">{t("newsAndEvents.no_posts")}</p>
     </div>
-  </div>
-)}
+  ) : (
+    <div class="container mx-auto my-12">
+      {/* Title */}
+      <h1 class="text-4xl font-bold text-center text-gradient leading-normal mb-4">
+        {t("newsAndEvents.title")}
+      </h1>
+
+      {/* Description */}
+      <p class="text-center text-muted-foreground max-w-8xl mx-auto mb-12">
+        {t("newsAndEvents.short_description")}
+      </p>
+
+      {/* Blog Grid */}
+      <div class="grid md:grid-cols-5 md:grid-rows-2 gap-6 grid-cols-1 grid-rows-none">
+        {posts.map((post, index) => (
+          <div class={gridClass[index]}>
+            <LatestBlogCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date.toISOString()}
+              author={post.data.author}
+              image={post.data.image}
+              slug={post.slug}
+              lang={lang}
+              translations={translations}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
