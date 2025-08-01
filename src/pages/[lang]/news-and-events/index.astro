@@ -4,6 +4,7 @@ import { getLatestPosts, getRemainingBlogPosts } from "@/lib/blog";
 import { BlogList } from "@/components/pages/newsAndEvents/BlogList";
 import LatestBlogList from "@/components/pages/newsAndEvents/LatestBlogList.astro";
 
+import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, ui } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
@@ -21,13 +22,27 @@ const remainingPosts = await getRemainingBlogPosts(lang);
 ---
 
 <Layout title={`អត្ថបទព័ត៌មាន និង ព្រឹត្តិការណ៍ - News and Events`}>
-  <!-- Section 1 -->
-  <LatestBlogList translations={translations} posts={latestPosts} lang={lang} />
-  <!-- Section 2 -->
-  <BlogList
-    translations={translations}
-    posts={remainingPosts}
-    lang={lang}
-    client:load
-  />
+  <!-- Background decorations -->
+  <section class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
+    <div class="absolute inset-0 -z-10 pointer-events-none">
+      <img
+        src={background_svg_blob.src}
+        alt="bottom background"
+        class="absolute bottom-[10%] left-[50%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1]"
+      />
+    </div>
+    <!-- Section 1 -->
+    <LatestBlogList
+      translations={translations}
+      posts={latestPosts}
+      lang={lang}
+    />
+    <!-- Section 2 -->
+    <BlogList
+      translations={translations}
+      posts={remainingPosts}
+      lang={lang}
+      client:load
+    />
+  </section>
 </Layout>
