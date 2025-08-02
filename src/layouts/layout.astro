@@ -3,6 +3,7 @@ import "@/styles/global.css";
 
 import { getLocalizedRoutes, navigation } from "@/lib/route";
 
+import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header";
 
 import { defaultLang, ui } from "@/i18n/ui";
@@ -39,5 +40,6 @@ const currentPath = Astro.url.pathname;
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
