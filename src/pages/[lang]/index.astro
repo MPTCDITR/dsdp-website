@@ -1,5 +1,6 @@
 ---
 import ApplyStep from "@/components/home/ApplyStep.astro";
+import Event from "@/components/home/Event";
 import Hero from "@/components/home/Hero";
 
 import { languages } from "@/i18n/ui";
@@ -18,4 +19,5 @@ const lang = getLangFromUrl(Astro.url);
 <Layout title="ទំព័រដើម - Home">
   <Hero lang={lang} client:load />
   <ApplyStep lang={lang} />
+  <Event lang={lang} client:load />
 </Layout>
