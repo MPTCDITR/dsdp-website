@@ -1,0 +1,71 @@
+---
+import type { Video } from "@/lib/types";
+import { formatDistanceToNow } from "@/lib/utils";
+
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+
+import { Calendar, Clock, Play } from "lucide-react";
+
+interface Props {
+  video: Video;
+}
+
+const { video } = Astro.props;
+---
+
+<Card
+  className="overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow group"
+>
+  <div class="relative aspect-video">
+    <a
+      href={`https://www.youtube.com/watch?v=${video.id}`}
+      target="_blank"
+      class="flex items-center justify-center"
+    >
+      <img
+        src={video.thumbnail}
+        alt={video.title}
+        class="object-cover w-full"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      <Play
+        className="absolute hidden group-hover:flex stroke-primary stroke-2 fill-secondary size-16"
+      />
+    </a>
+  </div>
+  <CardHeader>
+    <a
+      href={`https://www.youtube.com/watch?v=${video.id}`}
+      target="_blank"
+      class="hover:underline"
+    >
+      <h3 class="text-xl font-semibold line-clamp-2">{video.title}</h3>
+    </a>
+  </CardHeader>
+  <CardContent className="flex-grow">
+    <p class="text-muted-foreground line-clamp-3">
+      {video.description}
+    </p>
+  </CardContent>
+  <CardFooter className="text-sm text-muted-foreground border-t">
+    <div class="flex justify-between w-full">
+      <div class="flex items-center">
+        <Calendar className="h-4 w-4 mr-1" />
+        <span>{formatDistanceToNow(new Date(video.publishedAt))}</span>
+      </div>
+      {
+        video.duration && (
+          <div class="flex items-center">
+            <Clock className="h-4 w-4 mr-1" />
+            <span>{video.duration}</span>
+          </div>
+        )
+      }
+    </div>
+  </CardFooter>
+</Card>
