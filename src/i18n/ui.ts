@@ -21,7 +21,6 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "Video & Media",
     "nav.news_and_events": "News & Event",
     "nav.contact": "Contact",
-
     // About Us
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
@@ -68,27 +67,22 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card3.position": "Head of Finance",
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
-
     //Hero Carousel
     "home.hero.title":
       "Digital Skills Development Program (DSDP) - Empowering Human Resource Development",
     "home.hero.description":
       "The DSDP aims to develop digital human resources in response to the needs of the digital economy and society, as well as the digital government. The program provides interest-free scholarships to students, trainees, and civil servants in public and private institutions, along with free consultations!",
-
     "home.hero.somdach":
       "somdach Hun Manet presides over the opening ceremony of the Digital Government Forum and Cambodia-International Digital Government and Technology Exhibition",
     "home.hero.somdach.description":
       "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
-
     "btn.moredetails": "More Details",
     "applyStep.step1.title": "Step 1: Register",
-
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
-
     // Contact Page
     // Info section
     "contact.title.1": "Contact Information",
@@ -126,7 +120,6 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "វីឌីអូនិងប្រព័ន្ធផ្សព្វផ្សាយ",
     "nav.news_and_events": "ព័ត៌មាននិង​ព្រឹត្តិការណ៍",
     "nav.contact": "ទំនាក់ទំនង",
-
     // About Us
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
@@ -159,7 +152,6 @@ export const ui: Record<string, Record<string, string>> = {
     "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
     "about.howToReturnMoney.description":
       "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
-
     //About Team
     "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
     "about.team.title2": "ក្រុមការងារស្នូល",
@@ -185,13 +177,11 @@ export const ui: Record<string, Record<string, string>> = {
       "ភ្នំពេញ៖ នាព្រឹកថ្ងៃទី១១ ខែមីនា ឆ្នាំ ២០២៤ សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្រ្តី នៃព្រះរាជាណាចក្រកម្ពុជា បានអញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និង ពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និង បច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១ នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ។ នៅក្នុងកម្មវិធីនេះផងដែរ សម្តេចធិបតីនាយករដ្ឋមន្ត្រី អញ្ជើញទស្សនាពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ ដោយក្នុងពិព័រណ៍នោះមានរួមមាន ស្តង់របស់មជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល និងកម្មវិធីបណ្តុះបណ្តាលផ្សេងទៀតរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ តាមរយៈទស្សនាកិច្ចនេះ ឯកឧត្តម ជា វ៉ាន់ដេត រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ បានទទួលបដិសណ្ឋារកិច្ច សម្តេចមហាបវរធិបតី ប្រកបដោយការស្វាគមន៍ និងគារវកិច្ចខ្ពង់ខ្ពស់។ ទន្ទឹមនេះ សម្តេចធិបតី បានចំណាយពេលវេលា ពិនិត្យស្វែងយល់បន្ថែម និងស្តាប់បទបង្ហាញដោយសង្ខេបអំពីមុខងារនិងគុណប្រយោជន៍ នៃមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ និងកម្មវិធីបណ្តុះបណ្តាល ដែលក្រសួងបាននឹងកំពុងអនុវត្ត ដែលវិធីសាស្ត្រមួយផ្នែកសម្រាប់បង្កើនសមត្ថភាពចាប់យកនិងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលរបស់មន្ត្រី និងប្រជាពលរដ្ឋក្នុងសហគមន៍ ព្រមទាំងកាត់បន្ថយគម្លាតឌីជីថល។",
     "btn.moredetails": "លម្អិតបន្ថែម",
     "applyStep.step1.title": "ជំហានទី ១៖ ចុះឈ្មោះ",
-
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និងមន្ត្រីរាជការ ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម៖",
-
     // Contact Page
     // Info section
     "contact.title.1": "ព័ត៌មានទំនាក់ទំនង",

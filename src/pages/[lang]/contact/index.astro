@@ -1,7 +1,10 @@
 ---
-import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
+import { Card } from "@/components/ui/card";
+
+import background_svg_blob from "@/assets/about/about-us/background2.svg";
 import { languages, ui } from "@/i18n/ui";
 import Layout from "@/layouts/layout.astro";
+import Image from "astro/components/Image.astro";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -11,17 +14,16 @@ export async function getStaticPaths() {
 
 const lang = Astro.params.lang as keyof typeof languages;
 const translations = ui[lang];
+
 const t = (key: string) => translations[key] || key;
 ---
 
 <Layout title="Contact Us">
   <!-- Infomation -->
-  <div class="relative">
-    <img
-      src={background_svg_blob.src}
-      alt="bottom background"
-      class="absolute bottom-[10%] left-[50%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] -translate-x-[5% ] -z-10"
-    />
+  <div
+    class="relative bg-[url('/src/assets/about/about-us/background2.svg')] bg-no-repeat bg-right bg-contain"
+  >
+    <!-- <Image src={background_svg_blob} alt="bottom background" /> -->
     <section class="py-16">
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
@@ -74,26 +76,23 @@ const t = (key: string) => translations[key] || key;
           </div>
         </div>
         <div class="flex flex-col justify-between items-center h-full">
-          <img src="/contact-photo/service.png" />
+          <img src="/icon/service.png" />
         </div>
       </div>
     </section>
-    <section class="py-16">
+    <section>
       <div class="container mx-auto px-4">
         <h2 class="text-2xl font-bold text-primary md:text-3xl lg:text-4xl">
           {t("contact.title.2")}
         </h2>
-        <div class="py-16">
+        <Card>
           <iframe
-            class="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px] rounded-xl shadow-md mx-auto"
+            class="w-full h-[clamp(300px,50vw,800px)] mx-auto"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6732149596046!2d104.91480367585223!3d11.57526794394968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095142eadcf8db%3A0xbd4e32a5eccddfb7!2sMinistry%20of%20Post%20and%20Telecommunications!5e0!3m2!1sen!2skh!4v1753945724231!5m2!1sen!2skh"
-            style="border:0;"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </div>
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </Card>
       </div>
     </section>
   </div>
