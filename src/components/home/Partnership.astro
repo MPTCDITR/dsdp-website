@@ -13,32 +13,28 @@ const logos = [
   {
     src: cadt,
     alt: "cadt Logo",
-    class: "w-[153px] h-[179px] object-contain",
-    liClass: "lg:col-span-1 ",
+    // Keep image sizing consistent
+    imgClass: "w-[153px] h-[179px] object-contain",
   },
   {
     src: itc,
     alt: "itc Logo",
-    class: "w-[153px] h-[179px] object-contain",
-    liClass: "lg:col-span-1 md:col-span-2 ",
+    imgClass: "w-[153px] h-[179px] object-contain",
   },
   {
     src: num,
     alt: "num Logo",
-    class: "w-[153px] h-[179px] object-contain",
-    liClass: "lg:col-span-1",
+    imgClass: "w-[153px] h-[179px] object-contain",
   },
   {
     src: rupp,
     alt: "rupp Logo",
-    class: "w-[153px] h-[179px] object-contain",
-    liClass: "lg:col-span-1 col-span-2",
+    imgClass: "w-[153px] h-[179px] object-contain",
   },
   {
     src: aupp,
     alt: "aupp Logo",
-    class: "w-[153px] h-[179px] object-contain",
-    liClass: "lg:col-span-1 col-span-2",
+    imgClass: "w-[153px] h-[179px] object-contain",
   },
 ];
 ---
@@ -62,10 +58,10 @@ const logos = [
     <Image
       src={advantage}
       alt="Partnership Benefits"
-      class="w-full mt-6 size-2/3 rounded-lg"
+      class="size-full mt-6 rounded-lg"
       loading="lazy"
-      width={800}
-      height={600}
+      width={1000}
+      height={800}
     />
   </div>
   <div class="relative mx-auto">
@@ -87,16 +83,21 @@ const logos = [
           និងឯកជនក្នុងគោលបំណងពង្រីកវិសាលភាពនៃគម្រោងឱ្យកាន់តែទូលំទូលាយពេញផ្ទៃប្រទេស
         </p>
         <ul
-          class="container flex flex-wrap justify-center items-center gap-16"
+          class="container flex flex-wrap justify-center gap-x-2 md:gap-x-16"
           aria-labelledby="trusted-by"
         >
           {
             logos.map((logo) => (
-              <li aria-label={logo.alt} class={logo.liClass ?? ""}>
+              <li
+                aria-label={logo.alt}
+                class="flex justify-center items-center
+                     w-1/2 md:w-1/5 lg:w-1/8
+                     "
+              >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  class={logo.class}
+                  class={logo.imgClass}
                   loading="lazy"
                   width={153}
                   height={179}
