@@ -7,6 +7,8 @@ import cadt from "@/assets/logo/CADT_logo.png";
 import itc from "@/assets/logo/ITC_logo.png";
 import num from "@/assets/logo/NUM_logo.png";
 import rupp from "@/assets/logo/RUPP_logo.png";
+import { languages } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
 
 const logos = [
@@ -37,6 +39,8 @@ const logos = [
     imgClass: "w-[153px] h-[179px] object-contain",
   },
 ];
+const lang = Astro.params.lang as keyof typeof languages;
+const t = useTranslations(lang);
 ---
 
 <section class="mx-auto py-8 relative">
@@ -49,16 +53,15 @@ const logos = [
   />
   <div class="mx-auto container relative z-10">
     <h1 class="text-2xl md:text-4xl text-primary font-bold mb-4">
-      អត្ថប្រយោជន៍សម្រាប់បេក្ខជន ក.អ.ជ.ឌ.
+      {t("home.candidate_benefits.title")}
     </h1>
     <p class="text-pretty text-muted-foreground">
-      ក្រោយពីបានជាប់ជាស្ថាពរជាមួយ ក.អ.ជ.ឌ.
-      បេក្ខជននឹងទទួលបានអត្ថប្រយោជន៍យ៉ាងច្រើនដូចជា៖
+      {t("home.candidate_benefits.description")}
     </p>
     <Image
       src={advantage}
       alt="Partnership Benefits"
-      class="size-full mt-6 rounded-lg"
+      class="w-full mt-6 rounded-lg"
       loading="lazy"
       width={1000}
       height={800}
@@ -68,19 +71,17 @@ const logos = [
     <Image
       src={background_2}
       alt="Background"
-      class="absolute top-0 left-0 w-[1028px] h-[1272px] object-cover -z-10 pointer-events-none"
+      class="absolute top-0 left-0 size-svh object-cover -z-10 pointer-events-none"
       height={600}
       width={800}
     />
     <div class="bg-zinc-100/40 mx-auto p-10 mt-8 mb-12 relative">
       <div class="flex flex-col items-center text-center text-wrap my-11">
         <h1 class="text-2xl md:text-4xl text-primary font-bold mb-4">
-          គ្រឹះស្ថានឧត្តមសិក្សាជាដៃគូរបស់យើង
+          {t("home.partnership.title")}
         </h1>
         <p class="text-pretty text-muted-foreground mb-8">
-          ក.អ.ជ.ឌ. បាននឹងកំពុងបន្តស្វែងរក
-          និងចុះអនុស្សរណៈជាមួយគ្រឹះស្ថានសិក្សាសាធារណៈ
-          និងឯកជនក្នុងគោលបំណងពង្រីកវិសាលភាពនៃគម្រោងឱ្យកាន់តែទូលំទូលាយពេញផ្ទៃប្រទេស
+          {t("home.partnership.description")}
         </p>
         <ul
           class="container flex flex-wrap justify-center gap-x-2 md:gap-x-16"
@@ -114,11 +115,10 @@ const logos = [
         class="mx-auto max-w-6xl flex flex-col gap-8 rounded-3xl lg:p-20 md:p-12 p-8 bg-gradient-to-r from-[#004282] via-[#05539F] to-[#002D58] items-center"
       >
         <h2 class="text-3xl md:text-4xl text-white font-bold mb-4 text-center">
-          ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?
+          {t("home.partnership.box.title")}
         </h2>
         <p class="text-base md:text-xl text-white text-center">
-          ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ
-          ក.អ.ជ.ឌ. សូមចុចប៊ូតុងខាងក្រោមនេះដើម្បីទំនាក់ទំនងមកយើងខ្ញុំ
+          {t("home.partnership.box.description")}
         </p>
       </div>
     </div>
