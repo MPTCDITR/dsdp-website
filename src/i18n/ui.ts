@@ -92,6 +92,17 @@ export const ui: Record<string, Record<string, string>> = {
     "home.event_3.title": "women for digital DSDP",
     "home.event_3.description":
       "The DSDP is honored to announce to the public that, as decided by the Royal Government, the DSDP will organize the 'National Science, Technology, and Digital Day' annually. For the year 2023, it will be held at the Sokha Angkor Hotel in Siem Reap Province.",
+    // candidate benefits
+    "home.candidate_benefits.title": "Benefits for DSDP Candidates",
+    "home.candidate_benefits.description":
+      "After being selected as a DSDP candidate, candidates will receive numerous benefits, including:",
+    // Partnership Section
+    "home.partnership.title": "Our Partners",
+    "home.partnership.description":
+      "DSDP is continuously seeking and signing MOUs with public and private educational institutions to expand the program's reach across the country.",
+    "home.partnership.box.title": "Want to become a DSDP partner?",
+    "home.partnership.box.description":
+      " If you or your institution is interested in becoming a partner of DSDP, please click the button below to contact us.",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
@@ -196,6 +207,17 @@ export const ui: Record<string, Record<string, string>> = {
     "home.event_3.title": "កម្មវិធីស្រ្តីដើម្បីជីជីថល ក.អ.ជ.ឌ",
     "home.event_3.description":
       "ក.អ.ជ.ឌ. មានកិត្តិយសសូមគោរពជម្រាបជូន ដំណឹងដល់សាធារណជនទូទៅមេត្តាជ្រាបថា៖ តាមការសម្រេចរបស់រាជរដ្ឋាភិបាល ក.អ.ជ.ឌ. នឹងកំណត់ការរៀបចំ «ទិវាជាតិវិទ្យាសាស្ត្រ បច្ចេកវិទ្យា និងឌីជីថល» ជាប្រចាំឆ្នាំ។ សម្រាប់ឆ្នាំ ២០២៣នេះនឹងត្រូវបានរៀបចំឡើងនៅសណ្ឋាគារ សុខាអង្គរ ខេត្តសៀមរាប",
+    // candidate benefits
+    "home.candidate_benefits.title": "អត្ថប្រយោជន៍សម្រាប់បេក្ខជន ក.អ.ជ.ឌ",
+    "home.candidate_benefits.description":
+      "ក្រោយពីបានជាប់ជាស្ថាពរជាមួយ ក.អ.ជ.ឌ. បេក្ខជននឹងទទួលបានអត្ថប្រយោជន៍យ៉ាងច្រើនដូចជា៖",
+    // Partnership Section
+    "home.partnership.title": "គ្រឹះស្ថានឧត្តមសិក្សាជាដៃគូរបស់យើង",
+    "home.partnership.description":
+      " ក.អ.ជ.ឌ. បាននឹងកំពុងបន្តស្វែងរក និង ចុះអនុស្សរណៈជាមួយគ្រឹះស្ថានសិក្សាសាធារណៈ និងឯកជនក្នុងគោលបំណងពង្រីកវិសាលភាពនៃគម្រោងឱ្យកាន់តែទូលំទូលាយពេញផ្ទៃប្រទេស",
+    "home.partnership.box.title": "ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?",
+    "home.partnership.box.description":
+      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ. សូមចុចប៊ូតុងខាងក្រោមនេះដើម្បីទំនាក់ទំនងមកយើងខ្ញុំ",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
