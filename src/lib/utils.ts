@@ -108,3 +108,14 @@ export const formatDistanceToNow = (date: Date | number): string => {
 
   return seconds === 1 ? "1 second ago" : `${seconds} seconds ago`;
 };
+
+export function formatDuration(isoDuration: string): string {
+  const match = isoDuration.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+  if (!match) return "";
+
+  const hours = match[1] ? `${match[1]}:` : "";
+  const minutes = match[2] ? `${match[2]}:` : "0:";
+  const seconds = match[3] ? match[3].padStart(2, "0") : "00";
+
+  return `${hours}${minutes}${seconds}`;
+}
