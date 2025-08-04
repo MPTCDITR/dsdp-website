@@ -21,7 +21,6 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "Video & Media",
     "nav.news_and_events": "News & Event",
     "nav.contact": "Contact",
-
     // About Us
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
@@ -68,18 +67,15 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card3.position": "Head of Finance",
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
-
     //Hero Carousel
     "home.hero.title":
       "Digital Skills Development Program (DSDP) - Empowering Human Resource Development",
     "home.hero.description":
       "The DSDP aims to develop digital human resources in response to the needs of the digital economy and society, as well as the digital government. The program provides interest-free scholarships to students, trainees, and civil servants in public and private institutions, along with free consultations!",
-
     "home.hero.somdach":
       "somdach Hun Manet presides over the opening ceremony of the Digital Government Forum and Cambodia-International Digital Government and Technology Exhibition",
     "home.hero.somdach.description":
       "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
-
     "btn.moredetails": "More Details",
     "applyStep.step1.title": "Step 1: Register",
     // Event Carousel
@@ -108,6 +104,17 @@ export const ui: Record<string, Record<string, string>> = {
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
+    // Contact Page
+    // Info section
+    "contact.title.1": "Contact Information",
+    "contact.description.1":
+      "Please complete the form on the right to contact the N.S.D.P Working Group. We will respond within 24 hours. Or contact us directly at the following phone number:",
+    "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "contact.description.4":
+      "Building No. 13, Preah Monivong Boulevard, Sangkat Sra Chak, Khan Daun Penh Phnom Penh 120210, Cambodia",
+    // Media Part
+    "contact.title.2": "Location in Google Map",
     // News and Events Page
     "newsAndEvents.title":
       "Latest Digital Events, Both Local and International",
@@ -138,7 +145,6 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "វីឌីអូនិងប្រព័ន្ធផ្សព្វផ្សាយ",
     "nav.news_and_events": "ព័ត៌មាននិង​ព្រឹត្តិការណ៍",
     "nav.contact": "ទំនាក់ទំនង",
-
     // About Us
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
@@ -171,7 +177,6 @@ export const ui: Record<string, Record<string, string>> = {
     "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
     "about.howToReturnMoney.description":
       "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
-
     //About Team
     "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
     "about.team.title2": "ក្រុមការងារស្នូល",
@@ -223,6 +228,17 @@ export const ui: Record<string, Record<string, string>> = {
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និងមន្ត្រីរាជការ ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម៖",
+    // Contact Page
+    // Info section
+    "contact.title.1": "ព័ត៌មានទំនាក់ទំនង",
+    "contact.description.1":
+      "សូមបំពេញទម្រង់ខាងស្តាំនេះ ដើម្បធ្វើទំនាក់ទំនងមកកាន់ក្រុមការ ងារ ក.អ.ជ.ឌ.។ យើងនឹងឆ្លើយតបទៅវិញក្នុងរយៈពេលមិនលើសពី ២៤ម៉ោង។ ឬទំនាក់ទំនងផ្ទាល់មកកាន់លេខទូរស័ព្ទខាងក្រោមនេះ ៖",
+    "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "contact.description.4":
+      "អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ 120210, កម្ពុជា",
+    // Media Part
+    "contact.title.2": "ទីតាំងលើ Google Map",
     // News and Events Page
     "newsAndEvents.title": "ព្រឹត្តិការណ៍ឌីជីថលថ្មីៗ​ ទាំងក្នុងនិងក្រៅប្រទេស",
     "newsAndEvents.short_description":
