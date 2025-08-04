@@ -16,4 +16,3 @@ H.E. Minister Chea Vandeth highlighted that to build the digital government, eco
 His Excellency Deputy Prime Minister Hangchuon Naron thanked MPTC for the CTC initiative in promoting digital literacy and skills and integrating technology subjects for digital education in the classroom, school, and community as a whole. This MoU is significant in a timely and targeted manner in supporting the development of digital education toward the promotion of growth, and increase in productivity and effectiveness in building Cambodia’s future digital citizens.
 
 The first CTC is being constructed at Hun Sen Mouy Mithona High School in Peaream commune, Bati district, Takeo province. Hun Sen Mouy Mithona is a leading high school in Bati district, Takeo province; the principal has received 2nd place in Good Management category across the country. The CTC project will commence at all high schools in Takeo starting November 2023 and will continue to roll out across the country.
-

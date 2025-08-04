@@ -116,6 +116,10 @@ export const ui: Record<string, Record<string, string>> = {
     "newsAndEvents.readmore": "Read More",
     "newsAndEvents.no_posts": "There's no News & Events at the moment.",
     "newsAndEvents.sub_title": "News & Events",
+    // Video and Media Page
+    "video-media.title": "Videos & Media",
+    "video-media.description":
+      "Enjoy our Digital Skill Development Program (DSDP) videos! Join us in fostering digital literacy and skills among students, preparing them for the digital age.",
     // CTA Buttons
     "btn.previous": "Previous",
     "btn.next": "Next",
@@ -226,7 +230,11 @@ export const ui: Record<string, Record<string, string>> = {
     "newsAndEvents.readmore": "អានបន្ថែម",
     "newsAndEvents.no_posts":
       "បច្ចុប្បន្ន មិនទាន់មានព័ត៌មាន ឬព្រឹត្តិការណ៍អ្វីទេ។",
-    "newsAndEvents.sub_title": "ព័ត៌មាន និង ព្រឹត្តិការណ៍ថ្មីៗ",
+    "newsAndEvents.sub_title": "ព័ត៌មាន និងព្រឹត្តិការណ៍ថ្មីៗ",
+    // Video and Media Page
+    "video-media.title": "វីដេអូ និង ការផ្សព្វផ្សាយ",
+    "video-media.description":
+      "សូមរីករាយជាមួយវីដេអូរបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) របស់យើង! ចូលរួមជាមួយយើងក្នុងការលើកកម្ពស់ចំណេះដឹង និងជំនាញឌីជីថលក្នុងចំណោមសិស្ស ដោយរៀបចំពួកគេសម្រាប់យុគសម័យឌីជីថល។",
     // CTA Buttons
     "btn.previous": "ទំព័រមុន",
     "btn.next": "ទំព័របន្ទាប់",
