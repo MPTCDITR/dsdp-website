@@ -1,0 +1,82 @@
+---
+import background from "@/assets/partnership/background.svg";
+import dbqoute from "@/assets/partnership/double_qoute.svg";
+import welcome from "@/assets/partnership/Welcome.gif";
+import { languages } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
+
+const lang = Astro.params.lang as keyof typeof languages;
+const t = useTranslations(lang);
+---
+
+<section class="">
+  <div class="relative container rounded-3xl overflow-hidden py-8">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 relative z-10"
+    >
+      <img
+        src={welcome.src}
+        alt="Welcome to the Partnership"
+        class="w-full h-auto mx-auto"
+      />
+      <div class="text-left">
+        <h1 class="text-4xl font-bold mt-4 text-gradient leading-normal">
+          {t("partner.title")}
+        </h1>
+        <p
+          class="my-6 text-base md:text-lg text-muted-foreground leading-relaxed"
+        >
+          <span class="font-bold"> {t("partner.description_1")}</span>
+          {t("partner.description_2")}
+          <span class="font-bold"> {t("partner.description_3")}</span>
+          {t("partner.description_4")}
+          <span class="font-bold"> {t("partner.description_5")}</span>
+          {t("partner.description_5")}
+          <span class="font-bold"> {t("partner.description_6")}</span>
+          {t("partner.description_7")}
+        </p>
+      </div>
+    </div>
+
+    <div class="relative text-center px-2 py-10 mt-8">
+      <img
+        src={background.src}
+        alt="Background"
+        class="absolute left-1/2 top-1/2 w-[410px] h-[82px] md:w-[750px] md:h-[150px] object-cover z-0 translate-x-[-50%] translate-y-[-50%] pointer-events-none"
+        aria-hidden="true"
+      />
+
+      <img
+        src={dbqoute.src}
+        alt="Double Quote"
+        class="absolute left-5 size-5 md:left-20 md:size-10 lg:left-40 xl:left-3/11 z-10"
+        aria-hidden="true"
+      />
+      <img
+        src={dbqoute.src}
+        alt="Double Quote"
+        class="absolute rotate-180 right-6 bottom-8 size-5 md:right-20 md:size-10 lg:right-40 xl:right-3/11 z-10"
+        aria-hidden="true"
+      />
+
+      <div class="relative z-20">
+        <p class="text-sm sm:text-base md:text-xl text-primary">
+          {t("partner.box.description_1")}<span class="font-bold">
+            {t("partner.box.description_2")}</span
+          >
+          {t("partner.box.description_3")}
+          <span class="font-bold"> {t("partner.box.description_4")}</span>
+          {t("partner.box.description_5")}
+          <p
+            class="text-xl md:text-2xl lg:text-5xl font-bold text-secondary leading-tight"
+          >
+            {t("partner.box.description_6")}
+            <p class="text-sm sm:text-base md:text-xl text-primary">
+              {t("partner.box.description_7")}
+            </p>
+          </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

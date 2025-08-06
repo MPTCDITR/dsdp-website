@@ -1,0 +1,23 @@
+---
+import ContactUs from "@/components/partnership/ContactUs.astro";
+import University from "@/components/partnership/University.astro";
+import Welcome from "@/components/partnership/Welcome.astro";
+
+import { languages } from "@/i18n/ui";
+import { getLangFromUrl } from "@/i18n/utils";
+import Layout from "@/layouts/layout.astro";
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="ទំព័រដើម - Home">
+  <Welcome lang={lang} />
+  <University lang={lang} />
+  <ContactUs lang={lang} />
+</Layout>
