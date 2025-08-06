@@ -1,33 +1,16 @@
 ---
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link-button";
 
-import { defaultLang, languages, ui, type SupportedLanguage } from "@/i18n/ui";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 
-export async function getStaticPaths() {
-  return Object.keys(languages).map((lang) => ({
-    params: { lang },
-  }));
-}
-
-const currentLocale = (Astro.url.pathname.split("/").filter(Boolean)[0] ||
-  defaultLang) as SupportedLanguage;
-
-const safeLocale: SupportedLanguage = Object.keys(languages).includes(
-  currentLocale,
-)
-  ? currentLocale
-  : "en";
-
-const translations = ui[safeLocale];
-
-const t = (key: string) => translations[key] || key;
-
-const homepageUrl = `/${safeLocale}`;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const homepageUrl = `/${lang}`;
 ---
 
 <Layout title="404">
-  <div class="bg-gradient-to-b from-gray-100 to-white text-center">
+  <section class="bg-gradient-to-b from-gray-100 to-white text-center">
     <div class="flex flex-col items-center justify-center py-10 space-y-10">
       <div class="flex flex-col gap-6 rounded-lg">
         <h1 class="text-[128px] font-bold text-destructive">
@@ -45,16 +28,9 @@ const homepageUrl = `/${safeLocale}`;
           </p>
         </div>
       </div>
-      <Button
-        className="items-center gap-2 whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive underline-offset-4 hover:underline px-25 py-7 has-[>svg]:px-3 w-40 h-11 rounded-full bg-primary text-white text-sm font-medium text-center flex justify-center hover:bg-primary/90"
-      >
-        <a
-          class="w-full h-full flex items-center justify-center no-underline text-l"
-          href={homepageUrl}
-        >
-          {t("404.description.4")}
-        </a>
-      </Button>
+      <LinkButton href={homepageUrl} variant="default" size="default">
+        {t("404.description.4")}
+      </LinkButton>
     </div>
-  </div>
+  </section>
 </Layout>
