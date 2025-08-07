@@ -97,7 +97,7 @@ export function Event({ lang }: EventCarouselProps) {
             className="w-40 h-11 rounded-full bg-primary text-white text-sm font-medium text-center flex justify-center hover:bg-primary/90"
           >
             <a
-              href={`/${lang}/nav.news_and_events`}
+              href={`/${lang}/media-hub/news-and-events`}
               className="w-full h-full flex items-center justify-center no-underline"
             >
               All Events
