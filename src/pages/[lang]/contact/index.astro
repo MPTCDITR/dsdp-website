@@ -1,0 +1,103 @@
+---
+import { Card } from "@/components/ui/card";
+
+import { languages, ui } from "@/i18n/ui";
+import Layout from "@/layouts/layout.astro";
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const lang = Astro.params.lang as keyof typeof languages;
+const translations = ui[lang];
+
+const t = (key: string) => translations[key] || key;
+---
+
+<Layout title="Contact Us">
+  <!-- Infomation -->
+  <div
+    class="relative bg-[url('/src/assets/about/about-us/background2.svg')] bg-no-repeat bg-right bg-contain"
+  >
+    <section class="mt-10 mb-10">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
+      >
+        <div class="space-y-6">
+          <h2
+            class="text-2xl font-bold text-gradient-b md:text-3xl lg:text-4xl"
+          >
+            {t("contact.title.1")}
+          </h2>
+          <p class="flex items-center gap-2 text-gray">
+            {t("contact.description.1")}
+          </p>
+          <p
+            class="flex items-start gap-3 text-gradient-b font-semibold text-lg"
+          >
+            <img src="/icon/phone.svg" alt="Phone Logo" class="w-6 h-6" />
+            <span>
+              {t("contact.description.2")}
+            </span>
+          </p>
+          <p
+            class="flex items-center gap-2 text-gradient-b font-semibold text-lg"
+          >
+            <img src="/icon/mail.svg" alt="Mail Logo" class="w-6 h-6" />
+            <span>
+              {t("contact.description.3")}
+            </span>
+          </p>
+          <p
+            class="flex items-start gap-2 text-gradient-b font-semibold text-lg"
+          >
+            <img src="/icon/map-pin.svg" alt="Map Logo" class="w-6 h-6" />
+            <span>
+              {t("contact.description.4")}
+            </span>
+          </p>
+          <!-- Media -->
+          <div class="flex gap-4 mt-14">
+            <a href="https://facebook.com" target="_blank">
+              <img src="/icon/Facebook.svg" alt="Facebook Logo" />
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="/icon/Instragram.svg" alt="Instagram Logo" />
+            </a>
+            <a href="https://x.com" target="_blank">
+              <img src="/icon/X.svg" alt="X Logo" />
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <img src="/icon/Youtube.svg" alt="YouTube Logo" />
+            </a>
+            <a href="https://xtelegram.org.com" target="_blank">
+              <img src="/icon/Telegram.svg" alt="Telegram Logo" />
+            </a>
+            <a href="https://LinkedIn.com" target="_blank">
+              <img src="/icon/Linkin.svg" alt="LinkedIn Logo" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between items-center h-full">
+          <img src="/icon/service.png" alt="Service Logo" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gradient-b md:text-3xl lg:text-4xl">
+          {t("contact.title.2")}
+        </h2>
+        <Card className="mt-4 md:mt-10 mb-10">
+          <iframe
+            class="w-full aspect-[21/9] mx-auto"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6732149596046!2d104.91480367585223!3d11.57526794394968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095142eadcf8db%3A0xbd4e32a5eccddfb7!2sMinistry%20of%20Post%20and%20Telecommunications!5e0!3m2!1sen!2skh!4v1753945724231!5m2!1sen!2skh"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </Card>
+      </div>
+    </section>
+  </div>
+</Layout>
