@@ -28,7 +28,11 @@ const homepageUrl = `/${lang}`;
           </p>
         </div>
       </div>
-      <LinkButton href={homepageUrl} variant="default" size="default">
+      <LinkButton
+        className="rounded-3xl hover:underline underline-offset-4"
+        size={"lg"}
+        href={homepageUrl}
+      >
         {t("404.description.4")}
       </LinkButton>
     </div>

@@ -1,27 +1,23 @@
-import * as React from "react";
+import type React from "react";
 
-import { cn } from "@/lib/utils";
-
-import { buttonVariants } from "@/components/ui/button";
-
+import { Button, buttonVariants } from "./button";
 import type { VariantProps } from "class-variance-authority";
 
-export interface LinkButtonProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
-    VariantProps<typeof buttonVariants> {}
+interface LinkButtonProps extends React.ComponentProps<"button"> {
+  href: string;
+  variant?: VariantProps<typeof buttonVariants>["variant"];
+  size?: VariantProps<typeof buttonVariants>["size"];
+}
 
-const LinkButton = React.forwardRef<HTMLAnchorElement, LinkButtonProps>(
-  ({ className, variant = "default", size = "default", ...props }, ref) => {
-    return (
-      <a
-        ref={ref}
-        className={cn(buttonVariants({ variant, size }), className)}
-        {...props}
-      />
-    );
-  },
-);
-
-LinkButton.displayName = "LinkButton";
-
-export { LinkButton };
+export const LinkButton = ({
+  variant,
+  size,
+  href,
+  ...props
+}: LinkButtonProps) => {
+  return (
+    <Button variant={variant} size={size} {...props} asChild>
+      <a href={href}>{props.children}</a>
+    </Button>
+  );
+};
