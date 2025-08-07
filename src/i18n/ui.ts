@@ -21,7 +21,6 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "Video & Media",
     "nav.news_and_events": "News & Event",
     "nav.contact": "Contact",
-
     // About Us
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
@@ -68,57 +67,15 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card3.position": "Head of Finance",
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
-
-    // Q&A
-    "qa.title.1": "Learn More About the DSDP",
-    "qa.title.2": "If you have questions regarding of the Digital Skills Development Program (DSDP), please refer to the frequently asked questions below. If your inquiry is not addressed, feel free to contact the DSDP team through our official contact page.",
-    "qa.title.3": "Frequently asked questions",
-    "qa.title.4": "For more details or inquiries about DSDP, click the 'Details' or 'Contact us' button below.",
-    "qa.question.1": "What is the DSDP Program?",
-    "qa.question.2": "Which digital-related fields are eligible for funding under the DSDP?",
-    "qa.question.3": "What are the eligibility criteria applicants must meet before applying for financial support from the DSDP?",
-    "qa.question.4": "What is the procedure for completing the application form?",
-    "qa.question.5": "How will applicants be informed of the application outcome?",
-    "qa.question.6": "When are candidates required to begin repayment to the DSDP?",
-    "qa.question.7": "What is the process for repaying the support received from the DSDP?",
-    "qa.answer.1": "The Digital Skills Development Program (DSDP) offers interest-free financial support to students, civil servants, employees from both public and private sectors, as well as members of non-governmental organizations. The program enables eligible individuals to pursue undergraduate studies in digital technology at accredited partner institutions.",
-
-
-
-    // Q&A
-    "qa.title.1": "Learn More About the DSDP",
-    "qa.title.2":
-      "If you have questions regarding of the Digital Skills Development Program (DSDP), please refer to the frequently asked questions below. If your inquiry is not addressed, feel free to contact the DSDP team through our official contact page.",
-    "qa.title.3": "Frequently asked questions",
-    "qa.title.4":
-      "For more details or inquiries about DSDP, click the 'Details' or 'Contact us' button below.",
-    "qa.question.1": "What is the DSDP Program?",
-    "qa.question.2":
-      "Which digital-related fields are eligible for funding under the DSDP?",
-    "qa.question.3":
-      "What are the eligibility criteria applicants must meet before applying for financial support from the DSDP?",
-    "qa.question.4":
-      "What is the procedure for completing the application form?",
-    "qa.question.5":
-      "How will applicants be informed of the application outcome?",
-    "qa.question.6":
-      "When are candidates required to begin repayment to the DSDP?",
-    "qa.question.7":
-      "What is the process for repaying the support received from the DSDP?",
-    "qa.answer.1":
-      "The Digital Skills Development Program (DSDP) offers interest-free financial support to students, civil servants, employees from both public and private sectors, as well as members of non-governmental organizations. The program enables eligible individuals to pursue undergraduate studies in digital technology at accredited partner institutions.",
-
     //Hero Carousel
     "home.hero.title":
       "Digital Skills Development Program (DSDP) - Empowering Human Resource Development",
     "home.hero.description":
       "The DSDP aims to develop digital human resources in response to the needs of the digital economy and society, as well as the digital government. The program provides interest-free scholarships to students, trainees, and civil servants in public and private institutions, along with free consultations!",
-
     "home.hero.somdach":
       "somdach Hun Manet presides over the opening ceremony of the Digital Government Forum and Cambodia-International Digital Government and Technology Exhibition",
     "home.hero.somdach.description":
       "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
-
     "btn.moredetails": "More Details",
     "applyStep.step1.title": "Step 1: Register",
     // Event Carousel
@@ -131,11 +88,33 @@ export const ui: Record<string, Record<string, string>> = {
     "home.event_3.title": "women for digital DSDP",
     "home.event_3.description":
       "The DSDP is honored to announce to the public that, as decided by the Royal Government, the DSDP will organize the 'National Science, Technology, and Digital Day' annually. For the year 2023, it will be held at the Sokha Angkor Hotel in Siem Reap Province.",
+    // candidate benefits
+    "home.candidate_benefits.title": "Benefits for DSDP Candidates",
+    "home.candidate_benefits.description":
+      "After being selected as a DSDP candidate, candidates will receive numerous benefits, including:",
+    // Partnership Section
+    "home.partnership.title": "Our Partners",
+    "home.partnership.description":
+      "DSDP is continuously seeking and signing MOUs with public and private educational institutions to expand the program's reach across the country.",
+    "home.partnership.box.title": "Want to become a DSDP partner?",
+    "home.partnership.box.description":
+      " If you or your institution is interested in becoming a partner of DSDP, please click the button below to contact us.",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
+    // Contact Page
+    // Info section
+    "contact.title.1": "Contact Information",
+    "contact.description.1":
+      "Please complete the form on the right to contact the N.S.D.P Working Group. We will respond within 24 hours. Or contact us directly at the following phone number:",
+    "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "contact.description.4":
+      "Building No. 13, Preah Monivong Boulevard, Sangkat Sra Chak, Khan Daun Penh Phnom Penh 120210, Cambodia",
+    // Media Part
+    "contact.title.2": "Location in Google Map",
     // News and Events Page
     "newsAndEvents.title":
       "Latest Digital Events, Both Local and International",
@@ -144,6 +123,10 @@ export const ui: Record<string, Record<string, string>> = {
     "newsAndEvents.readmore": "Read More",
     "newsAndEvents.no_posts": "There's no News & Events at the moment.",
     "newsAndEvents.sub_title": "News & Events",
+    // Video and Media Page
+    "video-media.title": "Videos & Media",
+    "video-media.description":
+      "Enjoy our Digital Skill Development Program (DSDP) videos! Join us in fostering digital literacy and skills among students, preparing them for the digital age.",
     // CTA Buttons
     "btn.previous": "Previous",
     "btn.next": "Next",
@@ -162,7 +145,6 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.video_and_media": "វីឌីអូនិងប្រព័ន្ធផ្សព្វផ្សាយ",
     "nav.news_and_events": "ព័ត៌មាននិង​ព្រឹត្តិការណ៍",
     "nav.contact": "ទំនាក់ទំនង",
-
     // About Us
     "about.title": "អំពីកម្មវិធី",
     "about.visionTitle": "ចក្ខុវិស័យ៖",
@@ -195,7 +177,6 @@ export const ui: Record<string, Record<string, string>> = {
     "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
     "about.howToReturnMoney.description":
       "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
-
     //About Team
     "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
     "about.team.title2": "ក្រុមការងារស្នូល",
@@ -209,21 +190,6 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card3.position": "Head of Finance",
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
-
-    // Q&A
-    "qa.title.1": "ស្វែងយល់បន្ថែមអំពី ក.អ.ជ.ឌ.!",
-    "qa.title.2": "បើអ្នកមានចម្ងល់អំពីកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល អ្នកអាចស្វែងយល់តាមរយៈសំណួរ-ចម្លើយខាងក្រោមនេះ។ ករណីអ្នកមិនទាន់ច្បាស់ អ្នកអាចទំនាក់ទំនងមកក្រុមការងារ ក.អ.ជ.ឌ. តាមរយៈទំព័រទំនាក់ទំនងរបស់យើងខ្ញុំ!",
-    "qa.title.3": "សំណួរដែលច្រើនសួរជាញឹកញាប់៖",
-    "qa.title.4": "ព័ត៌មានលម្អិតទាក់ទងក.អ.ជ.ឌ. ករណីអ្នកនៅតែមិនទាន់យល់ច្បាស់ អ្នកអាចចុចប៊ូតុងព័ត៌មានលម្អិតឬ ប៊ូតុងទាក់ទងក.អ.ជ.ឌ. ខាងក្រោមនេះ",
-    "qa.question.1": "តើកម្មវិធី ក.អ.ជ.ឌ. គឺជាអ្វី?",
-    "qa.question.2": "តើមុខជំនាញឌីជីថលណាខ្លះ ដែលបេក្ខជនអាចដាក់ពាក្យ ស្នើសុំថវិកាយកទៅរៀនបាន?",
-    "qa.question.3": "តើបេក្ខជនត្រូវបំពេញលក្ខខណ្ឌអ្វីខ្លះ មុននឹងធ្វើការដាក់ពាក្យ ស្នើសុំថវិកាពីក.អ.ជ.ឌ.?",
-    "qa.question.4": "តើត្រូវបំពេញពាក្យសុំដោយរបៀបណា?",
-    "qa.question.5": "តើធ្វើដូចម្តេចទើបដឹងលទ្ធផល ជាប់ ឬធ្លាក់?",
-    "qa.question.6": "តើបេក្ខជនត្រូវសងថវិកាទៅក.អ.ជ.ឌ.វិញនៅពេលណា?",
-    "qa.question.7": "តើបេក្ខជនសងប្រាក់ទៅក.អ.ជ.ឌ.វិញដូចម្តេច?",
-    "qa.answer.1": "ក.អ.ជ.ឌ. គឺជាកម្មវិធីផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ដល់ សិស្ស និស្សិត បុគ្គលិកបម្រើការងារនៅស្ថាប័នសាធារណៈ និងឯកជន ឬអង្គការមិនមែន រាជរដ្ឋាភិបាល ដែលមានបំណងចង់សិក្សាជំនាញ បច្ចេកវិទ្យាឌីជីថលក្នុងកម្រិតបរិញ្ញាបត្រ នៅគ្រឹះស្ថានឧត្តមសិក្សាដៃគូរបស់ ​ក.អ.ជ.ឌ.។",
-
 
     // Q&A
     "qa.title.1": "ស្វែងយល់បន្ថែមអំពី ក.អ.ជ.ឌ.!",
@@ -265,11 +231,33 @@ export const ui: Record<string, Record<string, string>> = {
     "home.event_3.title": "កម្មវិធីស្រ្តីដើម្បីជីជីថល ក.អ.ជ.ឌ",
     "home.event_3.description":
       "ក.អ.ជ.ឌ. មានកិត្តិយសសូមគោរពជម្រាបជូន ដំណឹងដល់សាធារណជនទូទៅមេត្តាជ្រាបថា៖ តាមការសម្រេចរបស់រាជរដ្ឋាភិបាល ក.អ.ជ.ឌ. នឹងកំណត់ការរៀបចំ «ទិវាជាតិវិទ្យាសាស្ត្រ បច្ចេកវិទ្យា និងឌីជីថល» ជាប្រចាំឆ្នាំ។ សម្រាប់ឆ្នាំ ២០២៣នេះនឹងត្រូវបានរៀបចំឡើងនៅសណ្ឋាគារ សុខាអង្គរ ខេត្តសៀមរាប",
+    // candidate benefits
+    "home.candidate_benefits.title": "អត្ថប្រយោជន៍សម្រាប់បេក្ខជន ក.អ.ជ.ឌ",
+    "home.candidate_benefits.description":
+      "ក្រោយពីបានជាប់ជាស្ថាពរជាមួយ ក.អ.ជ.ឌ. បេក្ខជននឹងទទួលបានអត្ថប្រយោជន៍យ៉ាងច្រើនដូចជា៖",
+    // Partnership Section
+    "home.partnership.title": "គ្រឹះស្ថានឧត្តមសិក្សាជាដៃគូរបស់យើង",
+    "home.partnership.description":
+      " ក.អ.ជ.ឌ. បាននឹងកំពុងបន្តស្វែងរក និង ចុះអនុស្សរណៈជាមួយគ្រឹះស្ថានសិក្សាសាធារណៈ និងឯកជនក្នុងគោលបំណងពង្រីកវិសាលភាពនៃគម្រោងឱ្យកាន់តែទូលំទូលាយពេញផ្ទៃប្រទេស",
+    "home.partnership.box.title": "ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?",
+    "home.partnership.box.description":
+      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ. សូមចុចប៊ូតុងខាងក្រោមនេះដើម្បីទំនាក់ទំនងមកយើងខ្ញុំ",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
       "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និងមន្ត្រីរាជការ ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម៖",
+    // Contact Page
+    // Info section
+    "contact.title.1": "ព័ត៌មានទំនាក់ទំនង",
+    "contact.description.1":
+      "សូមបំពេញទម្រង់ខាងស្តាំនេះ ដើម្បធ្វើទំនាក់ទំនងមកកាន់ក្រុមការ ងារ ក.អ.ជ.ឌ.។ យើងនឹងឆ្លើយតបទៅវិញក្នុងរយៈពេលមិនលើសពី ២៤ម៉ោង។ ឬទំនាក់ទំនងផ្ទាល់មកកាន់លេខទូរស័ព្ទខាងក្រោមនេះ ៖",
+    "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "contact.description.4":
+      "អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ 120210, កម្ពុជា",
+    // Media Part
+    "contact.title.2": "ទីតាំងលើ Google Map",
     // News and Events Page
     "newsAndEvents.title": "ព្រឹត្តិការណ៍ឌីជីថលថ្មីៗ​ ទាំងក្នុងនិងក្រៅប្រទេស",
     "newsAndEvents.short_description":
@@ -278,6 +266,10 @@ export const ui: Record<string, Record<string, string>> = {
     "newsAndEvents.no_posts":
       "បច្ចុប្បន្ន មិនទាន់មានព័ត៌មាន ឬព្រឹត្តិការណ៍អ្វីទេ។",
     "newsAndEvents.sub_title": "ព័ត៌មាន និងព្រឹត្តិការណ៍ថ្មីៗ",
+    // Video and Media Page
+    "video-media.title": "វីដេអូ និង ការផ្សព្វផ្សាយ",
+    "video-media.description":
+      "សូមរីករាយជាមួយវីដេអូរបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) របស់យើង! ចូលរួមជាមួយយើងក្នុងការលើកកម្ពស់ចំណេះដឹង និងជំនាញឌីជីថលក្នុងចំណោមសិស្ស ដោយរៀបចំពួកគេសម្រាប់យុគសម័យឌីជីថល។",
     // CTA Buttons
     "btn.previous": "ទំព័រមុន",
     "btn.next": "ទំព័របន្ទាប់",
