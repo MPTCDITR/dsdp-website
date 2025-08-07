@@ -24,12 +24,12 @@ const remainingPosts = await getRemainingBlogPosts(lang);
 
 <Layout title={`អត្ថបទព័ត៌មាន និង ព្រឹត្តិការណ៍ - News and Events`}>
   <!-- Background decorations -->
-  <section class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
+  <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
     <div class="absolute inset-0 -z-10 pointer-events-none">
       <Image
         src={background_svg_blob}
         alt="bottom background"
-        class="absolute bottom-[10%] left-[50%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1]"
+        class="absolute bottom-[10%] left-[50%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] opacity-50"
       />
     </div>
     <LatestBlogList
