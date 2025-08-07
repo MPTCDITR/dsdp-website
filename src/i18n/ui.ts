@@ -71,19 +71,26 @@ export const ui: Record<string, Record<string, string>> = {
 
     // Q&A
     "qa.title.1": "Learn More About the DSDP",
-    "qa.title.2": "If you have questions regarding of the Digital Skills Development Program (DSDP), please refer to the frequently asked questions below. If your inquiry is not addressed, feel free to contact the DSDP team through our official contact page.",
+    "qa.title.2":
+      "If you have questions regarding of the Digital Skills Development Program (DSDP), please refer to the frequently asked questions below. If your inquiry is not addressed, feel free to contact the DSDP team through our official contact page.",
     "qa.title.3": "Frequently asked questions",
-    "qa.title.4": "For more details or inquiries about DSDP, click the 'Details' or 'Contact us' button below.",
+    "qa.title.4":
+      "For more details or inquiries about DSDP, click the 'Details' or 'Contact us' button below.",
     "qa.question.1": "What is the DSDP Program?",
-    "qa.question.2": "Which digital-related fields are eligible for funding under the DSDP?",
-    "qa.question.3": "What are the eligibility criteria applicants must meet before applying for financial support from the DSDP?",
-    "qa.question.4": "What is the procedure for completing the application form?",
-    "qa.question.5": "How will applicants be informed of the application outcome?",
-    "qa.question.6": "When are candidates required to begin repayment to the DSDP?",
-    "qa.question.7": "What is the process for repaying the support received from the DSDP?",
-    "qa.answer.1": "The Digital Skills Development Program (DSDP) offers interest-free financial support to students, civil servants, employees from both public and private sectors, as well as members of non-governmental organizations. The program enables eligible individuals to pursue undergraduate studies in digital technology at accredited partner institutions.",
-
-
+    "qa.question.2":
+      "Which digital-related fields are eligible for funding under the DSDP?",
+    "qa.question.3":
+      "What are the eligibility criteria applicants must meet before applying for financial support from the DSDP?",
+    "qa.question.4":
+      "What is the procedure for completing the application form?",
+    "qa.question.5":
+      "How will applicants be informed of the application outcome?",
+    "qa.question.6":
+      "When are candidates required to begin repayment to the DSDP?",
+    "qa.question.7":
+      "What is the process for repaying the support received from the DSDP?",
+    "qa.answer.1":
+      "The Digital Skills Development Program (DSDP) offers interest-free financial support to students, civil servants, employees from both public and private sectors, as well as members of non-governmental organizations. The program enables eligible individuals to pursue undergraduate studies in digital technology at accredited partner institutions.",
 
     //Hero Carousel
     "home.hero.title":
@@ -189,18 +196,22 @@ export const ui: Record<string, Record<string, string>> = {
 
     // Q&A
     "qa.title.1": "ស្វែងយល់បន្ថែមអំពី ក.អ.ជ.ឌ.!",
-    "qa.title.2": "បើអ្នកមានចម្ងល់អំពីកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល អ្នកអាចស្វែងយល់តាមរយៈសំណួរ-ចម្លើយខាងក្រោមនេះ។ ករណីអ្នកមិនទាន់ច្បាស់ អ្នកអាចទំនាក់ទំនងមកក្រុមការងារ ក.អ.ជ.ឌ. តាមរយៈទំព័រទំនាក់ទំនងរបស់យើងខ្ញុំ!",
+    "qa.title.2":
+      "បើអ្នកមានចម្ងល់អំពីកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល អ្នកអាចស្វែងយល់តាមរយៈសំណួរ-ចម្លើយខាងក្រោមនេះ។ ករណីអ្នកមិនទាន់ច្បាស់ អ្នកអាចទំនាក់ទំនងមកក្រុមការងារ ក.អ.ជ.ឌ. តាមរយៈទំព័រទំនាក់ទំនងរបស់យើងខ្ញុំ!",
     "qa.title.3": "សំណួរដែលច្រើនសួរជាញឹកញាប់៖",
-    "qa.title.4": "ព័ត៌មានលម្អិតទាក់ទងក.អ.ជ.ឌ. ករណីអ្នកនៅតែមិនទាន់យល់ច្បាស់ អ្នកអាចចុចប៊ូតុងព័ត៌មានលម្អិតឬ ប៊ូតុងទាក់ទងក.អ.ជ.ឌ. ខាងក្រោមនេះ",
+    "qa.title.4":
+      "ព័ត៌មានលម្អិតទាក់ទងក.អ.ជ.ឌ. ករណីអ្នកនៅតែមិនទាន់យល់ច្បាស់ អ្នកអាចចុចប៊ូតុងព័ត៌មានលម្អិតឬ ប៊ូតុងទាក់ទងក.អ.ជ.ឌ. ខាងក្រោមនេះ",
     "qa.question.1": "តើកម្មវិធី ក.អ.ជ.ឌ. គឺជាអ្វី?",
-    "qa.question.2": "តើមុខជំនាញឌីជីថលណាខ្លះ ដែលបេក្ខជនអាចដាក់ពាក្យ ស្នើសុំថវិកាយកទៅរៀនបាន?",
-    "qa.question.3": "តើបេក្ខជនត្រូវបំពេញលក្ខខណ្ឌអ្វីខ្លះ មុននឹងធ្វើការដាក់ពាក្យ ស្នើសុំថវិកាពីក.អ.ជ.ឌ.?",
+    "qa.question.2":
+      "តើមុខជំនាញឌីជីថលណាខ្លះ ដែលបេក្ខជនអាចដាក់ពាក្យ ស្នើសុំថវិកាយកទៅរៀនបាន?",
+    "qa.question.3":
+      "តើបេក្ខជនត្រូវបំពេញលក្ខខណ្ឌអ្វីខ្លះ មុននឹងធ្វើការដាក់ពាក្យ ស្នើសុំថវិកាពីក.អ.ជ.ឌ.?",
     "qa.question.4": "តើត្រូវបំពេញពាក្យសុំដោយរបៀបណា?",
     "qa.question.5": "តើធ្វើដូចម្តេចទើបដឹងលទ្ធផល ជាប់ ឬធ្លាក់?",
     "qa.question.6": "តើបេក្ខជនត្រូវសងថវិកាទៅក.អ.ជ.ឌ.វិញនៅពេលណា?",
     "qa.question.7": "តើបេក្ខជនសងប្រាក់ទៅក.អ.ជ.ឌ.វិញដូចម្តេច?",
-    "qa.answer.1": "ក.អ.ជ.ឌ. គឺជាកម្មវិធីផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ដល់ សិស្ស និស្សិត បុគ្គលិកបម្រើការងារនៅស្ថាប័នសាធារណៈ និងឯកជន ឬអង្គការមិនមែន រាជរដ្ឋាភិបាល ដែលមានបំណងចង់សិក្សាជំនាញ បច្ចេកវិទ្យាឌីជីថលក្នុងកម្រិតបរិញ្ញាបត្រ នៅគ្រឹះស្ថានឧត្តមសិក្សាដៃគូរបស់ ​ក.អ.ជ.ឌ.។",
-
+    "qa.answer.1":
+      "ក.អ.ជ.ឌ. គឺជាកម្មវិធីផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ដល់ សិស្ស និស្សិត បុគ្គលិកបម្រើការងារនៅស្ថាប័នសាធារណៈ និងឯកជន ឬអង្គការមិនមែន រាជរដ្ឋាភិបាល ដែលមានបំណងចង់សិក្សាជំនាញ បច្ចេកវិទ្យាឌីជីថលក្នុងកម្រិតបរិញ្ញាបត្រ នៅគ្រឹះស្ថានឧត្តមសិក្សាដៃគូរបស់ ​ក.អ.ជ.ឌ.។",
 
     //Hero Carousel
     "home.hero.title":

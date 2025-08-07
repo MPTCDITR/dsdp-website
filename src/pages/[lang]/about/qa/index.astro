@@ -1,9 +1,9 @@
 ---
-import background_svg_blob from "@/assets/about/q-and-a/background-svg-blob.svg";
 import QuestionAndAnswer from "@/components/pages/about/faq-content";
-import { languages, ui } from "@/i18n/ui";
-import Layout from "@/layouts/layout.astro";
 
+import background_svg_blob from "@/assets/about/q-and-a/background-svg-blob.svg";
+import { languages } from "@/i18n/ui";
+import Layout from "@/layouts/layout.astro";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -12,24 +12,15 @@ export async function getStaticPaths() {
 }
 
 const lang = Astro.params.lang as keyof typeof languages;
-const translations = ui[lang];
-
-const t = (key: string) => translations[key] || key;
 ---
 
 <Layout title="FAQ">
-    
-      <div class="absolute right-0 hidden lg:block">
-        <img
-          src={background_svg_blob.src}
-          alt="bottom background"
-          class="w-full h-auto object-contain mx-auto "
-        />
-      </div>
-<QuestionAndAnswer
-  lang={lang}
-  client:load
-/>
-
-  
+  <div class="absolute right-0 hidden lg:block">
+    <img
+      src={background_svg_blob.src}
+      alt="bottom background"
+      class="w-full h-auto object-contain mx-auto"
+    />
+  </div>
+  <QuestionAndAnswer lang={lang} client:load />
 </Layout>
