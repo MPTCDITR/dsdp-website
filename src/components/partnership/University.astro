@@ -1,93 +1,16 @@
 ---
-import aupp from "@/assets/logo/AUPP Main Logo.png";
-import cadt from "@/assets/logo/CADT_logo.png";
-import itc from "@/assets/logo/ITC_logo.png";
-import num from "@/assets/logo/NUM_logo.png";
-import paragon from "@/assets/logo/Paragon_logo.png";
-import rupp from "@/assets/logo/RUPP_logo.png";
+import { universities } from "@/data/university";
 import { languages } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
 
 const lang = Astro.params.lang as keyof typeof languages;
 const t = useTranslations(lang);
-
-const logos = [
-  {
-    src: rupp,
-    alt: "RUPP Logo",
-    hoverTitle: t("RUPP.title"),
-    hoverItems: [
-      t("Uni.description"),
-      t("RUPP.major_1"),
-      t("RUPP.major_2"),
-      t("major.etc"),
-    ],
-  },
-  {
-    src: itc,
-    alt: "ITC Logo",
-    hoverTitle: t("ITC.title"),
-    hoverItems: [
-      t("Uni.description"),
-      t("ITC.major_1"),
-      t("ITC.major_2"),
-      t("major.etc"),
-    ],
-  },
-  {
-    src: num,
-    alt: "NUM Logo",
-    hoverTitle: t("NUM.title"),
-    hoverItems: [
-      t("Uni.description"),
-      t("NUM.major_1"),
-      t("NUM.major_2"),
-      t("NUM.major_3"),
-      t("major.etc"),
-    ],
-  },
-  {
-    src: aupp,
-    alt: "AUPP Logo",
-    hoverTitle: t("AUPP.title"),
-    hoverItems: [
-      t("Uni.description"),
-      t("AUPP.major_1"),
-      t("AUPP.major_2"),
-      t("AUPP.major_3"),
-      t("major.etc"),
-    ],
-  },
-  {
-    src: paragon,
-    alt: "Paragon Logo",
-    hoverTitle: t("Paragon.title"),
-    hoverItems: [
-      t("Uni.description"),
-      t("Paragon.major_1"),
-      t("Paragon.major_2"),
-      t("major.etc"),
-    ],
-  },
-  {
-    src: cadt,
-    alt: "CADT Logo",
-    hoverTitle: t("CADT.title"),
-    hoverItems: [
-      t("Uni.description"),
-      t("CADT.major_1"),
-      t("CADT.major_2"),
-      t("CADT.major_3"),
-      t("major.etc"),
-    ],
-  },
-];
 ---
 
 <section class="mx-auto relative">
   <div class="relative mx-auto">
-    <div class="mx-auto p-10 mt-8 mb-12 relative">
+    <div class="mx-auto p-0 mb-12 relative">
       <div class="flex flex-col items-center text-center text-wrap my-11">
         <h1 class="text-4xl md:text-4xl text-gradient font-bold mb-8">
           {t("home.partnership.title")}
@@ -98,30 +21,30 @@ const logos = [
           aria-labelledby="trusted-by"
         >
           {
-            logos.map((logo) => (
+            universities.map((uni) => (
               <li class="group relative flex justify-center items-center border rounded-lg h-[220px] overflow-clip bg-white shadow-sm">
                 <Image
-                  src={logo.src}
-                  alt={logo.alt}
+                  src={uni.image}
+                  alt={uni.alt}
                   class="w-full h-full object-contain p-6 transition-all duration-300 ease-in-out group-hover:opacity-40 group-hover:scale-100"
                   loading="lazy"
                   width={500}
                   height={420}
                 />
-
                 <div
-                  class="absolute inset-0 flex flex-col justify-center bg-white bg-opacity-100 p-4
+                  class="absolute inset-0 flex flex-col justify-start bg-white bg-opacity-100 p-4
                     opacity-0 translate-y-full group-hover:opacity-85 group-hover:translate-y-0
                     transition-all duration-300 ease-in-out
                     md:opacity-0 md:translate-y-full
-                    sm:opacity-85 sm:translate-y-0"
+                    sm:opacity-85 sm:translate-y-0
+                    overflow-y-auto max-h-[90%]"
                 >
                   <h3 class="font-bold text-center text-primary text-md mb-2">
-                    {logo.hoverTitle}
+                    {t(uni.hoverTitleKey)}
                   </h3>
                   <ul class="text-left text-base font-semibold text-primary list-none">
-                    {logo.hoverItems.map((item) => (
-                      <li>{item}</li>
+                    {uni.hoverItemKeys.map((key) => (
+                      <li>{t(key)}</li>
                     ))}
                   </ul>
                 </div>

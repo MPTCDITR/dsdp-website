@@ -192,6 +192,14 @@ export const ui: Record<string, Record<string, string>> = {
     // CTA Buttons
     "btn.previous": "Previous",
     "btn.next": "Next",
+    // 404 Page
+    "404.title.1": "404",
+    "404.description.1":
+      "Sorry, The page you're looking for could not be found.",
+    "404.description.2":
+      "It seems that the page you're trying to access doesn't exist or has been moved.",
+    "404.description.3": "Please check the Url once again",
+    "404.description.4": "Go back to Homepage",
   },
 
   km: {
@@ -294,7 +302,7 @@ export const ui: Record<string, Record<string, string>> = {
     "partner.description_4":
       "សាធារណៈ និងឯកជនទាំងក្នុង និងក្រៅប្រទេស ក្នុងគោលបំណង",
     "partner.description_5": "ពង្រីកកិច្ចសហប្រតិបត្តិការ",
-    "p.artner.description_6": "ជាមួយគ្រឹះស្ថានដៃគូទាំងអស់ក្នុងការ",
+    "partner.description_6": "ជាមួយគ្រឹះស្ថានដៃគូទាំងអស់ក្នុងការ",
     "partner.description_7": "បណ្តុះបណ្តាលធនធានមនុស្សឌីជីថល",
     "partner.description_8":
       "ដើម្បីឆ្លើយតបទៅ នឹងតម្រូវការទីផ្សារការងារជំនាញបច្ចេកវិទ្យាឌីជីថលនៅប្រទេសកម្ពុជា និងទីផ្សារពិភពលោក!",
@@ -376,6 +384,13 @@ export const ui: Record<string, Record<string, string>> = {
     // CTA Buttons
     "btn.previous": "ទំព័រមុន",
     "btn.next": "ទំព័របន្ទាប់",
+    // 404 Page
+    "404.title.1": "404",
+    "404.description.1": "សូមអភ័យទោស ទំព័រដែលអ្នកកំពុងស្វែងរកមិនអាចរកឃើញទេ។",
+    "404.description.2":
+      "វាហាក់បីដូចជាទំព័រដែលអ្នកកំពុងព្យាយាមចូលដំណើរការមិនមាន ឬត្រូវបានផ្លាស់ទី។",
+    "404.description.3": "សូមពិនិត្យមើល Url ម្តងទៀត",
+    "404.description.4": "ត្រឡប់ទៅគេហទំព័រដើមវិញ។",
   },
 } as const;
 

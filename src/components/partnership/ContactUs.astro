@@ -1,8 +1,9 @@
 ---
-import { Button } from "../ui/button";
+import { LinkButton } from "../ui/link-button";
 import background from "@/assets/partnership/honey-comb.svg";
 import { languages } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
 import { SquareUser } from "lucide-react";
 
 const lang = Astro.params.lang as keyof typeof languages;
@@ -14,8 +15,8 @@ const t = useTranslations(lang);
     class="mx-auto max-w-7xl flex flex-col gap-8 rounded-3xl lg:p-20 md:py-20 p-4 bg-gradient-to-r from-[#004282] via-[#05539F] to-[#002D58] items-center relative overflow-hidden"
   >
     <div>
-      <img
-        src={background.src}
+      <Image
+        src={background}
         alt="Background"
         class="object-fill absolute inset-0"
         aria-hidden="true"
@@ -31,17 +32,13 @@ const t = useTranslations(lang);
         {t("home.partnership.box.description")}
       </p>
     </div>
-    <Button
-      variant="link"
+    <LinkButton
       className="w-40 h-11 rounded-full bg-secondary text-white text-sm font-medium text-center flex justify-center hover:bg-secondary/90 z-10"
+      size={"lg"}
+      href={`/${lang}/contact`}
     >
       <SquareUser className="size-5" />
-      <a
-        href={`/${lang}/contact`}
-        class="w-full h-full flex items-center justify-center no-underline"
-      >
-        {t("partner.button.AboutUs")}
-      </a>
-    </Button>
+      {t("partner.button.AboutUs")}
+    </LinkButton>
   </div>
 </div>
