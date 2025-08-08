@@ -3,7 +3,6 @@ export const languages = {
   km: "Khmer",
 };
 
-export type SupportedLanguage = keyof typeof languages;
 export type Language = keyof typeof languages;
 export const defaultLang = "en";
 export const showDefaultLang = true;
