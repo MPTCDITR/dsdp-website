@@ -13,7 +13,7 @@ import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 
 import MobileNav from "./MobileNav";
 import DSDP from "@/assets/logo/dsdp-logo.svg";
-import type { SupportedLanguage } from "@/i18n/ui";
+import type { Language } from "@/i18n/ui";
 import { ChevronDown } from "lucide-react";
 
 interface NavMenuProps {
@@ -24,7 +24,7 @@ interface NavMenuProps {
 
 interface HeaderProps {
   translations: Record<string, string>;
-  lang: SupportedLanguage;
+  lang: Language;
   navigationItems: NavMenuProps[];
   currentPath: string;
 }

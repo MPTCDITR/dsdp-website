@@ -1,11 +1,4 @@
-import {
-  defaultLang,
-  routes,
-  showDefaultLang,
-  ui,
-  type Language,
-  type SupportedLanguage,
-} from "./ui";
+import { defaultLang, routes, showDefaultLang, ui, type Language } from "./ui";
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split("/");
@@ -64,10 +57,7 @@ export function getRouteFromUrl(url: URL): string | undefined {
   return undefined;
 }
 
-export function removeLanguagePrefix(
-  slug: string,
-  lang: SupportedLanguage,
-): string {
+export function removeLanguagePrefix(slug: string, lang: Language): string {
   return slug.replace(`${lang}/`, "");
 }
 

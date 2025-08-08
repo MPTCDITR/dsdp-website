@@ -5,7 +5,6 @@ import Welcome from "@/components/partnership/Welcome.astro";
 
 import background from "@/assets/partnership/background-svg-blob 4.svg";
 import { languages } from "@/i18n/ui";
-import { getLangFromUrl } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 import { Image } from "astro:assets";
 
@@ -15,7 +14,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const lang = getLangFromUrl(Astro.url);
+const { lang } = Astro.params;
 ---
 
 <Layout title="ទំព័រដើម - Home">
