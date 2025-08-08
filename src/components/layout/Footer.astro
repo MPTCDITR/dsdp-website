@@ -7,9 +7,16 @@ import Linkedin from "@/assets/footer/linkedin.svg";
 import telegram from "@/assets/footer/telegram.svg";
 import X from "@/assets/footer/X.svg";
 import Youtube from "@/assets/footer/youtube.svg";
-import dsdp from "@/assets/logo/dsdp.svg";
+import dsdp from "@/assets/logo/dsdp-white.svg";
 import mptc from "@/assets/logo/mptc-logo.png";
+import { languages, ui } from "@/i18n/ui";
 import { Mail, MapPinned, PhoneCall } from "lucide-react";
+
+const { lang } = Astro.props;
+const translations = ui[lang as keyof typeof languages];
+
+const t = (key: string) => translations[key] || key;
+
 
 const year = new Date().getFullYear();
 
@@ -49,20 +56,29 @@ const socialLinks = [
           <h1
             class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
           >
-            ABOUT US
+            {t("footer.title.1")}
           </h1>
           <ul class="space-y-3 text-base">
             <li>
-              <a href="#" class="hover:text-white hover:underline">About DSDP</a
+              <a
+                href={`/${lang}/about/about-us`}
+                class="hover:text-white hover:underline"
               >
+                {t("footer.description.1")}
+              </a>
             </li>
             <li>
-              <a href="#" class="hover:text-white hover:underline"
-                >About DSDP Team</a
+              <a
+                href={`/${lang}/about/about-team`}
+                class="hover:text-white hover:underline"
               >
+                {t("footer.description.2")}
+              </a>
             </li>
             <li>
-              <a href="#" class="hover:text-white hover:underline">Q and A</a>
+              <a href="#" class="hover:text-white hover:underline">
+                {t("footer.description.3")}
+              </a>
             </li>
           </ul>
         </div>
@@ -72,36 +88,40 @@ const socialLinks = [
           <h3
             class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
           >
-            PROGRAMS
+            {t("footer.title.2")}
           </h3>
           <ul class="space-y-3">
             <li>
               <a
-                href="#"
+                href={`/${lang}/how-to-apply`}
                 class="hover:text-white hover:underline transition-colors"
-                >How to apply</a
               >
+                {t("footer.description.4")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/${lang}/how-to-apply`}
+                class="hover:text-white hover:underline transition-colors"
+              >
+                {t("footer.description.5")}
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="hover:text-white hover:underline transition-colors"
-                >For students</a
               >
+                {t("footer.description.6")}
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="hover:text-white hover:underline transition-colors"
-                >For officer</a
               >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:text-white hover:underline transition-colors"
-                >For partnership</a
-              >
+                {t("footer.description.7")}
+              </a>
             </li>
           </ul>
         </div>
@@ -111,29 +131,34 @@ const socialLinks = [
           <h3
             class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
           >
-            USEFUL LINKS
+            {t("footer.title.3")}
           </h3>
           <ul class="space-y-3">
             <li>
               <a
-                href="#"
+                href="https://mptc.gov.kh/"
+                target="_black"
                 class="hover:text-white hover:underline transition-colors"
-                >ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍</a
               >
+                {t("footer.description.8")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://cadt.edu.kh/"
+                target="_blank"
+                class="hover:text-white hover:underline transition-colors"
+              >
+                {t("footer.description.9")}
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="hover:text-white hover:underline transition-colors"
-                >បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា</a
               >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:text-white hover:underline transition-colors"
-                >តំណបំពេញពាក្យស្នើសុំ</a
-              >
+                {t("footer.description.10")}
+              </a>
             </li>
           </ul>
         </div>
@@ -141,7 +166,7 @@ const socialLinks = [
         <!-- Get in Touch Section -->
         <div>
           <h3 class="text-white font-semibold tracking-wider uppercase mb-6">
-            GET IN TOUCH
+            {t("footer.title.4")}
           </h3>
           <ul class="space-y-3" aria-labelledby="contact-us">
             <li class="flex gap-4">
@@ -152,13 +177,14 @@ const socialLinks = [
                 rel="noopener noreferrer"
                 class="hover:text-white transition-colors"
               >
-                អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ
-                រាជធានីភ្នំពេញ Phnom Penh, Cambodia, 120210
+                {t("footer.description.11")}
               </a>
             </li>
             <li class="flex gap-4">
               <PhoneCall className="text-white flex-shrink-0" />
-              <a href="" class="hover:text-white transition-colors"> 1 2 3 </a>
+              <a href="" class="hover:text-white transition-colors">
+                {t("footer.description.12")}
+              </a>
             </li>
             <li class="flex gap-4">
               <Mail className="text-white flex-shrink-0" />
@@ -166,7 +192,7 @@ const socialLinks = [
                 href="#"
                 class="leading-relaxed hover:text-white transition-colors"
               >
-                info@dsdp.gov.kh | partners@dsdp.gov.kh
+                {t("footer.description.13")}
               </a>
             </li>
           </ul>
@@ -205,17 +231,25 @@ const socialLinks = [
       class="container flex flex-col-reverse md:flex-row items-center justify-between gap-6 text-sm my-8"
     >
       <p class="text-center md:text-left">
-        Copyright @{year} រក្សាសិទ្ធិគ្រប់យ៉ាង DSDP.GOV.KH
+        {t("footer.description.14")} @{year}
+        {t("footer.description.15")}
       </p>
       <nav class="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-2">
-        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a
-        >
+        <a href="#" class="hover:text-white transition-colors">
+          {t("footer.description.16")}
+        </a>
         <span class="inline">|</span>
-        <a href="#" class="text-white transition-colors">Term of Use</a>
+        <a href="#" class="text-white transition-colors">
+          {t("footer.description.17")}
+        </a>
         <span class="inline">|</span>
-        <a href="#" class="text-white transition-colors">Legal</a>
+        <a href="#" class="text-white transition-colors">
+          {t("footer.description.18")}
+        </a>
         <span class="inline">|</span>
-        <a href="#" class="text-white transition-colors">Sitemap</a>
+        <a href="#" class="text-white transition-colors">
+          {t("footer.description.19")}
+        </a>
       </nav>
     </div>
   </div>

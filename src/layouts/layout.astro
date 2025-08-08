@@ -40,6 +40,8 @@ const currentPath = Astro.url.pathname;
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer
+      translations={translations}
+      lang={lang} />
   </body>
 </html>
