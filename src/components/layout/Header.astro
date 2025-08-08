@@ -26,14 +26,14 @@ const { translations, lang, navigationItems, currentPath } = Astro.props;
 <header
   class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
 >
-  <div class="container mx-auto flex h-20 items-center justify-between px-4">
+  <div class="container flex h-20 items-center justify-between">
     <a href={`/${lang}/`} class="flex-shrink-0">
       <Image
         src={DSDP}
         alt="Logo"
         width={180}
         height={100}
-        class="h-14 w-auto sm:h-16"
+        class="h-8 w-auto xl:h-16 lg:h-10 md:h-16"
       />
     </a>
 
@@ -44,7 +44,7 @@ const { translations, lang, navigationItems, currentPath } = Astro.props;
       client:load
     />
 
-    <div class="flex items-center gap-x-2">
+    <div class="flex items-center">
       <LanguageSwitcher lang={lang} client:load />
       <MobileNav
         lang={lang}

@@ -43,14 +43,14 @@ export default function DesktopNav({
   };
 
   return (
-    <nav className="hidden xl:flex lg:gap-0 xl:gap-4 items-center">
+    <nav className="hidden lg:flex md:gap-0 items-center">
       {navigationItems?.map((item) =>
         item.children ? (
           <DropdownMenu key={item.label}>
             <DropdownMenuTrigger asChild>
               <Button
                 variant="ghost"
-                className={`flex items-center gap-1 text-base lg:px-3 xl:px-4 font-medium nav-link text-black ${
+                className={`flex items-center text-base font-medium nav-link text-black ${
                   isActive(item) ? "active" : "hover:text-primary"
                 }`}
               >
@@ -76,7 +76,7 @@ export default function DesktopNav({
           <a
             key={item.href || item.label}
             href={item.href}
-            className={`block rounded-md px-4 py-2 text-base font-medium transition-colors nav-link text-black hover:bg-accent hover:text-primary ${
+            className={`block rounded-md xl:px-4 lg:px-2 py-2 text-base font-medium transition-colors nav-link text-black hover:bg-accent hover:text-primary ${
               isActive(item) ? "bg-accent text-primary" : ""
             }`}
           >
