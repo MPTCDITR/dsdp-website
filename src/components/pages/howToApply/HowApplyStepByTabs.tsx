@@ -1,9 +1,11 @@
 import HowToApplySection from "@/components/pages/howToApply/HowToApplySection";
 
 import { HowToApplyData, type HowToApply } from "@/data/HowToApplyData";
+import { useTranslations } from "@/i18n/utils";
 
 interface HowApplyStepByTabsProps {
   tab_type: HowToApply;
+  t: ReturnType<typeof useTranslations>;
 }
 
 export default function HowApplyStepByTabs(props: HowApplyStepByTabsProps) {
@@ -13,7 +15,7 @@ export default function HowApplyStepByTabs(props: HowApplyStepByTabsProps) {
   return (
     <div>
       {data_student.map((item) => (
-        <HowToApplySection key={item.header_number} item={item} />
+        <HowToApplySection key={item.header_number} item={item} t={props.t} />
       ))}
     </div>
   );
