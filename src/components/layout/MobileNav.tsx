@@ -30,22 +30,7 @@ interface MobileNavProps {
   currentPath: string;
 }
 
-export function MobileNav({ navigationItems, currentPath }: MobileNavProps) {
-  const isActive = (item: NavMenuProps) => {
-    if (!item.href) {
-      return item.children
-        ? item.children.some(
-            (child) => child.href && currentPath.startsWith(child.href),
-          )
-        : false;
-    }
-
-    if (item.href === "/" || item.href === "") {
-      return currentPath === item.href;
-    }
-    return currentPath.startsWith(item.href);
-  };
-
+export function MobileNav({ navigationItems }: MobileNavProps) {
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -58,7 +43,7 @@ export function MobileNav({ navigationItems, currentPath }: MobileNavProps) {
           <MenuIcon className="h-5 w-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="border-l-2 border-dashed">
+      <SheetContent side="right" className="p-4">
         <SheetHeader>
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
@@ -76,9 +61,7 @@ export function MobileNav({ navigationItems, currentPath }: MobileNavProps) {
                   className="rounded border-0 data-[state=open]:bg-accent/50"
                 >
                   <AccordionTrigger
-                    className={`${
-                      isActive(item) ? "active " : ""
-                    }rounded-md bg-transparent px-4 py-2 font-medium hover:bg-accent nav-link hover:text-primary hover:no-underline text-base`}
+                    className={`rounded-md bg-transparent px-4 py-2 font-medium hover:bg-accent nav-link hover:text-primary hover:no-underline text-base`}
                   >
                     {item.label}
                   </AccordionTrigger>
@@ -88,9 +71,7 @@ export function MobileNav({ navigationItems, currentPath }: MobileNavProps) {
                         <li key={child.href}>
                           <a
                             href={child.href}
-                            className={`${
-                              isActive(child) ? "text-primary " : ""
-                            }block rounded-md px-6 py-2 font-medium hover:text-primary nav-link hover:bg-accent text-base`}
+                            className={`block rounded-md px-6 py-2 font-medium hover:text-primary nav-link hover:bg-accent text-base`}
                           >
                             {child.label}
                           </a>
@@ -104,9 +85,7 @@ export function MobileNav({ navigationItems, currentPath }: MobileNavProps) {
               <a
                 key={item.href || item.label}
                 href={item.href}
-                className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent ${
-                  isActive(item) ? "bg-accent" : ""
-                }`}
+                className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent`}
               >
                 {item.label}
               </a>
