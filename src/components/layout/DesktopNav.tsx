@@ -43,7 +43,7 @@ export default function DesktopNav({
   };
 
   return (
-    <nav className="hidden lg:flex md:gap-0 items-center">
+    <nav className="hidden xl:flex md:gap-0 items-center">
       {navigationItems?.map((item) =>
         item.children ? (
           <DropdownMenu key={item.label}>

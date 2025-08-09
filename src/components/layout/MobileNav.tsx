@@ -37,7 +37,7 @@ export function MobileNav({ navigationItems }: MobileNavProps) {
         <Button
           variant="ghost"
           size="icon"
-          className="lg:hidden"
+          className="xl:hidden"
           aria-label="Open menu"
         >
           <MenuIcon className="h-5 w-5" />
