@@ -285,6 +285,31 @@ export const ui: Record<string, Record<string, string>> = {
       "It seems that the page you're trying to access doesn't exist or has been moved.",
     "404.description.3": "Please check the Url once again",
     "404.description.4": "Go back to Homepage",
+    // Footer
+    "footer.title.1": "ABOUT US",
+    "footer.description.1": "About DSDP",
+    "footer.description.2": "About DSDP Team",
+    "footer.description.3": "Q and A",
+    "footer.title.2": "PROGRAMS",
+    "footer.description.4": "How to apply",
+    "footer.description.5": "For students",
+    "footer.description.6": "For officer",
+    "footer.description.7": "For partnership",
+    "footer.title.3": "USEFUL LINKS",
+    "footer.description.8": "Ministry of Posts and Telecommunications",
+    "footer.description.9": "Cambodia Academy of Digital Technology",
+    "footer.description.10": "Application Link",
+    "footer.title.4": "GET IN TOUCH",
+    "footer.description.11":
+      "Building No. 13,, Preah Monivong Boulevard, Sangkat Srachak, Khan Daun Penh, Phnom Penh, Cambodia, 120210",
+    "footer.description.12": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "footer.description.14": "Copyright",
+    "footer.description.15": "All rights reserved DSDP.GOV.KH",
+    "footer.description.16": "Privacy Policy",
+    "footer.description.17": "Term of Use",
+    "footer.description.18": "Legal",
+    "footer.description.19": "Sitemap",
   },
 
   km: {
@@ -378,66 +403,6 @@ export const ui: Record<string, Record<string, string>> = {
     "home.partnership.box.title": "ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?",
     "home.partnership.box.description":
       "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ. សូមចុចប៊ូតុងខាងក្រោមនេះដើម្បីទំនាក់ទំនងមកយើងខ្ញុំ",
-    //Partner page
-    "partner.title": "ក.អ.ជ.ឌ.ស្វាគមន៍គ្រឹះស្ថានជាដៃគូ ទូទាំងប្រទេស",
-    "partner.description_1": "ក.អ.ជ.ឌ.",
-    "partner.description_2":
-      "មានបេសកកម្មក្នុងការបន្តស្វែងរកនិងចុះអនុស្សរណៈជាមួយ និងការអប់រំឌីជីថល។ យើងមានកិត្តិយសស្វាគមន៍គ្រឹះស្ថានឧត្តមសិក្សា និងស្ថាប័នសិក្សាផ្សេងទៀត ដែលចូលរួមជាដៃគូរបស់យើង។",
-    "partner.description_3": "គ្រឹះស្ថានឧត្តមសិក្សា",
-    "partner.description_4":
-      "សាធារណៈ និងឯកជនទាំងក្នុង និងក្រៅប្រទេស ក្នុងគោលបំណង",
-    "partner.description_5": "ពង្រីកកិច្ចសហប្រតិបត្តិការ",
-    "partner.description_6": "ជាមួយគ្រឹះស្ថានដៃគូទាំងអស់ក្នុងការ",
-    "partner.description_7": "បណ្តុះបណ្តាលធនធានមនុស្សឌីជីថល",
-    "partner.description_8":
-      "ដើម្បីឆ្លើយតបទៅ នឹងតម្រូវការទីផ្សារការងារជំនាញបច្ចេកវិទ្យាឌីជីថលនៅប្រទេសកម្ពុជា និងទីផ្សារពិភពលោក!",
-    // Partner Box
-    "partner.box.description_1": "ចូលរួម",
-    "partner.box.description_2": "សហការជាដៃគូ",
-    "partner.box.description_3": "ជាមួយ",
-    "partner.box.description_4": "ក.អ.ជ.ឌ.",
-    "partner.box.description_5": "គឺចូលរួមដើម្បី",
-    "partner.box.description_6": "បង្កើនឧត្តមភាព ជំនាញឌីជីថល",
-    "partner.box.description_7": " សម្រាប់ប្រទេសកម្ពុជាឆ្ពោះទៅរកការអភិវឌ្ឍ!",
-
-    // Partner (University)
-    "partner.University.title": "គ្រឹះស្ថានឧត្តមសិក្សាជាដៃគូរបស់យើង",
-    // University
-    "Uni.description": "បណ្តុះបណ្តាលមុខវិជ្ជា៖",
-    "major.etc": "...",
-    //RUPP
-    "RUPP.tittle": "សាកលវិទ្យាល័យភូមិន្ទរាជធានីភ្នំពេញ",
-    "RUPP.major_1": "វិស្វកម្មទូរគមនាគមន៍ និង អេឡិចត្រូនិច",
-    "RUPP.major_2": "វិស្វកម្ម និង វិទ្យាសាស្ត្រទិន្នន័យ",
-    //ITC
-    "ITC.title": "វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា",
-    "ITC.major_1": "វិស្វករបច្ចេកវិទ្យាព័ត៌មាន និង គមនាគមន៍",
-    "ITC.major_2": "វិស្វករអេឡិចត្រូនិច និង ទូរគមនាគមន៍",
-
-    // AUPP
-    "AUPP.title": "សាកលវិទ្យាល័យអាមេរិកាំងភ្នំពេញ",
-    "AUPP.major_1": "វិទ្យាសាស្ត្រកុំព្យូទ័រ",
-    "AUPP.major_2": "បច្ចេកវិទ្យាក្លោដ",
-    "AUPP.major_3": "អភិវឌ្ឍន៍សុបវែរ",
-
-    // NUM
-    "NUM.title": "សាកលវិទ្យាល័យជាតិគ្រប់គ្រង",
-    "NUM.major_1": "ព័ត៌មានវិទ្យា",
-    "NUM.major_2": "វិស្វកម្មរ៉ូបូតិក",
-    "NUM.major_3": "ព័ត៌មានវិទ្យាពាណិជ្ជកម្ម",
-
-    // Paragon
-    "Paragon.title": "សាកលវិទ្យាល័យអន្តរជាតិផារ៉ាហ្គន",
-    "Paragon.major_1": "វិទ្យាសាស្ត្រកុំព្យូទ័រ",
-    "Paragon.major_2": "គ្រប់គ្រងប្រព័ន្ធព័ត៌មានវិទ្យា",
-
-    // CADT
-    "CADT.title": "បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា",
-    "CADT.major_1": "ទូរគមនាគមន៍ និង បណ្តាញ",
-    "CADT.major_2": "វិទ្យាសាស្ត្រកុំព្យូទ័រ",
-    "CADT.major_3": "ធុរកិច្ចឌីជីថល",
-    // Partner About Us Button
-    "partner.button.AboutUs": "ទំនាក់ទំនងពួកយើង",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
@@ -562,6 +527,31 @@ export const ui: Record<string, Record<string, string>> = {
       "វាហាក់បីដូចជាទំព័រដែលអ្នកកំពុងព្យាយាមចូលដំណើរការមិនមាន ឬត្រូវបានផ្លាស់ទី។",
     "404.description.3": "សូមពិនិត្យមើល Url ម្តងទៀត",
     "404.description.4": "ត្រឡប់ទៅគេហទំព័រដើមវិញ។",
+    // Footer
+    "footer.title.1": "អំពីយើង",
+    "footer.description.1": "អំពី ក.អ.ជ.ឌ",
+    "footer.description.2": "អំពីក្រុម ក.អ.ជ.ឌ",
+    "footer.description.3": "សំណួរ និង ចម្លើយ",
+    "footer.title.2": "កម្មវិធី",
+    "footer.description.4": "របៀបដាក់ពាក្យ",
+    "footer.description.5": "សម្រាប់សិស្ស",
+    "footer.description.6": "សម្រាប់មន្ត្រី",
+    "footer.description.7": "សម្រាប់ភាពជាដៃគូ",
+    "footer.title.3": "តំណភ្ជាប់សំខាន់ៗ",
+    "footer.description.8": "ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍",
+    "footer.description.9": "បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា",
+    "footer.description.10": "តំណបំពេញពាក្យស្នើសុំ",
+    "footer.title.4": "ទាក់ទងតាម",
+    "footer.description.11":
+      "អាគារលេខ 13, មហាវិថីព្រះមុនីវង្ស, សង្កាត់ស្រះចក, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ, កម្ពុជា, 120210",
+    "footer.description.12": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "footer.description.14": "រក្សាសិទ្ធិ",
+    "footer.description.15": "រក្សាសិទ្ធិគ្រប់យ៉ាង DSDP.GOV.KH",
+    "footer.description.16": "គោលការណ៍ឯកជនភាព",
+    "footer.description.17": "លក្ខខណ្ឌប្រើប្រាស់",
+    "footer.description.18": "ផ្លូវច្បាប់",
+    "footer.description.19": "ផែនទីគេហទំព័រ",
   },
 } as const;
 

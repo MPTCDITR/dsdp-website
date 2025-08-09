@@ -15,7 +15,7 @@ import image2 from "/src/assets/images/image2.webp";
 import image3 from "/src/assets/images/image3.webp";
 
 export const HOWTOAPPLY_TABS = {
-  STUDENT: "studentS",
+  STUDENT: "student",
   OFFICER: "officer",
 };
 export type HowToApply = (typeof HOWTOAPPLY_TABS)[keyof typeof HOWTOAPPLY_TABS];
