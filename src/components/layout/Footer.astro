@@ -9,6 +9,7 @@ import X from "@/assets/footer/X.svg";
 import Youtube from "@/assets/footer/youtube.svg";
 import dsdp from "@/assets/logo/dsdp-white.svg";
 import mptc from "@/assets/logo/mptc-logo.png";
+import { HOWTOAPPLY_TABS } from "@/data/HowToApplyData";
 import { languages, ui } from "@/i18n/ui";
 import { Image } from "astro:assets";
 import { Mail, MapPinned, PhoneCall } from "lucide-react";
@@ -102,7 +103,7 @@ const socialLinks = [
             </li>
             <li>
               <a
-                href={`/${lang}/how-to-apply`}
+                href={`/${lang}/how-to-apply?tab=${HOWTOAPPLY_TABS.STUDENT}`}
                 class="hover:text-white hover:underline transition-colors"
               >
                 {t("footer.description.5")}
@@ -110,7 +111,7 @@ const socialLinks = [
             </li>
             <li>
               <a
-                href="#"
+                href={`/${lang}/how-to-apply?tab=${HOWTOAPPLY_TABS.OFFICER}`}
                 class="hover:text-white hover:underline transition-colors"
               >
                 {t("footer.description.6")}
