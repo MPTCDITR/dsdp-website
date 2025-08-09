@@ -68,7 +68,8 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
 
-    // Q&A
+    // FAQ
+    "qa.btn.contact": "Contact us",
     "qa.title.1": "Learn More About the DSDP",
     "qa.title.2":
       "If you have questions regarding of the Digital Skills Development Program (DSDP), please refer to the frequently asked questions below. If your inquiry is not addressed, feel free to contact the DSDP team through our official contact page.",
