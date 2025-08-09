@@ -6,6 +6,7 @@ import step2Image from "@/assets/home/step_2.jpg";
 import step3Image from "@/assets/home/step_3.jpg";
 import step4Image from "@/assets/home/step_4.jpg";
 import step5Image from "@/assets/home/step_5.jpg";
+import type { languages } from "@/i18n/ui";
 import { ChevronRight } from "lucide-react";
 
 type Step = {
@@ -49,6 +50,7 @@ const steps: Step[] = [
     imageUrl: step5Image.src,
   },
 ];
+const lang = Astro.params.lang as keyof typeof languages;
 ---
 
 <section class="container mx-auto my-12">
@@ -74,7 +76,7 @@ const steps: Step[] = [
         className="w-40 h-11 rounded-full bg-primary text-white text-sm font-medium text-center flex justify-center hover:bg-primary/90"
       >
         <a
-          href="/${lang}/about/about-us"
+          href={`/${lang}/about/about-us`}
           class="w-full h-full flex items-center justify-center no-underline"
         >
           About Us
