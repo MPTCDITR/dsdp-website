@@ -2,66 +2,45 @@ import React from "react";
 
 import {
   Accordion,
-  AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  AccordionContent
 } from "@/components/ui/accordion";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-
+import { Image } from 'astro:assets';
 import background_style from "@/assets/about/q-and-a/background-style.svg";
 import FAQ_image from "@/assets/about/q-and-a/FAQ-Image.png";
-import type { defaultLang, ui } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
+import type { TranslateKey } from "@/i18n/utils";
 import { BadgeAlert, SquareUser } from "lucide-react";
-
-type translatekey = keyof (typeof ui)[typeof defaultLang];
 
 type Props = {
   lang: string;
 };
 
 interface QAListProp {
-  question: translatekey;
-  answer: translatekey;
+  question: TranslateKey;
+  answer: TranslateKey;
 }
+
 const qaList: Array<QAListProp> = [
-  {
-    question: "qa.question.1",
-    answer: "qa.answer.1",
-  },
-  {
-    question: "qa.question.2",
-    answer: "qa.answer.2",
-  },
-  {
-    question: "qa.question.3",
-    answer: "qa.answer.3",
-  },
-  {
-    question: "qa.question.4",
-    answer: "qa.answer.4",
-  },
-  {
-    question: "qa.question.5",
-    answer: "qa.answer.5",
-  },
-  {
-    question: "qa.question.6",
-    answer: "qa.answer.6",
-  },
-  {
-    question: "qa.question.7",
-    answer: "qa.answer.7",
-  },
+  { question: "qa.question.1", answer: "qa.answer.1" },
+  { question: "qa.question.2", answer: "qa.answer.2" },
+  { question: "qa.question.3", answer: "qa.answer.3" },
+  { question: "qa.question.4", answer: "qa.answer.4" },
+  { question: "qa.question.5", answer: "qa.answer.5" },
+  { question: "qa.question.6", answer: "qa.answer.6" },
+  { question: "qa.question.7", answer: "qa.answer.7" },
 ];
 
 const QuestionAndAnswer = ({ lang }: Props) => {
   const t = useTranslations(lang);
 
   return (
-    <div className="container my-20">
+    <div className="container my-20 ">
       {/* title section */}
       <div className="flex items-center justify-center">
         <div className="w-full max-w-2xl lg:max-w-3xl flex flex-col items-center gap-3">
@@ -94,10 +73,10 @@ const QuestionAndAnswer = ({ lang }: Props) => {
                 value={`item-${idx}`}
                 className="space-y-2 "
               >
-                <AccordionTrigger className="font-normal">
+                <AccordionTrigger className="font-normal text-base">
                   {t(item.question)}
                 </AccordionTrigger>
-                <AccordionContent className="font-normal">
+                <AccordionContent className="font-normal text-base">
                   {t(item.answer)}
                 </AccordionContent>
               </AccordionItem>
@@ -119,7 +98,7 @@ const QuestionAndAnswer = ({ lang }: Props) => {
         <Card className="relative bg-primary text-center text-white overflow-hidden px-8 py-20 md:py-18">
           <img
             src={background_style.src}
-            alt=""
+            alt="background style"
             aria-hidden="true"
             className="absolute inset-0 object-cover opacity-50"
           />
@@ -129,7 +108,7 @@ const QuestionAndAnswer = ({ lang }: Props) => {
             </h3>
             <Button variant="secondary" className="text-white rounded-full">
               <SquareUser />
-              Contact us
+              {t("qa.btn.contact")}
             </Button>
           </div>
         </Card>

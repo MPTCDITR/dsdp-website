@@ -2,25 +2,27 @@
 import QuestionAndAnswer from "@/components/pages/about/faq-content";
 
 import background_svg_blob from "@/assets/about/q-and-a/background-svg-blob.svg";
-import { languages } from "@/i18n/ui";
 import Layout from "@/layouts/layout.astro";
+import { Image } from 'astro:assets';
+import { ui, type Language } from "@/i18n/ui";
 
 export async function getStaticPaths() {
-  return Object.keys(languages).map((lang) => ({
+  return (Object.keys(ui) as Language[]).map((lang) => ({
     params: { lang },
   }));
 }
 
-const lang = Astro.params.lang as keyof typeof languages;
+const {lang} = Astro.params; 
 ---
 
 <Layout title="FAQ">
-  <div class="absolute right-0 hidden lg:block">
-    <img
-      src={background_svg_blob.src}
+    <Image
+      src={background_svg_blob || "/placeholder.svg"}
       alt="bottom background"
-      class="w-full h-auto object-contain mx-auto"
+      class="w-full h-auto object-contain absolute right-0 hidden lg:block"
     />
-  </div>
-  <QuestionAndAnswer lang={lang} client:load />
+    <div class="min-h-screen">
+        <QuestionAndAnswer lang={lang} client:load />
+    </div>
 </Layout>
+

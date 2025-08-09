@@ -75,3 +75,5 @@ export function getTranslatedkey(key: string, lang: string = "en"): string {
   const validLang = lang in ui ? lang : "en";
   return ui[validLang][key] || ui[defaultLang][key];
 }
+
+export type TranslateKey = keyof (typeof ui)[typeof defaultLang];

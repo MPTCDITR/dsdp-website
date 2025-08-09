@@ -69,7 +69,8 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
 
-    // Q&A
+    // FAQ
+    "qa.btn.contact": "Contact us",
     "qa.title.1": "Learn More About the DSDP",
     "qa.title.2":
       "If you have questions regarding of the Digital Skills Development Program (DSDP), please refer to the frequently asked questions below. If your inquiry is not addressed, feel free to contact the DSDP team through our official contact page.",
@@ -194,7 +195,8 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
 
-    // Q&A
+    // FAQ
+    "qa.btn.contact": "ទំនាក់ទំនង​​យើងខ្ញុំ",
     "qa.title.1": "ស្វែងយល់បន្ថែមអំពី ក.អ.ជ.ឌ.!",
     "qa.title.2":
       "បើអ្នកមានចម្ងល់អំពីកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល អ្នកអាចស្វែងយល់តាមរយៈសំណួរ-ចម្លើយខាងក្រោមនេះ។ ករណីអ្នកមិនទាន់ច្បាស់ អ្នកអាចទំនាក់ទំនងមកក្រុមការងារ ក.អ.ជ.ឌ. តាមរយៈទំព័រទំនាក់ទំនងរបស់យើងខ្ញុំ!",
