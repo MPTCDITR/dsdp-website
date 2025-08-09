@@ -64,7 +64,7 @@ export function BlogCard({
               <p className="text-gray-600 line-clamp-2">{description}</p>
               {/* CTA Btn */}
               <a
-                href={`/${lang}/news-and-events/${urlSlug}`}
+                href={`/${lang}/media-hub/news-and-events/${urlSlug}`}
                 className="bg-primary text-white hover:bg-secondary w-fit px-4 py-2 rounded-md"
               >
                 {t("newsAndEvents.readmore")} →

@@ -22,8 +22,8 @@ export const navigation = [
   {
     label: "nav.media_hub",
     children: [
-      { label: "nav.news_and_events", href: `/news-and-events` },
-      { label: "nav.video_and_media", href: `/video-and-media` },
+      { label: "nav.news_and_events", href: `/media-hub/news-and-events` },
+      { label: "nav.video_and_media", href: `/media-hub/video-and-media` },
     ],
   },
   { href: `/contact/`, label: "nav.contact" },
