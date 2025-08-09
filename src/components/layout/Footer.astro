@@ -10,6 +10,7 @@ import Youtube from "@/assets/footer/youtube.svg";
 import dsdp from "@/assets/logo/dsdp-white.svg";
 import mptc from "@/assets/logo/mptc-logo.png";
 import { languages, ui } from "@/i18n/ui";
+import { Image } from "astro:assets";
 import { Mail, MapPinned, PhoneCall } from "lucide-react";
 
 const { lang } = Astro.props;
@@ -20,29 +21,30 @@ const t = (key: string) => translations[key] || key;
 const year = new Date().getFullYear();
 
 const socialLinks = [
-  { href: "#", label: "Facebook", icon: Facebook },
-  { href: "#", label: "Linkedin", icon: Linkedin },
-  { href: "#", label: "X", icon: X },
-  { href: "#", label: "Youtube", icon: Youtube },
-  { href: "#", label: "Instagram", icon: Instagram },
-  { href: "#", label: "Telegram", icon: telegram },
+  { href: "/#", label: "Facebook", icon: Facebook },
+  { href: "/#", label: "Linkedin", icon: Linkedin },
+  { href: "/#", label: "X", icon: X },
+  { href: "/#", label: "Youtube", icon: Youtube },
+  { href: "/#", label: "Instagram", icon: Instagram },
+  { href: "/#", label: "Telegram", icon: telegram },
 ];
 ---
 
 <footer class={`bg-primary text-white relative overflow-hidden`}>
   <div>
-    <img
-      src={style.src}
+    <Image
+      src={style}
       alt="Background style"
       class="object-fill absolute"
       aria-hidden="true"
+      loading="lazy"
     />
   </div>
 
   <div class="absolute md:left-0 sm:right-30 right-15 bottom-0 w-full">
-    <img
-      src={Cambodia.src}
-      alt=""
+    <Image
+      src={Cambodia}
+      alt="Cambodia"
       class="object-fill md:scale-100 scale-150 md:h-[452px] sm:h-[450px] h-[300px]"
       loading="lazy"
     />
@@ -52,11 +54,11 @@ const socialLinks = [
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- About Us Section -->
         <div>
-          <h1
+          <p
             class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
           >
             {t("footer.title.1")}
-          </h1>
+          </p>
           <ul class="space-y-3 text-base">
             <li>
               <a
@@ -128,7 +130,7 @@ const socialLinks = [
         <!-- Useful Links Section -->
         <div>
           <h3
-            class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
+            class="text-white text-xl font-semibold tracking-wider uppercase mb-6"
           >
             {t("footer.title.3")}
           </h3>
@@ -164,9 +166,11 @@ const socialLinks = [
 
         <!-- Get in Touch Section -->
         <div>
-          <h3 class="text-white font-semibold tracking-wider uppercase mb-6">
+          <p
+            class="text-white text-xl font-semibold tracking-wider uppercase mb-6"
+          >
             {t("footer.title.4")}
-          </h3>
+          </p>
           <ul class="space-y-3" aria-labelledby="contact-us">
             <li class="flex gap-4">
               <MapPinned className="text-white flex-shrink-0" />
@@ -199,12 +203,20 @@ const socialLinks = [
       </div>
       <div class="mt-4 md:justify-between md:flex flex-row">
         <div class="flex items-center gap-4">
-          <a href="#" aria-label="P.T.C. Homepage">
-            <img src={mptc.src} alt="P.T.C. Logo" class="h-20 w-20" />
+          <a
+            href="https://mptc.gov.kh/"
+            target="_blank"
+            aria-label="P.T.C. Homepage"
+          >
+            <Image src={mptc} alt="P.T.C. Logo" class="h-20 w-20" />
           </a>
-          <a href="#" aria-label="Second Logo Homepage">
-            <img
-              src={dsdp.src}
+          <a
+            href="https://dsdp.gov.kh/"
+            target="_blank"
+            aria-label="Second Logo Homepage"
+          >
+            <Image
+              src={dsdp}
               alt="Second Organization Logo"
               class="h-20 w-20"
             />
