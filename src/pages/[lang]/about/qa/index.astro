@@ -1,10 +1,10 @@
 ---
-import QuestionAndAnswer from "@/components/pages/about/faq-content";
+import QuestionAndAnswer from "@/components/pages/about/QuestionAndAnswer.astro";
 
 import background_svg_blob from "@/assets/about/q-and-a/background-svg-blob.svg";
-import Layout from "@/layouts/layout.astro";
-import { Image } from 'astro:assets';
 import { ui, type Language } from "@/i18n/ui";
+import Layout from "@/layouts/layout.astro";
+import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   return (Object.keys(ui) as Language[]).map((lang) => ({
@@ -12,17 +12,20 @@ export async function getStaticPaths() {
   }));
 }
 
-const {lang} = Astro.params; 
+const { lang } = Astro.params;
 ---
 
 <Layout title="FAQ">
+  <div class="relative overflow-hidden">
     <Image
-      src={background_svg_blob || "/placeholder.svg"}
-      alt="bottom background"
-      class="w-full h-auto object-contain absolute right-0 hidden lg:block"
+      src={background_svg_blob}
+      alt="Background blob"
+      class="w-full h-auto object-cover absolute right-0 top-0 z-0 pointer-events-none select-none hidden lg:block"
+      loading="lazy"
+      aria-hidden="true"
     />
-    <div class="min-h-screen">
-        <QuestionAndAnswer lang={lang} client:load />
+    <div class="relative z-10">
+      <QuestionAndAnswer lang={lang} />
     </div>
+  </div>
 </Layout>
-
