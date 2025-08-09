@@ -8,7 +8,7 @@ export const navigation = [
     children: [
       { label: "nav.about_us", href: `/about/about-us` },
       { label: "nav.about_team", href: `/about/about-team` },
-      { label: "nav.about.question&answer", href: `/about/q&a` },
+      { label: "nav.about.question&answer", href: `/about/qa` },
     ],
   },
   {
