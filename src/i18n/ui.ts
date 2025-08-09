@@ -91,6 +91,18 @@ export const ui: Record<string, Record<string, string>> = {
       "What is the process for repaying the support received from the DSDP?",
     "qa.answer.1":
       "The Digital Skills Development Program (DSDP) offers interest-free financial support to students, civil servants, employees from both public and private sectors, as well as members of non-governmental organizations. The program enables eligible individuals to pursue undergraduate studies in digital technology at accredited partner institutions.",
+    "qa.answer.2":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.3":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.4":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.5":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.6":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.7":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 
     //Hero Carousel
     "home.hero.title":
@@ -235,6 +247,18 @@ export const ui: Record<string, Record<string, string>> = {
     "qa.question.7": "តើបេក្ខជនសងប្រាក់ទៅក.អ.ជ.ឌ.វិញដូចម្តេច?",
     "qa.answer.1":
       "ក.អ.ជ.ឌ. គឺជាកម្មវិធីផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ដល់ សិស្ស និស្សិត បុគ្គលិកបម្រើការងារនៅស្ថាប័នសាធារណៈ និងឯកជន ឬអង្គការមិនមែន រាជរដ្ឋាភិបាល ដែលមានបំណងចង់សិក្សាជំនាញ បច្ចេកវិទ្យាឌីជីថលក្នុងកម្រិតបរិញ្ញាបត្រ នៅគ្រឹះស្ថានឧត្តមសិក្សាដៃគូរបស់ ​ក.អ.ជ.ឌ.។",
+    "qa.answer.2":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.3":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.4":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.5":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.6":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "qa.answer.7":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 
     //Hero Carousel
     "home.hero.title":
