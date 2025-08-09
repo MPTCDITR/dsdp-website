@@ -1,9 +1,12 @@
 import type { HowToApplyDataProps } from "@/data/HowToApplyData";
+import { useTranslations } from "@/i18n/utils";
 
 export default function HowToApplySection({
   item,
+  t,
 }: {
   item: HowToApplyDataProps;
+  t: ReturnType<typeof useTranslations>;
 }) {
   return (
     <section
@@ -14,8 +17,10 @@ export default function HowToApplySection({
         <p className="text-8xl text-gradient font-semibold">
           {item.header_number}
         </p>
-        <h2 className="text-3xl leading-10 font-semibold mb-4">{item.title}</h2>
-        <item.content />
+        <h2 className="text-3xl leading-10 font-semibold mb-4">
+          {t(item.title)}
+        </h2>
+        <item.content t={t} />
       </div>
       <div className="lg:col-span-2 col-span-1">
         <img
