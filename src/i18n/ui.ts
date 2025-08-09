@@ -128,35 +128,35 @@ export const ui: Record<string, Record<string, string>> = {
     "major.etc": "...",
     //RUPP
     "RUPP.title": "Royal University of Phnom Penh",
-    "RUPP.major_1": "> Telecommunication and Electronic Engineering",
-    "RUPP.major_2": "> Engineering and Data Science",
+    "RUPP.major_1": "Telecommunication and Electronic Engineering",
+    "RUPP.major_2": "Engineering and Data Science",
     //ITC
     "ITC.title": "Institute of Technology of Cambodia",
-    "ITC.major_1": "> Information and Communication Technology Engineering",
-    "ITC.major_2": "> Electronic and Telecommunication Engineering",
+    "ITC.major_1": "Information and Communication Technology Engineering",
+    "ITC.major_2": "Electronic and Telecommunication Engineering",
 
     // AUPP
     "AUPP.title": "American University of Phnom Penh",
-    "AUPP.major_1": "> Computer Science",
-    "AUPP.major_2": "> Cloud Technology",
-    "AUPP.major_3": "> Software Development",
+    "AUPP.major_1": "Computer Science",
+    "AUPP.major_2": "Cloud Technology",
+    "AUPP.major_3": "Software Development",
 
     // NUM
     "NUM.title": "National University of Management",
-    "NUM.major_1": "> Information Technology",
-    "NUM.major_2": "> Robotics Engineering",
-    "NUM.major_3": "> Business Informatics",
+    "NUM.major_1": "Information Technology",
+    "NUM.major_2": "Robotics Engineering",
+    "NUM.major_3": "Business Informatics",
 
     // Paragon
     "Paragon.title": "Paragon International University",
-    "Paragon.major_1": "> Computer Science",
-    "Paragon.major_2": "> Information Management Systems",
+    "Paragon.major_1": "Computer Science",
+    "Paragon.major_2": "Information Management Systems",
 
     // CADT
     "CADT.title": "Cambodia Academy of Digital Technology",
-    "CADT.major_1": "> Telecommunications and Networking",
-    "CADT.major_2": "> Computer Science",
-    "CADT.major_3": "> Digital Business",
+    "CADT.major_1": "Telecommunications and Networking",
+    "CADT.major_2": "Computer Science",
+    "CADT.major_3": "Digital Business",
 
     // Partner About Us Button
     "partner.button.AboutUs": "Contact Us",
@@ -407,35 +407,35 @@ export const ui: Record<string, Record<string, string>> = {
     "major.etc": "...",
     //RUPP
     "RUPP.tittle": "សាកលវិទ្យាល័យភូមិន្ទរាជធានីភ្នំពេញ",
-    "RUPP.major_1": "> វិស្វកម្មទូរគមនាគមន៍ និង អេឡិចត្រូនិច",
-    "RUPP.major_2": "> វិស្វកម្ម និង វិទ្យាសាស្ត្រទិន្នន័យ",
+    "RUPP.major_1": "វិស្វកម្មទូរគមនាគមន៍ និង អេឡិចត្រូនិច",
+    "RUPP.major_2": "វិស្វកម្ម និង វិទ្យាសាស្ត្រទិន្នន័យ",
     //ITC
     "ITC.title": "វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា",
-    "ITC.major_1": "> វិស្វករបច្ចេកវិទ្យាព័ត៌មាន និង គមនាគមន៍",
-    "ITC.major_2": "> វិស្វករអេឡិចត្រូនិច និង ទូរគមនាគមន៍",
+    "ITC.major_1": "វិស្វករបច្ចេកវិទ្យាព័ត៌មាន និង គមនាគមន៍",
+    "ITC.major_2": "វិស្វករអេឡិចត្រូនិច និង ទូរគមនាគមន៍",
 
     // AUPP
     "AUPP.title": "សាកលវិទ្យាល័យអាមេរិកាំងភ្នំពេញ",
-    "AUPP.major_1": "> វិទ្យាសាស្ត្រកុំព្យូទ័រ",
-    "AUPP.major_2": "> បច្ចេកវិទ្យាក្លោដ",
-    "AUPP.major_3": "> អភិវឌ្ឍន៍សុបវែរ",
+    "AUPP.major_1": "វិទ្យាសាស្ត្រកុំព្យូទ័រ",
+    "AUPP.major_2": "បច្ចេកវិទ្យាក្លោដ",
+    "AUPP.major_3": "អភិវឌ្ឍន៍សុបវែរ",
 
     // NUM
     "NUM.title": "សាកលវិទ្យាល័យជាតិគ្រប់គ្រង",
-    "NUM.major_1": "> ព័ត៌មានវិទ្យា",
-    "NUM.major_2": "> វិស្វកម្មរ៉ូបូតិក",
-    "NUM.major_3": "> ព័ត៌មានវិទ្យាពាណិជ្ជកម្ម",
+    "NUM.major_1": "ព័ត៌មានវិទ្យា",
+    "NUM.major_2": "វិស្វកម្មរ៉ូបូតិក",
+    "NUM.major_3": "ព័ត៌មានវិទ្យាពាណិជ្ជកម្ម",
 
     // Paragon
     "Paragon.title": "សាកលវិទ្យាល័យអន្តរជាតិផារ៉ាហ្គន",
-    "Paragon.major_1": "> វិទ្យាសាស្ត្រកុំព្យូទ័រ",
-    "Paragon.major_2": "> គ្រប់គ្រងប្រព័ន្ធព័ត៌មានវិទ្យា",
+    "Paragon.major_1": "វិទ្យាសាស្ត្រកុំព្យូទ័រ",
+    "Paragon.major_2": "គ្រប់គ្រងប្រព័ន្ធព័ត៌មានវិទ្យា",
 
     // CADT
     "CADT.title": "បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា",
-    "CADT.major_1": "> ទូរគមនាគមន៍ និង បណ្តាញ",
-    "CADT.major_2": "> វិទ្យាសាស្ត្រកុំព្យូទ័រ",
-    "CADT.major_3": "> ធុរកិច្ចឌីជីថល",
+    "CADT.major_1": "ទូរគមនាគមន៍ និង បណ្តាញ",
+    "CADT.major_2": "វិទ្យាសាស្ត្រកុំព្យូទ័រ",
+    "CADT.major_3": "ធុរកិច្ចឌីជីថល",
     // Partner About Us Button
     "partner.button.AboutUs": "ទំនាក់ទំនងពួកយើង",
     // How to Apply Page

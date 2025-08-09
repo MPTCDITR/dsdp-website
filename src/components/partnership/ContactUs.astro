@@ -1,12 +1,16 @@
 ---
 import { LinkButton } from "../ui/link-button";
 import background from "@/assets/partnership/honey-comb.svg";
-import { languages } from "@/i18n/ui";
+import { type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
 import { SquareUser } from "lucide-react";
 
-const lang = Astro.params.lang as keyof typeof languages;
+interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
 const t = useTranslations(lang);
 ---
 

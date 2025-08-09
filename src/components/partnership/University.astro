@@ -11,18 +11,21 @@ const t = useTranslations(lang);
 <section class="mx-auto relative">
   <div class="relative mx-auto">
     <div class="mx-auto p-0 mb-12 relative">
-      <div class="flex flex-col items-center text-center text-wrap my-11">
-        <h1 class="text-4xl md:text-4xl text-gradient font-bold mb-8">
+      <header class="flex flex-col items-center text-center text-wrap my-11">
+        <h1
+          class="text-4xl md:text-4xl text-gradient font-bold mb-8"
+          id="trusted-by"
+        >
           {t("home.partnership.title")}
         </h1>
 
-        <ul
+        <section
           class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           aria-labelledby="trusted-by"
         >
           {
             universities.map((uni) => (
-              <li class="group relative flex justify-center items-center border rounded-lg h-[220px] overflow-clip bg-white shadow-sm">
+              <article class="group relative flex justify-center items-center border rounded-lg h-[220px] overflow-clip bg-white shadow-sm">
                 <Image
                   src={uni.image}
                   alt={uni.alt}
@@ -32,7 +35,7 @@ const t = useTranslations(lang);
                   height={420}
                 />
                 <div
-                  class="absolute inset-0 flex flex-col justify-start bg-white bg-opacity-100 p-4
+                  class="absolute inset-0 flex flex-col justify-start bg-gradient-to-b from-transparent to-white bg-opacity-100 p-4
                     opacity-0 translate-y-full group-hover:opacity-85 group-hover:translate-y-0
                     transition-all duration-300 ease-in-out
                     md:opacity-0 md:translate-y-full
@@ -42,17 +45,20 @@ const t = useTranslations(lang);
                   <h3 class="font-bold text-center text-primary text-md mb-2">
                     {t(uni.hoverTitleKey)}
                   </h3>
-                  <ul class="text-left text-base font-semibold text-primary list-none">
+                  <p class="text-left text-base font-semibold text-primary pl-4">
+                    {t(uni.description)}
+                  </p>
+                  <ul class="list-disc text-left text-base font-semibold text-primary pl-4">
                     {uni.hoverItemKeys.map((key) => (
                       <li>{t(key)}</li>
                     ))}
                   </ul>
                 </div>
-              </li>
+              </article>
             ))
           }
-        </ul>
-      </div>
+        </section>
+      </header>
     </div>
   </div>
 </section>
