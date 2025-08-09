@@ -10,11 +10,11 @@ import {
 
 import ENSquareIcon from "@/assets/language/en-square.svg";
 import KHSquareIcon from "@/assets/language/km-square.svg";
-import { languages, type SupportedLanguage } from "@/i18n/ui";
+import { languages, type Language } from "@/i18n/ui";
 import { ChevronDown } from "lucide-react";
 
 interface LanguageSwitcherProps {
-  lang: SupportedLanguage;
+  lang: Language;
 }
 
 const languageAssets = {
@@ -35,7 +35,7 @@ export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
     typeof window !== "undefined" ? window.location.pathname : "";
 
   // Helper to replace the lang segment in the current path
-  const getLangPath = (newLang: SupportedLanguage) => {
+  const getLangPath = (newLang: Language) => {
     const segments = currentPath.split("/").filter(Boolean);
     if (segments.length === 0) return `/${newLang}/`;
     segments[0] = newLang;
@@ -61,10 +61,10 @@ export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         {Object.entries(languages).map(([langKey, label]) => {
-          const itemLangAssets = languageAssets[langKey as SupportedLanguage];
+          const itemLangAssets = languageAssets[langKey as Language];
           return (
             <DropdownMenuItem key={langKey} className="text-base" asChild>
-              <a href={getLangPath(langKey as SupportedLanguage)}>
+              <a href={getLangPath(langKey as Language)}>
                 <img
                   src={itemLangAssets?.mainFlag?.src}
                   width="23"
