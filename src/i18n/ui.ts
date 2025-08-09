@@ -97,7 +97,69 @@ export const ui: Record<string, Record<string, string>> = {
       "DSDP is continuously seeking and signing MOUs with public and private educational institutions to expand the program's reach across the country.",
     "home.partnership.box.title": "Want to become a DSDP partner?",
     "home.partnership.box.description":
-      " If you or your institution is interested in becoming a partner of DSDP",
+      " If you or your institution is interested in becoming a partner of DSDP, please click the button below to contact us.",
+    //Partner page
+    "partner.title": "DSDP welcomes partner institutions nationwide",
+    "partner.description_1": "DSDP",
+    "partner.description_2":
+      "Our mission is to continuously seek and sign MOUs with institutions and promote digital education. We are honored to welcome higher education institutions and other organizations that join us as partners.",
+    "partner.description_3": "Higher Education Institutions",
+    "partner.description_4":
+      "Public and private, both domestic and international, with the aim of",
+    "partner.description_5": "Expanding cooperation",
+    "partner.description_6": "with all partner institutions in",
+    "partner.description_7": "Developing digital human resources",
+    "partner.description_8":
+      "To meet the needs of the digital technology job market in Cambodia and globally!",
+
+    // Partner Box
+    "partner.box.description_1": "Join",
+    "partner.box.description_2": "as a partner",
+    "partner.box.description_3": "with",
+    "partner.box.description_4": "DSDP",
+    "partner.box.description_5": "to",
+    "partner.box.description_6": "enhance excellence in digital skills",
+    "partner.box.description_7": "for Cambodia’s development!",
+
+    // Partner (University)
+    "partner.University.title": "Our Partner Universities",
+    // University
+    "Uni.description": "Training majors:",
+    "major.etc": "...",
+    //RUPP
+    "RUPP.title": "Royal University of Phnom Penh",
+    "RUPP.major_1": "Telecommunication and Electronic Engineering",
+    "RUPP.major_2": "Engineering and Data Science",
+    //ITC
+    "ITC.title": "Institute of Technology of Cambodia",
+    "ITC.major_1": "Information and Communication Technology Engineering",
+    "ITC.major_2": "Electronic and Telecommunication Engineering",
+
+    // AUPP
+    "AUPP.title": "American University of Phnom Penh",
+    "AUPP.major_1": "Computer Science",
+    "AUPP.major_2": "Cloud Technology",
+    "AUPP.major_3": "Software Development",
+
+    // NUM
+    "NUM.title": "National University of Management",
+    "NUM.major_1": "Information Technology",
+    "NUM.major_2": "Robotics Engineering",
+    "NUM.major_3": "Business Informatics",
+
+    // Paragon
+    "Paragon.title": "Paragon International University",
+    "Paragon.major_1": "Computer Science",
+    "Paragon.major_2": "Information Management Systems",
+
+    // CADT
+    "CADT.title": "Cambodia Academy of Digital Technology",
+    "CADT.major_1": "Telecommunications and Networking",
+    "CADT.major_2": "Computer Science",
+    "CADT.major_3": "Digital Business",
+
+    // Partner About Us Button
+    "partner.button.AboutUs": "Contact Us",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
@@ -340,7 +402,7 @@ export const ui: Record<string, Record<string, string>> = {
       " ក.អ.ជ.ឌ. បាននឹងកំពុងបន្តស្វែងរក និង ចុះអនុស្សរណៈជាមួយគ្រឹះស្ថានសិក្សាសាធារណៈ និងឯកជនក្នុងគោលបំណងពង្រីកវិសាលភាពនៃគម្រោងឱ្យកាន់តែទូលំទូលាយពេញផ្ទៃប្រទេស",
     "home.partnership.box.title": "ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?",
     "home.partnership.box.description":
-      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ.",
+      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ. សូមចុចប៊ូតុងខាងក្រោមនេះដើម្បីទំនាក់ទំនងមកយើងខ្ញុំ",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",

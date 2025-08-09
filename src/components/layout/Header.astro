@@ -1,0 +1,62 @@
+---
+import DesktopNav from "@/components/layout/DesktopNav.tsx";
+import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher.tsx";
+import { MobileNav } from "@/components/layout/MobileNav.tsx";
+
+import DSDP from "@/assets/logo/dsdp-logo.svg";
+import type { Language } from "@/i18n/ui";
+import { Image } from "astro:assets";
+
+interface NavMenuProps {
+  href?: string;
+  label: string;
+  children?: NavMenuProps[];
+}
+
+interface Props {
+  translations: Record<string, string>;
+  lang: Language;
+  navigationItems: NavMenuProps[];
+  currentPath: string;
+}
+
+const { translations, lang, navigationItems, currentPath } = Astro.props;
+---
+
+<header
+  class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+>
+  <div class="container flex md:h-20 h-16 items-center justify-between">
+    <a
+      href={`/${lang}/`}
+      class="flex-shrink-0 block md:max-w-[320px] sm:max-w-[280px] max-w-[170px] w-full"
+    >
+      <Image
+        src={DSDP}
+        alt="Logo"
+        width={320}
+        height={80}
+        class="h-auto xs:w-full md:w-5/6 object-contain"
+        loading="lazy"
+      />
+    </a>
+
+    <DesktopNav
+      lang={lang}
+      navigationItems={navigationItems}
+      currentPath={currentPath}
+      client:load
+    />
+
+    <div class="flex items-center">
+      <LanguageSwitcher lang={lang} client:load />
+      <MobileNav
+        lang={lang}
+        translations={translations}
+        currentPath={currentPath}
+        navigationItems={navigationItems}
+        client:load
+      />
+    </div>
+  </div>
+</header>
