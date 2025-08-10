@@ -1,12 +1,21 @@
 import React from "react";
 
-import { Content1, Content2, Content3 } from "./HowToApplyContent";
+import {
+  OfficerContent1,
+  OfficerContent2,
+  OfficerContent3,
+} from "./HowToApplyOfficerContent";
+import {
+  StudentContent1,
+  StudentContent2,
+  StudentContent3,
+} from "./HowToApplyStudentContent";
 import image1 from "/src/assets/images/image1.webp";
 import image2 from "/src/assets/images/image2.webp";
 import image3 from "/src/assets/images/image3.webp";
 
 export const HOWTOAPPLY_TABS = {
-  STUDENT: "studentS",
+  STUDENT: "student",
   OFFICER: "officer",
 };
 export type HowToApply = (typeof HOWTOAPPLY_TABS)[keyof typeof HOWTOAPPLY_TABS];
@@ -24,22 +33,22 @@ export const HowToApplyData: Array<HowToApplyDataProps> = [
   {
     header_number: "01",
     image: image1.src,
-    title: "លក្ខខណ្ឌទី១៖ លក្ខខណ្ឌតម្រូវមូលដ្ឋាន",
-    content: Content1,
+    title: "howToApply.student.condition1.title",
+    content: StudentContent1,
     type_content: HOWTOAPPLY_TABS.STUDENT,
   },
   {
     header_number: "02",
     image: image2.src,
-    title: "លក្ខខណ្ឌទី២៖ សំណុំលិខិតភ្ជាប់នៅពេលបំពេញពាក្យចុះឈ្មោះស្នើសុំដំបូង",
-    content: Content2,
+    title: "howToApply.student.condition2.title",
+    content: StudentContent2,
     type_content: HOWTOAPPLY_TABS.STUDENT,
   },
   {
     header_number: "03",
     image: image3.src,
-    title: "លក្ខខណ្ឌទី៣៖ សំណុំលិខិតភ្ជាប់នៅក្រោយពេលជាប់ជាស្ថាពរ",
-    content: Content3,
+    title: "howToApply.student.condition3.title",
+    content: StudentContent3,
     type_content: HOWTOAPPLY_TABS.STUDENT,
   },
 
@@ -47,22 +56,22 @@ export const HowToApplyData: Array<HowToApplyDataProps> = [
   {
     header_number: "01",
     image: image1.src,
-    title: "លក្ខខណ្ឌទី១៖ លក្ខខណ្ឌតម្រូវមូលដ្ឋាន",
-    content: Content1,
+    title: "howToApply.officer.condition1.title",
+    content: OfficerContent1,
     type_content: HOWTOAPPLY_TABS.OFFICER,
   },
   {
     header_number: "02",
     image: image2.src,
-    title: "លក្ខខណ្ឌទី២៖ សំណុំលិខិតភ្ជាប់នៅពេលបំពេញពាក្យចុះឈ្មោះស្នើសុំដំបូង",
-    content: Content2,
+    title: "howToApply.officer.condition2.title",
+    content: OfficerContent2,
     type_content: HOWTOAPPLY_TABS.OFFICER,
   },
   {
     header_number: "03",
     image: image3.src,
-    title: "លក្ខខណ្ឌទី៣៖ សំណុំលិខិតភ្ជាប់នៅក្រោយពេលជាប់ជាស្ថាពរ",
-    content: Content3,
+    title: "howToApply.officer.condition3.title",
+    content: OfficerContent3,
     type_content: HOWTOAPPLY_TABS.OFFICER,
   },
 ];

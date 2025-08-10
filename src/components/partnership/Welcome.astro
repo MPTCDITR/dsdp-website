@@ -1,0 +1,90 @@
+---
+import background from "@/assets/partnership/background.svg";
+import dbqoute from "@/assets/partnership/double_qoute.png";
+import welcome from "@/assets/partnership/Welcome.gif";
+import { type Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+
+interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section class="relative container">
+  <div class="rounded-3xl overflow-hidden pt-8 md:pt-16">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 md:gap-16 relative z-10"
+    >
+      <figure class="flex justify-center items-center">
+        <img
+          src={welcome.src}
+          alt="Welcome to the Partnership"
+          class="xl:w-2/3 h-auto mx-auto"
+        />
+      </figure>
+      <header class="text-left">
+        <h1
+          class="text-3xl sm:text-4xl font-bold mt-4 text-gradient leading-normal"
+        >
+          {t("partner.title")}
+        </h1>
+        <p
+          class="my-6 text-base md:text-lg text-muted-foreground leading-relaxed"
+        >
+          <span class="font-bold">{t("partner.description_1")}</span>
+          {t("partner.description_2")}
+          <span class="font-bold">{t("partner.description_3")}</span>
+          {t("partner.description_4")}
+          <span class="font-bold">{t("partner.description_5")}</span>
+          {t("partner.description_6")}
+          <span class="font-bold">{t("partner.description_7")}</span>
+        </p>
+      </header>
+    </div>
+
+    <section class="relative text-center px-2 py-10 mt-8">
+      <Image
+        src={background}
+        alt="Background"
+        class="absolute left-1/2 top-1/2 w-[320px] h-[64px] sm:w-[410px] sm:h-[82px] md:w-[750px] md:h-[150px] object-cover z-0 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        aria-hidden="true"
+      />
+
+      <Image
+        src={dbqoute}
+        alt="Double Quote"
+        class="absolute left-2 xs:w-4 xs:h-4 w-5 h-5 md:left-20 md:w-7 md:h-7 lg:left-40 xl:left-1/4 z-10"
+        aria-hidden="true"
+      />
+      <Image
+        src={dbqoute}
+        alt="Double Quote"
+        class="absolute rotate-180 xs:w-4 xs:h-4 right-5 bottom-8 w-5 h-5 md:right-20 md:w-7 md:h-7 lg:right-40 xl:right-1/4 z-10"
+        aria-hidden="true"
+      />
+
+      <div class="relative z-20">
+        <p class="text-sm sm:text-base md:text-xl text-primary">
+          {t("partner.box.description_1")}<span class="font-bold">
+            {t("partner.box.description_2")}</span
+          >
+          {t("partner.box.description_3")}
+          <span class="font-bold">{t("partner.box.description_4")}</span>
+          {t("partner.box.description_5")}
+        </p>
+        <p
+          class="text-xl md:text-2xl lg:text-5xl font-bold text-secondary leading-tight mb-2"
+        >
+          {t("partner.box.description_6")}
+        </p>
+        <p class="text-sm sm:text-base md:text-xl text-primary font-bold">
+          {t("partner.box.description_7")}
+        </p>
+      </div>
+    </section>
+  </div>
+</section>

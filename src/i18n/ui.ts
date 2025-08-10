@@ -3,7 +3,6 @@ export const languages = {
   km: "Khmer",
 };
 
-export type SupportedLanguage = keyof typeof languages;
 export type Language = keyof typeof languages;
 export const defaultLang = "en";
 export const showDefaultLang = true;
@@ -78,6 +77,8 @@ export const ui: Record<string, Record<string, string>> = {
       "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
     "btn.moredetails": "More Details",
     "applyStep.step1.title": "Step 1: Register",
+    //Apply Step
+    "applyStep.button.title": "About Us",
     // Event Carousel
     "home.event_1.title": "Signing Ceremony with DSDP",
     "home.event_1.description":
@@ -99,11 +100,159 @@ export const ui: Record<string, Record<string, string>> = {
     "home.partnership.box.title": "Want to become a DSDP partner?",
     "home.partnership.box.description":
       " If you or your institution is interested in becoming a partner of DSDP, please click the button below to contact us.",
+    //Partner page
+    "partner.title": "DSDP welcomes partner institutions nationwide",
+    "partner.description_1": "DSDP",
+    "partner.description_2":
+      "Our mission is to continuously seek and sign MOUs with institutions and promote digital education. We are honored to welcome higher education institutions and other organizations that join us as partners.",
+    "partner.description_3": "Higher Education Institutions",
+    "partner.description_4":
+      "Public and private, both domestic and international, with the aim of",
+    "partner.description_5": "Expanding cooperation",
+    "partner.description_6": "with all partner institutions in",
+    "partner.description_7": "Developing digital human resources",
+    "partner.description_8":
+      "To meet the needs of the digital technology job market in Cambodia and globally!",
+
+    // Partner Box
+    "partner.box.description_1": "Join",
+    "partner.box.description_2": "as a partner",
+    "partner.box.description_3": "with",
+    "partner.box.description_4": "DSDP",
+    "partner.box.description_5": "to",
+    "partner.box.description_6": "enhance excellence in digital skills",
+    "partner.box.description_7": "for Cambodia’s development!",
+
+    // Partner (University)
+    "partner.University.title": "Our Partner Universities",
+    // University
+    "Uni.description": "Training majors:",
+    "major.etc": "...",
+    //RUPP
+    "RUPP.title": "Royal University of Phnom Penh",
+    "RUPP.major_1": "Telecommunication and Electronic Engineering",
+    "RUPP.major_2": "Engineering and Data Science",
+    //ITC
+    "ITC.title": "Institute of Technology of Cambodia",
+    "ITC.major_1": "Information and Communication Technology Engineering",
+    "ITC.major_2": "Electronic and Telecommunication Engineering",
+
+    // AUPP
+    "AUPP.title": "American University of Phnom Penh",
+    "AUPP.major_1": "Computer Science",
+    "AUPP.major_2": "Cloud Technology",
+    "AUPP.major_3": "Software Development",
+
+    // NUM
+    "NUM.title": "National University of Management",
+    "NUM.major_1": "Information Technology",
+    "NUM.major_2": "Robotics Engineering",
+    "NUM.major_3": "Business Informatics",
+
+    // Paragon
+    "Paragon.title": "Paragon International University",
+    "Paragon.major_1": "Computer Science",
+    "Paragon.major_2": "Information Management Systems",
+
+    // CADT
+    "CADT.title": "Cambodia Academy of Digital Technology",
+    "CADT.major_1": "Telecommunications and Networking",
+    "CADT.major_2": "Computer Science",
+    "CADT.major_3": "Digital Business",
+
+    // Partner About Us Button
+    "partner.button.AboutUs": "Contact Us",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
-      "The Digital Skills Development Program provides opportunities for students, university students, and civil servants who meet the following criteria:",
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និង មន្ត្រីរាជការ  ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម ៖",
+    "howToApply.studentTab": "សម្រាប់សិស្ស-និស្សិត",
+    "howToApply.officerTab": "សម្រាប់មន្ត្រីរាជការ",
+    "howToApply.quantity1": "ចំនួន ០១ ច្បាប់",
+    "howToApply.quantity2": "ចំនួន ០២ ច្បាប់",
+    // How to Apply Page (Student Criteria)
+    "howToApply.student.condition1.title":
+      "លក្ខខណ្ឌទី១៖ លក្ខខណ្ឌតម្រូវមូលដ្ឋាន",
+    "howToApply.student.condition1.description":
+      "បេក្ខជនត្រូវមានលក្ខខណ្ឌតម្រូវដូចខាងក្រោម ៖",
+    "howToApply.student.condition1.item1": "ត្រូវមានសញ្ជាតិខ្មែរ",
+    "howToApply.student.condition1.item2":
+      "ទទួលបានសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល ដែលមាននិន្ទេសរួម A B ឬ C",
+    "howToApply.student.condition1.item3":
+      "ជាបេក្ខជនដែលបានបំពេញគ្រប់លក្ខខណ្ឌនៃការជ្រើសរើសឱ្យចុះឈ្មោះចូលរៀននៅតាមគ្រឹះស្ថានជាដៃគូទាំងអស់របស់ ក.អ.ជ.ឌ.",
+    "howToApply.student.condition1.item4":
+      "អាចឆ្លងកាត់ការប្រលង និង/ឬ ការសម្ភាស ដែលរៀបចំដោយ ក.អ.ជ.ឌ.",
+    "howToApply.student.condition1.item5":
+      "ត្រូវបានលើកទឹកចិត្តចំពោះបេក្ខជនមានជីវភាពក្រីក្រមកពីជនបទដាច់ស្រយាល ជាជនមានពិការភាព ជានារី",
+    "howToApply.student.condition2.title":
+      "លក្ខខណ្ឌទី២៖ សំណុំលិខិតភ្ជាប់នៅពេលបំពេញពាក្យចុះឈ្មោះស្នើសុំដំបូង",
+    "howToApply.student.condition2.description":
+      "បេក្ខជនត្រូវស្កេនភ្ជាប់មកជាមួយនូវឯកសារយោងនៅពេលបំពេញពាក្យស្នើសុំតាមប្រព័ន្ធអនឡាញរួមមាន ៖",
+    "howToApply.student.condition2.item1": "រូបថត ៤x៦ ផ្ទៃស",
+    "howToApply.student.condition2.item2":
+      "សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល",
+    "howToApply.student.condition2.item3":
+      "អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ឬសំបុត្រកំណើត",
+    "howToApply.student.condition2.item4": "សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ",
+    "howToApply.student.condition3.title":
+      "លក្ខខណ្ឌទី៣៖ សំណុំលិខិតភ្ជាប់នៅក្រោយពេលជាប់ជាស្ថាពរ",
+    "howToApply.student.condition3.description":
+      "បេក្ខជនដែលត្រូវបានជ្រើសរើសជាប់ជាស្ថាពរត្រូវមកបង្ហាញខ្លួន និងភ្ជាប់មកជាមួយនូវឯកសារតម្រូវរួមមាន ៖",
+    "howToApply.student.condition3.item1":
+      "1. ជីវប្រវត្តិសង្ខេបមានបិទរូបថត(រូបថត ៤x៦ ផ្ទៃ២)",
+    "howToApply.student.condition3.item2":
+      "2. កិច្ចព្រមព្រៀងស្តីពីការផ្តល់ថវិកាសិក្សាសម្រាប់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល",
+    "howToApply.student.condition3.item3":
+      "3. លិខិតធានាអះអាងពីអាណាព្យាបាល ឬសហព័ទ្ធ",
+    "howToApply.student.condition3.item4":
+      "4. សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល (មានឃ្យូ.អ.កូដ ស្តង់ដា ឬបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.student.condition3.item5":
+      "5. អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.student.condition3.item6": "6. សេចក្តីចម្លងសំបុត្របញ្ជាក់កំណើត",
+    "howToApply.student.condition3.item7":
+      "7. សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
+    // How to Apply Page (Officer Criteria)
+    "howToApply.officer.condition1.title":
+      "លក្ខខណ្ឌទី១៖ លក្ខខណ្ឌតម្រូវមូលដ្ឋាន",
+    "howToApply.officer.condition1.description":
+      "បេក្ខជនត្រូវមានលក្ខខណ្ឌតម្រូវដូចខាងក្រោម ៖",
+    "howToApply.officer.condition1.item1": "ត្រូវមានសញ្ជាតិខ្មែរ",
+    "howToApply.officer.condition1.item2":
+      "ទទួលបានសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល ដែលមាននិន្ទេសរួម A B ឬ C",
+    "howToApply.officer.condition1.item3":
+      "ជាបេក្ខជនដែលបានបំពេញគ្រប់លក្ខខណ្ឌនៃការជ្រើសរើសឱ្យចុះឈ្មោះចូលរៀននៅតាមគ្រឹះស្ថានជាដៃគូទាំងអស់របស់ ក.អ.ជ.ឌ.",
+    "howToApply.officer.condition1.item4":
+      "អាចឆ្លងកាត់ការប្រលង និង/ឬ ការសម្ភាស ដែលរៀបចំដោយ ក.អ.ជ.ឌ.",
+    "howToApply.officer.condition1.item5":
+      "ត្រូវបានលើកទឹកចិត្តចំពោះបេក្ខជនមានជីវភាពក្រីក្រមកពីជនបទដាច់ស្រយាល ជាជនមានពិការភាព ជានារី",
+    "howToApply.officer.condition2.title":
+      "លក្ខខណ្ឌទី២៖ សំណុំលិខិតភ្ជាប់នៅពេលបំពេញពាក្យចុះឈ្មោះស្នើសុំដំបូង",
+    "howToApply.officer.condition2.description":
+      "បេក្ខជនត្រូវស្កេនភ្ជាប់មកជាមួយនូវឯកសារយោងនៅពេលបំពេញពាក្យស្នើសុំតាមប្រព័ន្ធអនឡាញរួមមាន ៖",
+    "howToApply.officer.condition2.item1": "រូបថត ៤x៦ ផ្ទៃស",
+    "howToApply.officer.condition2.item2":
+      "សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល",
+    "howToApply.officer.condition2.item3":
+      "អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ឬសំបុត្រកំណើត",
+    "howToApply.officer.condition2.item4": "សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ",
+    "howToApply.officer.condition3.title":
+      "លក្ខខណ្ឌទី៣៖ សំណុំលិខិតភ្ជាប់នៅក្រោយពេលជាប់ជាស្ថាពរ",
+    "howToApply.officer.condition3.description":
+      "បេក្ខជនដែលត្រូវបានជ្រើសរើសជាប់ជាស្ថាពរត្រូវមកបង្ហាញខ្លួន និងភ្ជាប់មកជាមួយនូវឯកសារតម្រូវរួមមាន ៖",
+    "howToApply.officer.condition3.item1":
+      "1. ជីវប្រវត្តិសង្ខេបមានបិទរូបថត(រូបថត ៤x៦ ផ្ទៃ២)",
+    "howToApply.officer.condition3.item2":
+      "2. កិច្ចព្រមព្រៀងស្តីពីការផ្តល់ថវិកាសិក្សាសម្រាប់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល",
+    "howToApply.officer.condition3.item3":
+      "3. លិខិតធានាអះអាងពីអាណាព្យាបាល ឬសហព័ទ្ធ",
+    "howToApply.officer.condition3.item4":
+      "4. សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល (មានឃ្យូ.អ.កូដ ស្តង់ដា ឬបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.officer.condition3.item5":
+      "5. អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.officer.condition3.item6": "6. សេចក្តីចម្លងសំបុត្របញ្ជាក់កំណើត",
+    "howToApply.officer.condition3.item7":
+      "7. សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
     // Contact Page
     // Info section
     "contact.title.1": "Contact Information",
@@ -130,6 +279,39 @@ export const ui: Record<string, Record<string, string>> = {
     // CTA Buttons
     "btn.previous": "Previous",
     "btn.next": "Next",
+    // 404 Page
+    "404.title.1": "404",
+    "404.description.1":
+      "Sorry, The page you're looking for could not be found.",
+    "404.description.2":
+      "It seems that the page you're trying to access doesn't exist or has been moved.",
+    "404.description.3": "Please check the Url once again",
+    "404.description.4": "Go back to Homepage",
+    // Footer
+    "footer.title.1": "ABOUT US",
+    "footer.description.1": "About DSDP",
+    "footer.description.2": "About DSDP Team",
+    "footer.description.3": "Q and A",
+    "footer.title.2": "PROGRAMS",
+    "footer.description.4": "How to apply",
+    "footer.description.5": "For students",
+    "footer.description.6": "For officer",
+    "footer.description.7": "For partnership",
+    "footer.title.3": "USEFUL LINKS",
+    "footer.description.8": "Ministry of Posts and Telecommunications",
+    "footer.description.9": "Cambodia Academy of Digital Technology",
+    "footer.description.10": "Application Link",
+    "footer.title.4": "GET IN TOUCH",
+    "footer.description.11":
+      "Building No. 13,, Preah Monivong Boulevard, Sangkat Srachak, Khan Daun Penh, Phnom Penh, Cambodia, 120210",
+    "footer.description.12": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "footer.description.14": "Copyright",
+    "footer.description.15": "All rights reserved DSDP.GOV.KH",
+    "footer.description.16": "Privacy Policy",
+    "footer.description.17": "Term of Use",
+    "footer.description.18": "Legal",
+    "footer.description.19": "Sitemap",
   },
 
   km: {
@@ -202,6 +384,15 @@ export const ui: Record<string, Record<string, string>> = {
       "ភ្នំពេញ៖ នាព្រឹកថ្ងៃទី១១ ខែមីនា ឆ្នាំ ២០២៤ សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្រ្តី នៃព្រះរាជាណាចក្រកម្ពុជា បានអញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និង ពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និង បច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១ នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ។ នៅក្នុងកម្មវិធីនេះផងដែរ សម្តេចធិបតីនាយករដ្ឋមន្ត្រី អញ្ជើញទស្សនាពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ ដោយក្នុងពិព័រណ៍នោះមានរួមមាន ស្តង់របស់មជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល និងកម្មវិធីបណ្តុះបណ្តាលផ្សេងទៀតរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ តាមរយៈទស្សនាកិច្ចនេះ ឯកឧត្តម ជា វ៉ាន់ដេត រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ បានទទួលបដិសណ្ឋារកិច្ច សម្តេចមហាបវរធិបតី ប្រកបដោយការស្វាគមន៍ និងគារវកិច្ចខ្ពង់ខ្ពស់។ ទន្ទឹមនេះ សម្តេចធិបតី បានចំណាយពេលវេលា ពិនិត្យស្វែងយល់បន្ថែម និងស្តាប់បទបង្ហាញដោយសង្ខេបអំពីមុខងារនិងគុណប្រយោជន៍ នៃមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ និងកម្មវិធីបណ្តុះបណ្តាល ដែលក្រសួងបាននឹងកំពុងអនុវត្ត ដែលវិធីសាស្ត្រមួយផ្នែកសម្រាប់បង្កើនសមត្ថភាពចាប់យកនិងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលរបស់មន្ត្រី និងប្រជាពលរដ្ឋក្នុងសហគមន៍ ព្រមទាំងកាត់បន្ថយគម្លាតឌីជីថល។",
     "btn.moredetails": "លម្អិតបន្ថែម",
     "applyStep.step1.title": "ជំហានទី ១៖ ចុះឈ្មោះ",
+    // Apply Step 1
+    "applyStep.title.1": "  ជំហានងាយៗនៃការដាក់ពាក្យ",
+    "applyStep.title.2": "ស្នើសុំថវិកាគម្រោងរបស់",
+    "applyStep.title.3": "ក.អ.ជ.ឌ",
+    "applyStep.title.4":
+      "    សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ មន្ត្រីរាជការស៊ីវិល",
+    "applyStep.title.5":
+      "    អាចបំពេញពាក្យស្នើសុំគម្រោងថវិកាជាមួយយើងខ្ញុំតាមជំហានងាយៗដូចខាងក្រោម៖",
+    "applyStep.button.title": "អំពីពួកយើង",
     // Event Carousel
     "home.event_1.title": "កម្មវិធីចុះអនុស្សរណៈជាមួយ",
     "home.event_1.description":
@@ -227,7 +418,93 @@ export const ui: Record<string, Record<string, string>> = {
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
     "howToApply.subTitle":
-      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និងមន្ត្រីរាជការ ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម៖",
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ផ្តល់ឱកាសដល់ សិស្ស និស្សិត និង មន្ត្រីរាជការ  ដែលបំពេញលក្ខខណ្ឌដូចខាងក្រោម ៖",
+    "howToApply.studentTab": "សម្រាប់សិស្ស-និស្សិត",
+    "howToApply.officerTab": "សម្រាប់មន្ត្រីរាជការ",
+    "howToApply.quantity1": "ចំនួន ០១ ច្បាប់",
+    "howToApply.quantity2": "ចំនួន ០២ ច្បាប់",
+    // How to Apply Page (Student Criteria)
+    "howToApply.student.condition1.title":
+      "លក្ខខណ្ឌទី១៖ លក្ខខណ្ឌតម្រូវមូលដ្ឋាន",
+    "howToApply.student.condition1.description":
+      "បេក្ខជនត្រូវមានលក្ខខណ្ឌតម្រូវដូចខាងក្រោម ៖",
+    "howToApply.student.condition1.item1": "ត្រូវមានសញ្ជាតិខ្មែរ",
+    "howToApply.student.condition1.item2":
+      "ទទួលបានសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល ដែលមាននិន្ទេសរួម A B ឬ C",
+    "howToApply.student.condition1.item3":
+      "ជាបេក្ខជនដែលបានបំពេញគ្រប់លក្ខខណ្ឌនៃការជ្រើសរើសឱ្យចុះឈ្មោះចូលរៀននៅតាមគ្រឹះស្ថានជាដៃគូទាំងអស់របស់ ក.អ.ជ.ឌ.",
+    "howToApply.student.condition1.item4":
+      "អាចឆ្លងកាត់ការប្រលង និង/ឬ ការសម្ភាស ដែលរៀបចំដោយ ក.អ.ជ.ឌ.",
+    "howToApply.student.condition1.item5":
+      "ត្រូវបានលើកទឹកចិត្តចំពោះបេក្ខជនមានជីវភាពក្រីក្រមកពីជនបទដាច់ស្រយាល ជាជនមានពិការភាព ជានារី",
+    "howToApply.student.condition2.title":
+      "លក្ខខណ្ឌទី២៖ សំណុំលិខិតភ្ជាប់នៅពេលបំពេញពាក្យចុះឈ្មោះស្នើសុំដំបូង",
+    "howToApply.student.condition2.description":
+      "បេក្ខជនត្រូវស្កេនភ្ជាប់មកជាមួយនូវឯកសារយោងនៅពេលបំពេញពាក្យស្នើសុំតាមប្រព័ន្ធអនឡាញរួមមាន ៖",
+    "howToApply.student.condition2.item1": "រូបថត ៤x៦ ផ្ទៃស",
+    "howToApply.student.condition2.item2":
+      "សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល",
+    "howToApply.student.condition2.item3":
+      "អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ឬសំបុត្រកំណើត",
+    "howToApply.student.condition2.item4": "សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ",
+    "howToApply.student.condition3.title":
+      "លក្ខខណ្ឌទី៣៖ សំណុំលិខិតភ្ជាប់នៅក្រោយពេលជាប់ជាស្ថាពរ",
+    "howToApply.student.condition3.description":
+      "បេក្ខជនដែលត្រូវបានជ្រើសរើសជាប់ជាស្ថាពរត្រូវមកបង្ហាញខ្លួន និងភ្ជាប់មកជាមួយនូវឯកសារតម្រូវរួមមាន ៖",
+    "howToApply.student.condition3.item1":
+      "1. ជីវប្រវត្តិសង្ខេបមានបិទរូបថត(រូបថត ៤x៦ ផ្ទៃ២)",
+    "howToApply.student.condition3.item2":
+      "2. កិច្ចព្រមព្រៀងស្តីពីការផ្តល់ថវិកាសិក្សាសម្រាប់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល",
+    "howToApply.student.condition3.item3":
+      "3. លិខិតធានាអះអាងពីអាណាព្យាបាល ឬសហព័ទ្ធ",
+    "howToApply.student.condition3.item4":
+      "4. សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល (មានឃ្យូ.អ.កូដ ស្តង់ដា ឬបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.student.condition3.item5":
+      "5. អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.student.condition3.item6": "6. សេចក្តីចម្លងសំបុត្របញ្ជាក់កំណើត",
+    "howToApply.student.condition3.item7":
+      "7. សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
+    // How to Apply Page (Officer Criteria)
+    "howToApply.officer.condition1.title":
+      "លក្ខខណ្ឌទី១៖ លក្ខខណ្ឌតម្រូវមូលដ្ឋាន",
+    "howToApply.officer.condition1.description":
+      "បេក្ខជនត្រូវមានលក្ខខណ្ឌតម្រូវដូចខាងក្រោម ៖",
+    "howToApply.officer.condition1.item1": "ត្រូវមានសញ្ជាតិខ្មែរ",
+    "howToApply.officer.condition1.item2":
+      "ទទួលបានសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល ដែលមាននិន្ទេសរួម A B ឬ C",
+    "howToApply.officer.condition1.item3":
+      "ជាបេក្ខជនដែលបានបំពេញគ្រប់លក្ខខណ្ឌនៃការជ្រើសរើសឱ្យចុះឈ្មោះចូលរៀននៅតាមគ្រឹះស្ថានជាដៃគូទាំងអស់របស់ ក.អ.ជ.ឌ.",
+    "howToApply.officer.condition1.item4":
+      "អាចឆ្លងកាត់ការប្រលង និង/ឬ ការសម្ភាស ដែលរៀបចំដោយ ក.អ.ជ.ឌ.",
+    "howToApply.officer.condition1.item5":
+      "ត្រូវបានលើកទឹកចិត្តចំពោះបេក្ខជនមានជីវភាពក្រីក្រមកពីជនបទដាច់ស្រយាល ជាជនមានពិការភាព ជានារី",
+    "howToApply.officer.condition2.title":
+      "លក្ខខណ្ឌទី២៖ សំណុំលិខិតភ្ជាប់នៅពេលបំពេញពាក្យចុះឈ្មោះស្នើសុំដំបូង",
+    "howToApply.officer.condition2.description":
+      "បេក្ខជនត្រូវស្កេនភ្ជាប់មកជាមួយនូវឯកសារយោងនៅពេលបំពេញពាក្យស្នើសុំតាមប្រព័ន្ធអនឡាញរួមមាន ៖",
+    "howToApply.officer.condition2.item1": "រូបថត ៤x៦ ផ្ទៃស",
+    "howToApply.officer.condition2.item2":
+      "សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល",
+    "howToApply.officer.condition2.item3":
+      "អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ឬសំបុត្រកំណើត",
+    "howToApply.officer.condition2.item4": "សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ",
+    "howToApply.officer.condition3.title":
+      "លក្ខខណ្ឌទី៣៖ សំណុំលិខិតភ្ជាប់នៅក្រោយពេលជាប់ជាស្ថាពរ",
+    "howToApply.officer.condition3.description":
+      "បេក្ខជនដែលត្រូវបានជ្រើសរើសជាប់ជាស្ថាពរត្រូវមកបង្ហាញខ្លួន និងភ្ជាប់មកជាមួយនូវឯកសារតម្រូវរួមមាន ៖",
+    "howToApply.officer.condition3.item1":
+      "1. ជីវប្រវត្តិសង្ខេបមានបិទរូបថត(រូបថត ៤x៦ ផ្ទៃ២)",
+    "howToApply.officer.condition3.item2":
+      "2. កិច្ចព្រមព្រៀងស្តីពីការផ្តល់ថវិកាសិក្សាសម្រាប់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល",
+    "howToApply.officer.condition3.item3":
+      "3. លិខិតធានាអះអាងពីអាណាព្យាបាល ឬសហព័ទ្ធ",
+    "howToApply.officer.condition3.item4":
+      "4. សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬសញ្ញាបត្រសមមូល (មានឃ្យូ.អ.កូដ ស្តង់ដា ឬបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.officer.condition3.item5":
+      "5. អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
+    "howToApply.officer.condition3.item6": "6. សេចក្តីចម្លងសំបុត្របញ្ជាក់កំណើត",
+    "howToApply.officer.condition3.item7":
+      "7. សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ ច្បាប់ថតចម្លង (មានបញ្ជាក់ត្រឹមត្រូវ)",
     // Contact Page
     // Info section
     "contact.title.1": "ព័ត៌មានទំនាក់ទំនង",
@@ -254,6 +531,38 @@ export const ui: Record<string, Record<string, string>> = {
     // CTA Buttons
     "btn.previous": "ទំព័រមុន",
     "btn.next": "ទំព័របន្ទាប់",
+    // 404 Page
+    "404.title.1": "404",
+    "404.description.1": "សូមអភ័យទោស ទំព័រដែលអ្នកកំពុងស្វែងរកមិនអាចរកឃើញទេ។",
+    "404.description.2":
+      "វាហាក់បីដូចជាទំព័រដែលអ្នកកំពុងព្យាយាមចូលដំណើរការមិនមាន ឬត្រូវបានផ្លាស់ទី។",
+    "404.description.3": "សូមពិនិត្យមើល Url ម្តងទៀត",
+    "404.description.4": "ត្រឡប់ទៅគេហទំព័រដើមវិញ។",
+    // Footer
+    "footer.title.1": "អំពីយើង",
+    "footer.description.1": "អំពី ក.អ.ជ.ឌ",
+    "footer.description.2": "អំពីក្រុម ក.អ.ជ.ឌ",
+    "footer.description.3": "សំណួរ និង ចម្លើយ",
+    "footer.title.2": "កម្មវិធី",
+    "footer.description.4": "របៀបដាក់ពាក្យ",
+    "footer.description.5": "សម្រាប់សិស្ស",
+    "footer.description.6": "សម្រាប់មន្ត្រី",
+    "footer.description.7": "សម្រាប់ភាពជាដៃគូ",
+    "footer.title.3": "តំណភ្ជាប់សំខាន់ៗ",
+    "footer.description.8": "ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍",
+    "footer.description.9": "បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា",
+    "footer.description.10": "តំណបំពេញពាក្យស្នើសុំ",
+    "footer.title.4": "ទាក់ទងតាម",
+    "footer.description.11":
+      "អាគារលេខ 13, មហាវិថីព្រះមុនីវង្ស, សង្កាត់ស្រះចក, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ, កម្ពុជា, 120210",
+    "footer.description.12": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
+    "footer.description.14": "រក្សាសិទ្ធិ",
+    "footer.description.15": "រក្សាសិទ្ធិគ្រប់យ៉ាង DSDP.GOV.KH",
+    "footer.description.16": "គោលការណ៍ឯកជនភាព",
+    "footer.description.17": "លក្ខខណ្ឌប្រើប្រាស់",
+    "footer.description.18": "ផ្លូវច្បាប់",
+    "footer.description.19": "ផែនទីគេហទំព័រ",
   },
 } as const;
 

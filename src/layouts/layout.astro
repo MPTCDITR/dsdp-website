@@ -4,7 +4,7 @@ import "@/styles/global.css";
 import { getLocalizedRoutes, navigation } from "@/lib/route";
 
 import Footer from "@/components/layout/Footer.astro";
-import Header from "@/components/layout/Header";
+import Header from "@/components/layout/Header.astro";
 
 import { defaultLang, ui } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -35,11 +35,10 @@ const currentPath = Astro.url.pathname;
       lang={lang}
       navigationItems={navigationItems}
       currentPath={currentPath}
-      client:load
     />
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer translations={translations} lang={lang} />
   </body>
 </html>
