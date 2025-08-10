@@ -1,11 +1,13 @@
 ---
-import { Button } from "../ui/button";
+import { LinkButton } from "../ui/link-button";
 import Guide from "./Guide.astro";
 import step1Image from "@/assets/home/step_1.jpg";
 import step2Image from "@/assets/home/step_2.jpg";
 import step3Image from "@/assets/home/step_3.jpg";
 import step4Image from "@/assets/home/step_4.jpg";
 import step5Image from "@/assets/home/step_5.jpg";
+import type { Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 import { ChevronRight } from "lucide-react";
 
 type Step = {
@@ -49,6 +51,13 @@ const steps: Step[] = [
     imageUrl: step5Image.src,
   },
 ];
+
+interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
 ---
 
 <section class="container mx-auto my-12">
@@ -57,30 +66,26 @@ const steps: Step[] = [
   >
     <div class="flex-1">
       <h1 class="text-4xl text-primary font-bold mb-4">
-        ជំហានងាយៗនៃការដាក់ពាក្យ
+        {t("applyStep.title.1")}
         <br />
-        ស្នើសុំថវិកាគម្រោងរបស់ <span class="text-secondary">ក.អ.ជ.ឌ.</span>
+        {t("applyStep.title.2")}
+        <span class="text-secondary">{t("applyStep.title.3")}</span>
       </h1>
       <p class="text-pretty text-muted-foreground">
-        សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ
-        មន្ត្រីរាជការស៊ីវិល
+        {t("applyStep.title.4")}
         <br class="hidden md:block" />
-        អាចបំពេញពាក្យស្នើសុំគម្រោងថវិកាជាមួយយើងខ្ញុំតាមជំហានងាយៗដូចខាងក្រោម៖
+        {t("applyStep.title.5")}
       </p>
     </div>
     <div class="ml-2">
-      <Button
-        variant="link"
-        className="w-40 h-11 rounded-full bg-primary text-white text-sm font-medium text-center flex justify-center hover:bg-primary/90"
+      <LinkButton
+        className="rounded-3xl hover:underline underline-offset-4"
+        size={"lg"}
+        href={`/${lang}/about/about-us`}
       >
-        <a
-          href="/${lang}/about/about-us"
-          class="w-full h-full flex items-center justify-center no-underline"
-        >
-          About Us
-          <ChevronRight className="size-4" />
-        </a>
-      </Button>
+        {t("applyStep.button.title")}
+        <ChevronRight className="size-4" />
+      </LinkButton>
     </div>
   </div>
 

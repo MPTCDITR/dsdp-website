@@ -114,6 +114,8 @@ export const ui: Record<string, Record<string, string>> = {
       "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
     "btn.moredetails": "More Details",
     "applyStep.step1.title": "Step 1: Register",
+    //Apply Step
+    "applyStep.button.title": "About Us",
     // Event Carousel
     "home.event_1.title": "Signing Ceremony with DSDP",
     "home.event_1.description":
@@ -451,6 +453,15 @@ export const ui: Record<string, Record<string, string>> = {
       "ភ្នំពេញ៖ នាព្រឹកថ្ងៃទី១១ ខែមីនា ឆ្នាំ ២០២៤ សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្រ្តី នៃព្រះរាជាណាចក្រកម្ពុជា បានអញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និង ពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និង បច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១ នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ។ នៅក្នុងកម្មវិធីនេះផងដែរ សម្តេចធិបតីនាយករដ្ឋមន្ត្រី អញ្ជើញទស្សនាពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ ដោយក្នុងពិព័រណ៍នោះមានរួមមាន ស្តង់របស់មជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល និងកម្មវិធីបណ្តុះបណ្តាលផ្សេងទៀតរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ តាមរយៈទស្សនាកិច្ចនេះ ឯកឧត្តម ជា វ៉ាន់ដេត រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ បានទទួលបដិសណ្ឋារកិច្ច សម្តេចមហាបវរធិបតី ប្រកបដោយការស្វាគមន៍ និងគារវកិច្ចខ្ពង់ខ្ពស់។ ទន្ទឹមនេះ សម្តេចធិបតី បានចំណាយពេលវេលា ពិនិត្យស្វែងយល់បន្ថែម និងស្តាប់បទបង្ហាញដោយសង្ខេបអំពីមុខងារនិងគុណប្រយោជន៍ នៃមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ និងកម្មវិធីបណ្តុះបណ្តាល ដែលក្រសួងបាននឹងកំពុងអនុវត្ត ដែលវិធីសាស្ត្រមួយផ្នែកសម្រាប់បង្កើនសមត្ថភាពចាប់យកនិងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលរបស់មន្ត្រី និងប្រជាពលរដ្ឋក្នុងសហគមន៍ ព្រមទាំងកាត់បន្ថយគម្លាតឌីជីថល។",
     "btn.moredetails": "លម្អិតបន្ថែម",
     "applyStep.step1.title": "ជំហានទី ១៖ ចុះឈ្មោះ",
+    // Apply Step 1
+    "applyStep.title.1": "  ជំហានងាយៗនៃការដាក់ពាក្យ",
+    "applyStep.title.2": "ស្នើសុំថវិកាគម្រោងរបស់",
+    "applyStep.title.3": "ក.អ.ជ.ឌ",
+    "applyStep.title.4":
+      "    សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ មន្ត្រីរាជការស៊ីវិល",
+    "applyStep.title.5":
+      "    អាចបំពេញពាក្យស្នើសុំគម្រោងថវិកាជាមួយយើងខ្ញុំតាមជំហានងាយៗដូចខាងក្រោម៖",
+    "applyStep.button.title": "អំពីពួកយើង",
     // Event Carousel
     "home.event_1.title": "កម្មវិធីចុះអនុស្សរណៈជាមួយ",
     "home.event_1.description":
