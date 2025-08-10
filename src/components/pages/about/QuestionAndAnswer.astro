@@ -1,7 +1,7 @@
 ---
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { LinkButton } from "@/components/ui/link-button";
 
 import AccordionQA from "./AccordionQA";
 import background_style from "@/assets/about/q-and-a/background-style.svg";
@@ -96,14 +96,15 @@ const t = useTranslations(lang);
         >
           {t("qa.title.4")}
         </h3>
-        <Button
-          variant="secondary"
-          className="text-white rounded-full"
+        <LinkButton
+          variant={"secondary"}
+          className="text-white rounded-full px-4"
+          href={`/${lang}/contact`}
           aria-label={t("qa.btn.contact.aria") ?? "Contact us"}
         >
           <SquareUser aria-hidden="true" focusable="false" />
           {t("qa.btn.contact")}
-        </Button>
+        </LinkButton>
       </div>
     </Card>
   </aside>

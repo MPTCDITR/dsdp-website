@@ -23,7 +23,7 @@ interface BlogListProps {
 
 export function BlogList({ translations, posts, lang }: BlogListProps) {
   const t = useTranslations(lang);
-  // Error Handling
+
   if (!posts?.length) {
     return (
       <div className="space-y-8">
@@ -42,18 +42,17 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
   const currentArticles = posts.slice(startIndex, endIndex);
 
   return (
-    // Title
     <div className="container mx-auto my-12">
       <motion.h1
         className={"text-4xl font-bold text-gradient leading-normal mb-8"}
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
       >
         {t("newsAndEvents.sub_title")}
       </motion.h1>
 
-      {/* Contents */}
       <div className="space-y-4">
         {currentArticles.map((post, index) => (
           <BlogCard
@@ -71,7 +70,6 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
         ))}
       </div>
 
-      {/* Pagination */}
       <div className="mt-12">
         <Pagination>
           <PaginationContent>
@@ -87,6 +85,7 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
               <PaginationItem key={page}>
                 <PaginationLink
+                  className="w-10 h-10 mx-1"
                   onClick={() => setCurrentPage(page)}
                   isActive={currentPage === page}
                 >

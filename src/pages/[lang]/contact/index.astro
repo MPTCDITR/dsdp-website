@@ -1,33 +1,76 @@
 ---
 import { Card } from "@/components/ui/card";
 
-import { languages, ui } from "@/i18n/ui";
+import serviceImg from "@/assets/contact/contact.gif";
+import { languages, type Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MailOpen,
+  MapPin,
+  Phone,
+  X,
+  Youtube,
+} from "lucide-react";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
-    params: { lang },
+    params: { lang: lang as Language },
   }));
 }
 
-const lang = Astro.params.lang as keyof typeof languages;
-const translations = ui[lang];
+const { lang } = Astro.params;
+const t = useTranslations(lang);
 
-const t = (key: string) => translations[key] || key;
+const socialLinks = [
+  {
+    name: "Facebook",
+    url: "https://facebook.com",
+    icon: Facebook,
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com",
+    icon: Instagram,
+  },
+  {
+    name: "X",
+    url: "https://x.com",
+    icon: X,
+  },
+  {
+    name: "YouTube",
+    url: "https://youtube.com",
+    icon: Youtube,
+  },
+  {
+    name: "Telegram",
+    url: "https://xtelegram.org.com",
+    icon: MailOpen,
+  },
+  {
+    name: "LinkedIn",
+    url: "https://LinkedIn.com",
+    icon: Linkedin,
+  },
+];
 ---
 
 <Layout title="Contact Us">
-  <!-- Infomation -->
   <div
     class="relative bg-[url('/src/assets/about/about-us/background2.svg')] bg-no-repeat bg-right bg-contain"
   >
-    <section class="mt-10 mb-10">
+    <section class="my-10">
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
       >
         <div class="space-y-6">
           <h2
-            class="text-2xl font-bold text-gradient-b md:text-3xl lg:text-4xl"
+            class="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-b"
           >
             {t("contact.title.1")}
           </h2>
@@ -35,66 +78,60 @@ const t = (key: string) => translations[key] || key;
             {t("contact.description.1")}
           </p>
           <p
-            class="flex items-start gap-3 text-gradient-b font-semibold text-lg"
+            class="flex items-start gap-3 text-gradient-b font-semibold text-lg space-x-4"
           >
-            <img src="/icon/phone.svg" alt="Phone Logo" class="w-6 h-6" />
-            <span>
-              {t("contact.description.2")}
-            </span>
+            <Phone className="min-w-6 min-h-6 text-secondary" />
+            <span>{t("contact.description.2")}</span>
           </p>
           <p
-            class="flex items-center gap-2 text-gradient-b font-semibold text-lg"
+            class="flex items-center gap-2 text-gradient-b font-semibold text-lg space-x-4"
           >
-            <img src="/icon/mail.svg" alt="Mail Logo" class="w-6 h-6" />
-            <span>
-              {t("contact.description.3")}
-            </span>
+            <Mail className="min-w-6 min-h-6 text-secondary" />
+            <span>{t("contact.description.3")}</span>
           </p>
           <p
-            class="flex items-start gap-2 text-gradient-b font-semibold text-lg"
+            class="flex items-start gap-2 text-gradient-b font-semibold text-lg space-x-4"
           >
-            <img src="/icon/map-pin.svg" alt="Map Logo" class="w-6 h-6" />
-            <span>
-              {t("contact.description.4")}
-            </span>
+            <MapPin className="min-w-6 min-h-6 text-secondary" />
+            <span>{t("contact.description.4")}</span>
           </p>
-          <!-- Media -->
           <div class="flex gap-4 mt-14">
-            <a href="https://facebook.com" target="_blank">
-              <img src="/icon/Facebook.svg" alt="Facebook Logo" />
-            </a>
-            <a href="https://instagram.com" target="_blank">
-              <img src="/icon/Instragram.svg" alt="Instagram Logo" />
-            </a>
-            <a href="https://x.com" target="_blank">
-              <img src="/icon/X.svg" alt="X Logo" />
-            </a>
-            <a href="https://youtube.com" target="_blank">
-              <img src="/icon/Youtube.svg" alt="YouTube Logo" />
-            </a>
-            <a href="https://xtelegram.org.com" target="_blank">
-              <img src="/icon/Telegram.svg" alt="Telegram Logo" />
-            </a>
-            <a href="https://LinkedIn.com" target="_blank">
-              <img src="/icon/Linkin.svg" alt="LinkedIn Logo" />
-            </a>
+            {
+              socialLinks.map(({ name, url, icon: Icon }) => (
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label={name}
+                  class="rounded-full bg-secondary text-white flex items-center justify-center w-10 h-10 transition hover:bg-secondary/90"
+                >
+                  <Icon className="min-w-6 min-h-6" />
+                </a>
+              ))
+            }
           </div>
         </div>
         <div class="flex flex-col justify-between items-center h-full">
-          <img src="/icon/service.png" alt="Service Logo" />
+          <img
+            src={serviceImg.src}
+            alt="Service"
+            width={1000}
+            height={1000}
+            class="lg:w-2/3 w-full mx-auto"
+          />
         </div>
       </div>
     </section>
     <section>
       <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-bold text-gradient-b md:text-3xl lg:text-4xl">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-b">
           {t("contact.title.2")}
         </h2>
         <Card className="mt-4 md:mt-10 mb-10">
           <iframe
             class="w-full aspect-[21/9] mx-auto"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6732149596046!2d104.91480367585223!3d11.57526794394968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095142eadcf8db%3A0xbd4e32a5eccddfb7!2sMinistry%20of%20Post%20and%20Telecommunications!5e0!3m2!1sen!2skh!4v1753945724231!5m2!1sen!2skh"
-            allowfullscreen=""
+            allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </Card>
       </div>

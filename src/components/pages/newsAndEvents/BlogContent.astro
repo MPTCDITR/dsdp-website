@@ -2,6 +2,7 @@
 import { formatDate } from "@/lib/utils";
 
 import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 export interface Props {
   title: string;
@@ -18,11 +19,13 @@ const { title, date, author, image, lang } = Astro.props;
 <article class="container mx-auto my-4">
   {
     image && (
-      <img
-        src={image.src}
+      <Image
+        src={image}
         alt={title}
         class="rounded-lg w-full aspect-video object-cover"
         loading="lazy"
+        width={1000}
+        height={1000}
       />
     )
   }
@@ -33,13 +36,15 @@ const { title, date, author, image, lang } = Astro.props;
     >
       {title}
     </h1>
-    <p class="flex items-center gap-4 text-secondary font-bold">
+    <p
+      class="flex items-center gap-4 text-secondary font-bold md:text-xl text-lg"
+    >
       <span>{author},</span>
       <span>
         <time>{formatDate(date.toISOString(), lang)}</time>
       </span>
     </p>
-    <div class="prose prose-neutral max-w-none">
+    <div class="prose md:prose-lg lg:prose-xl max-w-none text-justify">
       <slot />
     </div>
   </section>

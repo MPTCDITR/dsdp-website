@@ -113,8 +113,13 @@ export const ui: Record<string, Record<string, string>> = {
     "home.hero.somdach.description":
       "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
     "btn.moredetails": "More Details",
-    "applyStep.step1.title": "Step 1: Register",
     //Apply Step
+    "applyStep.step1.title": "Step 1: Register",
+    "applyStep.title.1": "  ជំហានងាយៗនៃការដាក់ពាក្យ",
+    "applyStep.title.2": "ស្នើសុំថវិកាគម្រោងរបស់",
+    "applyStep.title.3": "ក.អ.ជ.ឌ",
+    "applyStep.title.4":
+      "    សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ មន្ត្រីរាជការស៊ីវិល",
     "applyStep.button.title": "About Us",
     // Event Carousel
     "home.event_1.title": "Signing Ceremony with DSDP",
