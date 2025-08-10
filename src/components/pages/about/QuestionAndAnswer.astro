@@ -18,16 +18,22 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 ---
 
-<div class="container my-20">
-  <!-- title section -->
-  <div class="flex items-center justify-center">
+<section class="container my-20" aria-labelledby="faq-main-title">
+  <header class="flex items-center justify-center">
     <div class="w-full max-w-2xl lg:max-w-3xl flex flex-col items-center gap-3">
-      <Badge className="bg-secondary/30 text-secondary rounded-full">
-        <BadgeAlert />
+      <Badge
+        className="bg-secondary/30 text-secondary rounded-full"
+        aria-label="FAQ badge"
+      >
+        <BadgeAlert aria-hidden="true" focusable="false" />
+        <span class="sr-only"
+          >{t("qa.badge.label") ?? "Questions and Answers"}</span
+        >
         QA of DSDP
       </Badge>
 
       <h1
+        id="faq-main-title"
         class="text-3xl md:text-5xl font-bold text-gradient leading-snug text-center"
       >
         {t("qa.title.1")}
@@ -39,32 +45,43 @@ const t = useTranslations(lang);
         {t("qa.title.2")}
       </p>
     </div>
-  </div>
+  </header>
 
-  <!-- FAQ section -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-6 max-w-5xl mx-auto">
-    <div class="order-2 lg:order-1">
-      <h2 class="text-2xl text-primary lg:text-3xl mb-8 font-medium">
+  <main class="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-6 max-w-5xl mx-auto">
+    <section class="order-2 lg:order-1" aria-labelledby="faq-questions-title">
+      <h2
+        id="faq-questions-title"
+        class="text-2xl text-primary lg:text-3xl mb-8 font-medium"
+      >
         {t("qa.title.3")}
       </h2>
 
-      <!-- Embed React AccordionQA component -->
       <AccordionQA lang={lang} client:load />
-    </div>
+    </section>
 
-    <div class="order-1 lg:order-2 flex items-center justify-center">
+    <figure
+      class="order-1 lg:order-2 flex items-center justify-center"
+      aria-labelledby="faq-image-caption"
+    >
       <Image
         src={FAQ_image}
-        alt="FAQ image"
+        alt="Illustration representing frequently asked questions"
         class="w-full max-w-md lg:max-w-lg h-auto object-cover"
       />
-    </div>
-  </div>
+      <figcaption id="faq-image-caption" class="sr-only">
+        {t("qa.image.caption") ?? "Frequently Asked Questions illustration"}
+      </figcaption>
+    </figure>
+  </main>
 
-  <!-- contact section -->
-  <div class="gap-6 my-12 max-w-5xl mx-auto">
+  <aside
+    class="gap-6 my-12 max-w-6xl mx-auto"
+    aria-labelledby="faq-contact-title"
+  >
     <Card
       className="relative bg-primary text-center text-white overflow-hidden px-8 py-20 md:py-18"
+      role="region"
+      aria-labelledby="faq-contact-title"
     >
       <Image
         src={background_style}
@@ -72,17 +89,22 @@ const t = useTranslations(lang);
         aria-hidden="true"
         class="absolute inset-0 object-cover opacity-50"
       />
-      <div class="relative z-10 max-w-2xl mx-auto">
+      <div class="relative z-10 max-w-4xl mx-auto">
         <h3
-          class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-relaxed text-center"
+          id="faq-contact-title"
+          class="text-xl md:text-2xl lg:text-3xl font-bold mb-6 leading-relaxed text-center"
         >
           {t("qa.title.4")}
         </h3>
-        <Button variant="secondary" className="text-white rounded-full">
-          <SquareUser />
+        <Button
+          variant="secondary"
+          className="text-white rounded-full"
+          aria-label={t("qa.btn.contact.aria") ?? "Contact us"}
+        >
+          <SquareUser aria-hidden="true" focusable="false" />
           {t("qa.btn.contact")}
         </Button>
       </div>
     </Card>
-  </div>
-</div>
+  </aside>
+</section>

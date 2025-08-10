@@ -10,14 +10,14 @@ import {
 import type { TranslateKey } from "@/i18n/utils";
 import { useTranslations } from "@/i18n/utils";
 
+type Props = {
+  lang: string;
+};
+
 interface QAListProp {
   question: TranslateKey;
   answer: TranslateKey;
 }
-
-type Props = {
-  lang: string;
-};
 
 const qaList: Array<QAListProp> = [
   { question: "qa.question.1", answer: "qa.answer.1" },
@@ -36,10 +36,10 @@ const AccordionQA: React.FC<Props> = ({ lang }) => {
     <Accordion type="single" collapsible>
       {qaList.map((item, idx) => (
         <AccordionItem key={idx} value={`item-${idx}`} className="space-y-2">
-          <AccordionTrigger className="font-normal text-base">
+          <AccordionTrigger className="text-lg font-medium">
             {t(item.question)}
           </AccordionTrigger>
-          <AccordionContent className="font-normal text-base">
+          <AccordionContent className="text-base">
             {t(item.answer)}
           </AccordionContent>
         </AccordionItem>
