@@ -3,15 +3,17 @@ import Business_mission from "@/assets/about/about-us/business-mission.gif";
 import Finding_brilliant_ideas from "@/assets/about/about-us/finding-brilliant-ideas.gif";
 import return_money from "@/assets/about/about-us/return-money.png";
 import what_is_dsdp from "@/assets/about/about-us/what-is-dsdp.png";
+import type { Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 
 interface AboutUsContent {
-  translations: Record<string, string>;
+  lang: Language;
 }
 
-export function AboutUs({ translations }: AboutUsContent) {
-  const t = (key: string) => translations[key] || key;
+export function AboutUs({ lang }: AboutUsContent) {
+  const t = useTranslations(lang);
   return (
-    <div className="container mx-auto px-8 py-4">
+    <div className="container">
       {/* Page Title */}
       <section className="relative z-10">
         <h1 className="text-left text-3xl md:text-5xl font-bold text-primary leading-snug mt-12 mb-8">
@@ -20,7 +22,7 @@ export function AboutUs({ translations }: AboutUsContent) {
       </section>
 
       {/* Vision Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
           <img
             src={Finding_brilliant_ideas.src}
@@ -46,7 +48,7 @@ export function AboutUs({ translations }: AboutUsContent) {
       </section>
 
       {/* Mission Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
           <h2 className="text-gradient-r text-4xl leading-snug md:text-4xl font-bold mb-4">
             {t("about.mission.title")}
@@ -67,7 +69,7 @@ export function AboutUs({ translations }: AboutUsContent) {
       </section>
 
       {/* What is DSDP Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
           <img src={what_is_dsdp.src} className="w-full" alt="DSDP" />
         </div>
@@ -83,7 +85,7 @@ export function AboutUs({ translations }: AboutUsContent) {
       </section>
 
       {/* Benefits Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
           <h2 className="text-gradient-b text-4xl leading-snug md:text-4xl font-bold mb-4">
             {t("about.benefits.title")}
@@ -103,7 +105,7 @@ export function AboutUs({ translations }: AboutUsContent) {
       </section>
 
       {/* Condition Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 p-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
           <img src={return_money.src} className="w-full" alt="Condition" />
         </div>

@@ -1,5 +1,6 @@
 ---
 import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 export interface Props {
   title: string;
@@ -16,35 +17,48 @@ const { title, description, image, slug, lang } = Astro.props;
 const urlSlug = slug.split("/").slice(1).join("/");
 ---
 
-<a
-  href={`/${lang}/media-hub/news-and-events/${urlSlug}`}
-  class="group relative flex h-full min-h-[320px] w-full flex-col overflow-hidden rounded-lg text-white shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl"
->
-  <!-- Image -->
-  {
-    image && (
-      <img
-        src={image.src}
-        alt={title}
-        class="absolute inset-0 w-full h-full object-cover rounded-lg"
-        loading="lazy"
-      />
-    )
-  }
-
-  <!-- Dark overlay -->
-  <div
-    class="absolute inset-0 bg-black/30 transition-colors duration-300 group-hover:bg-black/0 rounded-lg"
+<a href={`/${lang}/media-hub/news-and-events/${urlSlug}`} class="block">
+  <article
+    class="group relative flex h-full min-h-[320px] w-full flex-col overflow-hidden rounded-lg text-white shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl"
+    aria-labelledby={`latest-blog-title-${urlSlug}`}
   >
-  </div>
+    {
+      image && (
+        <Image
+          src={image}
+          alt={title}
+          class="absolute inset-0 w-full h-full object-cover rounded-lg"
+          loading="lazy"
+          width={1000}
+          height={1000}
+        />
+      )
+    }
 
-  <!-- Bottom content -->
-  <div
-    class="mt-auto relative z-10 bg-white/10 backdrop-blur-md px-4 py-3 w-full rounded-b-lg"
-  >
-    <h3 class="text-2xl font-bold line-clamp-2">{title}</h3>
-    <p class="mt-2 text-sm leading-relaxed text-gray-200 line-clamp-2">
-      {description}
-    </p>
-  </div>
+    <div
+      class="absolute inset-0 bg-black/30 transition-colors duration-300 group-hover:bg-black/0 rounded-lg"
+      aria-hidden="true"
+    >
+    </div>
+
+    <div
+      class="relative z-10 bg-white/10 backdrop-blur px-4 py-3 w-full rounded-b-lg space-y-2 mt-auto"
+    >
+      <h3
+        id={`latest-blog-title-${urlSlug}`}
+        class="text-xl font-semibold line-clamp-2"
+      >
+        <a
+          href={`/${lang}/media-hub/news-and-events/${urlSlug}`}
+          class="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+          aria-label={title}
+        >
+          {title}
+        </a>
+      </h3>
+      <p class="md:text-base text-sm leading-relaxed text-white line-clamp-2">
+        {description}
+      </p>
+    </div>
+  </article>
 </a>

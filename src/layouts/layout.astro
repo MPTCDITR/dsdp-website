@@ -16,10 +16,12 @@ interface Props {
 }
 const lang = getLangFromUrl(Astro.url);
 const translations = ui[lang];
-const { title } = Astro.props;
 const locale = Astro.currentLocale ?? defaultLang;
 const navigationItems = getLocalizedRoutes(navigation, locale);
 const currentPath = Astro.url.pathname;
+
+const { title, description, img } = Astro.props;
+const thumbnail = img ?? "/dsdp-logo-final.svg";
 ---
 
 <!doctype html>
@@ -27,9 +29,39 @@ const currentPath = Astro.url.pathname;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/dsdp-logo-final.svg" />
+
     <title>{title}</title>
+    <meta name="description" content={description ?? ""} />
+
+    <meta
+      name="keywords"
+      content="DSDP, Cambodia, Digital, Service, Platform, Government, Public Service, Digital Transformation, សេវាឌីជីថល, កម្ពុជា, រដ្ឋាភិបាល"
+    />
+    <meta name="author" content="DSDP Cambodia" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <link rel="canonical" href={Astro.url.href} />
+
+    <meta property="og:locale" content={lang} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DSDP Cambodia" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description ?? ""} />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:image" content={thumbnail} />
+    <meta property="og:image:alt" content={title} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description ?? ""} />
+    {img && <meta name="twitter:image" content={img} />}
+    <meta name="twitter:site" content="@dsdp_cambodia" />
+    <meta name="twitter:creator" content="@dsdp_cambodia" />
   </head>
-  <body class="flex min-h-screen flex-col">
+  <body>
     <Header
       translations={translations}
       lang={lang}
