@@ -1,5 +1,5 @@
 ---
-import { universities } from "@/data/university";
+import { universities } from "@/data/University";
 import { languages } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
@@ -13,7 +13,7 @@ const t = useTranslations(lang);
     <div class="mx-auto p-0 mb-12 relative">
       <header class="flex flex-col items-center text-center text-wrap my-11">
         <h1
-          class="text-4xl md:text-4xl text-gradient font-bold mb-8"
+          class="text-4xl md:text-4xl text-gradient font-bold mb-8 leading-snug"
           id="trusted-by"
         >
           {t("home.partnership.title")}
