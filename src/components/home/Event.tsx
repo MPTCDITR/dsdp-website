@@ -111,7 +111,7 @@ export function Event({ lang }: EventCarouselProps) {
         <img
           src={bgstyle.src}
           alt="background style"
-          className="absolute "
+          className="absolute select-none hidden md:block opacity-50"
           aria-hidden="true"
         />
       </div>
