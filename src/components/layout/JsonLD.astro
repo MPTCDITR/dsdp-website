@@ -1,0 +1,59 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  siteUrl: string;
+  canonicalUrl: string;
+  defaultSiteProjectName: string;
+  image: string;
+  type: string;
+  author: string;
+  authorUrl?: string;
+}
+
+const {
+  title,
+  description,
+  siteUrl,
+  canonicalUrl,
+  defaultSiteProjectName,
+  type,
+  image = "/dsdp-logo-final.svg",
+  author,
+  authorUrl,
+} = Astro.props;
+---
+
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(
+    {
+      "@context": "https://schema.org",
+      "@type": type,
+      headline: title,
+      description: description,
+      image: new URL(image, siteUrl).toString(),
+      author: {
+        "@type": "Person",
+        name: author,
+        url: authorUrl,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: defaultSiteProjectName,
+        logo: {
+          "@type": "ImageObject",
+          url: new URL("/icon-logo.svg", siteUrl).toString(),
+        },
+      },
+      datePublished: new Date().toISOString(),
+      dateModified: new Date().toISOString(),
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalUrl,
+      },
+    },
+    null,
+    2,
+  ).replace(/</g, "\u003c")}
+/>

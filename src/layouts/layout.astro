@@ -5,6 +5,7 @@ import { getLocalizedRoutes, navigation } from "@/lib/route";
 
 import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header.astro";
+import JsonLD from "@/components/layout/JsonLD.astro";
 
 import { defaultLang, ui } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -12,7 +13,9 @@ import { getLangFromUrl } from "@/i18n/utils";
 interface Props {
   title: string;
   description?: string;
-  img?: string;
+  img: string;
+  author: string;
+  type: string;
 }
 const lang = getLangFromUrl(Astro.url);
 const translations = ui[lang];
@@ -20,8 +23,13 @@ const locale = Astro.currentLocale ?? defaultLang;
 const navigationItems = getLocalizedRoutes(navigation, locale);
 const currentPath = Astro.url.pathname;
 
-const { title, description, img } = Astro.props;
-const thumbnail = img ?? "/dsdp-logo-final.svg";
+const {
+  title,
+  description,
+  img = "/dsdp-logo-final.svg",
+  author,
+  type,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -51,7 +59,7 @@ const thumbnail = img ?? "/dsdp-logo-final.svg";
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description ?? ""} />
     <meta property="og:url" content={Astro.url.href} />
-    <meta property="og:image" content={thumbnail} />
+    <meta property="og:image" content={img} />
     <meta property="og:image:alt" content={title} />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -60,6 +68,19 @@ const thumbnail = img ?? "/dsdp-logo-final.svg";
     {img && <meta name="twitter:image" content={img} />}
     <meta name="twitter:site" content="@dsdp_cambodia" />
     <meta name="twitter:creator" content="@dsdp_cambodia" />
+
+    <!-- Json LD -->
+    <JsonLD
+      title={title}
+      description={description ?? ""}
+      siteUrl={Astro.url.origin}
+      canonicalUrl={Astro.url.href}
+      defaultSiteProjectName="DSDP Cambodia"
+      image={img}
+      type={type}
+      author={author}
+      authorUrl="https://dsdp.gov.kh"
+    />
   </head>
   <body>
     <Header
