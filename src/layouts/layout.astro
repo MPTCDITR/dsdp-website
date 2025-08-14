@@ -22,6 +22,7 @@ const currentPath = Astro.url.pathname;
 
 const { title, description, img } = Astro.props;
 const thumbnail = img ?? "/dsdp-logo-final.svg";
+const canonicalUrl = Astro.request.url;
 ---
 
 <!doctype html>
@@ -43,14 +44,14 @@ const thumbnail = img ?? "/dsdp-logo-final.svg";
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
-    <link rel="canonical" href={Astro.url.href} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <meta property="og:locale" content={lang} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DSDP Cambodia" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description ?? ""} />
-    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={thumbnail} />
     <meta property="og:image:alt" content={title} />
 

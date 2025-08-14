@@ -22,7 +22,11 @@ const t = (key: string) => translations[key] || key;
 const year = new Date().getFullYear();
 
 const socialLinks = [
-  { href: "/#", label: "Facebook", icon: Facebook },
+  {
+    href: "https://www.facebook.com/dsdp.gov.kh",
+    label: "Facebook",
+    icon: Facebook,
+  },
   { href: "/#", label: "Linkedin", icon: Linkedin },
   { href: "/#", label: "X", icon: X },
   { href: "/#", label: "Youtube", icon: Youtube },
@@ -53,7 +57,6 @@ const socialLinks = [
   <div>
     <div class="container mt-16 mb-3 relative">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- About Us Section -->
         <div>
           <p
             class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
@@ -78,14 +81,16 @@ const socialLinks = [
               </a>
             </li>
             <li>
-              <a href="#" class="hover:text-white hover:underline">
+              <a
+                href={`/${lang}/about/qa`}
+                class="hover:text-white hover:underline"
+              >
                 {t("footer.description.3")}
               </a>
             </li>
           </ul>
         </div>
 
-        <!-- Programs Section -->
         <div>
           <h3
             class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
@@ -128,7 +133,6 @@ const socialLinks = [
           </ul>
         </div>
 
-        <!-- Useful Links Section -->
         <div>
           <h3
             class="text-white text-xl font-semibold tracking-wider uppercase mb-6"
@@ -165,7 +169,6 @@ const socialLinks = [
           </ul>
         </div>
 
-        <!-- Get in Touch Section -->
         <div>
           <p
             class="text-white text-xl font-semibold tracking-wider uppercase mb-6"
@@ -186,14 +189,18 @@ const socialLinks = [
             </li>
             <li class="flex gap-4">
               <PhoneCall className="text-white flex-shrink-0" />
-              <a href="" class="hover:text-white transition-colors">
+              <a
+                href={`tel:${t("footer.description.12")}`}
+                class="hover:text-white transition-colors"
+              >
                 {t("footer.description.12")}
               </a>
             </li>
             <li class="flex gap-4">
               <Mail className="text-white flex-shrink-0" />
+
               <a
-                href="#"
+                href={`mailto:${t("footer.description.13")}`}
                 class="leading-relaxed hover:text-white transition-colors"
               >
                 {t("footer.description.13")}
@@ -212,7 +219,7 @@ const socialLinks = [
             <Image src={mptc} alt="P.T.C. Logo" class="h-20 w-20" />
           </a>
           <a
-            href="https://dsdp.gov.kh/"
+            href={`/${lang}/about/about-team`}
             target="_blank"
             aria-label="Second Logo Homepage"
           >
@@ -246,23 +253,6 @@ const socialLinks = [
         {t("footer.description.14")} @{year}
         {t("footer.description.15")}
       </p>
-      <nav class="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-2">
-        <a href="#" class="hover:text-white transition-colors">
-          {t("footer.description.16")}
-        </a>
-        <span class="inline">|</span>
-        <a href="#" class="text-white transition-colors">
-          {t("footer.description.17")}
-        </a>
-        <span class="inline">|</span>
-        <a href="#" class="text-white transition-colors">
-          {t("footer.description.18")}
-        </a>
-        <span class="inline">|</span>
-        <a href="#" class="text-white transition-colors">
-          {t("footer.description.19")}
-        </a>
-      </nav>
     </div>
   </div>
 </footer>

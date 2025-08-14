@@ -346,7 +346,7 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.title.4": "GET IN TOUCH",
     "footer.description.11":
       "Building No. 13,, Preah Monivong Boulevard, Sangkat Srachak, Khan Daun Penh, Phnom Penh, Cambodia, 120210",
-    "footer.description.12": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "footer.description.12": "(+855) 123",
     "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
     "footer.description.14": "Copyright",
     "footer.description.15": "All rights reserved DSDP.GOV.KH",
@@ -629,7 +629,7 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.title.4": "ទាក់ទងតាម",
     "footer.description.11":
       "អាគារលេខ 13, មហាវិថីព្រះមុនីវង្ស, សង្កាត់ស្រះចក, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ, កម្ពុជា, 120210",
-    "footer.description.12": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+    "footer.description.12": "(+855) 123",
     "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
     "footer.description.14": "រក្សាសិទ្ធិ",
     "footer.description.15": "រក្សាសិទ្ធិគ្រប់យ៉ាង DSDP.GOV.KH",
