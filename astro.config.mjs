@@ -22,5 +22,12 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [react(), sitemap()],
+  integrations: [
+    react(),
+    sitemap({
+      changefreq: "weekly",
+      priority: 0.9,
+      lastmod: new Date("2025-08-15"),
+    }),
+  ],
 });
