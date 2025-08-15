@@ -6,7 +6,7 @@ import VideoList from "@/components/pages/videoAndMedia/VideoList.astro";
 import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, ui } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
-import Layout from "@/layouts/layout.astro";
+import BlogLayout from "@/layouts/BlogLayout.astro";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -23,7 +23,12 @@ const videos = await fetchPlaylistVideos(
 );
 ---
 
-<Layout title="វីដេអូ និង ការផ្សព្វផ្សាយ - Videos & Media">
+<BlogLayout
+  title="វីដេអូ និង ការផ្សព្វផ្សាយ - Videos & Media"
+  img="/dsdp-logo-final.svg"
+  author="DSDP Cambodia"
+  description="Explore our collection of videos and media showcasing our programs, events, and impact stories."
+>
   <!-- Background decorations -->
   <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
     <div class="absolute inset-0 -z-10 pointer-events-none">
@@ -36,4 +41,4 @@ const videos = await fetchPlaylistVideos(
     <!-- Video List Section  -->
     <VideoList videos={videos} lang={lang} translations={translations} />
   </section>
-</Layout>
+</BlogLayout>
