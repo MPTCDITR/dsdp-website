@@ -1,0 +1,65 @@
+---
+type AuthorProps = {
+  name: string;
+  url?: string;
+};
+
+type URLType = URL | string | undefined;
+type jsondlType = "WebPage" | "BlogPosting";
+
+interface Props {
+  title: string;
+  description?: string;
+  siteUrl: URLType;
+  canonicalUrl: URLType;
+  defaultSiteProjectName: string;
+  image: string;
+  type: jsondlType;
+  author: AuthorProps;
+}
+
+const {
+  title,
+  description,
+  siteUrl,
+  canonicalUrl,
+  defaultSiteProjectName,
+  type,
+  image = "/dsdp-logo-final.svg",
+  author,
+} = Astro.props;
+---
+
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(
+    {
+      "@context": "https://schema.org",
+      "@type": type,
+      headline: title,
+      description: description ?? "",
+      image: new URL(image, siteUrl).toString(),
+      author: {
+        "@type": "Person",
+        name: author.name,
+        url: author.url,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: defaultSiteProjectName,
+        logo: {
+          "@type": "ImageObject",
+          url: new URL("/icon-logo.svg", siteUrl).toString(),
+        },
+      },
+      datePublished: new Date().toISOString(),
+      dateModified: new Date().toISOString(),
+      mainEntityOfPage: {
+        "@type": type,
+        "@id": canonicalUrl,
+      },
+    },
+    null,
+    2,
+  ).replace(/</g, "\u003c")}
+/>
