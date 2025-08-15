@@ -2,7 +2,7 @@
 import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
 
 import { getLangFromUrl } from "@/i18n/utils";
-import Layout from "@/layouts/layout.astro";
+import BlogLayout from "@/layouts/BlogLayout.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -21,21 +21,18 @@ const { Content } = await entry.render();
 const lang = getLangFromUrl(Astro.url);
 ---
 
-<Layout
+<BlogLayout
   title={`${entry.data.title} - DSDP Cambodia`}
-  description={entry.data.description}
   img={entry.data.image?.src}
-  type="BlogPosting"
   author={entry.data.author}
 >
   <BlogContent
     title={entry.data.title}
     date={entry.data.date}
     author={entry.data.author}
-    description={entry.data.description}
     image={entry.data.image}
     lang={lang}
   >
     <Content />
   </BlogContent>
-</Layout>
+</BlogLayout>

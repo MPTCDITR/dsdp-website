@@ -1,14 +1,21 @@
 ---
+type AuthorProps = {
+  name: string;
+  url?: string;
+};
+
+type URLType = URL | string | undefined;
+type jsondlType = "WebPage" | "BlogPosting";
+
 interface Props {
   title: string;
-  description: string;
-  siteUrl: string;
-  canonicalUrl: string;
+  description?: string;
+  siteUrl: URLType;
+  canonicalUrl: URLType;
   defaultSiteProjectName: string;
   image: string;
-  type: string;
-  author: string;
-  authorUrl?: string;
+  type: jsondlType;
+  author: AuthorProps;
 }
 
 const {
@@ -20,7 +27,6 @@ const {
   type,
   image = "/dsdp-logo-final.svg",
   author,
-  authorUrl,
 } = Astro.props;
 ---
 
@@ -31,12 +37,12 @@ const {
       "@context": "https://schema.org",
       "@type": type,
       headline: title,
-      description: description,
+      description: description ?? "",
       image: new URL(image, siteUrl).toString(),
       author: {
         "@type": "Person",
-        name: author,
-        url: authorUrl,
+        name: author.name,
+        url: author.url,
       },
       publisher: {
         "@type": "Organization",
@@ -49,7 +55,7 @@ const {
       datePublished: new Date().toISOString(),
       dateModified: new Date().toISOString(),
       mainEntityOfPage: {
-        "@type": "WebPage",
+        "@type": type,
         "@id": canonicalUrl,
       },
     },
