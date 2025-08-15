@@ -9,11 +9,9 @@ import {
 
 import { Button } from "../ui/button";
 import { EventCarouselItem } from "./EventCarouselItem";
-import bacII from "@/assets/home/bacII.jpg";
 import bgstyle from "@/assets/home/backgorund-style 3.png";
-import boat_1 from "@/assets/home/boat_1.jpg";
-import boat_2 from "@/assets/home/boat_2.jpg";
 import type { Language } from "@/i18n/ui";
+import type { CollectionEntry } from "astro:content";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
@@ -26,26 +24,15 @@ interface Slide {
 
 interface EventCarouselProps {
   lang: Language;
+  latestPosts?: CollectionEntry<"blog">[];
 }
 
-export function Event({ lang }: EventCarouselProps) {
-  const slides: Slide[] = [
-    {
-      image: boat_1.src,
-      title: "home.event_1.title",
-      description: "home.event_1.description",
-    },
-    {
-      image: bacII.src,
-      title: "home.event_2.title",
-      description: "home.event_2.description",
-    },
-    {
-      image: boat_2.src,
-      title: "home.event_3.title",
-      description: "home.event_3.description",
-    },
-  ];
+export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
+  const slides: Slide[] = latestPosts.map((post) => ({
+    image: post.data.image?.src || "",
+    title: post.data.title,
+    description: post.data.description,
+  }));
 
   const plugin = useRef(
     Autoplay({
@@ -114,15 +101,15 @@ export function Event({ lang }: EventCarouselProps) {
               loop: true,
               align: "start",
             }}
-            className="w-full h-full"
+            className="w-full"
           >
-            <CarouselContent className="h-full flex">
+            <CarouselContent className="flex ">
               {slides.map((slide, index) => (
                 <CarouselItem
                   key={index}
-                  className="rounded-lg md:basis-1/3 basis-full"
+                  className="lg:basis-2/5 md:basis-3/5 basis-full"
                 >
-                  <EventCarouselItem slide={slide} lang={lang} />
+                  <EventCarouselItem slide={slide} />
                 </CarouselItem>
               ))}
             </CarouselContent>
