@@ -43,11 +43,11 @@ const lang = Astro.params.lang as keyof typeof languages;
 const t = useTranslations(lang);
 ---
 
-<section class="mx-auto py-8 relative">
+<section class="mx-auto py-8 relative overflow-hidden">
   <Image
     src={background_1}
     alt="Background"
-    class="absolute top-0 right-0 w-[800px] h-full object-cover object-right -z-10 pointer-events-none"
+    class="absolute top-0 right-0 w-[800px] h-full object-cover object-right -z-10 pointer-events-none select-none hidden md:block opacity-50"
     height={600}
     width={800}
   />
@@ -71,7 +71,7 @@ const t = useTranslations(lang);
     <Image
       src={background_2}
       alt="Background"
-      class="absolute top-0 left-0 size-svh object-cover -z-10 pointer-events-none"
+      class="absolute top-0 left-0 size-svh object-cover -z-10 pointer-events-none select-none hidden md:block opacity-50"
       height={600}
       width={800}
     />

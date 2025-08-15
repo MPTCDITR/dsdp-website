@@ -13,10 +13,10 @@ interface AboutUsContent {
 export function AboutUs({ lang }: AboutUsContent) {
   const t = useTranslations(lang);
   return (
-    <div className="container">
+    <div className="container my-12">
       {/* Page Title */}
       <section className="relative z-10">
-        <h1 className="text-left text-3xl md:text-5xl font-bold text-primary leading-snug mt-12 mb-8">
+        <h1 className="text-left text-4xl md:text-5xl font-bold text-primary leading-snug mt-12 mb-8">
           {t("about.title")}
         </h1>
       </section>
@@ -32,7 +32,7 @@ export function AboutUs({ lang }: AboutUsContent) {
         </div>
 
         <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
-          <h2 className="text-gradient-r text-4xl leading-relaxed md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-r text-4xl leading-relaxed font-bold mb-4">
             {t("about.visionTitle")}
           </h2>
           <p className="text-base text-muted-foreground mb-4">
@@ -50,7 +50,7 @@ export function AboutUs({ lang }: AboutUsContent) {
       {/* Mission Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
-          <h2 className="text-gradient-r text-4xl leading-snug md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-r text-4xl leading-snug font-bold mb-4">
             {t("about.mission.title")}
           </h2>
           <p className="text-base text-muted-foreground mb-4">
@@ -87,7 +87,7 @@ export function AboutUs({ lang }: AboutUsContent) {
       {/* Benefits Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="order-2 md:order-1 w-full max-w-[508px] mx-auto">
-          <h2 className="text-gradient-b text-4xl leading-snug md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-b text-4xl leading-snug font-bold mb-4">
             {t("about.benefits.title")}
           </h2>
           <p className="text-base text-foreground leading-relaxed">
@@ -111,7 +111,7 @@ export function AboutUs({ lang }: AboutUsContent) {
         </div>
 
         <div className="order-2 md:order-2 w-full max-w-[508px] mx-auto">
-          <h2 className="text-gradient-b text-4xl leading-snug md:text-4xl font-bold mb-4">
+          <h2 className="text-gradient-b text-4xl leading-snug font-bold mb-4">
             {t("about.conditionReturnMoney.title")}
           </h2>
           <p className="text-base text-foreground leading-relaxed mb-4">
