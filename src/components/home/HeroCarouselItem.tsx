@@ -25,7 +25,15 @@ export function HeroCarouselItem({ slide, lang }: HeroCarouselItemProps) {
         alt={t(slide.title)}
         className="w-full h-[600px] object-cover"
       />
-      <div className="absolute inset-0 bg-black/60" />
+
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%)",
+        }}
+      />
+
       <div className="absolute inset-0 flex items-center justify-start p-6 sm:p-12 md:p-24 pointer-events-none">
         <motion.div
           initial={{ opacity: 0, x: -20 }}

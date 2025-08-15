@@ -8,8 +8,8 @@ import {
 } from "@/components/ui/carousel";
 
 import { HeroCarouselItem } from "./HeroCarouselItem";
-import dsdp from "@/assets/home/dsdp-hero.png";
-import somdach from "@/assets/home/somdach.jpg";
+import hero_1 from "@/assets/home/dsdp_hero_1.png";
+import hero_2 from "@/assets/home/dsdp_hero_2.png";
 import type { Language } from "@/i18n/ui";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -26,12 +26,12 @@ interface HeroCarouselProps {
 export function Hero({ lang }: HeroCarouselProps) {
   const slides: Slide[] = [
     {
-      image: dsdp.src,
+      image: hero_1.src,
       title: "home.hero.title",
       description: "home.hero.description",
     },
     {
-      image: somdach.src,
+      image: hero_2.src,
       title: "home.hero.somdach",
       description: "home.hero.somdach.description",
     },
