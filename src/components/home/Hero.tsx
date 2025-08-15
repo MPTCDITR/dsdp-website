@@ -8,29 +8,34 @@ import {
 } from "@/components/ui/carousel";
 
 import { HeroCarouselItem } from "./HeroCarouselItem";
+import hero_1 from "@/assets/home/dsdp_hero_1.png";
+import hero_2 from "@/assets/home/dsdp_hero_2.png";
 import type { Language } from "@/i18n/ui";
-import type { CollectionEntry } from "astro:content";
 import Autoplay from "embla-carousel-autoplay";
 
 interface Slide {
   image: string;
   title: string;
   description: string;
-  slug: string; // NEW
 }
 
 interface HeroCarouselProps {
   lang: Language;
-  posts?: CollectionEntry<"hero">[]; // new
 }
 
-export function Hero({ lang, posts = [] }: HeroCarouselProps) {
-  const slides: Slide[] = posts.map((post) => ({
-    image: post.data.image?.src || "",
-    title: post.data.title,
-    description: post.data.description,
-    slug: post.slug, // NEW
-  }));
+export function Hero({ lang }: HeroCarouselProps) {
+  const slides: Slide[] = [
+    {
+      image: hero_1.src,
+      title: "home.hero.title",
+      description: "home.hero.description",
+    },
+    {
+      image: hero_2.src,
+      title: "home.hero.somdach",
+      description: "home.hero.somdach.description",
+    },
+  ];
 
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true }),
