@@ -27,7 +27,7 @@ const cannonicaURL = Astro.request.url;
 
 const {
   title,
-  description,
+  description = "DSDP Cambodia - Digital Service Delivery Platform",
   img = "/dsdp-logo-final.svg",
   author,
 } = Astro.props;
@@ -41,7 +41,7 @@ const {
     <link rel="icon" type="image/svg+xml" href="/dsdp-logo-final.svg" />
 
     <title>{title}</title>
-    <meta name="description" content={description ?? ""} />
+    <meta name="description" content={description} />
 
     <meta
       name="keywords"
@@ -58,14 +58,14 @@ const {
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DSDP Cambodia" />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description ?? ""} />
+    <meta property="og:description" content={description} />
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:image" content={img} />
     <meta property="og:image:alt" content={title} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description ?? ""} />
+    <meta name="twitter:description" content={description} />
     {img && <meta name="twitter:image" content={img} />}
     <meta name="twitter:site" content="@dsdp_cambodia" />
     <meta name="twitter:creator" content="@dsdp_cambodia" />
@@ -73,7 +73,7 @@ const {
     <!-- Json LD -->
     <Jsonld
       title={title}
-      description={description ?? ""}
+      description={description}
       siteUrl={siteUrl}
       canonicalUrl={cannonicaURL}
       defaultSiteProjectName="DSDP Cambodia"
