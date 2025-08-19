@@ -1,8 +1,8 @@
-import benefits_more_than_money from "@/assets/about/about-us/benefits-more-than-money.png";
+import benefits_more_than_money from "@/assets/about/about-us/benefits-more-than-money.svg";
 import Business_mission from "@/assets/about/about-us/business-mission.gif";
 import Finding_brilliant_ideas from "@/assets/about/about-us/finding-brilliant-ideas.gif";
-import return_money from "@/assets/about/about-us/return-money.png";
-import what_is_dsdp from "@/assets/about/about-us/what-is-dsdp.png";
+import return_money from "@/assets/about/about-us/return-money.svg";
+import what_is_dsdp from "@/assets/about/about-us/what-is-dsdp.svg";
 import type { Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 
