@@ -9,12 +9,11 @@ import {
 
 import { Button } from "../ui/button";
 import { EventCarouselItem } from "./EventCarouselItem";
-import bacII from "@/assets/home/bacII.jpg";
 import bgstyle from "@/assets/home/backgorund-style 3.png";
-import boat_1 from "@/assets/home/boat_1.jpg";
-import boat_2 from "@/assets/home/boat_2.jpg";
 import type { Language } from "@/i18n/ui";
+import type { CollectionEntry } from "astro:content";
 import Autoplay from "embla-carousel-autoplay";
+import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 
 interface Slide {
@@ -25,59 +24,30 @@ interface Slide {
 
 interface EventCarouselProps {
   lang: Language;
+  latestPosts?: CollectionEntry<"blog">[];
 }
 
-function useEllipseCount() {
-  const [count, setCount] = useState(3);
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 1024) {
-        setCount(2);
-      } else {
-        setCount(3);
-      }
-    }
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return count;
-}
-
-export function Event({ lang }: EventCarouselProps) {
-  const slides: Slide[] = [
-    {
-      image: boat_1.src,
-      title: "home.event_1.title",
-      description: "home.event_1.description",
-    },
-    {
-      image: bacII.src,
-      title: "home.event_2.title",
-      description: "home.event_2.description",
-    },
-    {
-      image: boat_2.src,
-      title: "home.event_3.title",
-      description: "home.event_3.description",
-    },
-  ];
+export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
+  const slides: Slide[] = latestPosts.map((post) => ({
+    image: post.data.image?.src || "",
+    title: post.data.title,
+    description: post.data.description,
+  }));
 
   const plugin = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true }),
+    Autoplay({
+      delay: 2000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    }),
   );
 
   const [api, setApi] = useState<CarouselApi>();
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const ellipseCount = useEllipseCount();
 
   useEffect(() => {
     if (!api) return;
-    setSelectedIndex(api.selectedScrollSnap());
 
-    const onSelect = () => setSelectedIndex(api.selectedScrollSnap());
+    const onSelect = () => {};
     api.on("select", onSelect);
 
     return () => {
@@ -115,41 +85,37 @@ export function Event({ lang }: EventCarouselProps) {
           aria-hidden="true"
         />
       </div>
-      <div className="relative md:ml-7 xl:ml-27 2xl:ml-55 px-4 md:px-0">
+
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="relative md:ml-7 xl:ml-27 2xl:ml-55 px-4 md:px-0"
+      >
         <div className="relative z-10">
           <Carousel
             setApi={setApi}
             plugins={[plugin.current]}
             opts={{
               loop: true,
-              duration: 5000,
               align: "start",
             }}
-            className="w-full h-full"
+            className="w-full"
           >
-            <CarouselContent className="h-full flex">
+            <CarouselContent className="flex ">
               {slides.map((slide, index) => (
                 <CarouselItem
                   key={index}
-                  className="rounded-lg md:basis-1/3 basis-full"
+                  className="lg:basis-2/5 md:basis-3/5 basis-full"
                 >
-                  <EventCarouselItem slide={slide} lang={lang} />
+                  <EventCarouselItem slide={slide} />
                 </CarouselItem>
               ))}
             </CarouselContent>
           </Carousel>
-
-          <div className="flex justify-center mt-11 gap-2">
-            {Array.from({ length: ellipseCount }).map((_, idx) => (
-              <span
-                key={idx}
-                className={`w-2 h-2 rounded-full transition-all duration-300
-              ${selectedIndex % ellipseCount === idx ? "bg-primary scale-125" : "bg-gray-300"}`}
-              />
-            ))}
-          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

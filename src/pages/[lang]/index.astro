@@ -1,4 +1,6 @@
 ---
+import { getLatestPosts } from "@/lib/blog";
+
 import ApplyStep from "@/components/home/ApplyStep.astro";
 import Event from "@/components/home/Event";
 import Hero from "@/components/home/Hero";
@@ -15,11 +17,12 @@ export async function getStaticPaths() {
 }
 
 const lang = getLangFromUrl(Astro.url);
+const latestPosts = await getLatestPosts(lang);
 ---
 
 <Layout title="ទំព័រដើម - Home">
   <Hero lang={lang} client:load />
   <ApplyStep lang={lang} />
-  <Event lang={lang} client:load />
+  <Event lang={lang} latestPosts={latestPosts} client:load />
   <Partnership lang={lang} />
 </Layout>
