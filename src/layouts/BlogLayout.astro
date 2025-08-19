@@ -13,7 +13,7 @@ import { getLangFromUrl } from "@/i18n/utils";
 interface Props {
   title: string;
   description?: string;
-  img: string;
+  img?: string;
   author: string;
 }
 const lang = getLangFromUrl(Astro.url);
