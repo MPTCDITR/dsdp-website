@@ -8,11 +8,12 @@ export interface Props {
   title: string;
   date: Date;
   author: string;
+  description: string;
   image?: ImageMetadata;
   lang: string;
 }
 
-const { title, date, author, image, lang } = Astro.props;
+const { title, date, author, description, image, lang } = Astro.props;
 ---
 
 <article class="container mx-auto my-4">
@@ -35,6 +36,11 @@ const { title, date, author, image, lang } = Astro.props;
     >
       {title}
     </h1>
+    {
+      description && (
+        <p class="opacity-50 text-base leading-loose">{description}</p>
+      )
+    }
     <p
       class="flex items-center gap-4 text-secondary font-bold md:text-xl text-lg flex-wrap"
     >

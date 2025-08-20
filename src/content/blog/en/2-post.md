@@ -2,7 +2,7 @@
 title: Press Release On The Signing Ceremony of the Memorandum of Understanding on the Establishment of Community Tech Centers at Public High Schools between the Ministry of Post and Telecommunications and the Ministry of Education, Youth and Sport
 date: 2023-10-09
 author: Ministry of Posts and Telecommunications
-description: Phnom Penh, 9th October 2023, at the Ministry of Post and Telecommunications, His Excellency Minister Chea Vandeth and His Excellency Deputy Prime Minister Hangchuon Naron, Minister of Education, Youth and Sport, presided over the signing ceremony of the Memorandum of Understanding on the Establishment of Community Tech Centers at Public High Schools. The ceremony was attended by the leadership, officials, and representatives from both ministries as well as representatives from higher education institutions, high schools, private sectors, and press units, totaling approximately 270 attendees.
+description: At the Ministry of Post and Telecommunications on October 9, 2023, Ministers Chea Vandeth and Hangchuon Naron signed a Memorandum of Understanding (MoU) to establish Community Tech Centers at public high schools. The signing ceremony was attended by around 270 people, including officials, educators, and members of the private sector and press.
 image: "src/assets/images/news.jpg"
 tags: []
 ---
