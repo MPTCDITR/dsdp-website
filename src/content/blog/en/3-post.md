@@ -2,6 +2,7 @@
 title: Press release on the groundbreaking ceremony for the construction of community technology centers at public high schools in Takeo province
 date: 2023-10-11
 author: Ministry of Posts and Telecommunications
+description: In the morning of November 10th, 2023, at Bunrany Hun Sen Bati High School, His Excellency Chea Vandeth, Minister of Posts and Telecommunications (MPTC), presided over the groundbreaking ceremony for the construction of Community Technology Centers (CTCCs) in public high schools in Takeo province. The ceremony was attended by His Excellency San Vathana, Undersecretary of State for the Ministry of Education, Youth and Sports; His Excellency Ouch Phe, Governor of Takeo Provincial Government; leaders and civil servants of the CPTC; city and district governments throughout Takeo province; representatives of departments and offices of Education, Youth and Sports; teachers, students, and citizens, totaling approximately 2,068 people.
 image: "src/assets/images/news.jpg"
 tags: []
 ---
