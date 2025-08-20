@@ -15,6 +15,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import { useTranslations } from "@/i18n/utils";
 import { MenuIcon } from "lucide-react";
 
 interface NavMenuProps {
@@ -30,14 +31,15 @@ interface MobileNavProps {
   currentPath: string;
 }
 
-export function MobileNav({ navigationItems }: MobileNavProps) {
+export function MobileNav({ navigationItems, lang }: MobileNavProps) {
+  const t = useTranslations(lang);
   return (
     <Sheet>
       <SheetTrigger asChild>
         <Button
           variant="ghost"
           size="icon"
-          className="xl:hidden"
+          className="xl:hidden size-6 rounded-md"
           aria-label="Open menu"
         >
           <MenuIcon className="h-5 w-5" />
@@ -45,7 +47,7 @@ export function MobileNav({ navigationItems }: MobileNavProps) {
       </SheetTrigger>
       <SheetContent side="right" className="p-4">
         <SheetHeader>
-          <SheetTitle>Menu</SheetTitle>
+          <SheetTitle>{t("nav.menu")}</SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-4 mt-4">
           {navigationItems?.map((item, index) =>

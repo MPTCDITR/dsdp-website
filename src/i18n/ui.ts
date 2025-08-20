@@ -9,6 +9,7 @@ export const showDefaultLang = true;
 export const ui: Record<string, Record<string, string>> = {
   en: {
     // Navigation
+    "nav.menu": "Menu",
     "nav.home": "Home",
     "nav.about": "About Us",
     "nav.about_us": "About DSDP",
@@ -358,6 +359,7 @@ export const ui: Record<string, Record<string, string>> = {
 
   km: {
     // Navigation
+    "nav.menu": "បញ្ជីមាតិកា",
     "nav.home": "ទំព័រដើម",
     "nav.about": "អំពីពួកយើង",
     "nav.about_us": "អំពីឌីអេសឌីធី",

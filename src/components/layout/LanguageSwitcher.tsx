@@ -55,7 +55,8 @@ export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
             height="23"
             alt={`${currentLangAssets?.label} flag`}
           />
-          <span>{currentLangAssets?.label}</span>
+          <span className="hidden sm:inline">{currentLangAssets?.label}</span>
+
           <ChevronDown className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
