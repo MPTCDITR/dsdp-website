@@ -22,7 +22,11 @@ const latestPosts = await getLatestPosts(lang);
 const remainingPosts = await getRemainingBlogPosts(lang);
 ---
 
-<Layout title={`អត្ថបទព័ត៌មាន និង ព្រឹត្តិការណ៍ - News and Events`}>
+<Layout
+  title="អត្ថបទព័ត៌មាន និង ព្រឹត្តិការណ៍ - News and Events"
+  description="Stay updated with the latest news, events, and announcements from our organization, all in one place."
+  author="DSDP Cambodia"
+>
   <!-- Background decorations -->
   <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
     <div class="absolute inset-0 -z-10 pointer-events-none">

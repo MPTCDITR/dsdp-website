@@ -42,7 +42,7 @@ const {
     <link rel="sitemap" href="/sitemap-0.xml" />
 
     <title>{title}</title>
-    <meta name="description" content={description ?? ""} />
+    <meta name="description" content={description} />
 
     <meta
       name="keywords"
@@ -53,14 +53,14 @@ const {
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
-    <link rel="canonical" href={cannonicaURL} />
+    <link rel="canonical" href={Astro.url.href} />
 
     <meta property="og:locale" content={lang} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DSDP Cambodia" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={cannonicaURL} />
+    <meta property="og:url" content={Astro.url.href} />
     <meta property="og:image" content={img} />
     <meta property="og:image:alt" content={title} />
 
@@ -79,7 +79,7 @@ const {
       canonicalUrl={cannonicaURL}
       defaultSiteProjectName="DSDP Cambodia"
       image={img}
-      type={"WebPage"}
+      type={"BlogPosting"}
       author={{
         name: author,
         url: "https://dsdp.gov.kh",

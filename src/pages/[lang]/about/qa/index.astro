@@ -15,7 +15,12 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 ---
 
-<Layout title="FAQ">
+<Layout
+  title="FAQ"
+  title="សំណួរ និងចម្លើយ - FAQ"
+  description="Find answers to the most common questions about our programs, services, and how to get involved."
+  author="DSDP Cambodia"
+>
   <section aria-label="FAQ" class="relative overflow-hidden">
     <Image
       src={background_svg_blob}

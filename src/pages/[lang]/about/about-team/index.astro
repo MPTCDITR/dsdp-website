@@ -13,6 +13,10 @@ export async function getStaticPaths() {
 const lang = Astro.params.lang as keyof typeof languages;
 ---
 
-<Layout title="អំពីឌីអេសឌីធី - About DSDP">
+<Layout
+  title="អំពីក្រុមឌីអេសឌីធី - About DSDP Team"
+  description="Meet the dedicated team behind DSDP, working together to drive our mission and make a positive impact in the community."
+  author="DSDP Cambodia"
+>
   <AboutTeamComponent lang={lang} client:load />
 </Layout>

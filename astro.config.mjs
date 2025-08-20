@@ -1,5 +1,6 @@
 // @ts-check
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
@@ -21,5 +22,12 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [react()],
+  integrations: [
+    react(),
+    sitemap({
+      changefreq: "weekly",
+      priority: 0.9,
+      lastmod: new Date("2025-08-15"),
+    }),
+  ],
 });
