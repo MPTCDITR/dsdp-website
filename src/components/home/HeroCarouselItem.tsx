@@ -7,6 +7,9 @@ interface Slide {
   image: string;
   title: string;
   description: string;
+  url: string; // added
+  date?: Date | string;
+  author?: string;
 }
 
 interface HeroCarouselItemProps {
@@ -16,13 +19,13 @@ interface HeroCarouselItemProps {
 
 export function HeroCarouselItem({ slide, lang }: HeroCarouselItemProps) {
   const t = useTranslations(lang);
-  const moreDetailsHref = `/${lang}/about/about-us/`;
+  const moreDetailsHref = slide.url;
 
   return (
     <div className="relative w-full h-full">
       <img
         src={slide.image}
-        alt={t(slide.title)}
+        alt={slide.title}
         className="w-full h-[600px] object-cover"
       />
 

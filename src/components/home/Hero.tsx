@@ -16,6 +16,9 @@ interface Slide {
   image: string;
   title: string;
   description: string;
+  url: string; // NEW
+  date?: Date | string;
+  author?: string;
 }
 
 interface HeroCarouselProps {
@@ -24,14 +27,21 @@ interface HeroCarouselProps {
 }
 
 export function Hero({ lang, latestPosts = [] }: HeroCarouselProps) {
-  const slides: Slide[] = latestPosts.map((post) => ({
-    image:
-      typeof post.data.image === "string"
-        ? post.data.image
-        : post.data.image?.src || "",
-    title: post.data.title,
-    description: post.data.description,
-  }));
+  const slides: Slide[] = latestPosts.map((post) => {
+    const [, ...slugParts] = post.slug.split("/"); // drop lang
+    const slug = slugParts.join("/");
+    return {
+      image:
+        typeof post.data.image === "string"
+          ? post.data.image
+          : post.data.image?.src || "",
+      title: post.data.title,
+      description: post.data.description,
+      url: `/${lang}/media-hub/hero/${slug}`,
+      date: post.data.date,
+      author: post.data.author,
+    };
+  });
   const plugin = useRef(
     Autoplay({
       delay: 5000,

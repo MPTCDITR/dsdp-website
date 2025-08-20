@@ -1,0 +1,39 @@
+---
+import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
+
+import { getLangFromUrl } from "@/i18n/utils";
+import Layout from "@/layouts/layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("hero");
+  return blogEntries.map((entry) => {
+    const [lang, ...slug] = entry.slug.split("/");
+    return {
+      params: { lang, slug: slug.join("/") },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout
+  title={`${entry.data.title} - Community Tech Centers`}
+  description={entry.data.description}
+  img={entry.data.image?.src}
+>
+  <BlogContent
+    title={entry.data.title}
+    date={entry.data.date}
+    author={entry.data.author}
+    description={entry.data.description}
+    image={entry.data.image}
+    lang={lang}
+  >
+    <Content />
+  </BlogContent>
+</Layout>

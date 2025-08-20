@@ -20,7 +20,7 @@ interface Slide {
   image: string;
   title: string;
   description: string;
-  url: string; // NEW
+  url: string;
 }
 
 interface EventCarouselProps {
@@ -87,7 +87,7 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
         <img
           src={bgstyle.src}
           alt="background style"
-          className="absolute "
+          className="absolute select-none hidden md:block opacity-50"
           aria-hidden="true"
         />
       </div>
