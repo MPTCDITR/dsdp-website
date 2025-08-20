@@ -43,10 +43,10 @@ export function HeroCarouselItem({ slide, lang }: HeroCarouselItemProps) {
           className="pointer-events-auto flex w-full max-w-4xl flex-col gap-6 text-white"
         >
           <h1 className="text-3xl md:text-4xl font-bold leading-tight line-clamp-3">
-            {t(slide.title)}
+            {slide.title}
           </h1>
           <p className="text-lg md:text-xl leading-relaxed line-clamp-4 text-white">
-            {t(slide.description)}
+            {slide.description}
           </p>
           <motion.a
             href={moreDetailsHref}

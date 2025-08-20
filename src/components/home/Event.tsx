@@ -20,6 +20,7 @@ interface Slide {
   image: string;
   title: string;
   description: string;
+  url: string; // NEW
 }
 
 interface EventCarouselProps {
@@ -28,11 +29,16 @@ interface EventCarouselProps {
 }
 
 export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
-  const slides: Slide[] = latestPosts.map((post) => ({
-    image: post.data.image?.src || "",
-    title: post.data.title,
-    description: post.data.description,
-  }));
+  const slides: Slide[] = latestPosts.map((post) => {
+    const [, ...slugParts] = post.slug.split("/");
+    const slug = slugParts.join("/");
+    return {
+      image: post.data.image?.src || "",
+      title: post.data.title,
+      description: post.data.description,
+      url: `/${lang}/media-hub/news-and-events/${slug}`,
+    };
+  });
 
   const plugin = useRef(
     Autoplay({
