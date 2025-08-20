@@ -1,0 +1,43 @@
+---
+import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
+
+import Layout from "@/layouts/layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("hero");
+  return entries.map((entry) => {
+    const [lang, ...slug] = entry.slug.split("/");
+    return {
+      params: { lang, slug: slug.join("/") }, // pass a string
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const lang = Astro.params.lang as string;
+
+// normalize image to a string URL for BlogContent/Layout
+const imageSrc =
+  typeof entry.data.image === "string"
+    ? entry.data.image
+    : (entry.data.image?.src ?? "");
+---
+
+<Layout
+  title={`${entry.data.title} - Community Tech Centers`}
+  img={imageSrc}
+  author={entry.data.author}
+>
+  <BlogContent
+    title={entry.data.title}
+    date={entry.data.date}
+    author={entry.data.author}
+    image={entry.data.image}
+    lang={lang}
+  >
+    <Content />
+  </BlogContent>
+</Layout>

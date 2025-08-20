@@ -2,7 +2,7 @@ import aupp from "@/assets/logo/AUPP Main Logo.png";
 import cadt from "@/assets/logo/CADT_logo.png";
 import itc from "@/assets/logo/ITC_logo.png";
 import num from "@/assets/logo/NUM_logo.png";
-import paragon from "@/assets/logo/Paragon_Logo.png";
+import paragon from "@/assets/logo/Paragon_logo.png";
 import rupp from "@/assets/logo/RUPP_logo.png";
 import type { ImageMetadata } from "astro";
 
