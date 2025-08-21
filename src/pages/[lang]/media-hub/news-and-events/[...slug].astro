@@ -1,4 +1,6 @@
 ---
+import { formatDate } from "@/lib/utils";
+
 import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
 
 import { getLangFromUrl } from "@/i18n/utils";
@@ -29,11 +31,10 @@ const lang = getLangFromUrl(Astro.url);
 >
   <BlogContent
     title={entry.data.title}
-    date={entry.data.date}
+    date={formatDate(entry.data.date.toISOString(), lang)}
     author={entry.data.author}
     image={entry.data.image}
     description={entry.data.description}
-    lang={lang}
   >
     <Content />
   </BlogContent>
