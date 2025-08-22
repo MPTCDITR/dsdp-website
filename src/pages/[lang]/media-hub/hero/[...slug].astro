@@ -1,7 +1,7 @@
 ---
 import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
 
-import Layout from "@/layouts/layout.astro";
+import BlogLayout from "@/layouts/BlogLayout.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -26,7 +26,7 @@ const imageSrc =
     : (entry.data.image?.src ?? "");
 ---
 
-<Layout
+<BlogLayout
   title={`${entry.data.title} - Community Tech Centers`}
   img={imageSrc}
   author={entry.data.author}
@@ -40,4 +40,4 @@ const imageSrc =
   >
     <Content />
   </BlogContent>
-</Layout>
+</BlogLayout>

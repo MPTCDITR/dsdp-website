@@ -21,10 +21,9 @@ const { title, date, author, image, lang } = Astro.props;
       <Image
         src={image}
         alt={title}
-        class="rounded-lg w-full aspect-video object-cover"
+        class="rounded-lg w-full h-fit object-cover"
         loading="lazy"
-        width={2000}
-        height={2000}
+        inferSize
       />
     )
   }
