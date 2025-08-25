@@ -2,6 +2,7 @@
 title: His Excellency Minister Chea Vandeth hold talks with Dr. Cosmas Zavazava, Director of the Telecommunication Development Bureau of the International Telecommunication Union (ITU)
 date: 2024-07-22
 author: Ministry of Posts and Telecommunications
+description: Minister Chea Vandeth met with Dr. Cosmas Zavazava, Director of the Telecommunication Development Bureau of the **International Telecommunication Union (ITU)**, to discuss strengthening international cooperation between Cambodia and the ITU.
 image: "src/assets/images/news.jpg"
 tags: []
 ---

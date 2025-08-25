@@ -3,13 +3,12 @@ import { formatDate } from "@/lib/utils";
 
 import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
 
-import { getLangFromUrl } from "@/i18n/utils";
 import BlogLayout from "@/layouts/BlogLayout.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog");
-  return blogEntries.map((entry) => {
+  const entries = await getCollection("hero");
+  return entries.map((entry) => {
     const [lang, ...slug] = entry.slug.split("/");
     return {
       params: { lang, slug: slug.join("/") },
@@ -20,14 +19,18 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-const lang = getLangFromUrl(Astro.url);
+const lang = Astro.params.lang as string;
+
+const imageSrc =
+  typeof entry.data.image === "string"
+    ? entry.data.image
+    : (entry.data.image?.src ?? "");
 ---
 
 <BlogLayout
-  title={`${entry.data.title} - DSDP Cambodia`}
-  img={entry.data.image?.src}
+  title={`${entry.data.title} - Community Tech Centers`}
+  img={imageSrc}
   author={entry.data.author}
-  description={entry.data.description}
 >
   <BlogContent
     title={entry.data.title}

@@ -21,6 +21,7 @@ interface Slide {
   image: string;
   title: string;
   description: string;
+  url: string;
 }
 
 interface EventCarouselProps {
@@ -29,12 +30,16 @@ interface EventCarouselProps {
 }
 
 export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
-  const t = useTranslations(lang);
-  const slides: Slide[] = latestPosts.map((post) => ({
-    image: post.data.image?.src || "",
-    title: post.data.title,
-    description: post.data.description,
-  }));
+  const slides: Slide[] = latestPosts.map((post) => {
+    const [, ...slugParts] = post.slug.split("/");
+    const slug = slugParts.join("/");
+    return {
+      image: post.data.image?.src || "",
+      title: post.data.title,
+      description: post.data.description,
+      url: `/${lang}/media-hub/news-and-events/${slug}`,
+    };
+  });
 
   const plugin = useRef(
     Autoplay({
@@ -45,6 +50,7 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
   );
 
   const [api, setApi] = useState<CarouselApi>();
+  const t = useTranslations(lang);
 
   useEffect(() => {
     if (!api) return;
