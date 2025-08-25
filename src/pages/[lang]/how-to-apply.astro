@@ -1,36 +1,46 @@
 ---
-import { HowToApply as HowToApplyComponent } from "@/components/pages/howToApply/HowToApply";
-
-import { languages, type Language } from "@/i18n/ui";
+import contact_team from "@/assets/about/about-team/Mailbox-rafiki.png";
+import { languages } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
+import type { GetStaticPaths } from "astro";
+import { Image } from "astro:assets";
 
-export const prerender = true;
-
-export async function getStaticPaths() {
+export const getStaticPaths = (() => {
   return Object.keys(languages).map((lang) => ({
-    params: { lang: lang as Language },
+    params: { lang },
   }));
-}
+}) satisfies GetStaticPaths;
 
 const { lang } = Astro.params;
 const t = useTranslations(lang);
 ---
 
 <Layout
-  title="របៀបដាក់ពាក្យ - How To Apply"
-  description="Step-by-step guidance on the application process, eligibility, and required documents to help you apply successfully."
+  title="អំពីក្រុមឌីអេសឌីធី - About DSDP Team"
+  description="Meet the dedicated team behind DSDP, working together to drive our mission and make a positive impact in the community."
   author="DSDP Cambodia"
 >
-  <!-- Header -->
-  <div class="container mx-auto my-4 px-4">
-    <h1 class="text-4xl font-bold text-center mb-4 mt-16 text-primary">
-      {t("howToApply.title-1")}
-      <br />
-      {t("howToApply.title-2")}
+  <Image
+    src={contact_team}
+    alt="DSDP Team"
+    width={contact_team.width}
+    height={contact_team.height}
+    class={"lg:w-1/3 md:w-2/3 mx-auto w-full"}
+  />
+  <div
+    aria-label="How to apply"
+    class="container max-w-3xl mx-auto mb-10 space-y-5 text-primary"
+  >
+    <h1 class="md:text-4xl text-3xl font-bold text-center md:leading-relaxed">
+      {t("contact.team.title")}
+      <a href="tel:123" class="text-secondary">123</a>
     </h1>
-    <p class="text-center mb-8 opacity-60">{t("howToApply.subTitle")}</p>
-    <!-- Content -->
-    <HowToApplyComponent lang={lang} client:load />
+    <p
+      aria-label="Under construction page"
+      class="md:text-2xl text-xl font-semibold text-center"
+    >
+      {t("under-construction.title")}
+    </p>
   </div>
 </Layout>
