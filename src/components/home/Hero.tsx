@@ -8,37 +8,46 @@ import {
 } from "@/components/ui/carousel";
 
 import { HeroCarouselItem } from "./HeroCarouselItem";
-import hero_1 from "@/assets/home/dsdp_hero_1.png";
-import hero_2 from "@/assets/home/dsdp_hero_2.png";
 import type { Language } from "@/i18n/ui";
+import type { CollectionEntry } from "astro:content";
 import Autoplay from "embla-carousel-autoplay";
 
 interface Slide {
   image: string;
   title: string;
   description: string;
+  url: string;
+  date?: Date | string;
+  author?: string;
 }
 
 interface HeroCarouselProps {
   lang: Language;
+  latestPosts?: CollectionEntry<"hero">[];
 }
 
-export function Hero({ lang }: HeroCarouselProps) {
-  const slides: Slide[] = [
-    {
-      image: hero_1.src,
-      title: "home.hero.title",
-      description: "home.hero.description",
-    },
-    {
-      image: hero_2.src,
-      title: "home.hero.somdach",
-      description: "home.hero.somdach.description",
-    },
-  ];
-
+export function Hero({ lang, latestPosts = [] }: HeroCarouselProps) {
+  const slides: Slide[] = latestPosts.map((post) => {
+    const [, ...slugParts] = post.slug.split("/");
+    const slug = slugParts.join("/");
+    return {
+      image:
+        typeof post.data.image === "string"
+          ? post.data.image
+          : post.data.image?.src || "",
+      title: post.data.title,
+      description: post.data.description,
+      url: `/${lang}/media-hub/hero/${slug}`,
+      date: post.data.date,
+      author: post.data.author,
+    };
+  });
   const plugin = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true }),
+    Autoplay({
+      delay: 5000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    }),
   );
 
   const [api, setApi] = useState<CarouselApi>();
@@ -46,6 +55,8 @@ export function Hero({ lang }: HeroCarouselProps) {
   useEffect(() => {
     if (!api) return;
   }, [api]);
+
+  if (slides.length === 0) return null;
 
   return (
     <div className="relative w-full  mx-auto">
@@ -57,7 +68,10 @@ export function Hero({ lang }: HeroCarouselProps) {
       >
         <CarouselContent className="h-full">
           {slides.map((slide, index) => (
-            <CarouselItem key={index} className="h-full pl-0">
+            <CarouselItem
+              key={`${slide.image}-${index}`}
+              className="h-full pl-0"
+            >
               <HeroCarouselItem slide={slide} lang={lang} />
             </CarouselItem>
           ))}
