@@ -2,6 +2,7 @@
 title: Press Release on the Inauguration Ceremony of Community Technology Center at Hun Sen High School on June 1 in Param Commune, Bati District, Takeo Province
 date: 2024-06-24
 author: Ministry of Posts and Telecommunications
+description: Minister of Posts and Telecommunications Chea Vandeth presided over the inauguration of a Community Technology Center at Hun Sen Muy Mithona High School in Takeo province. The ceremony was also attended by the Japanese Ambassador to Cambodia and a Secretary of State from the Ministry of Education, Youth and Sports.
 image: "src/assets/images/news.jpg"
 tags: []
 ---

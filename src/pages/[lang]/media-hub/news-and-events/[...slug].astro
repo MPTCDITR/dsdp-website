@@ -1,4 +1,6 @@
 ---
+import { formatDate } from "@/lib/utils";
+
 import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
 
 import { getLangFromUrl } from "@/i18n/utils";
@@ -25,13 +27,14 @@ const lang = getLangFromUrl(Astro.url);
   title={`${entry.data.title} - DSDP Cambodia`}
   img={entry.data.image?.src}
   author={entry.data.author}
+  description={entry.data.description}
 >
   <BlogContent
     title={entry.data.title}
-    date={entry.data.date}
+    date={formatDate(entry.data.date.toISOString(), lang)}
     author={entry.data.author}
     image={entry.data.image}
-    lang={lang}
+    description={entry.data.description}
   >
     <Content />
   </BlogContent>

@@ -2,6 +2,7 @@
 title: His Excellency Hun Many, Deputy Prime Minister and Minister of Public Service, and His Excellency Chea Vandeth, Minister of Posts and Telecommunications
 date: 2025-02-17
 author: Ministry of Posts and Telecommunications
+description: Deputy Prime Minister **Hun Many** and Minister of Posts and Telecommunications **Chea Vandeth** visited a model of the **Community Technology Center** project. The visit took place at the Ministry of Posts and Telecommunications on February 17, 2025, during a seminar on the Ministry's functions and structure.
 image: "src/assets/images/news.jpg"
 tags: []
 ---

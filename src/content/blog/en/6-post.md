@@ -2,6 +2,7 @@
 title: Ministry of Posts and Telecommunications organizes training courses for teachers at 18 high schools in Takeo Province
 date: 2025-03-01
 author: Ministry of Posts and Telecommunications
+description: In March 2025, the Ministry of Posts and Telecommunications (MPTC) and the Ministry of Education, Youth and Sports (MOEYS) collaborated to train 37 teachers from Takeo province. This eight-day course was part of a larger initiative to establish **Community Technology Centers (CTCs)** and improve digital literacy at public high schools.
 image: "src/assets/images/news.jpg"
 tags: []
 ---
