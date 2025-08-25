@@ -22,19 +22,15 @@ export const universities: University[] = [
       "Uni.description",
       "RUPP.major_1",
       "RUPP.major_2",
-      "major.etc",
+      "RUPP.major_3",
+      "RUPP.major_4",
     ],
   },
   {
     image: itc,
     alt: "ITC Logo",
     hoverTitleKey: "ITC.title",
-    hoverItemKeys: [
-      "Uni.description",
-      "ITC.major_1",
-      "ITC.major_2",
-      "major.etc",
-    ],
+    hoverItemKeys: ["Uni.description", "ITC.major_1", "ITC.major_2"],
   },
   {
     image: num,
@@ -45,7 +41,7 @@ export const universities: University[] = [
       "NUM.major_1",
       "NUM.major_2",
       "NUM.major_3",
-      "major.etc",
+      "NUM.major_4",
     ],
   },
   {
@@ -57,7 +53,11 @@ export const universities: University[] = [
       "AUPP.major_1",
       "AUPP.major_2",
       "AUPP.major_3",
-      "major.etc",
+      "AUPP.major_4",
+      "AUPP.major_5",
+      "AUPP.major_6",
+      "AUPP.major_7",
+      "AUPP.major_8",
     ],
   },
   {
@@ -68,7 +68,7 @@ export const universities: University[] = [
       "Uni.description",
       "Paragon.major_1",
       "Paragon.major_2",
-      "major.etc",
+      "Paragon.major_3",
     ],
   },
   {
@@ -80,7 +80,8 @@ export const universities: University[] = [
       "CADT.major_1",
       "CADT.major_2",
       "CADT.major_3",
-      "major.etc",
+      "CADT.major_4",
+      "CADT.major_5",
     ],
   },
 ];

@@ -38,11 +38,21 @@ export function AboutUs({ lang }: AboutUsContent) {
           <p className="text-base text-muted-foreground mb-4">
             {t("about.visionDescription")}
           </p>
-          <ul className="list-disc pl-6 space-y-2 text-base text-foreground leading-relaxed">
+          <ul className="list-decimal pl-8 space-y-3 text-base text-foreground leading-relaxed">
             <li>{t("about.vision1")}</li>
             <li>{t("about.vision2")}</li>
             <li>{t("about.vision3")}</li>
-            <li>{t("about.vision4")}</li>
+            <li>
+              {t("about.vision4")}
+              <ol className="list-disc pl-8 space-y-3 cursor-pointer my-3">
+                <li>{t("about.vision4.1")}</li>
+                <li>{t("about.vision4.2")}</li>
+                <li>{t("about.vision4.3")}</li>
+                <li>{t("about.vision4.4")}</li>
+                <li>{t("about.vision4.5")}</li>
+                <li>{t("about.vision4.6")}</li>
+              </ol>
+            </li>
           </ul>
         </div>
       </section>
@@ -56,7 +66,7 @@ export function AboutUs({ lang }: AboutUsContent) {
           <p className="text-base text-muted-foreground mb-4">
             {t("about.mission.description")}
           </p>
-          <ul className="list-disc pl-6 space-y-2 text-base text-foreground leading-relaxed">
+          <ul className="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed">
             <li>{t("about.mission1")}</li>
             <li>{t("about.mission2")}</li>
             <li>{t("about.mission3")}</li>
@@ -90,9 +100,16 @@ export function AboutUs({ lang }: AboutUsContent) {
           <h2 className="text-gradient-b text-4xl leading-snug font-bold mb-4">
             {t("about.benefits.title")}
           </h2>
-          <p className="text-base text-foreground leading-relaxed">
+          <p className="text-base text-muted-foreground mb-4">
             {t("about.benefits.description")}
           </p>
+          <ul className="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed">
+            <li>{t("about.benefits1")}</li>
+            <li>{t("about.benefits2")}</li>
+            <li>{t("about.benefits3")}</li>
+            <li>{t("about.benefits4")}</li>
+            <li>{t("about.benefits5")}</li>
+          </ul>
         </div>
 
         <div className="order-1 md:order-2 w-full max-w-[508px] mx-auto">
@@ -105,7 +122,7 @@ export function AboutUs({ lang }: AboutUsContent) {
       </section>
 
       {/* Condition Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-start gap-12">
         <div className="order-1 md:order-1 w-full max-w-[508px] mx-auto">
           <img src={return_money.src} className="w-full" alt="Condition" />
         </div>
@@ -114,15 +131,29 @@ export function AboutUs({ lang }: AboutUsContent) {
           <h2 className="text-gradient-b text-4xl leading-snug font-bold mb-4">
             {t("about.conditionReturnMoney.title")}
           </h2>
-          <p className="text-base text-foreground leading-relaxed mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             {t("about.conditionReturnMoney.description")}
           </p>
-          <h3 className="text-gradient-b text-2xl leading-snug md:text-2xl font-bold mb-4">
+          <ul className="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed">
+            <li>{t("about.conditionReturnMoney1")}</li>
+            <li>{t("about.conditionReturnMoney2")}</li>
+            <li>{t("about.conditionReturnMoney3")}</li>
+            <li>{t("about.conditionReturnMoney4")}</li>
+            <li>{t("about.conditionReturnMoney5")}</li>
+          </ul>
+          <h3 className="text-gradient-b text-2xl mt-3 leading-snug md:text-2xl font-bold mb-4">
             {t("about.howToReturnMoney.title")}
           </h3>
-          <p className="text-base text-foreground leading-relaxed">
+          <p className="text-base text-muted-foreground mb-4">
             {t("about.howToReturnMoney.description")}
           </p>
+          <ul className="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed">
+            <li>{t("about.howToReturnMoney1")}</li>
+            <li>{t("about.howToReturnMoney2")}</li>
+            <li>{t("about.howToReturnMoney3")}</li>
+            <li>{t("about.howToReturnMoney4")}</li>
+            <li>{t("about.howToReturnMoney5")}</li>
+          </ul>
         </div>
       </section>
     </div>
