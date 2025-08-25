@@ -1,4 +1,6 @@
 ---
+import { formatDate } from "@/lib/utils";
+
 import BlogContent from "@/components/pages/newsAndEvents/BlogContent.astro";
 
 import BlogLayout from "@/layouts/BlogLayout.astro";
@@ -9,7 +11,7 @@ export async function getStaticPaths() {
   return entries.map((entry) => {
     const [lang, ...slug] = entry.slug.split("/");
     return {
-      params: { lang, slug: slug.join("/") }, // pass a string
+      params: { lang, slug: slug.join("/") },
       props: { entry },
     };
   });
@@ -19,7 +21,6 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 const lang = Astro.params.lang as string;
 
-// normalize image to a string URL for BlogContent/Layout
 const imageSrc =
   typeof entry.data.image === "string"
     ? entry.data.image
@@ -33,10 +34,10 @@ const imageSrc =
 >
   <BlogContent
     title={entry.data.title}
-    date={entry.data.date}
+    date={formatDate(entry.data.date.toISOString(), lang)}
     author={entry.data.author}
     image={entry.data.image}
-    lang={lang}
+    description={entry.data.description}
   >
     <Content />
   </BlogContent>
