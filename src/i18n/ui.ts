@@ -68,6 +68,10 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
 
+    // contact-team
+    "contact.team.title":
+      "Please get in touch with our supporters for additional details by Phnom number ",
+
     // FAQ
     "qa.btn.contact": "Contact us",
     "qa.title.1": "Learn More About the DSDP",
@@ -355,6 +359,9 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.description.17": "Term of Use",
     "footer.description.18": "Legal",
     "footer.description.19": "Sitemap",
+
+    // under-construction
+    "under-construction.title": "Page is under construction",
   },
 
   km: {
@@ -416,6 +423,10 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.card3.position": "Head of Finance",
     "about.team.card4.name": "H.E. Apsara",
     "about.team.card4.position": "Head of Finance",
+
+    // contact-supporter
+    "contact.team.title":
+      "សូមទាក់ទងមក ពួកយើងសម្រាប់ព័ត៌មានលម្អិតបន្ថែមតាមរយៈលេខ ",
 
     // FAQ
     "qa.btn.contact": "ទំនាក់ទំនង​​យើងខ្ញុំ",
@@ -639,6 +650,10 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.description.17": "លក្ខខណ្ឌប្រើប្រាស់",
     "footer.description.18": "ផ្លូវច្បាប់",
     "footer.description.19": "ផែនទីគេហទំព័រ",
+
+    // under-construction
+    "under-construction.title":
+      "ទំព័រនេះកំពុងជួសជុល។ សូមពិនិត្យមើលម្ដងទៀតនៅពេលក្រោយ។",
   },
 } as const;
 
