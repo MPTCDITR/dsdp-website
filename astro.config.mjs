@@ -6,8 +6,7 @@ import { defineConfig } from "astro/config";
 import { loadEnv } from "vite";
 
 const { PUBLIC_SITE_URL } = loadEnv(
-  // @ts-ignore
-  process.env.NODE_ENV,
+  process.env.NODE_ENV || "development",
   process.cwd(),
   "",
 );
