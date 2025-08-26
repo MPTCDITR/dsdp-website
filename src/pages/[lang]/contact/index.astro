@@ -2,20 +2,11 @@
 import { Card } from "@/components/ui/card";
 
 import serviceImg from "@/assets/contact/contact.gif";
+import { SOCIAL_MEDIA_DATA } from "@/data/SocialMedia";
 import { languages, type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MailOpen,
-  MapPin,
-  Phone,
-  X,
-  Youtube,
-} from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -25,39 +16,6 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = useTranslations(lang);
-
-const socialLinks = [
-  {
-    name: "Facebook",
-    url: "https://facebook.com",
-    icon: Facebook,
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com",
-    icon: Instagram,
-  },
-  {
-    name: "X",
-    url: "https://x.com",
-    icon: X,
-  },
-  {
-    name: "YouTube",
-    url: "https://youtube.com",
-    icon: Youtube,
-  },
-  {
-    name: "Telegram",
-    url: "https://xtelegram.org.com",
-    icon: MailOpen,
-  },
-  {
-    name: "LinkedIn",
-    url: "https://LinkedIn.com",
-    icon: Linkedin,
-  },
-];
 ---
 
 <Layout
@@ -99,15 +57,14 @@ const socialLinks = [
           </p>
           <div class="flex gap-4 mt-14">
             {
-              socialLinks.map(({ name, url, icon: Icon }) => (
+              SOCIAL_MEDIA_DATA.map((item) => (
                 <a
-                  href={url}
+                  href={item.href}
                   target="_blank"
-                  rel="noopener"
-                  aria-label={name}
+                  rel="noopener noreferrer"
                   class="rounded-full bg-secondary text-white flex items-center justify-center w-10 h-10 transition hover:bg-secondary/90"
                 >
-                  <Icon className="min-w-6 min-h-6" />
+                  <item.icon class="h-5 w-5" />
                 </a>
               ))
             }
