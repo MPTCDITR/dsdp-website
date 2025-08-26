@@ -1,10 +1,10 @@
 ---
-title: Digital Skills Development Program (DSDP) - Empowering Human Resource Developmen
-description: The DSDP aims to develop digital human resources in response to the needs of the digital economy and society, as well as the digital government. The program provides interest-free scholarships to students, trainees, and civil servants in public and private institutions, along with free consultations!
+title: The Ministry of Post and Telecommunications (MPTC) has established the “Digital Skills Development Program” (DSDP) to support the development of digital human capital. 
+description: The program provides interest-free study financing, student counseling, accommodation support, collaboration with higher education institutions and relevant stakeholders, and/or the development and use of digital technologies to serve education.
 date: 2024-07-01
 author: Ministry of Posts and Telecommunications
 image: "src/assets/home/dsdp_hero_1.png"
 tags: []
 ---
 
-The DSDP aims to develop digital human resources in response to the needs of the digital economy and society, as well as the digital government. The program provides interest-free scholarships to students, trainees, and civil servants in public and private institutions, along with free consultations!
+The program provides interest-free study financing, student counseling, accommodation support, collaboration with higher education institutions and relevant stakeholders, and/or the development and use of digital technologies to serve education.

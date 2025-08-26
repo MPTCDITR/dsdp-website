@@ -11,14 +11,16 @@ const t = useTranslations(lang);
 <section class="mx-auto relative">
   <div class="relative mx-auto">
     <div class="mx-auto p-0 mb-12 relative">
-      <header class="flex flex-col items-center text-center text-wrap my-11">
+      <header class="flex flex-col items-center text-center text-wrap my-12">
         <h1
-          class="text-4xl md:text-4xl text-gradient font-bold mb-8"
+          class="text-4xl md:text-4xl text-gradient font-bold"
           id="trusted-by"
         >
           {t("home.partnership.title")}
         </h1>
-
+        <p class="text-base text-muted-foreground my-4">
+          {t("home.partnership.description")}
+        </p>
         <section
           class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           aria-labelledby="trusted-by"

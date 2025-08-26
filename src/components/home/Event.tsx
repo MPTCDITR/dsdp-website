@@ -11,6 +11,7 @@ import { Button } from "../ui/button";
 import { EventCarouselItem } from "./EventCarouselItem";
 import bgstyle from "@/assets/home/backgorund-style 3.png";
 import type { Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
@@ -49,6 +50,7 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
   );
 
   const [api, setApi] = useState<CarouselApi>();
+  const t = useTranslations(lang);
 
   useEffect(() => {
     if (!api) return;
@@ -63,9 +65,9 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
 
   return (
     <div>
-      <div className="container items-center mb-6 lg:flex lg:justify-between">
+      <div className="container items-start mb-6 lg:flex lg:justify-between">
         <h1 className="text-4xl font-bold text-primary mb-8">
-          ព្រឹត្តិការណ៍សំខាន់ៗ
+          {t("event.title")}
         </h1>
         <div className="ml-2">
           <Button
@@ -76,7 +78,7 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
               href={`/${lang}/media-hub/news-and-events`}
               className="w-full h-full flex items-center justify-center no-underline"
             >
-              All Events
+              {t("event.btn")}
               <ChevronRight className="size-4" />
             </a>
           </Button>

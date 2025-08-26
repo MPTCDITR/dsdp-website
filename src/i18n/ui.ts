@@ -22,43 +22,80 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.news_and_events": "News & Event",
     "nav.contact": "Contact",
     // About Us
-    "about.title": "អំពីកម្មវិធី",
-    "about.visionTitle": "ចក្ខុវិស័យ៖",
+    "about.title": "About DSDP",
+    "about.visionTitle": "Vision",
     "about.visionDescription":
-      "ក្នុងនាមជាសេនាធិកាផ្ទាល់របស់ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍ ក.អ.ជ.ឌ. មានចក្ខុវិស័យក្នុងការ៖",
+      "As an initiative directly under the Ministry of Post and Telecommunications, the DSDP has the vision to:",
     "about.vision1":
-      "ចូលរួម​អនុវត្តយុទ្ធសាស្រ្តបញ្ចកោណដំណាក់កាលទី១ របស់រាជរដ្ឋាភិបាលកម្ពុជា នីតិកាលទី៧ នៃរដ្ឋសភា",
+      "Scope of implementation of the Digital Skills Development Program to respond to the demand of the digital technology labor market.",
     "about.vision2":
-      "ចូលរួមអនុវត្តក្របខណ្ឌគោលនយោបាយសេដ្ឋកិច្ច និងសង្គមឌីជីថល ២០២១-២០៣៥",
-    "about.vision3": "និងក្របខណ្ឌគោលនយោបាយរដ្ឋាភិបាលឌីជីថល ២០២២-២០៣៥",
+      "The Ministry of Post and Telecommunications (MPTC) is the competent authority responsible for leading and managing the DSDP.",
+    "about.vision3":
+      "The DSDP is funded by annual contributions from the Capacity Building, Research, and Development Fund for the Telecommunications and ICT sector, as well as potential contributions from other lawful sources.",
     "about.vision4":
-      "លើកកម្ពស់ស្តង់ដាការអប់រំលើជំនាញដែលពាក់ព័ន្ធនឹងបច្ចេកវិទ្យាឌីជីថល និងគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល",
-    "about.mission.title": "បេសកកម្ម៖",
+      "The purposes of DSDP funding include, but are not limited to, the following:",
+    "about.vision4.1": "Supporting the development of digital human capital.",
+    "about.vision4.2":
+      "Providing interest-free study financing to support digital skills development for students and professionals in both public and private institutions.",
+    "about.vision4.3":
+      "Covering expenses for necessary courses or training programs to support digital skills development.",
+    "about.vision4.4":
+      "Developing and applying digital technologies to serve education.",
+    "about.vision4.5":
+      "Covering operational expenses of the DSDP Management Committee.",
+    "about.vision4.6":
+      "Other purposes as determined by the DSDP Management Committee.",
+    "about.mission.title": "Mission",
     "about.mission.description":
-      "ក.អ.ជ.ឌ. បានប្តេជ្ញាបំពេញនូវបេសកកម្មរបស់ខ្លួនយ៉ាងពេញទំហឹងជាអាទិ៍គឺ៖",
+      "The Digital Technology Skills Development Fund (DTSDF) is committed to fulfilling its mission by:",
     "about.mission1":
-      "ផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់លើជំនាញបច្ចេកវិទ្យាឌីជីថល",
+      "Providing interest-free educational funding for digital technology skills development.",
     "about.mission2":
-      "អភិវឌ្ឍន៍ និងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលសម្រាប់បម្រើដល់ការអប់រំ  និង",
-    "about.mission3": "បង្កើនធនធានមនុស្សដែលមានចំណេះដឹងផ្នែកបច្ចេកវិទ្យាឌីជីថល",
-    "about.whatIsDsdp.title": "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.)",
+      "Promoting the development and utilization of digital technologies to support education.",
+    "about.mission3":
+      "Enhancing human resources by fostering knowledge and expertise in the field of digital technology.",
+    "about.whatIsDsdp.title": "What is DSDP?",
     "about.whatIsDsdp.description":
-      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ដែលមានឈ្មោះជាភាសាអង់គ្លេស “Digital Skill Development Program (DSDP)” ក្រោមការផ្តួចផ្តើមគំនិតបង្កើត និងអភិវឌ្ឍឡើងដោយក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ តាមរយៈការប្រើប្រាស់ធនធានពី វិភាគទានប្រចាំឆ្នាំរបស់មូល និធិនៃការកសាងសមត្ថភាព និងស្រាវជ្រាវ និងការអភិវឌ្ឍលើវិស័យ ទូរគមនាគមន៍ និងបច្ចេកវិទ្យា គមនាគមន៍និងព័ត៌មាន(ស.អ.) និងវិភាគទានពីប្រភពស្របច្បាប់ផ្សេងៗទៀត ក្នុងគោលដៅគាំទ្រ ដល់ដំណើរការអភិវឌ្ឍមូលធន មនុស្សឌីជីថល ឆ្លើយតបទៅនឹង តម្រូវការនៃការអភិវឌ្ឍសេដ្ឋកិច្ច និងសង្គមឌីជីថល និងរដ្ឋាភិបាលឌីជីថល។​",
-    "about.benefits.title": "តើ ក.អ.ជ.ឌ. ជួយដល់សិស្ស-និស្សិត ដូចម្តេច?",
+      "The Digital Skills Development Program (DSDP) is a financial support initiative of the Ministry of Post and Telecommunications (MPTC). Its objective is to support the development of digital human capital in response to the needs of Cambodia’s economic, social, and digital government development.​",
+    "about.benefits.title": "Benefits of DSDP",
     "about.benefits.description":
-      "កម្មវិធី ក.អ.ជ.ឌ. នឹងផ្តល់ ថវិកាសិក្សាដោយមិនគិតការប្រាក់ ជូនទៅដល់សិស្ស និស្សិត និងមន្ត្រីរាជការនៅតាមស្ថាប័ន សាធារណៈ និងឯកជន ដែលមានបំណងចង់បន្តការសិក្សាក្នុងកម្រិតសិក្សា ថ្នាក់បរិញ្ញាបត្រ បរិញ្ញាបត្រជាន់ខ្ពស់ បណ្ឌិត ឬក្នុងវគ្គបណ្តុះបណ្តាលកម្រិតវិញ្ញាបនបត្រលើជំនាញបច្ចេកវិទ្យាឌីជីថលផ្សេង នៅគ្រឹះស្ថានឧត្តមសិក្សាសាធារណៈ និងឯកជន។ បន្ថែមពីលើការផ្តល់ថវិកាសិក្សា កម្មវិធី ក.អ.ជ.ឌ. ក៏ផ្តល់ការប្រឹក្សាយោបល់ដល់សិស្ស និស្សិត និងមន្ត្រីរាជការគ្រប់រូប ព្រមទាំងជួយសម្របសម្រួលការស្នាក់នៅរបស់និស្សិតមកពីតាមខេត្តផងដែរ។",
-    "about.conditionReturnMoney.title": "លក្ខខណ្ឌនៃការសងថវិកាមក ក.អ.ជ.ឌ. វិញ!",
+      "Successful applicants of the Digital Skills Development Program will receive the following benefits:",
+    "about.benefits1":
+      "Interest-free financing for tuition fees up to completion of a bachelor’s degree.",
+    "about.benefits2": "One laptop computer (if required).",
+    "about.benefits3": "Accommodation expenses (if required).",
+    "about.benefits4": "Academic, residential, and career counseling.",
+    "about.benefits5":
+      "Access to quality job opportunities and high salaries in both public and private sectors.",
+    "about.conditionReturnMoney.title": "Eligibility Criteria for Applicants",
     "about.conditionReturnMoney.description":
-      "កម្មវិធី ក.អ.ជ.ឌ. ផ្តល់លក្ខខណ្ឌងាយស្រួលសម្រាប់បេក្ខជន ដើម្បីធ្វើការសងប្រាក់ដល់កម្មវិធីក.អ.ជ.ឌ. វិញ បន្ទាប់ពីសិស្សនិស្សិតបញ្ចប់ការសិក្សា និងទទួលបានការងារធ្វើ។",
-    "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
-    "about.howToReturnMoney.description":
-      "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
+      "Successful applicants of the Digital Skills Development Program will receive the following benefits:",
+    "about.conditionReturnMoney1": "Be of Cambodian nationality.",
+    "about.conditionReturnMoney2":
+      "Be a student who passed the 2025 high school diploma exam with an overall grade of A, B, or C.",
+    "about.conditionReturnMoney3":
+      "Meet all requirements for admission to one of the listed higher education partner institutions.",
+    "about.conditionReturnMoney4": "Pass an examination and/or interview.",
+    "about.conditionReturnMoney5":
+      "Students from disadvantaged backgrounds, rural and remote areas, those with disabilities, and female students are strongly encouraged.",
+    "about.howToReturnMoney.title": "Repayment Method",
+    "about.howToReturnMoney.description": "According to the DSDP agreement:",
+    "about.howToReturnMoney1":
+      "Students must repay MPTC the total amount of financial support received through DSDP after completing their studies, once they are employed and earn a monthly salary of at least USD 500. Repayment must be made monthly, at a minimum of 20% of their monthly salary, to sustain the continuity of DSDP for future Cambodian students and to strengthen the sense of responsibility toward their education. By this principle, students agree that their future public institution or private enterprise employer will deduct and transfer at least 20% of their monthly salary to MPTC through DSDP. The detailed conditions of repayment will be established in a separate agreement.",
+    "about.howToReturnMoney2":
+      "Repayment will be implemented: (a) Under a tripartite agreement between the student, their future employer, and a representative of MPTC and (b) On a monthly basis, starting from the time the student receives their first salary until the total amount of financial support received is fully repaid.",
+    "about.howToReturnMoney3":
+      "In cases where, after graduation, a student earns a sufficiently high salary, they may request their employer to repay more than the minimum 20% of their monthly salary to MPTC through DSDP, with prior notification to MPTC.",
+    "about.howToReturnMoney4":
+      "Students are also encouraged to contribute to the DSDP in other ways, such as financial donations, technical support, knowledge sharing with future DSDP students, teaching digital subjects within their expertise, or volunteering with the program.",
+    "about.howToReturnMoney5":
+      "If a student earns less than USD 500 per month after graduation, DSDP will allow a maximum grace period of 3 years for repayment. However, starting from the 37th month after graduation, regardless of employment status, the student must repay at least USD 100 per month until the total amount is fully repaid. This will also be implemented (a) Under a tripartite agreement between the student, their guardian, and a representative of MPTC; and (b) On a monthly basis, starting from the 37th month after graduation until the total support amount received is fully repaid.",
 
     //About Team
     "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
-    "about.team.title2": "ក្រុមការងារស្នូល",
+    "about.team.title2": "Core Team",
     "about.team.title2.description":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "The Core Team consists of dedicated professionals who provide strategic guidance, coordinate key initiatives, and ensure the effective implementation of the Secretariat’s programs. Each member contributes expertise in digital technology, policy, and project management to advance the organization’s mission and strengthen human resources in the field of digital technology.",
     "about.team.card1.name": "H.E. Apsara",
     "about.team.card1.position": "Head of Finance",
     "about.team.card2.name": "H.E. Apsara",
@@ -90,38 +127,42 @@ export const ui: Record<string, Record<string, string>> = {
     "qa.question.7":
       "What is the process for repaying the support received from the DSDP?",
     "qa.answer.1":
-      "The Digital Skills Development Program (DSDP) offers interest-free financial support to students, civil servants, employees from both public and private sectors, as well as members of non-governmental organizations. The program enables eligible individuals to pursue undergraduate studies in digital technology at accredited partner institutions.",
+      "The Digital Skills Development Program (DSDP) is a financial support initiative of the Ministry of Post and Telecommunications aimed at supporting the development of digital human capital to meet the needs of Cambodia’s economic, social, and digital government development.",
     "qa.answer.2":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "qa.answer.3":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Applicants may choose from DSDP’s partner institutions and programs, including:",
+    "qa.answer.3": "Applicants must meet the following criteria:",
     "qa.answer.4":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Applicants must complete the online application form via Form Kh (in process).",
     "qa.answer.5":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "qa.answer.6":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "qa.answer.7":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Once selected by the program, the DSDP Secretariat will contact students for an in-person interview and confirm acceptance of the interest-free financial support.",
+    "qa.answer.6": "According to the DSDP agreement:",
 
     //Hero Carousel
     "home.hero.title":
-      "Digital Skills Development Program (DSDP) - Empowering Human Resource Development",
+      "The Ministry of Post and Telecommunications (MPTC) has established the “Digital Skills Development Program” (DSDP) to support the development of digital human capital.",
     "home.hero.description":
-      "The DSDP aims to develop digital human resources in response to the needs of the digital economy and society, as well as the digital government. The program provides interest-free scholarships to students, trainees, and civil servants in public and private institutions, along with free consultations!",
+      "The program provides interest-free study financing, student counseling, accommodation support, collaboration with higher education institutions and relevant stakeholders, and/or the development and use of digital technologies to serve education.",
     "home.hero.somdach":
-      "somdach Hun Manet presides over the opening ceremony of the Digital Government Forum and Cambodia-International Digital Government and Technology Exhibition",
+      "Somdach Hun Manet presides over the opening ceremony of the Digital Government Forum and Cambodia-International Digital Government and Technology Exhibition",
     "home.hero.somdach.description":
       "Phnom Penh: On March 11, 2024, Somdach, Hun Manet, presided over the opening ceremony of the Digital Government Forum and the Cambodia-International Digital Government and Technology Exhibition. During this event, His Majesty visited the exhibition showcasing community technology centers and digital skills development programs by the Ministry of Posts and Telecommunications. This initiative aims to enhance digital capabilities among civil servants and citizens, reducing the digital divide.",
     "btn.moredetails": "More Details",
     //Apply Step
     "applyStep.step1.title": "Step 1: Register",
-    "applyStep.title.1": "  ជំហានងាយៗនៃការដាក់ពាក្យ",
-    "applyStep.title.2": "ស្នើសុំថវិកាគម្រោងរបស់",
-    "applyStep.title.3": "ក.អ.ជ.ឌ",
+    "applyStep.title.1": "Simple Steps to Apply",
+    "applyStep.title.2": "Apply for project funding from",
+    "applyStep.title.3": "DSDP",
     "applyStep.title.4":
-      "    សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ មន្ត្រីរាជការស៊ីវិល",
-    "applyStep.button.title": "About Us",
+      "High school graduates, university students, or civil servants",
+    "applyStep.title.5":
+      "can apply for project funding with us by following these simple steps:",
+    "applyStep.title.6":
+      "Applicants must complete the online application form via www.dsdp.gov.kh/registration within the specified deadline.",
+    "applyStep.title.7":
+      "For more information, please contact 123 or email info@dsdp.gov.kh",
+    "applyStep.button.title": "About us",
+    "event.title": "Events",
+    "event.btn": "All events",
     // Event Carousel
     "home.event_1.title": "Signing Ceremony with DSDP",
     "home.event_1.description":
@@ -133,16 +174,16 @@ export const ui: Record<string, Record<string, string>> = {
     "home.event_3.description":
       "The DSDP is honored to announce to the public that, as decided by the Royal Government, the DSDP will organize the 'National Science, Technology, and Digital Day' annually. For the year 2023, it will be held at the Sokha Angkor Hotel in Siem Reap Province.",
     // candidate benefits
-    "home.candidate_benefits.title": "Benefits for DSDP Candidates",
+    "home.candidate_benefits.title": "Benefits for DSDP Applicants",
     "home.candidate_benefits.description":
-      "After being selected as a DSDP candidate, candidates will receive numerous benefits, including:",
+      "Successful candidates of the DSDP program will receive the following benefits:",
     // Partnership Section
-    "home.partnership.title": "Our Partners",
+    "home.partnership.title": "Partner Higher Education Institutions of DSDP.",
     "home.partnership.description":
-      "DSDP is continuously seeking and signing MOUs with public and private educational institutions to expand the program's reach across the country.",
+      "Applicants can select from DSDP’s partner higher education institutions and eligible study programs as follows:",
     "home.partnership.box.title": "Want to become a DSDP partner?",
     "home.partnership.box.description":
-      " If you or your institution is interested in becoming a partner of DSDP, please click the button below to contact us.",
+      " If you or your institution is interested in becoming a partner of DSDP.",
     //Partner page
     "partner.title": "DSDP welcomes partner institutions nationwide",
     "partner.description_1": "DSDP",
@@ -163,45 +204,53 @@ export const ui: Record<string, Record<string, string>> = {
     "partner.box.description_3": "with",
     "partner.box.description_4": "DSDP",
     "partner.box.description_5": "to",
-    "partner.box.description_6": "enhance excellence in digital skills",
+    "partner.box.description_6": "Enhance excellence in digital skills",
     "partner.box.description_7": "for Cambodia’s development!",
 
-    // Partner (University)
-    "partner.University.title": "Our Partner Universities",
     // University
     "Uni.description": "Training majors:",
-    "major.etc": "...",
     //RUPP
     "RUPP.title": "Royal University of Phnom Penh",
     "RUPP.major_1": "Telecommunication and Electronic Engineering",
-    "RUPP.major_2": "Engineering and Data Science",
+    "RUPP.major_2": "Data Science and Engineering",
+    "RUPP.major_3": "Information Technology",
+    "RUPP.major_4": "Information Technology Engineering",
     //ITC
     "ITC.title": "Institute of Technology of Cambodia",
-    "ITC.major_1": "Information and Communication Technology Engineering",
-    "ITC.major_2": "Electronic and Telecommunication Engineering",
+    "ITC.major_1": "Software Engineering",
+    "ITC.major_2": "AI Engineering and Cybersecurity",
 
     // AUPP
     "AUPP.title": "American University of Phnom Penh",
-    "AUPP.major_1": "Computer Science",
-    "AUPP.major_2": "Cloud Technology",
-    "AUPP.major_3": "Software Development",
+    "AUPP.major_1": "Information Technology Management/Computer Science",
+    "AUPP.major_2": "Information and Communication Technology",
+    "AUPP.major_3": "Cybersecurity",
+    "AUPP.major_4": "Artificial Intelligence",
+    "AUPP.major_5": "Digital Infrastructure",
+    "AUPP.major_6": "Software Development",
+    "AUPP.major_7": "Data Analytics/Information Systems",
+    "AUPP.major_8": "Interactive App Design and Development",
 
     // NUM
     "NUM.title": "National University of Management",
-    "NUM.major_1": "Information Technology",
-    "NUM.major_2": "Robotics Engineering",
-    "NUM.major_3": "Business Informatics",
+    "NUM.major_1": "Digital Economy",
+    "NUM.major_2": "Financial Technology",
+    "NUM.major_3": "Global Entrepreneurship and Innovation",
+    "NUM.major_4": "Financial Technology",
 
     // Paragon
     "Paragon.title": "Paragon International University",
     "Paragon.major_1": "Computer Science",
-    "Paragon.major_2": "Information Management Systems",
+    "Paragon.major_2": "Management of Information Systems",
+    "Paragon.major_3": "Digital Arts and Design",
 
     // CADT
     "CADT.title": "Cambodia Academy of Digital Technology",
-    "CADT.major_1": "Telecommunications and Networking",
-    "CADT.major_2": "Computer Science",
-    "CADT.major_3": "Digital Business",
+    "CADT.major_1": "Software Engineering",
+    "CADT.major_2": "Data Science",
+    "CADT.major_3": "e-Commerce",
+    "CADT.major_4": "Telecommunications and Networking Engineering",
+    "CADT.major_5": "Cybersecurity",
 
     // Partner About Us Button
     "partner.button.AboutUs": "Contact Us",
@@ -300,8 +349,8 @@ export const ui: Record<string, Record<string, string>> = {
     // Info section
     "contact.title.1": "Contact Information",
     "contact.description.1":
-      "Please complete the form on the right to contact the N.S.D.P Working Group. We will respond within 24 hours. Or contact us directly at the following phone number:",
-    "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+      "Please complete the form on the right to contact the DSDP Working Group. We will respond within 24 hours. Or contact us directly at the following phone number:",
+    "contact.description.2": "123",
     "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
     "contact.description.4":
       "Building No. 13, Preah Monivong Boulevard, Sangkat Sra Chak, Khan Daun Penh Phnom Penh 120210, Cambodia",
@@ -347,7 +396,7 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.title.4": "GET IN TOUCH",
     "footer.description.11":
       "Building No. 13,, Preah Monivong Boulevard, Sangkat Srachak, Khan Daun Penh, Phnom Penh, Cambodia, 120210",
-    "footer.description.12": "(+855) 123",
+    "footer.description.12": "123",
     "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
     "footer.description.14": "Copyright",
     "footer.description.15": "All rights reserved DSDP.GOV.KH",
@@ -372,42 +421,79 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.news_and_events": "ព័ត៌មាននិង​ព្រឹត្តិការណ៍",
     "nav.contact": "ទំនាក់ទំនង",
     // About Us
-    "about.title": "អំពីកម្មវិធី",
-    "about.visionTitle": "ចក្ខុវិស័យ៖",
+    "about.title": "អំពី ក.អ.ជ.ឌ",
+    "about.visionTitle": "ចក្ខុវិស័យ",
     "about.visionDescription":
       "ក្នុងនាមជាសេនាធិកាផ្ទាល់របស់ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍ ក.អ.ជ.ឌ. មានចក្ខុវិស័យក្នុងការ៖",
     "about.vision1":
-      "ចូលរួម​អនុវត្តយុទ្ធសាស្រ្តបញ្ចកោណដំណាក់កាលទី១ របស់រាជរដ្ឋាភិបាលកម្ពុជា នីតិកាលទី៧ នៃរដ្ឋសភា",
+      "វិសាលភាពអនុវត្តចំពោះកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ដើម្បីឆ្លើយតបទៅនឹងតម្រូវការទីផ្សារជំនាញបច្ចេកវិទ្យាឌីជីថល។",
     "about.vision2":
-      "ចូលរួមអនុវត្តក្របខណ្ឌគោលនយោបាយសេដ្ឋកិច្ច និងសង្គមឌីជីថល ២០២១-២០៣៥",
-    "about.vision3": "និងក្របខណ្ឌគោលនយោបាយរដ្ឋាភិបាលឌីជីថល ២០២២-២០៣៥",
+      "ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ ដែលសរសេរកាត់ថា “ក.ប.ទ. ” ជាស្ថាប័នមានសមត្ថកិច្ចលើការដឹកនាំនិងគ្រប់គ្រង ក.អ.ជ.ឌ. ។",
+    "about.vision3":
+      "ក.អ.ជ.ឌ. មានធនធានពីវិភាគទានប្រចាំឆ្នាំពីមូលនិធិនៃការកសាងសមត្ថភាព និងការស្រាវជ្រាវនិងការអភិវឌ្ឍលើវិស័យទូរគមនាគមន៍ និងបច្ចេកវិទ្យាគមនាគមន៍និងព័ត៌មាន (ស.អ.) និងអាចមានវិភាគទានពីប្រភពស្របច្បាប់ផ្សេងៗទៀត។",
     "about.vision4":
-      "លើកកម្ពស់ស្តង់ដាការអប់រំលើជំនាញដែលពាក់ព័ន្ធនឹងបច្ចេកវិទ្យាឌីជីថល និងគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល",
-    "about.mission.title": "បេសកកម្ម៖",
+      "កម្មវត្ថុនៃការប្រើប្រាស់ថវិកា ក.អ.ជ.ឌ. មានជាអាទិ៍ ដូចខាងក្រោម៖",
+    "about.vision4.1": "ការគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល។",
+    "about.vision4.2":
+      "ការផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ សម្រាប់ការអភិវឌ្ឍជំនាញឌីជីថលដល់សិស្ស និស្សិត និងអ្នកបម្រើការងារនៅស្ថាប័នសាធារណៈនិងឯកជន។",
+    "about.vision4.3":
+      "ការចំណាយលើការរៀបចំវគ្គសិក្សាឬវគ្គបណ្តុះបណ្តាលចាំបាច់នានា ដើម្បីគាំទ្រដល់ដំណើរការអភិវឌ្ឍជំនាញឌីជីថល។",
+    "about.vision4.4":
+      "ការអភិវឌ្ឍនិងការប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលសម្រាប់បម្រើដល់ការអប់រំ។",
+    "about.vision4.5":
+      "ការចំណាយសម្រាប់ដំណើរការការងាររបស់គណៈគ្រប់គ្រង ក.អ.ជ.ឌ.។",
+    "about.vision4.6": "កម្មវត្ថុផ្សេងៗទៀតដែលកំណត់ដោយគណៈគ្រប់គ្រង ក.អ.ជ.ឌ.។",
+    "about.mission.title": "បេសកកម្ម",
     "about.mission.description":
       "ក.អ.ជ.ឌ. បានប្តេជ្ញាបំពេញនូវបេសកកម្មរបស់ខ្លួនយ៉ាងពេញទំហឹងជាអាទិ៍គឺ៖",
     "about.mission1":
       "ផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់លើជំនាញបច្ចេកវិទ្យាឌីជីថល",
     "about.mission2":
-      "អភិវឌ្ឍន៍ និងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលសម្រាប់បម្រើដល់ការអប់រំ  និង",
+      "អភិវឌ្ឍន៍ និងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលសម្រាប់បម្រើដល់ការអប់រំ និង",
     "about.mission3": "បង្កើនធនធានមនុស្សដែលមានចំណេះដឹងផ្នែកបច្ចេកវិទ្យាឌីជីថល",
-    "about.whatIsDsdp.title": "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.)",
+    "about.whatIsDsdp.title": "អ្វីទៅជា (ក.អ.ជ.ឌ.)?",
     "about.whatIsDsdp.description":
-      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ដែលមានឈ្មោះជាភាសាអង់គ្លេស “Digital Skill Development Program (DSDP)” ក្រោមការផ្តួចផ្តើមគំនិតបង្កើត និងអភិវឌ្ឍឡើងដោយក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ តាមរយៈការប្រើប្រាស់ធនធានពី វិភាគទានប្រចាំឆ្នាំរបស់មូល និធិនៃការកសាងសមត្ថភាព និងស្រាវជ្រាវ និងការអភិវឌ្ឍលើវិស័យ ទូរគមនាគមន៍ និងបច្ចេកវិទ្យា គមនាគមន៍និងព័ត៌មាន(ស.អ.) និងវិភាគទានពីប្រភពស្របច្បាប់ផ្សេងៗទៀត ក្នុងគោលដៅគាំទ្រ ដល់ដំណើរការអភិវឌ្ឍមូលធន មនុស្សឌីជីថល ឆ្លើយតបទៅនឹង តម្រូវការនៃការអភិវឌ្ឍសេដ្ឋកិច្ច និងសង្គមឌីជីថល និងរដ្ឋាភិបាលឌីជីថល។​",
-    "about.benefits.title": "តើ ក.អ.ជ.ឌ. ជួយដល់សិស្ស-និស្សិត ដូចម្តេច?",
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​",
+    "about.benefits.title": "អត្ថប្រយោជន៍នៃ ក.អ.ជ.ឌ.",
     "about.benefits.description":
-      "កម្មវិធី ក.អ.ជ.ឌ. នឹងផ្តល់ ថវិកាសិក្សាដោយមិនគិតការប្រាក់ ជូនទៅដល់សិស្ស និស្សិត និងមន្ត្រីរាជការនៅតាមស្ថាប័ន សាធារណៈ និងឯកជន ដែលមានបំណងចង់បន្តការសិក្សាក្នុងកម្រិតសិក្សា ថ្នាក់បរិញ្ញាបត្រ បរិញ្ញាបត្រជាន់ខ្ពស់ បណ្ឌិត ឬក្នុងវគ្គបណ្តុះបណ្តាលកម្រិតវិញ្ញាបនបត្រលើជំនាញបច្ចេកវិទ្យាឌីជីថលផ្សេង នៅគ្រឹះស្ថានឧត្តមសិក្សាសាធារណៈ និងឯកជន។ បន្ថែមពីលើការផ្តល់ថវិកាសិក្សា កម្មវិធី ក.អ.ជ.ឌ. ក៏ផ្តល់ការប្រឹក្សាយោបល់ដល់សិស្ស និស្សិត និងមន្ត្រីរាជការគ្រប់រូប ព្រមទាំងជួយសម្របសម្រួលការស្នាក់នៅរបស់និស្សិតមកពីតាមខេត្តផងដែរ។",
-    "about.conditionReturnMoney.title": "លក្ខខណ្ឌនៃការសងថវិកាមក ក.អ.ជ.ឌ. វិញ!",
+      "បេក្ខជនជ័យលាភីនៃកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល នឹងទទួលបានអត្ថប្រយោជន៍ ដូចខាងក្រោម៖",
+    "about.benefits1":
+      "ថវិកាសិក្សាដោយមិនគិតការប្រាក់ ដើម្បីបង់ថ្លៃសិក្សារហូតដល់ចប់ថ្នាក់បរិញ្ញាបត្រ",
+    "about.benefits2": "កុំព្យូទ័រយួរដៃមួយគ្រឿង (ប្រសិនបើមានតម្រូវការ)",
+    "about.benefits3": "ថ្លៃស្នាក់នៅ (ប្រសិនបើមានតម្រូវការ)",
+    "about.benefits4":
+      "ការប្រឹក្សាយោបល់អំពីការសិក្សា លើការស្នាក់នៅ និងការអភិវឌ្ឍអាជីប",
+    "about.benefits5":
+      "ឱកាសការងារល្អ និងប្រាក់បៀវត្សរ៍ខ្ពស់ក្នុងវិស័យសាធារណៈនិងឯកជន។",
+    "about.conditionReturnMoney.title": "លក្ខខណ្ឌសម្រាប់បេក្ខជនដែលខ្ចីប្រាក់",
     "about.conditionReturnMoney.description":
-      "កម្មវិធី ក.អ.ជ.ឌ. ផ្តល់លក្ខខណ្ឌងាយស្រួលសម្រាប់បេក្ខជន ដើម្បីធ្វើការសងប្រាក់ដល់កម្មវិធីក.អ.ជ.ឌ. វិញ បន្ទាប់ពីសិស្សនិស្សិតបញ្ចប់ការសិក្សា និងទទួលបានការងារធ្វើ។",
-    "about.howToReturnMoney.title": "តើត្រូវសងដោយរបៀបណា?",
+      "បេក្ខជនត្រូវមានលក្ខខណ្ឌ ដូចខាងក្រោម៖",
+    "about.conditionReturnMoney1": "មានសញ្ជាតិខ្មែរ",
+    "about.conditionReturnMoney2":
+      "ជាសិស្សដែលប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិឆ្នាំសិក្សា២០២៥ ដែលមាននិទ្ទេសរួម A B ឬ C",
+    "about.conditionReturnMoney3":
+      "ជាបេក្ខជនដែលបានបំពេញគ្រប់លក្ខខណ្ឌនៃការជ្រើសរើសឱ្យចុះឈ្មោះចូលរៀននៅតាមគ្រឹះស្ថានឧត្ដមសិក្សាខាងលើ",
+    "about.conditionReturnMoney4": "ឆ្លងកាត់ការប្រឡង និង/ឬការសម្ភាសន៍",
+    "about.conditionReturnMoney5":
+      "ជាសិស្សដែលមានជីវភាពក្រីក្រ មកពីជនបទដាច់ស្រយាល ជនមានពិការភាព ឬសិស្សនារី ត្រូវបានលើកទឹកចិត្ត។",
+    "about.howToReturnMoney.title": "របៀបសងប្រាក់",
     "about.howToReturnMoney.description":
-      "ការសងថវិកា ត្រូវធ្វើឡើងតាមរយៈការបង់រំសល់ប្រចាំខែ ដោយផ្អែកតាមលក្ខខណ្ឌដែលបានព្រមព្រៀងគ្នារវាងបេក្ខជន និង ក.អ.ជ.ឌ. ដោយធ្វើឡើងនៅក្នុងប្រព័ន្ធគណនារំលស់ឥតការប្រាក់តាមអនឡាញរបស់ក្រុមការងាររដ្ឋបាលផ្ទាល់។",
+      "យោងទៅលើកិច្ចព្រមព្រៀងរបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថលដូចខាងក្រោម៖",
+    "about.howToReturnMoney1":
+      "និស្សិត ត្រូវទូទាត់ជូន ក.ប.ទ. វិញនូវចំនួនថវិកាសរុបដែលបានទទួលតាមរយៈ ក.អ.ជ.ឌ. បន្ទាប់ពីបញ្ចប់ការសិក្សា និងពេលទទួលបានការងារធ្វើ ហើយទទួលបានប្រាក់បៀវត្សរ៍ចាប់ពី ៥០០ (ប្រាំរយ) ដុល្លារអាមេរិក ដោយត្រូវទូទាត់បន្តបន្ទាប់ជារៀងរាល់ខែនូវថវិកាយ៉ាងតិចចំនួន ២០% (ម្ភៃភាគរយ) នៃបៀវត្សរ៍ប្រចាំខែរបស់ខ្លួន ដើម្បីទ្រទ្រង់និរន្តរភាពនៃ ក.អ.ជ.ឌ. សម្រាប់និស្សិតកម្ពុជាបន្តបន្ទាប់នាពេលអនាគត និងក្នុងគោលបំណងពង្រឹងទំនួលខុសត្រូវលើការសិក្សារបស់ និស្សិត។ ក្នុងស្មារតីនេះ និស្សិត យល់ព្រម ឱ្យស្ថាប័នសាធារណៈ ឬសហគ្រាសឯកជនដែលខ្លួននឹងបម្រើការជូនបន្ទាប់ពីបញ្ចប់ការសិក្សា ទូទាត់ថវិកាយ៉ាងតិចចំនួន ២០% (ម្ភៃភាគរយ) នៃប្រាក់បៀវត្សរ៍ប្រចាំខែនាពេលអនាគតរបស់សាមី និស្សិត ជូន ក.ប.ទ. តាមរយៈ ក.អ.ជ.ឌ.។ លក្ខខណ្ឌលម្អិតនៃការទូទាត់ថវិកាជូន ក.ប.ទ. តាមរយៈ ក.អ.ជ.ឌ. វិញនឹងត្រូវរៀបចំឡើងតាមរយៈកិច្ចព្រមព្រៀងដាច់ដោយឡែកផ្សេងទៀត។",
+    "about.howToReturnMoney2":
+      "ការទូទាត់ថវិកាខាងលើនេះនឹងត្រូវអនុវត្ត៖ (១) ក្រោមកិច្ចព្រមព្រៀងត្រីភាគីរវាង និស្សិត អនាគតនិយោជករបស់សាមី និស្សិត និងតំណាងរបស់ ក.ប.ទ. និង (២) ជារៀងរាល់ខែដោយគិត ចាប់ពីពេលសាមី និស្សិត ទទួលបានប្រាក់បៀវត្សរ៍ដំបូង រហូតដល់ថវិកាទូទាត់សរុបស្មើនឹងចំនួនថវិកាសរុបដែលសាមី និស្សិត ទទួលបានពី ក.ប.ទ. តាមរយៈ ក.អ.ជ.ឌ.។",
+    "about.howToReturnMoney3":
+      "ក្នុងករណីក្រោយពីបញ្ចប់ការសិក្សា និស្សិត ទទួលបានប្រាក់បៀវត្សរ៍ប្រចាំខែក្នុងកម្រិតខ្ពស់សមរម្យសាមី និស្សិត អាចស្នើឱ្យស្ថាប័ន ឬសហគ្រាសដែលខ្លួននឹងបម្រើការជូនឱ្យទូទាត់ថវិកា ដើម្បីសងជូន ក.ប.ទ. វិញលើសពីចំនួន ២០% នៃប្រាក់បៀវត្សរ៍ប្រចាំខែនាពេលអនាគតរបស់ខ្លួនបានដោយជូនដំណឹងដល់ ក.ប.ទ. ឱ្យបានជ្រាបផងដែរ។",
+    "about.howToReturnMoney4":
+      "និស្សិត ក៏ត្រូវបានលើកទឹកចិត្តឱ្យចូលរួមទ្រទ្រង់ ក.អ.ជ.ឌ. ក្រោមរូបភាពបន្ថែមផ្សេងទៀត ជាអាទិ៍ ជំនួយសប្បុរសជាថវិកា និងជំនួយបច្ចេកទេស រួមមានការចែករំលែកចំណេះដឹងដល់និស្សិត ក.អ.ជ.ឌ. ជំនាន់ក្រោយៗ ឬការបង្រៀនមុខវិជ្ជាឌីជីថលណាមួយដែលជាជំនាញរបស់ខ្លួន ឬការធ្វើការជាបុគ្គលិកស្ម័គ្រចិត្តរបស់កម្មវិធី។",
+    "about.howToReturnMoney5":
+      "ក្នុងករណី និស្សិត ទទួលបានបៀវត្សរ៍ប្រចាំខែក្រោម ៥០០ (ប្រាំរយ) ដុល្លារអាម៉េរិក ក.អ.ជ.ឌ. នឹងពន្យាពេលជូន និស្សិត លើការទូទាត់ថវិកាសងត្រឡប់មក ក.ប.ទ. ក្នុងរយៈពេលជាអតិបរមារត្រឹម ៣ឆ្នាំ បន្ទាប់ពីបញ្ចប់ការសិក្សា។ ប៉ុន្តែចាប់ពីខែទី៣៧ ក្រោយពី និស្សិត បញ្ចប់ការសិក្សា ទោះបីជា និស្សិត មិនទាន់ទទួលបានការងារធ្វើក៏ដោយ និស្សិត មានកាតព្វកិច្ចទូទាត់ថវិកាបន្តបន្ទាប់ជារៀងរាល់ខែចំនួន ១០០ (មួយរយ)ដុល្លារអាម៉េរិក ជូន ក.ប.ទ. ជាកំហិត។ ការទូទាត់ថវិកាខាងលើនេះនឹងត្រូវអនុវត្ត៖ (១) ក្រោមកិច្ចព្រមព្រៀងត្រីភាគីរវាង និស្សិត អាណាព្យាបាលរបស់ និស្សិត និងតំណាងរបស់ ក.ប.ទ. និង (២) ជារៀងរាល់ខែដោយគិតចាប់ពីខែទី៣៧ ក្រោយពីសាមី និស្សិត បញ្ចប់ការសិក្សារហូតដល់ថវិកាទូទាត់សរុបស្មើនឹងចំនួនថវិកាសរុបដែលសាមី និស្សិត ទទួលបានពី ក.ប.ទ. តាមរយៈ ក.អ.ជ.ឌ.។",
     //About Team
     "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
     "about.team.title2": "ក្រុមការងារស្នូល",
     "about.team.title2.description":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "ក្រុមការងារស្នូលរបស់លេខាធិការដ្ឋានមានសមាជិកដែលស្មោះត្រង់ និងមានជំនាញ ក្នុងការផ្តល់ការណែនាំយុទ្ធសាស្ត្រ សម្របសម្រួលគម្រោងសំខាន់ៗ និងធានាថាកម្មវិធីត្រូវបានអនុវត្តយ៉ាងមានប្រសិទ្ធភាព។ សមាជិកម្នាក់ៗនាំមកនូវជំនាញផ្នែកបច្ចេកវិទ្យាឌីជីថល គោលនយោបាយ និងការគ្រប់គ្រងគម្រោង ដើម្បីលើកស្ទួយបេសកកម្មរបស់អង្គការ និងពង្រឹងធនធានមនុស្សក្នុងវិស័យបច្ចេកវិទ្យាឌីជីថល។",
     "about.team.card1.name": "H.E. Apsara",
     "about.team.card1.position": "Head of Finance",
     "about.team.card2.name": "H.E. Apsara",
@@ -435,40 +521,43 @@ export const ui: Record<string, Record<string, string>> = {
     "qa.question.6": "តើបេក្ខជនត្រូវសងថវិកាទៅក.អ.ជ.ឌ.វិញនៅពេលណា?",
     "qa.question.7": "តើបេក្ខជនសងប្រាក់ទៅក.អ.ជ.ឌ.វិញដូចម្តេច?",
     "qa.answer.1":
-      "ក.អ.ជ.ឌ. គឺជាកម្មវិធីផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ដល់ សិស្ស និស្សិត បុគ្គលិកបម្រើការងារនៅស្ថាប័នសាធារណៈ និងឯកជន ឬអង្គការមិនមែន រាជរដ្ឋាភិបាល ដែលមានបំណងចង់សិក្សាជំនាញ បច្ចេកវិទ្យាឌីជីថលក្នុងកម្រិតបរិញ្ញាបត្រ នៅគ្រឹះស្ថានឧត្តមសិក្សាដៃគូរបស់ ​ក.អ.ជ.ឌ.។",
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។",
     "qa.answer.2":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "qa.answer.3":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "បេក្ខជនអាចជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សា និងជំនាញសិក្សាដែលជាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ដូចខាងក្រោម៖",
+    "qa.answer.3": "បេក្ខជនត្រូវមានលក្ខខណ្ឌ ដូចខាងក្រោម៖",
     "qa.answer.4":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "បេក្ខជនត្រូវបំពេញពាក្យស្នើសុំអនឡាញតាមរយៈ Form Kh (in Process)",
     "qa.answer.5":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "បន្ទាប់ពីសិស្សានុសិស្សត្រូវបានជ្រើសរើសពីកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ក្រុមការងារលេខាធិការដ្ឋាននៃកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល និងធ្វើការទំនាក់ទំនង ដើម្បីសម្ភាស៍ផ្ទាល់មាត់ និងបញ្ជាក់ពីការយល់ព្រមទទួលជំនួយហិរញ្ញវត្ថុគ្មានការប្រាក់របស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល។",
     "qa.answer.6":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "qa.answer.7":
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "យោងទៅលើកិច្ចព្រមព្រៀងរបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថលដូចខាងក្រោម៖",
 
     //Hero Carousel
     "home.hero.title":
-      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល ហៅកាត់ថា ក.អ.ជ.ឌ. គាំទ្រដល់ ដំណើរការអភិវឌ្ឍ មូលធនមនុស្ស",
+      "ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ បានបង្កើត “កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល” សរសេរកាត់ថា “ក.អ.ជ.ឌ.” ដើម្បីគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល",
     "home.hero.description":
-      "គោលដៅចម្បងរបស់ ក.អ.ជ.ឌ. គឺចូលរួមអភិវឌ្ឍន៍មូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការនៃវឌ្ឍនាភាពសេដ្ឋកិច្ច និងសង្គមឌីជីថល និង រដ្ឋាភិបាលឌីជីថល។ កម្មវិធីនេះផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ជូន ទៅដល់សិស្ស និស្សិត និងមន្ត្រីរាជការតាមស្ថាប័នសាធារណៈ និងឯកជន គ្រប់រូប ព្រមជាមួយនឹងការប្រឹក្សាយោបល់នានាដោយឥតគិតថ្លៃផងដែរ!",
+      "តាមរយៈការផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ ការប្រឹក្សាយោបល់ដល់និស្សិត ការសម្របសម្រួលការស្នាក់នៅរបស់និស្សិត ការសហការជាមួយគ្រឹះស្ថានឧត្តមសិក្សា និងស្ថាប័នពាក់ព័ន្ធ និង/ឬ ការអភិវឌ្ឍនិងការប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលសម្រាប់បម្រើដល់ការអប់រំ។",
     "home.hero.somdach":
-      "វិសម្តេចធិបតី ហ៊ុន ម៉ាណែត អញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និងពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១",
+      "សម្តេចធិបតី ហ៊ុន ម៉ាណែត អញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និងពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១",
     "home.hero.somdach.description":
       "ភ្នំពេញ៖ នាព្រឹកថ្ងៃទី១១ ខែមីនា ឆ្នាំ ២០២៤ សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្រ្តី នៃព្រះរាជាណាចក្រកម្ពុជា បានអញ្ជើញជាអធិបតីក្នុងពិធីបើក វេទិការដ្ឋាភិបាលឌីជីថល និង ពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និង បច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ លើកទី ១ នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ។ នៅក្នុងកម្មវិធីនេះផងដែរ សម្តេចធិបតីនាយករដ្ឋមន្ត្រី អញ្ជើញទស្សនាពិព័រណ៍រដ្ឋាភិបាលឌីជីថល និងបច្ចេកវិទ្យាឌីជីថលកម្ពុជា-អន្តរជាតិ ដោយក្នុងពិព័រណ៍នោះមានរួមមាន ស្តង់របស់មជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល និងកម្មវិធីបណ្តុះបណ្តាលផ្សេងទៀតរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ តាមរយៈទស្សនាកិច្ចនេះ ឯកឧត្តម ជា វ៉ាន់ដេត រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ បានទទួលបដិសណ្ឋារកិច្ច សម្តេចមហាបវរធិបតី ប្រកបដោយការស្វាគមន៍ និងគារវកិច្ចខ្ពង់ខ្ពស់។ ទន្ទឹមនេះ សម្តេចធិបតី បានចំណាយពេលវេលា ពិនិត្យស្វែងយល់បន្ថែម និងស្តាប់បទបង្ហាញដោយសង្ខេបអំពីមុខងារនិងគុណប្រយោជន៍ នៃមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ និងកម្មវិធីបណ្តុះបណ្តាល ដែលក្រសួងបាននឹងកំពុងអនុវត្ត ដែលវិធីសាស្ត្រមួយផ្នែកសម្រាប់បង្កើនសមត្ថភាពចាប់យកនិងប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថលរបស់មន្ត្រី និងប្រជាពលរដ្ឋក្នុងសហគមន៍ ព្រមទាំងកាត់បន្ថយគម្លាតឌីជីថល។",
     "btn.moredetails": "លម្អិតបន្ថែម",
     "applyStep.step1.title": "ជំហានទី ១៖ ចុះឈ្មោះ",
     // Apply Step 1
-    "applyStep.title.1": "  ជំហានងាយៗនៃការដាក់ពាក្យ",
+    "applyStep.title.1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "applyStep.title.2": "ស្នើសុំថវិកាគម្រោងរបស់",
     "applyStep.title.3": "ក.អ.ជ.ឌ",
     "applyStep.title.4":
-      "    សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ មន្ត្រីរាជការស៊ីវិល",
+      "សិស្សានុសិស្សដែលទើបប្រលងជាប់មធ្យមសិក្សាទុតិយភូមិ ឬ និស្សិត ឬ មន្ត្រីរាជការស៊ីវិល",
     "applyStep.title.5":
-      "    អាចបំពេញពាក្យស្នើសុំគម្រោងថវិកាជាមួយយើងខ្ញុំតាមជំហានងាយៗដូចខាងក្រោម៖",
+      "អាចបំពេញពាក្យស្នើសុំគម្រោងថវិកាជាមួយយើងខ្ញុំតាមជំហានងាយៗដូចខាងក្រោម៖",
+    "applyStep.title.6":
+      "បេក្ខជនត្រូវបំពេញពាក្យស្នើសុំអនឡាញតាមរយៈ www.dsdp.gov.kh/registration ទៅតាមកាលបរិច្ឆេទកំណត់។",
+    "applyStep.title.7":
+      "សម្រាប់ព័ត៌មានបន្ថែម សូមទាក់ទងទូរស័ព្ទលេខ ១២៣ ឬអ៊ីម៉ែល info@dsdp.gov.kh",
     "applyStep.button.title": "អំពីពួកយើង",
+    "event.title": "ព្រឹត្តិការណ៍",
+    "event.btn": "ព្រឹត្តិការណ៍ទាំងអស់",
     // Event Carousel
     "home.event_1.title": "កម្មវិធីចុះអនុស្សរណៈជាមួយ",
     "home.event_1.description":
@@ -482,14 +571,86 @@ export const ui: Record<string, Record<string, string>> = {
     // candidate benefits
     "home.candidate_benefits.title": "អត្ថប្រយោជន៍សម្រាប់បេក្ខជន ក.អ.ជ.ឌ",
     "home.candidate_benefits.description":
-      "ក្រោយពីបានជាប់ជាស្ថាពរជាមួយ ក.អ.ជ.ឌ. បេក្ខជននឹងទទួលបានអត្ថប្រយោជន៍យ៉ាងច្រើនដូចជា៖",
+      "បេក្ខជនជ័យលាភីនៃ ក.អ.ជ.ឌ. នឹងទទួលបានអត្ថប្រយោជន៍ ដូចខាងក្រោម៖",
     // Partnership Section
-    "home.partnership.title": "គ្រឹះស្ថានឧត្តមសិក្សាជាដៃគូរបស់យើង",
+    "home.partnership.title":
+      "គ្រឹះស្ថានឧត្តមសិក្សាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល",
     "home.partnership.description":
-      " ក.អ.ជ.ឌ. បាននឹងកំពុងបន្តស្វែងរក និង ចុះអនុស្សរណៈជាមួយគ្រឹះស្ថានសិក្សាសាធារណៈ និងឯកជនក្នុងគោលបំណងពង្រីកវិសាលភាពនៃគម្រោងឱ្យកាន់តែទូលំទូលាយពេញផ្ទៃប្រទេស",
+      "បេក្ខជនអាចជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សានិងជំនាញសិក្សាដែលជាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ដូចខាងក្រោម៖",
     "home.partnership.box.title": "ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?",
     "home.partnership.box.description":
-      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ. សូមចុចប៊ូតុងខាងក្រោមនេះដើម្បីទំនាក់ទំនងមកយើងខ្ញុំ",
+      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ.",
+
+    //Partner page
+    "partner.title": "ក.អ.ជ.ឌ. ស្វាគមន៍ស្ថាប័នដៃគូទូទាំងប្រទេស",
+    "partner.description_1": "ក.អ.ជ.ឌ",
+    "partner.description_2":
+      "មានបេសកកម្មបន្តស្វែងរក និងចុះហត្ថលេខាលើកិច្ចព្រមព្រៀងសហការណ៍ (MOU) ជាមួយស្ថាប័នដៃគូ ដើម្បីលើកកម្ពស់ការអប់រំឌីជីថល។ យើងមានកិត្តិយសក្នុងការស្វាគមន៍គ្រឹះស្ថានឧត្តមសិក្សា និងអង្គការផ្សេងៗ ដែលបានចូលរួមជាមួយយើងជាដៃគូ។",
+    "partner.description_3": "គ្រឹះស្ថានឧត្តមសិក្សា",
+    "partner.description_4":
+      "សាធារណៈ និងឯកជន ទាំងក្នុងស្រុក និងក្រៅស្រុក ត្រូវបានអញ្ជើញចូលរួមក្នុងគោលបំណងដូចគ្នា គឺ",
+    "partner.description_5": "ពង្រីកកិច្ចសហប្រតិបត្តិការ",
+    "partner.description_6": "មួយដៃគូទាំងអស់ ក្នុងការ",
+    "partner.description_7": "អភិវឌ្ឍធនធានមនុស្សឌីជីថល",
+    "partner.description_8":
+      "ដើម្បីបំពេញតម្រូវការទីផ្សារការងារបច្ចេកវិទ្យាឌីជីថលនៅកម្ពុជា និងទូទាំងពិភពលោក។",
+
+    // Partner Box
+    "partner.box.description_1": "ចូលរួម",
+    "partner.box.description_2": "ជាដៃគូ",
+    "partner.box.description_3": "ជាមួយ",
+    "partner.box.description_4": "ក.អ.ជ.ឌ.",
+    "partner.box.description_5": "ដើម្បី",
+    "partner.box.description_6": "លើកកំពស់ឧត្តមភាពក្នុងជំនាញឌីជីថល",
+    "partner.box.description_7": "សម្រាប់ការអភិវឌ្ឍន៍ប្រទេសកម្ពុជា។",
+
+    // University
+    "Uni.description": "ជំនាញបណ្តុះបណ្តាល:",
+    //RUPP
+    "RUPP.title": "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",
+    "RUPP.major_1": "វិស្វកម្មទូរគមនាគមន៍ និងអេឡិចត្រូនិក",
+    "RUPP.major_2": "វិស្វកម្ម និងវិទ្យាសាស្រ្តទិន្ន័យ",
+    "RUPP.major_3": "ព័ត៌មានវិទ្យា",
+    "RUPP.major_4": "វិស្វកម្មបច្ចេកវិទ្យាព័ត៌មាន",
+    //ITC
+    "ITC.title": "វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា",
+    "ITC.major_1": "វិស្វកម្មសុសវែរ",
+    "ITC.major_2": "វិស្វកម្មបញ្ញាសិប្បនិម្មិត និងសន្តិសុខសាយប័រ",
+
+    // AUPP
+    "AUPP.title": "សាកលវិទ្យាល័យអាមេរិកាំងភ្នំពេញ",
+    "AUPP.major_1": "ការគ្រប់គ្រងព័ត៌មានវិទ្យា/វិទ្យាសាស្ត្រកុំព្យូទ័រ",
+    "AUPP.major_2": "បច្ចេកវិទ្យាគមនាគមន៍និងព័ត៌មាន",
+    "AUPP.major_3": "សន្តិសុខសាយប័រ",
+    "AUPP.major_4": "បញ្ញាសិប្បនិម្មិត",
+    "AUPP.major_5": "ហេដ្ឋារចនាសម្ព័ន្ធឌីជីថល",
+    "AUPP.major_6": "ការអភិវឌ្ឍសុសវែរ",
+    "AUPP.major_7": "ការវិភាគទិន្នន័យ/ប្រព័ន្ធព័ត៌មាន",
+    "AUPP.major_8": "ការអភិវឌ្ឍនិងការរចនាកម្មវិធីអន្តរកម្ម",
+
+    // NUM
+    "NUM.title": "សាកលវិទ្យាល័យជាតិគ្រប់គ្រង",
+    "NUM.major_1": "សេដ្ឋកិច្ចឌីជីថល",
+    "NUM.major_2": "បច្ចេកវិទ្យាហិរញ្ញវត្ថុ",
+    "NUM.major_3": "សហគ្រិនភាពសកលនិងនវានុវត្តន៍",
+    "NUM.major_4": "ព័ត៌មានវិទ្យាធុរកិច្ច",
+
+    // Paragon
+    "Paragon.title": "សាកលវិទ្យាល័យអន្តរជាតិផារ៉ាហ្គន",
+    "Paragon.major_1": "វិទ្យាសាស្ត្រកុំព្យូទ័រ",
+    "Paragon.major_2": "គ្រប់គ្រងប្រព័ន្ធព័ត៌មាន",
+    "Paragon.major_3": "រចនាប្លង់ និងប្រព័ន្ធផ្សព្វផ្សាយ ",
+
+    // CADT
+    "CADT.title": "បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា",
+    "CADT.major_1": "វិស្វកម្មសុសវែរ",
+    "CADT.major_2": "វិទ្យាសាស្ត្រទិន្នន័យ",
+    "CADT.major_3": "ពាណិជ្ជកម្មអេឡិចត្រូនិច",
+    "CADT.major_4": "វិស្វកម្មទូរគមនាគមន៍និងបណ្តាញ",
+    "CADT.major_5": "សន្តិសុខសាយប័រ",
+
+    // Partner About Us Button
+    "partner.button.AboutUs": "Contact Us",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
@@ -585,8 +746,8 @@ export const ui: Record<string, Record<string, string>> = {
     // Info section
     "contact.title.1": "ព័ត៌មានទំនាក់ទំនង",
     "contact.description.1":
-      "សូមបំពេញទម្រង់ខាងស្តាំនេះ ដើម្បធ្វើទំនាក់ទំនងមកកាន់ក្រុមការ ងារ ក.អ.ជ.ឌ.។ យើងនឹងឆ្លើយតបទៅវិញក្នុងរយៈពេលមិនលើសពី ២៤ម៉ោង។ ឬទំនាក់ទំនងផ្ទាល់មកកាន់លេខទូរស័ព្ទខាងក្រោមនេះ ៖",
-    "contact.description.2": "(+855) 12 345 678 | 12 45 678 | 12 34 567",
+      "សូមបំពេញទម្រង់ខាងស្តាំនេះ ដើម្បធ្វើទំនាក់ទំនងមកកាន់ក្រុមការងារ ក.អ.ជ.ឌ.។ យើងនឹងឆ្លើយតបទៅវិញក្នុងរយៈពេលមិនលើសពី ២៤ម៉ោង។ ឬទំនាក់ទំនងផ្ទាល់មកកាន់លេខទូរស័ព្ទខាងក្រោមនេះ ៖",
+    "contact.description.2": "123",
     "contact.description.3": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
     "contact.description.4":
       "អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ 120210, កម្ពុជា",
@@ -631,7 +792,7 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.title.4": "ទាក់ទងតាម",
     "footer.description.11":
       "អាគារលេខ 13, មហាវិថីព្រះមុនីវង្ស, សង្កាត់ស្រះចក, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ, កម្ពុជា, 120210",
-    "footer.description.12": "(+855) 123",
+    "footer.description.12": "123",
     "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
     "footer.description.14": "រក្សាសិទ្ធិ",
     "footer.description.15": "រក្សាសិទ្ធិគ្រប់យ៉ាង DSDP.GOV.KH",
