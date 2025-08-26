@@ -3,11 +3,17 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import { loadEnv } from "vite";
 
-const siteUrl = import.meta.env.SITE_URL || "https://dsdp.gov.kh";
+const { PUBLIC_SITE_URL } = loadEnv(
+  // @ts-ignore
+  process.env.NODE_ENV,
+  process.cwd(),
+  "",
+);
 
 export default defineConfig({
-  site: siteUrl,
+  site: PUBLIC_SITE_URL || "https://dsdp.gov.kh",
 
   server: {
     host: "::",
