@@ -183,7 +183,7 @@ export const ui: Record<string, Record<string, string>> = {
       "Applicants can select from DSDP’s partner higher education institutions and eligible study programs as follows:",
     "home.partnership.box.title": "Want to become a DSDP partner?",
     "home.partnership.box.description":
-      " If you or your institution is interested in becoming a partner of DSDP, please click the button below to contact us.",
+      " If you or your institution is interested in becoming a partner of DSDP.",
     //Partner page
     "partner.title": "DSDP welcomes partner institutions nationwide",
     "partner.description_1": "DSDP",
@@ -579,7 +579,7 @@ export const ui: Record<string, Record<string, string>> = {
       "បេក្ខជនអាចជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សានិងជំនាញសិក្សាដែលជាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ដូចខាងក្រោម៖",
     "home.partnership.box.title": "ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?",
     "home.partnership.box.description":
-      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ. សូមចុចប៊ូតុងខាងក្រោមនេះដើម្បីទំនាក់ទំនងមកយើងខ្ញុំ",
+      "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ.",
 
     //Partner page
     "partner.title": "ក.អ.ជ.ឌ. ស្វាគមន៍ស្ថាប័នដៃគូទូទាំងប្រទេស",
