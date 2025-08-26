@@ -4,8 +4,10 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
+const siteUrl = import.meta.env.SITE_URL || "https://dsdp.gov.kh";
+
 export default defineConfig({
-  site: process.env.PUBLIC_SITE_URL || "http://localhost:4321",
+  site: siteUrl,
 
   server: {
     host: "::",
