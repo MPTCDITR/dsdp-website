@@ -1,0 +1,24 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  img: ImageMetadata;
+  name: string;
+  position: string;
+  ministry: string;
+}
+
+const { img, name, position, ministry } = Astro.props;
+---
+
+<div class="container">
+  <Image
+    src={img}
+    alt={`${name}'s portrait`}
+    class="w-3xs h-xs object-cover mb-4 rounded-2xl mx-auto"
+  />
+  <h3 class="text-center text-2xl font-bold mb-2">{name}</h3>
+  <p class="text-center text-sm">{position}</p>
+  <p class="text-center text-sm">{ministry}</p>
+</div>
