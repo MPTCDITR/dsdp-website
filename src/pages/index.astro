@@ -1,5 +1,7 @@
 ---
-const cannonicaURL = Astro.request.url;
+import Jsonld from "@/components/layout/Jsonld.astro";
+
+const cannonicaURL = new URL(Astro.site ?? "");
 ---
 
 <meta http-equiv="refresh" content="0;url=/km/" />
@@ -46,3 +48,14 @@ const cannonicaURL = Astro.request.url;
 <meta name="twitter:image" content="/dsdp-logo-final.svg" />
 <meta name="twitter:site" content="@dsdp_cambodia" />
 <meta name="twitter:creator" content="@dsdp_cambodia" />
+
+<Jsonld
+  title="DSDP Cambodia"
+  description="DSDP Cambodia - Digital Service Delivery Platform"
+  siteUrl={cannonicaURL}
+  canonicalUrl={cannonicaURL}
+  defaultSiteProjectName="DSDP Cambodia"
+  image="/dsdp-logo-final.svg"
+  type="WebPage"
+  author={{ name: "DSDP Cambodia", url: cannonicaURL }}
+/>

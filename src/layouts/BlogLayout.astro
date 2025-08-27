@@ -22,8 +22,8 @@ const locale = Astro.currentLocale ?? defaultLang;
 const navigationItems = getLocalizedRoutes(navigation, locale);
 const currentPath = Astro.url.pathname;
 
-const siteUrl = Astro.site;
-const cannonicaURL = Astro.request.url;
+const siteUrl = new URL(Astro.site ?? "");
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? "");
 
 const {
   title,
@@ -53,14 +53,14 @@ const {
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
-    <link rel="canonical" href={Astro.url.href} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <meta property="og:locale" content={lang} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DSDP Cambodia" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={img} />
     <meta property="og:image:alt" content={title} />
 
@@ -71,18 +71,17 @@ const {
     <meta name="twitter:site" content="@dsdp_cambodia" />
     <meta name="twitter:creator" content="@dsdp_cambodia" />
 
-    <!-- Json LD -->
     <Jsonld
       title={title}
       description={description}
       siteUrl={siteUrl}
-      canonicalUrl={cannonicaURL}
+      canonicalUrl={canonicalUrl}
       defaultSiteProjectName="DSDP Cambodia"
       image={img}
       type={"BlogPosting"}
       author={{
         name: author,
-        url: "https://dsdp.gov.kh",
+        url: siteUrl,
       }}
     />
   </head>
