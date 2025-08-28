@@ -2,6 +2,7 @@
 import AboutTeam from "@/components/pages/about/about-team-content.astro";
 
 import { languages } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 import type { GetStaticPaths } from "astro";
 
@@ -12,11 +13,17 @@ export const getStaticPaths = (() => {
 }) satisfies GetStaticPaths;
 
 const { lang } = Astro.params;
+
+const t = useTranslations(lang);
 ---
 
 <Layout
-  title="អំពីក្រុមឌីអេសឌីធី - About DSDP Team"
-  description="Meet the dedicated team behind DSDP, working together to drive our mission and make a positive impact in the community."
+  title={t("about.team.title")}
+  description={t("about.team.name") +
+    ", " +
+    t("about.team.position") +
+    " " +
+    t("about.team.ministry")}
   author="DSDP Cambodia"
 >
   <AboutTeam lang={lang} />
