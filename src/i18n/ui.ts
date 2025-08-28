@@ -13,7 +13,7 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.home": "Home",
     "nav.about": "About Us",
     "nav.about_us": "About DSDP",
-    "nav.about_team": "DSDP Team",
+    "nav.about_team": "DSDP Chairman",
     "nav.about.question&answer": "Q&A",
     "nav.our_partners": "Our Partners",
     "nav.how_to_apply": "How to Apply",
@@ -92,18 +92,14 @@ export const ui: Record<string, Record<string, string>> = {
       "If a student earns less than USD 500 per month after graduation, DSDP will allow a maximum grace period of 3 years for repayment. However, starting from the 37th month after graduation, regardless of employment status, the student must repay at least USD 100 per month until the total amount is fully repaid. This will also be implemented (a) Under a tripartite agreement between the student, their guardian, and a representative of MPTC; and (b) On a monthly basis, starting from the 37th month after graduation until the total support amount received is fully repaid.",
 
     //About Team
-    "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
-    "about.team.title2": "Core Team",
-    "about.team.title2.description":
-      "The Core Team consists of dedicated professionals who provide strategic guidance, coordinate key initiatives, and ensure the effective implementation of the Secretariat’s programs. Each member contributes expertise in digital technology, policy, and project management to advance the organization’s mission and strengthen human resources in the field of digital technology.",
-    "about.team.card1.name": "H.E. Apsara",
-    "about.team.card1.position": "Head of Finance",
-    "about.team.card2.name": "H.E. Apsara",
-    "about.team.card2.position": "Head of Finance",
-    "about.team.card3.name": "H.E. Apsara",
-    "about.team.card3.position": "Head of Finance",
-    "about.team.card4.name": "H.E. Apsara",
-    "about.team.card4.position": "Head of Finance",
+    "about.team.title": "Chairman of D.S.D.P.",
+    "about.team.name": "H.E. Mr. VANDETH CHEA",
+    "about.team.position": "Minister of Post and Telecommunications",
+    "about.team.ministry": "(M.P.T.C.)",
+    "about.team.description1":
+      "In the effort to promote the development of digital human capital, and to contribution to the implementation of Strategic Goal No. 3 and Strategic Goal No. 7 of the Cambodia Digital Government Policy of 2022-2035, the Ministry of Post and Telecommunications has established a new program, called the <strong>Digital Skill Development Program (D.S.D.P.)</strong>. This program will allow students who cannot afford tuition fees to apply for interest-free educational financial support to pay for school tuition at the program’s partner higher education institutions. Students will then need to repay 20% of their monthly salary back once they graduate and earn a salary starting from USD 500 or more, in order to sustain the program for students in the next generation. In addition, to ensure effectiveness and efficiency in fulfilling this mission, the Ministry of Post and Telecommunications has decided to create the D.S.D.P. management committee, of which I myself as the Chairman, and with a Secretariat as the Administrative and Technical Officer to coordinate day-to-day operations. Undoubtedly, the education sector is one of the key partners in digital transformation. In this sense, the collaboration between the Ministry of Post and Telecommunication and the six higher education institutions are a new evidence of unity in building and developing digital human capital through the partnership between a ministry of specialization and educational institutions, in line with the vision of the Cambodian government for strengthening human resource capacity and also known as the continued commitment of the ministry in establishing a robust digital ecosystem that supports digital transformation across all sectors of the country.",
+    "about.team.description2":
+      "I firmly believe that the Digital Skill Development Program will achieve successful results and will yield valuable returns in the form of digital human capital that will deliver an active force in building and developing Cambodia's digital economy and society toward the Cambodia Vision 2050, under the wise and dynamic leadership of <strong>Samdech Moha Borvor Thipadei Hun Manet, the Prime Minister of Cambodia</strong>.",
 
     // contact-team
     "contact.team.title":
@@ -386,7 +382,7 @@ export const ui: Record<string, Record<string, string>> = {
     // Footer
     "footer.title.1": "ABOUT US",
     "footer.description.1": "About DSDP",
-    "footer.description.2": "About DSDP Team",
+    "footer.description.2": "DSDP Chairman",
     "footer.description.3": "Q and A",
     "footer.title.2": "PROGRAMS",
     "footer.description.4": "How to apply",
@@ -418,8 +414,8 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.menu": "បញ្ជីមាតិកា",
     "nav.home": "ទំព័រដើម",
     "nav.about": "អំពីពួកយើង",
-    "nav.about_us": "អំពីឌីអេសឌីធី",
-    "nav.about_team": "អំពីក្រុមឌីអេសឌីធី",
+    "nav.about_us": "អំពី ក.អ.ជ.ឌ.",
+    "nav.about_team": "ប្រធាន​ ក.អ.ជ.ឌ.",
     "nav.about.question&answer": "សំណួរ​និងចម្លើយ",
     "nav.our_partners": "ដៃគូរបស់យើង",
     "nav.how_to_apply": "របៀបដាក់ពាក្យ",
@@ -497,18 +493,14 @@ export const ui: Record<string, Record<string, string>> = {
     "about.howToReturnMoney5":
       "ក្នុងករណី និស្សិត ទទួលបានបៀវត្សរ៍ប្រចាំខែក្រោម ៥០០ (ប្រាំរយ) ដុល្លារអាម៉េរិក ក.អ.ជ.ឌ. នឹងពន្យាពេលជូន និស្សិត លើការទូទាត់ថវិកាសងត្រឡប់មក ក.ប.ទ. ក្នុងរយៈពេលជាអតិបរមារត្រឹម ៣ឆ្នាំ បន្ទាប់ពីបញ្ចប់ការសិក្សា។ ប៉ុន្តែចាប់ពីខែទី៣៧ ក្រោយពី និស្សិត បញ្ចប់ការសិក្សា ទោះបីជា និស្សិត មិនទាន់ទទួលបានការងារធ្វើក៏ដោយ និស្សិត មានកាតព្វកិច្ចទូទាត់ថវិកាបន្តបន្ទាប់ជារៀងរាល់ខែចំនួន ១០០ (មួយរយ)ដុល្លារអាម៉េរិក ជូន ក.ប.ទ. ជាកំហិត។ ការទូទាត់ថវិកាខាងលើនេះនឹងត្រូវអនុវត្ត៖ (១) ក្រោមកិច្ចព្រមព្រៀងត្រីភាគីរវាង និស្សិត អាណាព្យាបាលរបស់ និស្សិត និងតំណាងរបស់ ក.ប.ទ. និង (២) ជារៀងរាល់ខែដោយគិតចាប់ពីខែទី៣៧ ក្រោយពីសាមី និស្សិត បញ្ចប់ការសិក្សារហូតដល់ថវិកាទូទាត់សរុបស្មើនឹងចំនួនថវិកាសរុបដែលសាមី និស្សិត ទទួលបានពី ក.ប.ទ. តាមរយៈ ក.អ.ជ.ឌ.។",
     //About Team
-    "about.team.title1": "រចនាសម្ព័ន្ធលេខាធិការដ្ឋាន",
-    "about.team.title2": "ក្រុមការងារស្នូល",
-    "about.team.title2.description":
-      "ក្រុមការងារស្នូលរបស់លេខាធិការដ្ឋានមានសមាជិកដែលស្មោះត្រង់ និងមានជំនាញ ក្នុងការផ្តល់ការណែនាំយុទ្ធសាស្ត្រ សម្របសម្រួលគម្រោងសំខាន់ៗ និងធានាថាកម្មវិធីត្រូវបានអនុវត្តយ៉ាងមានប្រសិទ្ធភាព។ សមាជិកម្នាក់ៗនាំមកនូវជំនាញផ្នែកបច្ចេកវិទ្យាឌីជីថល គោលនយោបាយ និងការគ្រប់គ្រងគម្រោង ដើម្បីលើកស្ទួយបេសកកម្មរបស់អង្គការ និងពង្រឹងធនធានមនុស្សក្នុងវិស័យបច្ចេកវិទ្យាឌីជីថល។",
-    "about.team.card1.name": "H.E. Apsara",
-    "about.team.card1.position": "Head of Finance",
-    "about.team.card2.name": "H.E. Apsara",
-    "about.team.card2.position": "Head of Finance",
-    "about.team.card3.name": "H.E. Apsara",
-    "about.team.card3.position": "Head of Finance",
-    "about.team.card4.name": "H.E. Apsara",
-    "about.team.card4.position": "Head of Finance",
+    "about.team.title": "ប្រធាន ក.អ.ជ.ឌ.",
+    "about.team.name": "ឯកឧត្តម ជា វ៉ាន់ដេត",
+    "about.team.position": "រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍",
+    "about.team.ministry": "(ក.ប.ទ.)",
+    "about.team.description1":
+      "ក្នុងកិច្ចខិតខំជំរុញការកសាងមូលធនមនុស្សឌីជីថល ដើម្បីចូលរួមអនុវត្តគោលដៅជាយុទ្ធសាស្ត្រទី៣ និងយុទ្ធសាស្ត្រទី៧ នៃគោលនយោបាយរដ្ឋាភិបាលឌីជីថលកម្ពុជា ២០២២-២០៣៥ ក្រសួងប្រៃសណីយ៍និង ទូរគមនាគមន៍បានបង្កើតកម្មវិធីថ្មីមួយទៀតគឺ <strong>កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ខ.)</strong>។ កម្មវិធីនេះនឹងអនុញ្ញាតឱ្យសិស្សដែលមិនមាន លទ្ធភាពបង់ថ្លៃសិក្សាគឺ អាចស្នើសុំហិរញ្ញប្បទានសិក្សាពីកម្មវិធីដោយគ្មានការប្រាក់យកទៅបង់ថ្លៃសិក្សានៅ គ្រឹះស្ថានឧត្តមសិក្សាជាដៃគូរបស់កម្មវិធី ហើយសិស្សត្រូវទូទាត់មកវិញ ២០% នៃបៀវត្សប្រចាំខែ នៅពេលដែលខ្លួនចេញធ្វើការនិងទទួលបានបៀវត្សចាប់ពី ៥០០ដុល្លារសហរដ្ឋអាម៉េរិកឡើងទៅ ដើម្បីទ្រទ្រង់និរន្តរភាពនៃកម្មវិធីសម្រាប់សិស្សជំនាន់ក្រោយ។ បន្ថែមពីលើនេះ ដើម្បីធានាប្រសិទ្ធភាពនិងស័ក្តិសិទ្ធភាពក្នុងការបំពេញបេសកកម្មការងារមួយនេះ ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក៏បានសម្រេចបង្កើតគណៈគ្រប់គ្រងកម្មវិធី អភិវឌ្ឍន៍ជំនាញឌីជីថល ដែលរូបខ្ញុំផ្ទាល់គឺជាប្រធានគណៈគ្រប់គ្រងហើយមានលេខាធិការដ្ឋានមួយជា សេនាធិការរដ្ឋបាលនិងបច្ចេកទេសដើម្បីសម្របសម្រួលការងារប្រចាំថ្ងៃ។ ជាការពិតណាស់ វិស័យអប់រំជាវិស័យដៃគូមួយសម្រាប់ កិច្ចការបរិវត្តកម្មឌីជីថល។ ក្នុងន័យនេះ កិច្ចសហប្រតិបត្តិការរវាងក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ និងគ្រឹះស្ថានឧត្តមសិក្សាទាំង ៦ គឺជាសក្ខីភាព ថ្មីមួយទៀតក្នុងការរួមគ្នាកសាង និងអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ក្នុងភាពជាដៃគូរវាងក្រសួងជំនាញ និងគ្រឹះស្ថានអប់រំ ស្របតាមចក្ខុវិស័យរបស់រាជរដ្ឋាភិបាលកម្ពុជា សម្រាប់បំពេញតម្រូវការការកសាងសមត្ថភាពធនធានមនុស្ស និងជាការគូសបញ្ជាក់ជាថ្មីអំពីការបន្តកិច្ចខិតខំរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ ក្នុងការរៀបចំឱ្យមានប្រព័ន្ធ អេកូឡូស៊ីឌីជីថលមួយរឹងមាំ និងអំណោយផលដល់ការធ្វើបរិវត្តកម្មឌីជីថលលើ គ្រប់វិស័យទូទាំងប្រទេស។ ",
+    "about.team.description2":
+      "ខ្ញុំសង្ឃឹមជឿជាក់យ៉ាងមុតមាំថា កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថលនឹងទទួលបានជោគជ័យ ហើយផ្តល់ជាផ្លែផ្កាត្រលប់មកវិញនូវមូលធនមនុស្សឌីជីថល ដែលកម្លាំងសកម្មក្នុងកសាងនិងអភិវឌ្ឍសេដ្ឋកិច្ចនិងសង្គម ឌីជីថល ឆ្ពោះទៅកាន់ ចក្ខុវិស័យកម្ពុជាឆ្នាំ២០៥០ ក្រោមការដឹកនាំ ប្រកបដោយភាពឈ្លាសវៃនិងស្វាហាប់របស់ <strong>សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្ត្រីនៃព្រះរាជាណាចក្រកម្ពុជា</strong>។",
 
     // contact-supporter
     "contact.team.title":
@@ -789,7 +781,7 @@ export const ui: Record<string, Record<string, string>> = {
     // Footer
     "footer.title.1": "អំពីយើង",
     "footer.description.1": "អំពី ក.អ.ជ.ឌ",
-    "footer.description.2": "អំពីក្រុម ក.អ.ជ.ឌ",
+    "footer.description.2": "ប្រធាន ក.អ.ជ.ឌ",
     "footer.description.3": "សំណួរ និង ចម្លើយ",
     "footer.title.2": "កម្មវិធី",
     "footer.description.4": "របៀបដាក់ពាក្យ",
