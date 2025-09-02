@@ -69,13 +69,13 @@ export const ui: Record<string, Record<string, string>> = {
       "Access to quality job opportunities and high salaries in both public and private sectors.",
     "about.conditionReturnMoney.title": "Eligibility Criteria for Applicants",
     "about.conditionReturnMoney.description":
-      "Successful applicants of the Digital Skills Development Program will receive the following benefits:",
-    "about.conditionReturnMoney1": "Be of Cambodian nationality.",
+      "Applicants must meet the following criteria:",
+    "about.conditionReturnMoney1": "Must be of Cambodian nationality.",
     "about.conditionReturnMoney2":
-      "Be a student who passed the 2025 high school diploma exam with an overall grade of A, B, or C.",
+      "Must be a student who has passed the 2025 National High School Examination with an overall grade of A, B, or C.",
     "about.conditionReturnMoney3":
-      "Meet all requirements for admission to one of the listed higher education partner institutions.",
-    "about.conditionReturnMoney4": "Pass an examination and/or interview.",
+      "Must meet all requirements set by the selection process for enrollment at the above-mentioned higher education institutions.",
+    "about.conditionReturnMoney4": "Must pass an examination and/or interview.",
     "about.conditionReturnMoney5":
       "Students from disadvantaged backgrounds, rural and remote areas, those with disabilities, and female students are strongly encouraged.",
     "about.howToReturnMoney.title": "Repayment Method",
@@ -93,13 +93,13 @@ export const ui: Record<string, Record<string, string>> = {
 
     //About Team
     "about.team.title": "Chairman of D.S.D.P.",
-    "about.team.name": "H.E. Mr. VANDETH CHEA",
+    "about.team.name": "H.E. VANDETH CHEA",
     "about.team.position": "Minister of Post and Telecommunications",
     "about.team.ministry": "(M.P.T.C.)",
     "about.team.description1":
-      "In the effort to promote the development of digital human capital, and to contribution to the implementation of Strategic Goal No. 3 and Strategic Goal No. 7 of the Cambodia Digital Government Policy of 2022-2035, the Ministry of Post and Telecommunications has established a new program, called the <strong>Digital Skill Development Program (D.S.D.P.)</strong>. This program will allow students who cannot afford tuition fees to apply for interest-free educational financial support to pay for school tuition at the program’s partner higher education institutions. Students will then need to repay 20% of their monthly salary back once they graduate and earn a salary starting from USD 500 or more, in order to sustain the program for students in the next generation. In addition, to ensure effectiveness and efficiency in fulfilling this mission, the Ministry of Post and Telecommunications has decided to create the D.S.D.P. management committee, of which I myself as the Chairman, and with a Secretariat as the Administrative and Technical Officer to coordinate day-to-day operations. Undoubtedly, the education sector is one of the key partners in digital transformation. In this sense, the collaboration between the Ministry of Post and Telecommunication and the six higher education institutions are a new evidence of unity in building and developing digital human capital through the partnership between a ministry of specialization and educational institutions, in line with the vision of the Cambodian government for strengthening human resource capacity and also known as the continued commitment of the ministry in establishing a robust digital ecosystem that supports digital transformation across all sectors of the country.",
+      "In its effort to promote the development of digital human capital and to contribute to the implementation of Strategic Goal 3 and Strategic Goal 7 of the Cambodia Digital Government Policy 2022–2035, the Ministry of Post and Telecommunications has established a new initiative — the <strong>Digital Skills Development Program (D.S.D.P.)</strong>. This program enables students with financial difficulties to apply for interest-free educational funding to cover tuition fees at partner higher education institutions. Graduates who benefit from this support are required to repay <strong>20% of their monthly salary</strong> once they enter the workforce and earn a minimum of <strong>USD 500 per month</strong>, ensuring the program’s sustainability for future generations of students. To guarantee efficiency and accountability, the Ministry has also created a <strong>D.S.D.P. Management Committee</strong> chaired directly by myself, with a Secretariat serving as the administrative and technical arm responsible for day-to-day coordination. The education sector plays a vital role in driving digital transformation, and in this regard, the collaboration between the Ministry of Post and Telecommunications and six higher education institutions stands as a new milestone in building and developing Cambodia’s digital human capital. This partnership reflects the Royal Government’s vision to strengthen human resource capacity and reaffirms the Ministry’s ongoing commitment to fostering a robust digital ecosystem that supports nationwide digital transformation.",
     "about.team.description2":
-      "I firmly believe that the Digital Skill Development Program will achieve successful results and will yield valuable returns in the form of digital human capital that will deliver an active force in building and developing Cambodia's digital economy and society toward the Cambodia Vision 2050, under the wise and dynamic leadership of <strong>Samdech Moha Borvor Thipadei Hun Manet, the Prime Minister of Cambodia</strong>.",
+      "I am firmly confident that the <strong>Digital Skills Development Program (D.S.D.P.)</strong> will achieve great success and produce a new generation of skilled digital human resources, who will be an active driving force in advancing Cambodia’s digital economy and society, moving towards the <strong>Cambodia 2050 Vision</strong> under the wise and dynamic leadership of <strong>Samdech Moha Borvor Thipadei Hun Manet, Prime Minister of the Kingdom of Cambodia.</strong>",
 
     // contact-team
     "contact.team.title":
@@ -185,18 +185,28 @@ export const ui: Record<string, Record<string, string>> = {
     "home.partnership.box.description":
       " If you or your institution is interested in becoming a partner of DSDP.",
     //Partner page
-    "partner.title": "DSDP welcomes partner institutions nationwide",
-    "partner.description_1": "DSDP",
-    "partner.description_2":
-      "Our mission is to continuously seek and sign MOUs with institutions and promote digital education. We are honored to welcome higher education institutions and other organizations that join us as partners.",
-    "partner.description_3": "Higher Education Institutions",
-    "partner.description_4":
-      "Public and private, both domestic and international, with the aim of",
-    "partner.description_5": "Expanding cooperation",
-    "partner.description_6": "with all partner institutions in",
-    "partner.description_7": "Developing digital human resources",
-    "partner.description_8":
-      "To meet the needs of the digital technology job market in Cambodia and globally!",
+    "partner.title": "D.S.D.P. Welcomes Partner Institutions Nationwide",
+    "partner.description_1": "Digital Skill Development Program (D.S.D.P.)",
+    "partner.description_2": "has a mission to continuously seek and sign",
+    "partner.description_3": "cooperation agreements (MOUs)",
+    "partner.description_4": "with partner institutions to",
+    "partner.description_5": "promote digital education",
+    "partner.description_6": "We are honored to welcome",
+    "partner.description_7": "higher education institutions",
+    "partner.description_8": "and",
+    "partner.description_9": "other organizations",
+    "partner.description_10": "that have joined us as partners both",
+    "partner.description_11":
+      "public and private higher education institutions",
+    "partner.description_12": "domestic and international,",
+    "partner.description_13":
+      "are invited to participate in this shared goal: ",
+    "partner.description_14": "expanding cooperation",
+    "partner.description_15": "in",
+    "partner.description_16": "developing digital human resources",
+    "partner.description_17": "to meet the growing demands of the",
+    "partner.description_18": "digital technology job market",
+    "partner.description_19": "in Cambodia and worldwide.",
 
     // Partner Box
     "partner.box.description_1": "Join",
@@ -456,7 +466,7 @@ export const ui: Record<string, Record<string, string>> = {
     "about.mission3": "បង្កើនធនធានមនុស្សដែលមានចំណេះដឹងផ្នែកបច្ចេកវិទ្យាឌីជីថល",
     "about.whatIsDsdp.title": "អ្វីទៅជា (ក.អ.ជ.ឌ.)?",
     "about.whatIsDsdp.description":
-      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​",
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​",
     "about.benefits.title": "អត្ថប្រយោជន៍នៃ ក.អ.ជ.ឌ.",
     "about.benefits.description":
       "បេក្ខជនជ័យលាភីនៃកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល នឹងទទួលបានអត្ថប្រយោជន៍ ដូចខាងក្រោម៖",
@@ -498,9 +508,9 @@ export const ui: Record<string, Record<string, string>> = {
     "about.team.position": "រដ្ឋមន្ត្រីក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍",
     "about.team.ministry": "(ក.ប.ទ.)",
     "about.team.description1":
-      "ក្នុងកិច្ចខិតខំជំរុញការកសាងមូលធនមនុស្សឌីជីថល ដើម្បីចូលរួមអនុវត្តគោលដៅជាយុទ្ធសាស្ត្រទី៣ និងយុទ្ធសាស្ត្រទី៧ នៃគោលនយោបាយរដ្ឋាភិបាលឌីជីថលកម្ពុជា ២០២២-២០៣៥ ក្រសួងប្រៃសណីយ៍និង ទូរគមនាគមន៍បានបង្កើតកម្មវិធីថ្មីមួយទៀតគឺ <strong>កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ខ.)</strong>។ កម្មវិធីនេះនឹងអនុញ្ញាតឱ្យសិស្សដែលមិនមាន លទ្ធភាពបង់ថ្លៃសិក្សាគឺ អាចស្នើសុំហិរញ្ញប្បទានសិក្សាពីកម្មវិធីដោយគ្មានការប្រាក់យកទៅបង់ថ្លៃសិក្សានៅ គ្រឹះស្ថានឧត្តមសិក្សាជាដៃគូរបស់កម្មវិធី ហើយសិស្សត្រូវទូទាត់មកវិញ ២០% នៃបៀវត្សប្រចាំខែ នៅពេលដែលខ្លួនចេញធ្វើការនិងទទួលបានបៀវត្សចាប់ពី ៥០០ដុល្លារសហរដ្ឋអាម៉េរិកឡើងទៅ ដើម្បីទ្រទ្រង់និរន្តរភាពនៃកម្មវិធីសម្រាប់សិស្សជំនាន់ក្រោយ។ បន្ថែមពីលើនេះ ដើម្បីធានាប្រសិទ្ធភាពនិងស័ក្តិសិទ្ធភាពក្នុងការបំពេញបេសកកម្មការងារមួយនេះ ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក៏បានសម្រេចបង្កើតគណៈគ្រប់គ្រងកម្មវិធី អភិវឌ្ឍន៍ជំនាញឌីជីថល ដែលរូបខ្ញុំផ្ទាល់គឺជាប្រធានគណៈគ្រប់គ្រងហើយមានលេខាធិការដ្ឋានមួយជា សេនាធិការរដ្ឋបាលនិងបច្ចេកទេសដើម្បីសម្របសម្រួលការងារប្រចាំថ្ងៃ។ ជាការពិតណាស់ វិស័យអប់រំជាវិស័យដៃគូមួយសម្រាប់ កិច្ចការបរិវត្តកម្មឌីជីថល។ ក្នុងន័យនេះ កិច្ចសហប្រតិបត្តិការរវាងក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ និងគ្រឹះស្ថានឧត្តមសិក្សាទាំង ៦ គឺជាសក្ខីភាព ថ្មីមួយទៀតក្នុងការរួមគ្នាកសាង និងអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ក្នុងភាពជាដៃគូរវាងក្រសួងជំនាញ និងគ្រឹះស្ថានអប់រំ ស្របតាមចក្ខុវិស័យរបស់រាជរដ្ឋាភិបាលកម្ពុជា សម្រាប់បំពេញតម្រូវការការកសាងសមត្ថភាពធនធានមនុស្ស និងជាការគូសបញ្ជាក់ជាថ្មីអំពីការបន្តកិច្ចខិតខំរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ ក្នុងការរៀបចំឱ្យមានប្រព័ន្ធ អេកូឡូស៊ីឌីជីថលមួយរឹងមាំ និងអំណោយផលដល់ការធ្វើបរិវត្តកម្មឌីជីថលលើ គ្រប់វិស័យទូទាំងប្រទេស។ ",
+      "ក្នុងកិច្ចខិតខំក្នុងការលើកសមត្ថភាព ធនធានមនុស្សឌីជីថល និងដើម្បីចូលរួមអនុវត្តគោលដៅយុទ្ធសាស្ត្រលេខ ៣ និង គោលដៅយុទ្ធសាស្ត្រលេខ ៧ នៃ គោលនយោបាយរដ្ឋាភិបាលឌីជីថលកម្ពុជា ២០២២–២០៣៥, ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍បានបង្កើតឧបករណ៍ថ្មីមួយ — <strong>កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ខ.)</strong>។ កម្មវិធីនេះអនុញ្ញាតឱ្យសិស្សដែលមានភាពលំបាកផ្នែកហិរញ្ញវត្ថុអាចស្នើសុំ ថវិកាសិក្សាដោយគ្មានការប្រាក់ ដើម្បីទូទាត់ថ្លៃសិក្សានៅ គ្រឹះស្ថានឧត្តមសិក្សាដៃគូ។ សិស្សដែលទទួលបានការគាំទ្រនេះត្រូវតែសងវិញ <strong>២០% នៃប្រាក់ខែប្រចាំខែ</strong> ពេលចូលធ្វើការនិងទទួលបានប្រាក់ខែយ៉ាងហោចណាស់ <strong>៥០០ ដុល្លារសហរដ្ឋអាមេរិក ក្នុងមួយខែ</strong>, ដើម្បីធានាប្រសិទ្ធភាពនៃកម្មវិធីសម្រាប់ជំនាន់ក្រោយ។ ដើម្បីធានាការប្រតិបត្តិមានប្រសិទ្ធភាព និងទទួលខុសត្រូវ, ក្រសួងបានបង្កើត <strong>គណៈកម្មាធិការគ្រប់គ្រង (ក.អ.ជ.ខ.)</strong> ដែលខ្ញុំបន្តផ្ទាល់ជាប្រធាន, ជាមួយ លេខាធិការដ្ឋាន ដើម្បីសម្របសម្រួលការងារប្រចាំថ្ងៃ។ វិស័យអប់រំមានតួនាទីសំខាន់ក្នុងការជំរុញ បម្លែងឌីជីថល, ហើយការសហប្រតិបត្តិរវាងក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ និង គ្រឹះស្ថានឧត្តមសិក្សា ៦ ស្ថាប័ន គឺជាសក្ខីភាពថ្មីមួយក្នុងការសាងសង់ និងអភិវឌ្ឍ ធនធានមនុស្សឌីជីថលកម្ពុជា។ គំនិតនេះសម្របសម្រួលនឹង ចក្ខុវិស័យរដ្ឋាភិបាលកម្ពុជា ក្នុងការលើកសមត្ថភាពធនធានមនុស្ស និងបញ្ជាក់ពីកិច្ចខិតខំរបស់ក្រសួងក្នុងការបង្កើត ប្រព័ន្ធអេកូឡូស៊ីឌីជីថលរឹងមាំ ដែលគាំទ្រការបម្លែងឌីជីថលទូទាំងប្រទេស។",
     "about.team.description2":
-      "ខ្ញុំសង្ឃឹមជឿជាក់យ៉ាងមុតមាំថា កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថលនឹងទទួលបានជោគជ័យ ហើយផ្តល់ជាផ្លែផ្កាត្រលប់មកវិញនូវមូលធនមនុស្សឌីជីថល ដែលកម្លាំងសកម្មក្នុងកសាងនិងអភិវឌ្ឍសេដ្ឋកិច្ចនិងសង្គម ឌីជីថល ឆ្ពោះទៅកាន់ ចក្ខុវិស័យកម្ពុជាឆ្នាំ២០៥០ ក្រោមការដឹកនាំ ប្រកបដោយភាពឈ្លាសវៃនិងស្វាហាប់របស់ <strong>សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្ត្រីនៃព្រះរាជាណាចក្រកម្ពុជា</strong>។",
+      "ខ្ញុំមានជំនឿជាក់ល្អថា <strong>កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ខ.)</strong> នឹងទទួលបានជោគជ័យយ៉ាងល្អ និងបង្កើត មនុស្សឌីជីថលជំនាញខ្ពស់ជំនាន់ថ្មី, ដែលជាកម្លាំងសកម្មក្នុងការលើកសមត្ថភាព សេដ្ឋកិច្ច និងសង្គមឌីជីថលកម្ពុជា, ទៅកាន់ <strong>Cambodia 2050 Vision</strong> តាមការដឹកនាំ <strong>សម្តេចមហាបវរធិបតី ហ៊ុន ម៉ាណែត នាយករដ្ឋមន្ត្រី ព្រះរាជាណាចក្រកម្ពុជា</strong>។",
 
     // contact-supporter
     "contact.team.title":
@@ -524,9 +534,9 @@ export const ui: Record<string, Record<string, string>> = {
     "qa.question.6": "តើបេក្ខជនត្រូវសងថវិកាទៅក.អ.ជ.ឌ.វិញនៅពេលណា?",
     "qa.question.7": "តើបេក្ខជនសងប្រាក់ទៅក.អ.ជ.ឌ.វិញដូចម្តេច?",
     "qa.answer.1":
-      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។",
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។",
     "qa.answer.2":
-      "បេក្ខជនអាចជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សា និងជំនាញសិក្សាដែលជាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ដូចខាងក្រោម៖",
+      "បេក្ខជនអាចជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សា និងជំនាញសិក្សាដែលជាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ដូចខាងក្រោម៖",
     "qa.answer.3": "បេក្ខជនត្រូវមានលក្ខខណ្ឌ ដូចខាងក្រោម៖",
     "qa.answer.4":
       "បេក្ខជនត្រូវបំពេញពាក្យស្នើសុំអនឡាញតាមរយៈ Form Kh (in Process)",
@@ -579,24 +589,34 @@ export const ui: Record<string, Record<string, string>> = {
     "home.partnership.title":
       "គ្រឹះស្ថានឧត្តមសិក្សាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល",
     "home.partnership.description":
-      "បេក្ខជនអាចជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សានិងជំនាញសិក្សាដែលជាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (DSDP) ដូចខាងក្រោម៖",
+      "បេក្ខជនអាចជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សានិងជំនាញសិក្សាដែលជាដៃគូររបស់កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ដូចខាងក្រោម៖",
     "home.partnership.box.title": "ចង់ក្លាយជាដៃគូសហការរបស់ ក.អ.ជ.ឌ. ដែរឬទេ?",
     "home.partnership.box.description":
       "ប្រសិនបើលោកអ្នក ឬគ្រឺះស្ថានរបស់លោកអ្នក មានបំណងចង់ក្លាយជាដៃគូសហការជាមួយ ក.អ.ជ.ឌ.",
 
     //Partner page
     "partner.title": "ក.អ.ជ.ឌ. ស្វាគមន៍ស្ថាប័នដៃគូទូទាំងប្រទេស",
-    "partner.description_1": "ក.អ.ជ.ឌ",
-    "partner.description_2":
-      "មានបេសកកម្មបន្តស្វែងរក និងចុះហត្ថលេខាលើកិច្ចព្រមព្រៀងសហការណ៍ (MOU) ជាមួយស្ថាប័នដៃគូ ដើម្បីលើកកម្ពស់ការអប់រំឌីជីថល។ យើងមានកិត្តិយសក្នុងការស្វាគមន៍គ្រឹះស្ថានឧត្តមសិក្សា និងអង្គការផ្សេងៗ ដែលបានចូលរួមជាមួយយើងជាដៃគូ។",
-    "partner.description_3": "គ្រឹះស្ថានឧត្តមសិក្សា",
-    "partner.description_4":
-      "សាធារណៈ និងឯកជន ទាំងក្នុងស្រុក និងក្រៅស្រុក ត្រូវបានអញ្ជើញចូលរួមក្នុងគោលបំណងដូចគ្នា គឺ",
-    "partner.description_5": "ពង្រីកកិច្ចសហប្រតិបត្តិការ",
-    "partner.description_6": "មួយដៃគូទាំងអស់ ក្នុងការ",
-    "partner.description_7": "អភិវឌ្ឍធនធានមនុស្សឌីជីថល",
-    "partner.description_8":
-      "ដើម្បីបំពេញតម្រូវការទីផ្សារការងារបច្ចេកវិទ្យាឌីជីថលនៅកម្ពុជា និងទូទាំងពិភពលោក។",
+    "partner.description_1": "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ខ.)",
+    "partner.description_2": "មានបេសកកម្មក្នុងការស្វែងរក និងចុះហត្ថលេខាលើ",
+    "partner.description_3": "កិច្ចព្រមព្រៀងសហការណ៍ (MOUs)",
+    "partner.description_4": "ជាមួយស្ថាប័នដៃគូ ដើម្បី",
+    "partner.description_5": "លើកកម្ពស់ការអប់រំឌីជីថល។",
+    "partner.description_6": "យើងមានកិត្តិយសក្នុងការស្វាគមន៍",
+    "partner.description_7": "គ្រឹះស្ថានឧត្តមសិក្សា",
+    "partner.description_8": "និង ",
+    "partner.description_9": "អង្គការផ្សេងៗ",
+    "partner.description_10": "ដែលបានចូលរួមជាមួយយើងជាដៃគូ។",
+    "partner.description_11": "គ្រឹះស្ថានឧត្តមសិក្សា",
+    "partner.description_12": "សាធារណៈ និងឯកជន",
+    "partner.description_13": ", ទាំង",
+    "partner.description_14": "ក្នុងស្រុក និងក្រៅស្រុក",
+    "partner.description_15": "ត្រូវបានអញ្ជើញចូលរួមក្នុងគោលបំណងរួមនេះ៖",
+    "partner.description_16": "ពង្រីកកិច្ចសហប្រតិបត្តការ ",
+    "partner.description_17": "ក្នុង ",
+    "partner.description_18": "ការអភិវឌ្ឍធនធានមនុស្សឌីជីថល",
+    "partner.description_19": "ដើម្បីបំពេញតម្រូវការកើនឡើងនៃ",
+    "partner.description_20": "ទីផ្សារការងារបច្ចេកវិទ្យាឌីជីថល",
+    "partner.description_21": "នៅកម្ពុជា និងទូទាំងពិភពលោក។",
 
     // Partner Box
     "partner.box.description_1": "ចូលរួម",
@@ -653,7 +673,7 @@ export const ui: Record<string, Record<string, string>> = {
     "CADT.major_5": "សន្តិសុខសាយប័រ",
 
     // Partner About Us Button
-    "partner.button.AboutUs": "Contact Us",
+    "partner.button.AboutUs": "ទំនាក់ទំនងមកយើង",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",

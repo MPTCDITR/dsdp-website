@@ -33,7 +33,10 @@ const { title, date, author, description, image } = Astro.props;
     >
       {title}
     </h1>
-    <p class="text-neutral-500 text-base leading-loose">{description}</p>
+    <p
+      class="text-neutral-500 text-base leading-loose"
+      set:html={description}
+    />
     <p
       class="flex items-center gap-4 text-secondary font-bold md:text-xl text-lg flex-wrap"
     >
