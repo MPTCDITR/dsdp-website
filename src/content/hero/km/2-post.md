@@ -3,8 +3,7 @@ title: សេចក្តីជូនដំណឹង ស្តីពី កា�
 description: "ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ <strong>(ក.ប.ទ.)</strong> សូមជម្រាបជូនសិស្សានុសិស្ស និងសាធារណជនទាំងអស់ មេត្តាជ្រាបថា ដើម្បីគាំទ្រដល់ដំណើរការកសាងមូលធនមនុស្សឌីជីថលឆ្លើយតបទៅនឹងតម្រូវការនៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល ក៏ដូចជាបំពេញបន្ថែមលើការអនុវត្ត <strong>“កម្មវិធីអាហារូបករណ៍ទេពកោសល្យឌីជីថលតេជោ” ក.ប.ទ.</strong> បានបង្កើត <strong>“កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.)”</strong> ដែលមានឈ្មោះជាភាសាអង់គ្លេសថា <strong>Digital Skill Development Program (D.S.D.P.)</strong> ដែលជាកម្មវិធីផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ (ជំនួយហិរញ្ញវត្ថុ) មិនមែនជាអាហារូបករណ៍ (Financial Aid without Interest)។ ក្នុងឆ្នាំសិក្សា ២០២៥-២០២៦ នេះ <strong>ក.ប.ទ.</strong> នឹងវាយតម្លៃជ្រើសរើសបេក្ខជនប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិឆ្នាំសិក្សា២០២៥ ដែលមានបំណងសិក្សាថ្នាក់បរិញ្ញាបត្រជំនាញបច្ចេកវិទ្យាឌីជីថល នៅតាមគ្រឹះស្ថានឧត្តមសិក្សាដៃគូរបស់ <strong>ក.អ.ជ.ឌ.</strong> ចំនួន ៦ ដោយភ្ជាប់មកជាមួយនូវជំនាញ លក្ខខណ្ឌ និងអត្ថប្រយោជន៍ដូចខាងក្រោម៖"
 date: 2025-08-29
 author: ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍
-image: "src/assets/home/Scholarship_DSDP_Final.jpg"
-image2: "src/assets/home/Scholarship_DSDP_form_1.jpg"
+image: "public/home_hero_section/Scholarship_DSDP_Final.jpg"
 tags: []
 ---
 <span class="text-primary font-semibold">ក. គ្រឹះស្ថានឧត្តមសិក្សា និងជំនាញសិក្សា</span>
@@ -84,20 +83,7 @@ tags: []
 \- កាលបរិច្ឆេទទទួលពាក្យគិតចាប់ពីថ្ងៃជូនដំណឹងនេះរហូតដល់ ថ្ងៃទី១ ខែវិច្ឆិកា ឆ្នាំ២០២៥  
 \- សម្រាប់ព័ត៌មានបន្ថែម សូមទាក់ទងតាមទូរសព្ទលេខ ១២៣។  
 
-<Image
-  src="/src/assets/home/Scholarship_DSDP_form_1.jpg"
-  alt="DSDP Form 1"
-  class="rounded-lg w-full h-fit object-cover my-4"
-/>
+![image](/home_hero_section/Scholarship_DSDP_form_1.jpg) 
+![image](/home_hero_section/Scholarship_DSDP_form_2.jpg) 
+![image](/home_hero_section/Scholarship_DSDP_form_3.jpg)
 
-<Image
-  src="/src/assets/home/Scholarship_DSDP_form_2.jpg"
-  alt="DSDP Form 2"
-  class="rounded-lg w-full h-fit object-cover my-4"
-/>
-
-<Image
-  src="/src/assets/home/Scholarship_DSDP_form_3.jpg"
-  alt="DSDP Form 3"
-  class="rounded-lg w-full h-fit object-cover my-4"
-/>

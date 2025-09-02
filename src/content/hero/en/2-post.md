@@ -3,8 +3,7 @@ title: Announcement on the Provision of Interest-Free Scholarships for Bachelor�
 description: "The Ministry of Post and Telecommunications <strong>(MPTC)</strong> hereby informs all students and the public that, in order to support the development of digital human capital and respond to the needs of economic, social, and digital government development, as well as supplement the implementation of <strong>“Digital Talent Scholarship Program” MPTC</strong>, the Ministry has established the <strong>“Digital Skills Development Program (D.S.D.P.)”</strong>, known in English as <strong>Digital Skill Development Program (D.S.D.P.)</strong>. This program provides interest-free educational funding (financial assistance) rather than a scholarship (Financial Aid without Interest). For the academic year 2025–2026, <strong>MPTC</strong> will evaluate and select candidates who have passed the 2025 national high school examination and wish to pursue a bachelor’s degree in digital technology at the six partner higher education institutions of <strong>D.S.D.P.</strong>, following the attached programs, requirements, and benefits:"
 date: 2025-08-29
 author: Ministry of Post and Telecommunications
-image: "src/assets/home/Scholarship_DSDP_Final.jpg"
-image2: "src/assets/home/Scholarship_DSDP_form_1.jpg"
+image: "public/home_hero_section/Scholarship_DSDP_Final.jpg"
 tags: []
 ---
 <span class="text-primary font-semibold">A. Higher Education Institutions and Fields of Study</span>
@@ -84,20 +83,7 @@ Candidates must complete the online application and attach the following documen
 \- Application deadline is from the announcement date until November 1, 2025  
 \- For more information, please contact phone number 123  
 
-<Image
-  src="/src/assets/home/Scholarship_DSDP_form_1.jpg"
-  alt="DSDP Form 1"
-  class="rounded-lg w-full h-fit object-cover my-4"
-/>
+![image](/home_hero_section/Scholarship_DSDP_form_1.jpg) 
+![image](/home_hero_section/Scholarship_DSDP_form_2.jpg) 
+![image](/home_hero_section/Scholarship_DSDP_form_3.jpg)
 
-<Image
-  src="/src/assets/home/Scholarship_DSDP_form_2.jpg"
-  alt="DSDP Form 2"
-  class="rounded-lg w-full h-fit object-cover my-4"
-/>
-
-<Image
-  src="/src/assets/home/Scholarship_DSDP_form_3.jpg"
-  alt="DSDP Form 3"
-  class="rounded-lg w-full h-fit object-cover my-4"
-/>
