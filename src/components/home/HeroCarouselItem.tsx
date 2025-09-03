@@ -48,9 +48,11 @@ export function HeroCarouselItem({ slide, lang }: HeroCarouselItemProps) {
           <h1 className="text-3xl md:text-4xl font-bold leading-tight line-clamp-3">
             {slide.title}
           </h1>
-          <p className="text-lg md:text-xl leading-relaxed line-clamp-4 text-white">
-            {slide.description}
-          </p>
+          <p
+            className="text-lg md:text-xl leading-relaxed line-clamp-4 text-white"
+            dangerouslySetInnerHTML={{ __html: slide.description }}
+          />
+
           <motion.a
             href={moreDetailsHref}
             whileHover={{ scale: 1.05 }}
