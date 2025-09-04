@@ -1,0 +1,163 @@
+---
+import benefits_more_than_money from "@/assets/about/about-us/benefits-more-than-money.svg";
+import Business_mission from "@/assets/about/about-us/business-mission.gif";
+import Finding_brilliant_ideas from "@/assets/about/about-us/finding-brilliant-ideas.gif";
+import return_money from "@/assets/about/about-us/return-money.svg";
+import what_is_dsdp from "@/assets/about/about-us/what-is-dsdp.svg";
+import { useTranslations } from "@/i18n/utils";
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div class="container my-12">
+  <!-- Page Title -->
+  <section class="relative z-10">
+    <h1
+      class="text-left text-4xl md:text-5xl font-bold text-primary leading-snug mt-12 mb-8"
+    >
+      {t("about.title")}
+    </h1>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <div class="order-1 md:order-1 w-full max-w-[508px] mx-auto">
+      <img
+        src={Finding_brilliant_ideas.src}
+        class="w-full"
+        alt="Finding Ideas"
+      />
+    </div>
+    <div class="order-2 md:order-2 w-full max-w-[508px] mx-auto">
+      <h2 class="text-gradient-r text-4xl leading-relaxed font-bold mb-4">
+        {t("about.visionTitle")}
+      </h2>
+      <p class="text-base text-muted-foreground mb-4">
+        {t("about.visionDescription")}
+      </p>
+      <ul
+        class="list-decimal pl-8 space-y-3 text-base text-foreground leading-relaxed"
+      >
+        <li>{t("about.vision1")}</li>
+        <li>{t("about.vision2")}</li>
+        <li>{t("about.vision3")}</li>
+        <li>
+          {t("about.vision4")}
+          <ol class="list-disc pl-8 space-y-3 cursor-pointer my-3">
+            <li>{t("about.vision4.1")}</li>
+            <li>{t("about.vision4.2")}</li>
+            <li>{t("about.vision4.3")}</li>
+            <li>{t("about.vision4.4")}</li>
+            <li>{t("about.vision4.5")}</li>
+            <li>{t("about.vision4.6")}</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <div class="order-2 md:order-1 w-full max-w-[508px] mx-auto">
+      <h2 class="text-gradient-r text-4xl leading-snug font-bold mb-4">
+        {t("about.mission.title")}
+      </h2>
+      <p class="text-base text-muted-foreground mb-4">
+        {t("about.mission.description")}
+      </p>
+      <ul
+        class="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed"
+      >
+        <li>{t("about.mission1")}</li>
+        <li>{t("about.mission2")}</li>
+        <li>{t("about.mission3")}</li>
+      </ul>
+    </div>
+    <div class="order-1 md:order-2 w-full max-w-[508px] mx-auto">
+      <img src={Business_mission.src} class="w-full" alt="Mission" />
+    </div>
+  </section>
+
+  <!-- What is DSDP Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <div class="order-1 md:order-1 w-full max-w-[508px] mx-auto">
+      <img src={what_is_dsdp.src} class="w-full" alt="DSDP" />
+    </div>
+    <div class="order-2 md:order-2 w-full max-w-[508px] mx-auto">
+      <h2
+        class="text-gradient-b text-4xl leading-snug md:text-4xl font-bold mb-4"
+      >
+        {t("about.whatIsDsdp.title")}
+      </h2>
+      <p class="text-base text-foreground leading-relaxed">
+        {t("about.whatIsDsdp.description")}
+      </p>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <div class="order-2 md:order-1 w-full max-w-[508px] mx-auto">
+      <h2 class="text-gradient-b text-4xl leading-snug font-bold mb-4">
+        {t("about.benefits.title")}
+      </h2>
+      <p class="text-base text-muted-foreground mb-4">
+        {t("about.benefits.description")}
+      </p>
+      <ul
+        class="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed"
+      >
+        <li>{t("about.benefits1")}</li>
+        <li>{t("about.benefits2")}</li>
+        <li>{t("about.benefits3")}</li>
+        <li>{t("about.benefits4")}</li>
+        <li>{t("about.benefits5")}</li>
+      </ul>
+    </div>
+    <div class="order-1 md:order-2 w-full max-w-[508px] mx-auto">
+      <img src={benefits_more_than_money.src} class="w-full" alt="Benefits" />
+    </div>
+  </section>
+
+  <!-- Condition Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2 items-start gap-12">
+    <div class="order-1 md:order-1 w-full max-w-[508px] mx-auto">
+      <img src={return_money.src} class="w-full" alt="Condition" />
+    </div>
+    <div class="order-2 md:order-2 w-full max-w-[508px] mx-auto">
+      <h2 class="text-gradient-b text-4xl leading-snug font-bold mb-4">
+        {t("about.conditionReturnMoney.title")}
+      </h2>
+      <p class="text-base text-muted-foreground mb-4">
+        {t("about.conditionReturnMoney.description")}
+      </p>
+      <ul
+        class="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed"
+      >
+        <li>{t("about.conditionReturnMoney1")}</li>
+        <li>{t("about.conditionReturnMoney2")}</li>
+        <li>{t("about.conditionReturnMoney3")}</li>
+        <li>{t("about.conditionReturnMoney4")}</li>
+        <li>{t("about.conditionReturnMoney5")}</li>
+      </ul>
+      <h3
+        class="text-gradient-b text-2xl mt-3 leading-snug md:text-2xl font-bold mb-4"
+      >
+        {t("about.howToReturnMoney.title")}
+      </h3>
+      <p class="text-base text-muted-foreground mb-4">
+        {t("about.howToReturnMoney.description")}
+      </p>
+      <ul
+        class="list-disc pl-6 space-y-3 text-base text-foreground leading-relaxed"
+      >
+        <li>{t("about.howToReturnMoney1")}</li>
+        <li>{t("about.howToReturnMoney2")}</li>
+        <li>{t("about.howToReturnMoney3")}</li>
+        <li>{t("about.howToReturnMoney4")}</li>
+        <li>{t("about.howToReturnMoney5")}</li>
+      </ul>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,95 @@
+---
+import { universities } from "@/data/university";
+import { useTranslations } from "@/i18n/utils";
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const qaList = [
+  { questionKey: "qa.question.1", answerKey: "qa.answer.1" },
+  {
+    questionKey: "qa.question.2",
+    answerKey: "qa.answer.2",
+  },
+  {
+    questionKey: "qa.question.3",
+    answerKey: "qa.answer.3",
+    list: [
+      {
+        items: [
+          "about.conditionReturnMoney1",
+          "about.conditionReturnMoney2",
+          "about.conditionReturnMoney3",
+          "about.conditionReturnMoney4",
+          "about.conditionReturnMoney5",
+        ],
+      },
+    ],
+  },
+  { questionKey: "qa.question.4", answerKey: "qa.answer.4" },
+  { questionKey: "qa.question.5", answerKey: "qa.answer.5" },
+  {
+    questionKey: "qa.question.6",
+    answerKey: "qa.answer.6",
+    list: [
+      {
+        items: [
+          "about.howToReturnMoney1",
+          "about.howToReturnMoney2",
+          "about.howToReturnMoney3",
+          "about.howToReturnMoney4",
+          "about.howToReturnMoney5",
+        ],
+      },
+    ],
+  },
+];
+---
+
+<div class="w-full">
+  {
+    qaList.map((item) => (
+      <details class="mb-4 border-b">
+        <summary class="text-lg cursor-pointer py-2 font-semibold">
+          {t(item.questionKey)}
+        </summary>
+        <div class="text-base space-y-3 py-2">
+          {item.questionKey === "qa.question.2" ? (
+            <div class="space-y-5">
+              {item.answerKey && <p>{t(item.answerKey)}</p>}
+
+              {universities.map((uni) => (
+                <div>
+                  <h4 class="font-medium text-primary">
+                    {t(uni.hoverTitleKey)}
+                  </h4>
+                  <ul class="list-disc pl-6 space-y-1">
+                    {uni.hoverItemKeys
+                      .filter((key) => key !== "Uni.description")
+                      .map((key) => (
+                        <li>{t(key)}</li>
+                      ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <>
+              {item.answerKey && <p>{t(item.answerKey)}</p>}
+
+              {item.list?.map((listBlock) => (
+                <div class="space-y-1">
+                  <ul class="list-disc pl-6 space-y-1">
+                    {listBlock.items.map((ans) => (
+                      <li>{t(ans)}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </>
+          )}
+        </div>
+      </details>
+    ))
+  }
+</div>

@@ -1,0 +1,14 @@
+---
+import HowToApplySection from "./HowToApplySection.astro";
+import { HowToApplyData } from "@/data/HowToApplyData";
+
+const { tab_type, t } = Astro.props;
+
+const data_student = HowToApplyData.filter(
+  (item) => item.type_content === tab_type,
+);
+---
+
+<div>
+  {data_student.map((item) => <HowToApplySection item={item} t={t} />)}
+</div>

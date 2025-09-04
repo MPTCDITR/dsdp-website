@@ -1,0 +1,42 @@
+---
+// filepath: f:\MPTC_project\DSDP\dsdp-web\src\components\pages\howToApply\HowToApply.astro
+import HowApplyStepByTabs from "./HowApplyStepByTabs.astro";
+import { HOWTOAPPLY_TABS } from "@/data/HowToApplyData";
+import { useTranslations } from "@/i18n/utils";
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const tab = Astro.url.searchParams.get("tab") ?? HOWTOAPPLY_TABS.STUDENT;
+---
+
+<div
+  class="container mx-auto my-4 px-4 bg-muted rounded-xl h-auto flex flex-col p-6 gap-7 mb-16"
+>
+  <div class="flex gap-4 mb-6">
+    <button
+      class={`px-4 py-2 rounded-lg font-semibold ${tab === HOWTOAPPLY_TABS.STUDENT ? "bg-primary text-white" : "bg-white text-primary"}`}
+      onclick={`window.location.search='?tab=${HOWTOAPPLY_TABS.STUDENT}'`}
+      type="button"
+    >
+      {t("howToApply.studentTab")}
+    </button>
+    <button
+      class={`px-4 py-2 rounded-lg font-semibold ${tab === HOWTOAPPLY_TABS.OFFICER ? "bg-primary text-white" : "bg-white text-primary"}`}
+      onclick={`window.location.search='?tab=${HOWTOAPPLY_TABS.OFFICER}'`}
+      type="button"
+    >
+      {t("howToApply.officerTab")}
+    </button>
+  </div>
+  {
+    tab === HOWTOAPPLY_TABS.STUDENT && (
+      <HowApplyStepByTabs tab_type={HOWTOAPPLY_TABS.STUDENT} t={t} />
+    )
+  }
+  {
+    tab === HOWTOAPPLY_TABS.OFFICER && (
+      <HowApplyStepByTabs tab_type={HOWTOAPPLY_TABS.OFFICER} t={t} />
+    )
+  }
+</div>
