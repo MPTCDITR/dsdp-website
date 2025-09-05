@@ -1,5 +1,4 @@
 ---
-
 import contact_team from "@/assets/about/about-team/Mailbox-rafiki.png";
 import { languages } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
@@ -9,7 +8,7 @@ import { Image } from "astro:assets";
 
 export const getStaticPaths = (() => {
   return Object.keys(languages).map((lang) => ({
-    params: { lang : lang as keyof typeof languages },
+    params: { lang: lang as keyof typeof languages },
   }));
 }) satisfies GetStaticPaths;
 
