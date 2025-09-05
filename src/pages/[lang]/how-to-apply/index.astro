@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
 
 export const getStaticPaths = (() => {
   return Object.keys(languages).map((lang) => ({
-    params: { lang },
+    params: { lang: lang as keyof typeof languages },
   }));
 }) satisfies GetStaticPaths;
 
