@@ -25,6 +25,6 @@ Speaking on the occasion, HE Minister Chea Vandeth said that after receiving a h
 
 The Minister is optimistic that the launch of the C.T.C. will be a new, important, timely and targeted achievement that supports the development of digital education with a proactive spirit and an open mind towards the mission of implementing digital government, aiming to contribute to the effective implementation in accordance with the Cambodian Digital Economy and Society Policy Framework and the Cambodian Digital Government Policy, towards achieving Cambodia's Vision 2050 under the wise leadership of His Excellency Samdech Moha Borvor Thipadei Hun Manet, Prime Minister of the Kingdom of Cambodia.
 
+![image 8](/blog/article-3/image-8.jpg)
+![image 9](/blog/article-3/image-9.jpg)
 ![image 10](/blog/article-3/image-10.jpg)
-![image 11](/blog/article-3/image-11.jpg)
-![image 12](/blog/article-3/image-12.jpg)
