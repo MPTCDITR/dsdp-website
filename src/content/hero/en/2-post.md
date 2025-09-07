@@ -1,11 +1,12 @@
 ---
 title: Announcement on the Provision of Interest-Free Scholarships for Bachelor’s Degree Studies in Digital Technology through the “Digital Skills Development Program”
-description: "The Ministry of Post and Telecommunications <strong>(MPTC)</strong> hereby informs all students and the public that, in order to support the development of digital human capital and respond to the needs of economic, social, and digital government development, as well as supplement the implementation of <strong>“Digital Talent Scholarship Program” MPTC</strong>, the Ministry has established the <strong>“Digital Skills Development Program (D.S.D.P.)”</strong>, known in English as <strong>Digital Skill Development Program (D.S.D.P.)</strong>. This program provides interest-free educational funding (financial assistance) rather than a scholarship (Financial Aid without Interest). For the academic year 2025–2026, <strong>MPTC</strong> will evaluate and select candidates who have passed the 2025 national high school examination and wish to pursue a bachelor’s degree in digital technology at the six partner higher education institutions of <strong>D.S.D.P.</strong>, following the attached programs, requirements, and benefits:"
+description: "The Ministry of Post and Telecommunications (MPTC) hereby informs all students and the public that, in order to support the development of digital human capital and respond to the needs of economic, social, and digital government development, as well as supplement the implementation of “Digital Talent Scholarship Program” MPTC, the Ministry has established the “Digital Skills Development Program (D.S.D.P.)”, known in English as Digital Skill Development Program (D.S.D.P) This program provides interest-free educational funding (financial assistance) rather than a scholarship (Financial Aid without Interest). For the academic year 2025–2026, MPTC will evaluate and select candidates who have passed the 2025 national high school examination and wish to pursue a bachelor’s degree in digital technology at the six partner higher education institutions of D.S.D.P., following the attached programs, requirements, and benefits:"
 date: 2025-08-29
 author: Ministry of Post and Telecommunications
 image: "public/home_hero_section/Scholarship_DSDP_Final.jpg"
 tags: []
 ---
+
 <span class="text-primary font-semibold">A. Higher Education Institutions and Fields of Study</span>
 
 **1. Cambodia Academy of Digital Technology (CADT):**
@@ -32,24 +33,24 @@ tags: []
 \- Telecommunications and Electronic Engineering  
 \- Data Science and Engineering  
 \- Information Technology  
-\- Information Technology Engineering  
+\- Information Technology Engineering
 
 **4. National University of Management (NUM):**
 
 \- Digital Economy  
 \- Financial Technology  
-\- Global Entrepreneurship and Innovation  
+\- Global Entrepreneurship and Innovation
 
 **5. Institute of Technology of Cambodia (ITC):**
 
 \- Software Engineering  
-\- AI Engineering and Cybersecurity  
+\- AI Engineering and Cybersecurity
 
 **6. Paragon International University (Paragon.U):**
 
 \- Computer Science  
 \- Management of Information Systems  
-\- Digital Arts and Design  
+\- Digital Arts and Design
 
 <span class="text-primary font-semibold">B. Benefits</span>  
 Selected candidates of D.S.D.P. will receive the following benefits:  
@@ -58,7 +59,7 @@ Selected candidates of D.S.D.P. will receive the following benefits:
 \- Funding for accommodation fees (if needed)  
 \- Academic, accommodation, and career advisory support  
 \- Better job opportunities and high salaries in both public and private sectors  
-\- Additional benefits provided by each partner higher education institution  
+\- Additional benefits provided by each partner higher education institution
 
 <span class="text-primary font-semibold">C. Selection Requirements</span>  
 Candidates must meet the following conditions:  
@@ -67,7 +68,7 @@ Candidates must meet the following conditions:
 \- Fulfilled all registration requirements at the six partner higher education institutions  
 \- Passed assessment (interview or competency test) conducted by the D.S.D.P. Secretariat  
 \- Signed an agreement with the D.S.D.P. Secretariat after selection  
-\- Students from disadvantaged backgrounds, rural and remote areas, those with disabilities, or female students are encouraged  
+\- Students from disadvantaged backgrounds, rural and remote areas, those with disabilities, or female students are encouraged
 
 <span class="text-primary font-semibold">D. Required Application Documents</span>  
 Candidates must complete the online application and attach the following documents:  
@@ -76,14 +77,13 @@ Candidates must complete the online application and attach the following documen
 \- National ID, passport, or birth certificate  
 \- Family book or residence book  
 \- Supporting documents (if any)  
-\- Parents’ or guardians’ ID  
+\- Parents’ or guardians’ ID
 
 <span class="text-primary font-semibold">E. Application Dates and Submission</span>  
 \- Candidates must submit the online application via https://go.gov.kh/mptc/dsdp-registration or scan the attached QR code  
 \- Application deadline is from the announcement date until November 1, 2025  
-\- For more information, please contact phone number 123  
+\- For more information, please contact phone number 123
 
-![image](/home_hero_section/Scholarship_DSDP_form_1.jpg) 
-![image](/home_hero_section/Scholarship_DSDP_form_2.jpg) 
+![image](/home_hero_section/Scholarship_DSDP_form_1.jpg)
+![image](/home_hero_section/Scholarship_DSDP_form_2.jpg)
 ![image](/home_hero_section/Scholarship_DSDP_form_3.jpg)
-
