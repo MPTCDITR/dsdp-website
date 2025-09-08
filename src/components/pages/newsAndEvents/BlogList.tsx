@@ -3,7 +3,9 @@ import { useState } from "react";
 import { convertNumberToKhmer } from "@/lib/utils";
 
 import {
+  DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -16,10 +18,6 @@ import {
 import { BlogCard } from "@/components/pages/newsAndEvents/BlogCard";
 
 import { useTranslations } from "@/i18n/utils";
-import {
-  DropdownMenu,
-  DropdownMenuRadioGroup,
-} from "@radix-ui/react-dropdown-menu";
 import type { CollectionEntry } from "astro:content";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -44,7 +42,7 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
 
   const [currentPage, setCurrentPage] = useState(1);
 
-  const ITEMS_PER_PAGE = 2;
+  const ITEMS_PER_PAGE = 10;
   const totalPages = Math.ceil(posts.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
@@ -95,9 +93,8 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
                 </div>
               </PaginationItem>
             </div>
-            {/* Pages 1–10 as buttons */}
             {Array.from(
-              { length: Math.min(totalPages, 3) },
+              { length: Math.min(totalPages, 10) },
               (_, i) => i + 1,
             ).map((page) => (
               <PaginationItem key={page}>
@@ -110,44 +107,39 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
                 </PaginationLink>
               </PaginationItem>
             ))}
-            {totalPages > 5 && (
-              <PaginationItem>
-                <DropdownMenu>
+            <PaginationItem>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
                   <DropdownMenuTrigger asChild>
-                    <DropdownMenuTrigger asChild>
-                      <PaginationLink
-                        className="w-10 h-10 items-center flex mx-1"
-                        isActive={currentPage > 3}
-                      >
-                        {currentPage > 3
-                          ? lang === "en"
-                            ? currentPage
-                            : convertNumberToKhmer(currentPage)
-                          : "..."}
-                      </PaginationLink>
-                    </DropdownMenuTrigger>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent className="w-auto">
-                    <DropdownMenuRadioGroup
-                      value={currentPage.toString()}
-                      onValueChange={(value) => setCurrentPage(Number(value))}
+                    <PaginationLink
+                      className="w-10 h-10 items-center flex mx-1"
+                      isActive={currentPage > 3}
                     >
-                      {Array.from(
-                        { length: totalPages - 3 },
-                        (_, i) => i + 4,
-                      ).map((page) => (
-                        <DropdownMenuRadioItem
-                          key={page}
-                          value={page.toString()}
-                        >
-                          {lang === "en" ? page : convertNumberToKhmer(page)}
-                        </DropdownMenuRadioItem>
-                      ))}
-                    </DropdownMenuRadioGroup>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </PaginationItem>
-            )}
+                      {currentPage > 3
+                        ? lang === "en"
+                          ? currentPage
+                          : convertNumberToKhmer(currentPage)
+                        : "..."}
+                    </PaginationLink>
+                  </DropdownMenuTrigger>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-auto">
+                  <DropdownMenuRadioGroup
+                    value={currentPage.toString()}
+                    onValueChange={(value) => setCurrentPage(Number(value))}
+                  >
+                    {Array.from(
+                      { length: totalPages - 3 },
+                      (_, i) => i + 4,
+                    ).map((page) => (
+                      <DropdownMenuRadioItem key={page} value={page.toString()}>
+                        {lang === "en" ? page : convertNumberToKhmer(page)}
+                      </DropdownMenuRadioItem>
+                    ))}
+                  </DropdownMenuRadioGroup>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </PaginationItem>
 
             <div className="flex-1 justify-end flex">
               <PaginationItem>
