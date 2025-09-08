@@ -28,7 +28,7 @@ tags: []
 
 អាស្រ័យហេតុនេះ សូមសាធារណជនទាំងអស់ជ្រាបជាព័ត៌មាន។
 
-![image 6](/blog/article-2/image-7.jpg)
-![image 7](/blog/article-2/image-8.jpg)
-![image 8](/blog/article-2/image-9.jpg)
-![image 9](/blog/article-2/image-10.jpg)
+![image 6](/blog/article-2/image-6.jpg)
+![image 7](/blog/article-2/image-7.jpg)
+![image 8](/blog/article-2/image-8.jpg)
+![image 9](/blog/article-2/image-9.jpg)

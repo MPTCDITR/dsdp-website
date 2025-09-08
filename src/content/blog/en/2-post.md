@@ -26,7 +26,7 @@ His Excellency Deputy Prime Minister Hangchuon Naron thanked MPTC for the CTC in
 
 The first CTC is being constructed at Hun Sen Mouy Mithona High School in Peaream commune, Bati district, Takeo province. Hun Sen Mouy Mithona is a leading high school in Bati district, Takeo province; the principal has received 2nd place in Good Management category across the country. The CTC project will commence at all high schools in Takeo starting November 2023 and will continue to roll out across the country.
 
-![image 6](/blog/article-2/image-7.jpg)
-![image 7](/blog/article-2/image-8.jpg)
-![image 8](/blog/article-2/image-9.jpg)
-![image 9](/blog/article-2/image-10.jpg)
+![image 6](/blog/article-2/image-6.jpg)
+![image 7](/blog/article-2/image-7.jpg)
+![image 8](/blog/article-2/image-8.jpg)
+![image 9](/blog/article-2/image-9.jpg)
