@@ -6,7 +6,7 @@ import { Instagram, Mail } from "lucide-react";
 
 export const SOCIAL_MEDIA_DATA = [
   {
-    href: "https://www.facebook.com/dsdp.gov.kh",
+    href: "https://www.facebook.com/share/1EqCriuoKL/?mibextid=wwXIfr",
     label: "Facebook",
     icon: Facebook,
   },

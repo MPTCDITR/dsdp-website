@@ -5,6 +5,7 @@ import { MobileNav } from "@/components/layout/MobileNav.tsx";
 
 import DSDP from "@/assets/logo/dsdp-logo.svg";
 import type { Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
 
 interface NavMenuProps {
@@ -21,6 +22,7 @@ interface Props {
 }
 
 const { translations, lang, navigationItems, currentPath } = Astro.props;
+const t = useTranslations(lang);
 ---
 
 <header
@@ -49,7 +51,11 @@ const { translations, lang, navigationItems, currentPath } = Astro.props;
     />
 
     <div class="flex items-center">
-      <LanguageSwitcher lang={lang} client:load />
+      <LanguageSwitcher
+        applyLabel={t("nav.applytitle")}
+        lang={lang}
+        client:load
+      />
       <MobileNav
         lang={lang}
         translations={translations}

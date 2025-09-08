@@ -15,6 +15,7 @@ import { ChevronDown } from "lucide-react";
 
 interface LanguageSwitcherProps {
   lang: Language;
+  applyLabel: string;
 }
 
 const languageAssets = {
@@ -29,7 +30,8 @@ const languageAssets = {
     squareFlag: KHSquareIcon,
   },
 };
-export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
+
+export function LanguageSwitcher({ lang, applyLabel }: LanguageSwitcherProps) {
   const currentLangAssets = languageAssets[lang];
   const currentPath =
     typeof window !== "undefined" ? window.location.pathname : "";
@@ -43,42 +45,51 @@ export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
   };
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button
-          variant="ghost"
-          className="flex items-center gap-2 text-base font-medium"
-        >
-          <img
-            src={currentLangAssets?.mainFlag?.src}
-            width="23"
-            height="23"
-            alt={`${currentLangAssets?.label} flag`}
-          />
-          <span className="hidden sm:inline">{currentLangAssets?.label}</span>
+    <div className="flex items-center gap-2">
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button
+            variant="ghost"
+            className="flex items-center gap-2 text-base font-medium"
+          >
+            <img
+              src={currentLangAssets?.mainFlag?.src}
+              width="23"
+              height="23"
+              alt={`${currentLangAssets?.label} flag`}
+            />
+            <span className="hidden sm:inline">{currentLangAssets?.label}</span>
 
-          <ChevronDown className="h-4 w-4" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        {Object.entries(languages).map(([langKey, label]) => {
-          const itemLangAssets = languageAssets[langKey as Language];
-          return (
-            <DropdownMenuItem key={langKey} className="text-base" asChild>
-              <a href={getLangPath(langKey as Language)}>
-                <img
-                  src={itemLangAssets?.mainFlag?.src}
-                  width="23"
-                  height="23"
-                  alt={`${label} flag`}
-                  className="mr-2"
-                />
-                {label}
-              </a>
-            </DropdownMenuItem>
-          );
-        })}
-      </DropdownMenuContent>
-    </DropdownMenu>
+            <ChevronDown className="h-4 w-4" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          {Object.entries(languages).map(([langKey, label]) => {
+            const itemLangAssets = languageAssets[langKey as Language];
+            return (
+              <DropdownMenuItem key={langKey} className="text-base" asChild>
+                <a href={getLangPath(langKey as Language)}>
+                  <img
+                    src={itemLangAssets?.mainFlag?.src}
+                    width="23"
+                    height="23"
+                    alt={`${label} flag`}
+                    className="mr-2"
+                  />
+                  {label}
+                </a>
+              </DropdownMenuItem>
+            );
+          })}
+        </DropdownMenuContent>
+      </DropdownMenu>
+      <Button
+        variant="secondary"
+        className="px-4 rounded-full text-white"
+        asChild
+      >
+        <a href="https://go.gov.kh/mptc/dsdp-registration">{applyLabel}</a>
+      </Button>
+    </div>
   );
 }
