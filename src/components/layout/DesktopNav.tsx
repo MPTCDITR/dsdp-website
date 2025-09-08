@@ -76,7 +76,7 @@ export default function DesktopNav({
           <a
             key={item.href || item.label}
             href={item.href}
-            className={`block rounded-md xl:px-4 lg:px-2 py-2 text-base font-medium transition-colors nav-link text-black hover:bg-accent hover:text-primary ${
+            className={`block rounded-md xl:px-4 whitespace-nowrap lg:px-2 py-2 text-base font-medium transition-colors nav-link text-black hover:bg-accent hover:text-primary ${
               isActive(item) ? "bg-accent text-primary" : ""
             }`}
           >

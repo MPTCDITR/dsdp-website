@@ -85,7 +85,7 @@ export function LanguageSwitcher({ lang, applyLabel }: LanguageSwitcherProps) {
       </DropdownMenu>
       <Button
         variant="secondary"
-        className="px-4 rounded-full text-white"
+        className="px-4 rounded-full text-white hidden md:inline-flex"
         asChild
       >
         <a href="https://go.gov.kh/mptc/dsdp-registration">{applyLabel}</a>
