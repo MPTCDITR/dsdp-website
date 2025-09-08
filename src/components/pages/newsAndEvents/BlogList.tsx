@@ -108,7 +108,10 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <DropdownMenuTrigger asChild>
-                      <PaginationLink isActive={currentPage > 3}>
+                      <PaginationLink
+                        className="w-10 h-10 text-center flex mx-1"
+                        isActive={currentPage > 3}
+                      >
                         {currentPage > 3
                           ? lang === "en"
                             ? currentPage
