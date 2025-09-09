@@ -15,6 +15,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import { LinkButton } from "../ui/link-button";
 import { useTranslations } from "@/i18n/utils";
 import { MenuIcon } from "lucide-react";
 
@@ -100,13 +101,14 @@ export function MobileNav({
               ),
             )}
           </nav>
-          <Button
-            variant="secondary"
+          <LinkButton
+            target="_blank"
+            variant={"secondary"}
             className="px-4 rounded-full text-white sm:hidden"
-            asChild
+            href="https://go.gov.kh/mptc/dsdp-registration"
           >
-            <a href="https://go.gov.kh/mptc/dsdp-registration">{applyLabel}</a>
-          </Button>
+            {applyLabel}
+          </LinkButton>
         </SheetContent>
       </Sheet>
     </div>

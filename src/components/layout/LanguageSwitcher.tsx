@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import { LinkButton } from "../ui/link-button";
 import ENSquareIcon from "@/assets/language/en-square.svg";
 import KHSquareIcon from "@/assets/language/km-square.svg";
 import { languages, type Language } from "@/i18n/ui";
@@ -83,13 +84,15 @@ export function LanguageSwitcher({ lang, applyLabel }: LanguageSwitcherProps) {
           })}
         </DropdownMenuContent>
       </DropdownMenu>
-      <Button
+      <LinkButton
+        target="_blank"
+        rel="noopener noreferrer"
         variant="secondary"
         className="px-4 rounded-full text-white hidden md:inline-flex"
-        asChild
+        href="https://go.gov.kh/mptc/dsdp-registration"
       >
-        <a href="https://go.gov.kh/mptc/dsdp-registration">{applyLabel}</a>
-      </Button>
+        {applyLabel}
+      </LinkButton>
     </div>
   );
 }
