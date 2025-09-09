@@ -9,7 +9,7 @@ export const showDefaultLang = true;
 export const ui: Record<string, Record<string, string>> = {
   en: {
     // Navigation
-    "nav.applytitle": "Apply",
+    "nav.applytitle": "Apply Now",
     "nav.menu": "Menu",
     "nav.home": "Home",
     "nav.about": "About Us",
