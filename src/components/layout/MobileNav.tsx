@@ -46,7 +46,7 @@ export function MobileNav({
           <Button
             variant="ghost"
             size="icon"
-            className="xl:hidden size-6 rounded-md ml-2"
+            className="xl:hidden size-6 rounded-md"
             aria-label="Open menu"
           >
             <MenuIcon className="size-6" />
@@ -104,7 +104,7 @@ export function MobileNav({
           <LinkButton
             target="_blank"
             variant={"secondary"}
-            className="px-4 rounded-full text-white sm:hidden"
+            className="px-4 rounded-full text-white md:hidden"
             href="https://go.gov.kh/mptc/dsdp-registration"
           >
             {applyLabel}

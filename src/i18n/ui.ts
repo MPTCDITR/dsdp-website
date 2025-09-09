@@ -104,7 +104,7 @@ export const ui: Record<string, Record<string, string>> = {
 
     // contact-team
     "contact.team.title":
-      "Please get in touch with our supporters for additional details by Phnom number ",
+      "Please get in touch with our supporters for additional details by Phone number ",
 
     // FAQ
     "qa.btn.contact": "Contact us",
@@ -394,7 +394,7 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.title.1": "ABOUT US",
     "footer.description.1": "About DSDP",
     "footer.description.2": "DSDP Chairman",
-    "footer.description.3": "Q and A",
+    "footer.description.3": "Q&A",
     "footer.title.2": "PROGRAMS",
     "footer.description.4": "How to apply",
     "footer.description.5": "For students",

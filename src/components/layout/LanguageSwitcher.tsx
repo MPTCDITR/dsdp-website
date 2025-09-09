@@ -8,7 +8,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { LinkButton } from "../ui/link-button";
 import ENSquareIcon from "@/assets/language/en-square.svg";
 import KHSquareIcon from "@/assets/language/km-square.svg";
 import { languages, type Language } from "@/i18n/ui";
@@ -16,7 +15,6 @@ import { ChevronDown } from "lucide-react";
 
 interface LanguageSwitcherProps {
   lang: Language;
-  applyLabel: string;
 }
 
 const languageAssets = {
@@ -32,7 +30,7 @@ const languageAssets = {
   },
 };
 
-export function LanguageSwitcher({ lang, applyLabel }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ lang }: LanguageSwitcherProps) {
   const currentLangAssets = languageAssets[lang];
   const currentPath =
     typeof window !== "undefined" ? window.location.pathname : "";
@@ -84,15 +82,6 @@ export function LanguageSwitcher({ lang, applyLabel }: LanguageSwitcherProps) {
           })}
         </DropdownMenuContent>
       </DropdownMenu>
-      <LinkButton
-        target="_blank"
-        rel="noopener noreferrer"
-        variant="secondary"
-        className="px-4 rounded-full text-white hidden md:inline-flex"
-        href="https://go.gov.kh/mptc/dsdp-registration"
-      >
-        {applyLabel}
-      </LinkButton>
     </div>
   );
 }
