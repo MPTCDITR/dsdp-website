@@ -10,9 +10,9 @@ import {
   StudentContent2,
   StudentContent3,
 } from "./HowToApplyStudentContent";
-import image1 from "/src/assets/images/image1.webp";
-import image2 from "/src/assets/images/image2.webp";
-import image3 from "/src/assets/images/image3.webp";
+import image1 from "/src/assets/how-to-apply-data/students.webp";  
+import image2 from "/src/assets/how-to-apply-data/screenshot-form.webp";
+import image3 from "/src/assets/how-to-apply-data/discussion.webp";
 
 export const HOWTOAPPLY_TABS = {
   STUDENT: "student",

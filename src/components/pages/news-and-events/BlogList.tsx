@@ -15,7 +15,7 @@ import {
   PaginationItem,
   PaginationLink,
 } from "@/components/ui/pagination";
-import { BlogCard } from "@/components/pages/newsAndEvents/BlogCard";
+import { BlogCard } from "@/components/pages/news-and-events/BlogCard";
 
 import { useTranslations } from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";

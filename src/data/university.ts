@@ -1,9 +1,9 @@
-import aupp from "@/assets/logo/AUPP Main Logo.png";
-import cadt from "@/assets/logo/CADT_logo.png";
-import itc from "@/assets/logo/ITC_logo.png";
-import num from "@/assets/logo/NUM_logo.png";
-import paragon from "@/assets/logo/Paragon_Logo.png";
-import rupp from "@/assets/logo/RUPP_logo.png";
+import aupp from "@/assets/logo/aupp-main-logo.png";
+import cadt from "@/assets/logo/cadt-logo.png";
+import itc from "@/assets/logo/itc-logo.png";
+import num from "@/assets/logo/num-logo.png";
+import paragon from "@/assets/logo/paragon-logo.png";
+import rupp from "@/assets/logo/rupp-logo.png";
 import type { ImageMetadata } from "astro";
 
 export interface University {

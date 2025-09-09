@@ -9,7 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { universities } from "@/data/university";
+import { universities } from "@/data/University";
 import { useTranslations } from "@/i18n/utils";
 
 type Props = { lang: string };

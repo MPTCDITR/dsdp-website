@@ -1,4 +1,4 @@
-import HowToApplySection from "@/components/pages/howToApply/HowToApplySection";
+import HowToApplySection from "@/components/pages/how-to-apply/HowToApplySection";
 
 import { HowToApplyData, type HowToApply } from "@/data/HowToApplyData";
 import { useTranslations } from "@/i18n/utils";
