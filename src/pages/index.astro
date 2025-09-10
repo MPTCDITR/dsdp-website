@@ -1,11 +1,9 @@
 ---
 import Jsonld from "@/components/layout/Jsonld.astro";
 
-import thumbnail from "@/assets/logo/dsdp-logo-final.svg";
-
 const cannonicaURL = new URL(Astro.site ?? "");
 
-const imageUrl = new URL(thumbnail.src, Astro.site ?? "");
+const imageUrl = new URL("/logo.png", Astro.site ?? "");
 ---
 
 <meta http-equiv="refresh" content="0;url=/km/" />
