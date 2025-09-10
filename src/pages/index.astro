@@ -1,12 +1,7 @@
 ---
 import Jsonld from "@/components/layout/Jsonld.astro";
 
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-
 const cannonicaURL = new URL(Astro.site ?? "");
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 
 const imageUrl = new URL("/favicon.svg", Astro.site ?? "");
 ---
@@ -15,7 +10,10 @@ const imageUrl = new URL("/favicon.svg", Astro.site ?? "");
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>DSDP Cambodia</title>
-<meta name="description" content={t("about.whatIsDsdp.description")} />
+<meta
+  name="description"
+  content="កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"
+/>
 <meta
   name="keywords"
   content="DSDP, Cambodia, Digital, Service, Platform, Government, Public Service, Digital Transformation, សេវាឌីជីថល, កម្ពុជា, រដ្ឋាភិបាល"
@@ -33,21 +31,27 @@ const imageUrl = new URL("/favicon.svg", Astro.site ?? "");
 <meta property="og:locale" content="km" />
 <meta property="og:site_name" content="DSDP Cambodia" />
 <meta property="og:title" content="DSDP Cambodia" />
-<meta property="og:description" content={t("about.whatIsDsdp.description")} />
+<meta
+  property="og:description"
+  content={"កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"}
+/>
 <meta property="og:url" content={cannonicaURL} />
 <meta property="og:image" content={imageUrl} />
 <meta property="og:image:alt" content="DSDP Cambodia" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="DSDP Cambodia" />
-<meta name="twitter:description" content={t("about.whatIsDsdp.description")} />
+<meta
+  name="twitter:description"
+  content={"កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"}
+/>
 <meta name="twitter:image" content={imageUrl} />
 <meta name="twitter:site" content="@dsdp_cambodia" />
 <meta name="twitter:creator" content="@dsdp_cambodia" />
 
 <Jsonld
   title="DSDP Cambodia"
-  description={t("about.whatIsDsdp.description")}
+  description={"កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"}
   siteUrl={cannonicaURL}
   canonicalUrl={cannonicaURL}
   defaultSiteProjectName="DSDP Cambodia"
