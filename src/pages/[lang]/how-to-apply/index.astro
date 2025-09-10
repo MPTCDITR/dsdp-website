@@ -4,14 +4,14 @@ import { LinkButton } from "@/components/ui/link-button";
 import documentsImg from "/public/how_to_apply/documents.gif";
 import processingImg from "/public/how_to_apply/processing.gif";
 import verifiedImg from "/public/how_to_apply/verified.gif";
+import background_style from "@/assets/about/about-us/backgorund-style.svg";
+import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 import type { GetStaticPaths } from "astro";
-import { SquareUser } from "lucide-react";
 import { Image } from "astro:assets";
-import background_style from "@/assets/about/about-us/backgorund-style.svg";
-import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
+import { SquareUser } from "lucide-react";
 
 export const getStaticPaths = (() => {
   return Object.keys(languages).map((lang) => ({
@@ -29,24 +29,23 @@ const applyLabel = t("nav.applytitle");
   description="The Digital Skill Development Program (D.S.D.P.) is a financial aid initiative (not a scholarship) aimed at providing interest-free study financing to high school graduates (Grade 12) who wish to pursue a bachelor’s degree in digital-related fields but have not received a full 100% scholarship from other educational institutions."
   author="DSDP Cambodia"
 >
-  <section
-    class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
-      <div class="absolute inset-0 -z-10">
-    <Image
-      src={background_style}
-      alt="top background"
-      class="absolute top-[-10%] right-[75%] w-full max-w-full h-auto select-none hidden md:block opacity-50"
-      width={1000}
-      height={1000}
-    />
-    <Image
-      src={background_svg_blob}
-      alt="bottom background"
-      class="absolute bottom-[-10%] left-[55%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
-      width={1000}
-      height={1000}
-    />
-  </div>
+  <section class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <Image
+        src={background_style}
+        alt="top background"
+        class="absolute top-[-10%] right-[75%] w-full max-w-full h-auto select-none hidden md:block opacity-50"
+        width={1000}
+        height={1000}
+      />
+      <Image
+        src={background_svg_blob}
+        alt="bottom background"
+        class="absolute bottom-[-10%] left-[55%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
+        width={1000}
+        height={1000}
+      />
+    </div>
     <div class="container my-12">
       <section>
         <div
