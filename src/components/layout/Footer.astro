@@ -91,7 +91,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href={`/${lang}/how-to-apply?tab=${HOWTOAPPLY_TABS.STUDENT}`}
-                class="hover:text-white hover:underline transition-colors"
+                class="transition-colors text-gray-300 cursor-not-allowed pointer-events-none"
               >
                 {t("footer.description.5")}
               </a>
@@ -99,7 +99,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href={`/${lang}/how-to-apply?tab=${HOWTOAPPLY_TABS.OFFICER}`}
-                class="hover:text-white hover:underline transition-colors"
+                class="transition-colors text-gray-300 cursor-not-allowed pointer-events-none"
               >
                 {t("footer.description.6")}
               </a>
@@ -142,7 +142,8 @@ const year = new Date().getFullYear();
             </li>
             <li>
               <a
-                href="#"
+                target="_blank"
+                href="https://go.gov.kh/mptc/dsdp-registration"
                 class="hover:text-white hover:underline transition-colors"
               >
                 {t("footer.description.10")}
@@ -216,6 +217,7 @@ const year = new Date().getFullYear();
           {
             SOCIAL_MEDIA_DATA.map((item) => (
               <a
+                target="_black"
                 href={item.href}
                 aria-label={item.label}
                 class="bg-primary hover:bg-white/20 rounded-full p-3 flex items-center justify-center transition-colors"
