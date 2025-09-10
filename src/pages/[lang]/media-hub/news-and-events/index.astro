@@ -1,13 +1,13 @@
 ---
 import { getLatestPosts, getRemainingBlogPosts } from "@/lib/blog";
 
-import { BlogList } from "@/components/pages/newsAndEvents/BlogList.tsx";
-import LatestBlogList from "@/components/pages/newsAndEvents/LatestBlogList.astro";
+import { BlogList } from "@/components/pages/news-and-events/BlogList";
+import LatestBlogList from "@/components/pages/news-and-events/LatestBlogList.astro";
 
 import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, ui } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
-import Layout from "@/layouts/layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
 export async function getStaticPaths() {

@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion";
 
 import { qaList } from "@/data/qaList";
-import { universities } from "@/data/university";
+import { universities } from "@/data/University";
 import type { Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 

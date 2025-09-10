@@ -3,7 +3,7 @@ title: ក្រសួងប្រៃសណីយ៍និងទូរគមន�
 date: 2025-03-01
 author: ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍
 description: ក.ប.ទ. បានបើកវគ្គបណ្ដុះបណ្ដាលរយៈពេល ៨ថ្ងៃ (២៤ កុម្ភៈ – ៣ មីនា ២០២៥) សម្រាប់គ្រូបង្រៀនមូលដ្ឋានគ្រឹះបច្ចេកវិទ្យាឌីជីថល នៃម.ប.ស. នៅវិទ្យាល័យគោលដៅ ១៨ ក្នុងខេត្តតាកែវ។ វគ្គនេះមានអ្នកចូលរួម ៣៧ រូប ផ្តោតលើអត្ថប្រយោជន៍បច្ចេកវិទ្យាឌីជីថល មូលដ្ឋានកុំព្យូទ័រ Hardware, Software និងការប្រើប្រាស់ Google Doc និង Google Slide។
-image: "public/blog/article-6/thumbnail.jpg"
+image: "public/blog/mptc-training-takeo-teachers/thumbnail.jpg"
 tags: []
 ---
 
@@ -11,8 +11,8 @@ tags: []
 
 រាជធានីភ្នំពេញ ថ្ងៃទី១ ខែមីនា ឆ្នាំ២០២៥
 
-![image 1](/blog/article-6/image-1.jpg)
-![image 2](/blog/article-6/image-2.jpg)
-![image 3](/blog/article-6/image-3.jpg)
-![image 4](/blog/article-6/image-4.jpg)
-![image 5](/blog/article-6/image-5.jpg)
+![image 1](/blog/mptc-training-takeo-teachers/image-1.jpg)
+![image 2](/blog/mptc-training-takeo-teachers/image-2.jpg)
+![image 3](/blog/mptc-training-takeo-teachers/image-3.jpg)
+![image 4](/blog/mptc-training-takeo-teachers/image-4.jpg)
+![image 5](/blog/mptc-training-takeo-teachers/image-5.jpg)
