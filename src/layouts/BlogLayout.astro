@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header.astro";
 import Jsonld from "@/components/layout/Jsonld.astro";
 
+import thumbnail from "@/assets/logo/dsdp-logo-final.svg";
 import { defaultLang } from "@/i18n/ui";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
@@ -28,9 +29,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? "");
 const {
   title,
   description = t("about.whatIsDsdp.description"),
-  img = "/favicon.svg",
+  img = thumbnail.src,
   author = "@DSDP_Cambodia",
 } = Astro.props;
+
+const imageUrl = new URL(img, Astro.site!);
 ---
 
 <!doctype html>
@@ -61,7 +64,7 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:image" content={img} />
+    <meta property="og:image" content={imageUrl} />
     <meta property="og:image:alt" content={title} />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -69,7 +72,7 @@ const {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:site" content="@dsdp_cambodia" />
     <meta name="twitter:creator" content={author} />
-    {img && <meta name="twitter:image" content={img} />}
+    {img && <meta name="twitter:image" content={imageUrl} />}
 
     <Jsonld
       title={title}
@@ -77,7 +80,7 @@ const {
       siteUrl={siteUrl}
       canonicalUrl={canonicalUrl}
       defaultSiteProjectName="DSDP Cambodia"
-      image={img}
+      image={imageUrl}
       type="BlogPosting"
       author={{
         name: author,
