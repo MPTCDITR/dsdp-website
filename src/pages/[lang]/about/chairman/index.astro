@@ -13,7 +13,6 @@ export const getStaticPaths = (() => {
 }) satisfies GetStaticPaths;
 
 const { lang } = Astro.params;
-
 const t = useTranslations(lang);
 ---
 
@@ -24,7 +23,7 @@ const t = useTranslations(lang);
     t("about.team.position") +
     " " +
     t("about.team.ministry")}
-  author="DSDP Cambodia"
+  author="@DSDP_Cambodia"
 >
   <AboutTeam lang={lang} />
 </Layout>

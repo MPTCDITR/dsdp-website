@@ -3,7 +3,7 @@ title: Announcement on the Provision of Interest-Free Scholarships for Bachelor�
 description: "The Ministry of Post and Telecommunications (MPTC) hereby informs all students and the public that, in order to support the development of digital human capital and respond to the needs of economic, social, and digital government development, as well as supplement the implementation of “Digital Talent Scholarship Program” MPTC, the Ministry has established the “Digital Skills Development Program (D.S.D.P.)”, known in English as Digital Skill Development Program (D.S.D.P) This program provides interest-free educational funding (financial assistance) rather than a scholarship (Financial Aid without Interest). For the academic year 2025–2026, MPTC will evaluate and select candidates who have passed the 2025 national high school examination and wish to pursue a bachelor’s degree in digital technology at the six partner higher education institutions of D.S.D.P., following the attached programs, requirements, and benefits:"
 date: 2025-08-29
 author: Ministry of Post and Telecommunications
-image: "public/home_hero_section/scholarship_dsdp_final.jpg"
+image: "public/home_hero_section/Scholarship_DSDP_Final.jpg"
 tags: []
 ---
 
