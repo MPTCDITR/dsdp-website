@@ -265,6 +265,39 @@ export const ui: Record<string, Record<string, string>> = {
 
     // Partner About Us Button
     "partner.button.AboutUs": "Contact Us",
+    //How to Apply Page V.2
+    //title for how to apple page v.2
+    "HowToApply.title_1": "How to Apply",
+    "HowToApply.title_2": "Application Documents",
+    "HowToApply.title_3": "If Selected",
+    "HowToApply.title_4": "Application Deadline and Submission",
+    //Description for hoqw to apply page v.2
+    "HowToApply.description_1":
+      "The Digital Skill Development Program (DSDP) is a financial aid initiative (not a scholarship) aimed at providing interest-free study financing to high school graduates (Grade 12) who wish to pursue a bachelor’s degree in digital-related fields but have not received a full 100% scholarship from other educational institutions.",
+    "HowToApply.description_2":
+      "Applicants are required to complete the online application and upload scanned copies of the following supporting documents:",
+    "HowToApply.description.point_1": "A 4x6 cm photo",
+    "HowToApply.description.point_2":
+      "High school diploma, provisional certificate, or official Grade 12 examination results",
+    "HowToApply.description.point_3":
+      "National ID card, passport, or birth certificate",
+    "HowToApply.description_3":
+      "In the event that an applicant is selected to receive interest-free study financing, they must submit certified copies of the following documents, verified by a competent authority, or official copies containing a standard QR code that can be authenticated by the Royal Government:",
+    "HowToApply.description.point_4":
+      "High school diploma, provisional certificate, or official Grade 12 examination results",
+    "HowToApply.description.point_5":
+      "National ID card, passport, or birth certificate",
+    "HowToApply.description.point_6": "Family book or residence book",
+    "HowToApply.description.point_7":
+      "Union membership documents (if applicable)",
+    "HowToApply.description.point_8":
+      "Parent(s) or guardian’s national ID card",
+    "HowToApply.description_4":
+      "Applicants must complete the online application form via the following link:",
+    "HowToApply.description_5": "https://go.gov.kh/mptc/dsdp-registration",
+    "HowToApply.description_6":
+      "The application period is open from the date of this announcement until November 1, 2025.",
+    "HowToApply.description_7": "For more information, please contact 123.",
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
@@ -676,6 +709,41 @@ export const ui: Record<string, Record<string, string>> = {
 
     // Partner About Us Button
     "partner.button.AboutUs": "ទំនាក់ទំនងមកយើង",
+
+    //How to Apply Page V.2
+    //title for how to apple page v.2
+    "HowToApply.title_1": "របៀបចុះឈ្មោះស្នើសុំ",
+    "HowToApply.title_2": "សំណុំលិខិតចុះឈ្មោះស្នើសុំ",
+    "HowToApply.title_3": "ករណីបេក្ខជនត្រូវបានជ្រើសរើស",
+    "HowToApply.title_4": "ការបរិច្ឆេទ និងការទទួលពាក្យ",
+    //Description for hoqw to apply page v.2
+    "HowToApply.description_1":
+      "កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (Digital Skill Development Program) ជាកម្មវិធីជំនួយហិរញ្ញវត្ថុ មិនមែនអាហារូករណ៍ ក្នុងគោលបំណងផ្តល់ថវិកាសិក្សាដោយមិនគិតការប្រាក់ (Financial Aid without Interest) ដល់សិស្សានុសិស្ស ដែលទើបបញ្ចប់ការសិក្សាថ្នាក់ទី១២ (មធ្យមសិក្សាទុតិយភូមិ) មានបំណងបន្តការសិក្សាថ្នាក់បរិញ្ញាបត្រ ហើយស្រឡាញ់ការសិក្សាលើជំនាញឌីជីថល តែពុំបានទទួលអាហារូបករណ៍ពេញលេញ១០០% ពីគ្រឹះស្ថានអប់រំផ្សេងៗ។",
+    "HowToApply.description_2":
+      "បេក្ខជនត្រូវបំពេញពាក្យស្នើសុំតាមប្រព័ន្ធអនឡាញ (Online Application) ដោយត្រូវស្កេនភ្ជាប់ឯកសារយោងរួមមាន៖",
+    "HowToApply.description.point_1": "រូបថតទំហំ 4x6",
+    "HowToApply.description.point_2":
+      "សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬលទ្ធផលប្រឡងសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិផ្លូវការ",
+    "HowToApply.description.point_3":
+      "អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ឬសំបុត្រកំណើត",
+    "HowToApply.description_3":
+      "ក្នុងករណីបេក្ខជនត្រូវបានវាយតម្លៃជ្រើសរើសដើម្បីទទួលបានថវិកាសិក្សាដោយមិនគិតការប្រាក់ បេក្ខជនត្រូវប្រគល់ឯកសារថតចម្លងដោយមានបញ្ជាក់ពីអាជ្ញាធរមានសមត្តកិច្ច ឬឯកសារថតចម្លងដែលមានភ្ជាប់ QR Code ស្ដង់ដាដែលអាចផ្ទៀងផ្ទាត់បានតាមថ្នាល របស់រាជរដ្ឋាភិបាល ជាអាទ៍៖",
+    "HowToApply.description.point_4":
+      "សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬវិញ្ញាបនបត្របណ្តោះអាសន្នមធ្យមសិក្សាទុតិយភូមិ ឬលទ្ធផលប្រឡងសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិផ្លូវការ",
+    "HowToApply.description.point_5":
+      "អត្តសញ្ញាណប័ណ្ណ ឬលិខិតឆ្លងដែន ឬសំបុត្រកំណើត",
+    "HowToApply.description.point_6": "សៀវភៅគ្រួសារ ឬសៀវភៅស្នាក់នៅ",
+    "HowToApply.description.point_7": "ឯកសារសហព័ន្ទ (ប្រសិនជាមាន) និង",
+    "HowToApply.description.point_8":
+      "អត្តសញ្ញាណប័ណ្ណ ឪពុក ម្ដាយ ឬអាណាព្យាបាល។",
+    "HowToApply.description_4":
+      "បេក្ខជនត្រូវបំពេញពាក្យស្នើសុំតាមប្រព័ន្ធអនឡាញតាមរយៈតំណភ្ជាប់៖",
+    "HowToApply.description_5": "https://go.gov.kh/mptc/dsdp-registration",
+    "HowToApply.description_6":
+      "កាលបរិច្ឆេទទទួលពាក្យគិតចាប់ពីថ្ងៃជូនដំណឹងនេះរហូតដល់ ថ្ងៃទី១ ខែវិច្ឆិកា ឆ្នាំ២០២៥",
+    "HowToApply.description_7":
+      "សម្រាប់ព័ត៌មានបន្ថែម សូមទាក់ទងតាមទូរសព្ទលេខ ១២៣ ។",
+
     // How to Apply Page
     "howToApply.title-1": "ជំហានងាយៗនៃការដាក់ពាក្យ",
     "howToApply.title-2": "ស្នើសុំថវិកាគម្រោងរបស់ ក.អ.ជ.ឌ.",
