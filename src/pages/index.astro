@@ -2,20 +2,18 @@
 import Jsonld from "@/components/layout/Jsonld.astro";
 
 const cannonicaURL = new URL(Astro.site ?? "");
+
+const imageUrl = new URL("/favicon.svg", Astro.site ?? "");
 ---
 
 <meta http-equiv="refresh" content="0;url=/km/" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="sitemap" href="/sitemap-0.xml" />
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>DSDP Cambodia</title>
 <meta
   name="description"
-  content="DSDP Cambodia - Digital Service Delivery Platform"
+  content="កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"
 />
-
 <meta
   name="keywords"
   content="DSDP, Cambodia, Digital, Service, Platform, Government, Public Service, Digital Transformation, សេវាឌីជីថល, កម្ពុជា, រដ្ឋាភិបាល"
@@ -25,37 +23,39 @@ const cannonicaURL = new URL(Astro.site ?? "");
   name="robots"
   content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="canonical" href={cannonicaURL} />
+<link rel="sitemap" href="/sitemap-0.xml" />
 
-<meta property="og:locale" content="km" />
 <meta property="og:type" content="website" />
+<meta property="og:locale" content="km" />
 <meta property="og:site_name" content="DSDP Cambodia" />
 <meta property="og:title" content="DSDP Cambodia" />
 <meta
   property="og:description"
-  content="DSDP Cambodia - Digital Service Delivery Platform"
+  content={"កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"}
 />
 <meta property="og:url" content={cannonicaURL} />
-<meta property="og:image" content="/favicon.svg" />
+<meta property="og:image" content={imageUrl} />
 <meta property="og:image:alt" content="DSDP Cambodia" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="DSDP Cambodia" />
 <meta
   name="twitter:description"
-  content="DSDP Cambodia - Digital Service Delivery Platform"
+  content={"កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"}
 />
-<meta name="twitter:image" content="/favicon.svg" />
+<meta name="twitter:image" content={imageUrl} />
 <meta name="twitter:site" content="@dsdp_cambodia" />
 <meta name="twitter:creator" content="@dsdp_cambodia" />
 
 <Jsonld
   title="DSDP Cambodia"
-  description="DSDP Cambodia - Digital Service Delivery Platform"
+  description={"កម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល (ក.អ.ជ.ឌ.) ជាកម្មវិធីជំនួយផ្នែកហិរញ្ញវត្ថុរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ក្នុងគោលដៅគាំទ្រដល់ដំណើរការអភិវឌ្ឍមូលធនមនុស្សឌីជីថល ឆ្លើយតបទៅនឹងតម្រូវការ នៃការអភិវឌ្ឍសេដ្ឋកិច្ច សង្គម និងរដ្ឋាភិបាលឌីជីថល។​"}
   siteUrl={cannonicaURL}
   canonicalUrl={cannonicaURL}
   defaultSiteProjectName="DSDP Cambodia"
-  image="/favicon.svg"
+  image={imageUrl}
   type="WebPage"
-  author={{ name: "DSDP Cambodia", url: cannonicaURL }}
+  author={{ name: "@DSDP_Cambodia", url: cannonicaURL }}
 />
