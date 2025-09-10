@@ -16,13 +16,12 @@ interface NavMenuProps {
 }
 
 interface Props {
-  translations: Record<string, string>;
   lang: Language;
   navigationItems: NavMenuProps[];
   currentPath: string;
 }
 
-const { translations, lang, navigationItems, currentPath } = Astro.props;
+const { lang, navigationItems, currentPath } = Astro.props;
 const t = useTranslations(lang);
 const applyLabel = t("nav.applytitle");
 ---
@@ -66,7 +65,6 @@ const applyLabel = t("nav.applytitle");
 
       <MobileNav
         lang={lang}
-        translations={translations}
         currentPath={currentPath}
         navigationItems={navigationItems}
         applyLabel={t("nav.applytitle")}
