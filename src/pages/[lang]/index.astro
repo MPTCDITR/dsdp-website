@@ -9,7 +9,7 @@ import Partnership from "@/components/home/Partnership.astro";
 
 import { languages } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
-import Layout from "@/layouts/layout.astro";
+import Layout from "@/layouts/Layout.astro";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -22,11 +22,7 @@ const latestPosts = await getLatestPosts(lang);
 const heroPosts = await getHeroLatestPosts(lang);
 ---
 
-<Layout
-  title="ទំព័រដើម - Home"
-  description="DSDP Cambodia - Digital Service Delivery Platform"
-  author="DSDP Cambodia"
->
+<Layout title="ទំព័រដើម - Home">
   <Hero lang={lang} latestPosts={heroPosts} client:load />
   <ApplyStep lang={lang} />
   <Event lang={lang} latestPosts={latestPosts} client:load />

@@ -1,10 +1,10 @@
 ---
-import { AboutUs as AboutUsComponent } from "@/components/pages/about/about-us-content";
+import AboutUsComponent from "@/components/pages/about/AboutUsContent.astro";
 
 import background_style from "@/assets/about/about-us/backgorund-style.svg";
 import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, type Language } from "@/i18n/ui";
-import Layout from "@/layouts/layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
@@ -23,6 +23,7 @@ const { lang } = Astro.params;
 >
   <!-- Background decorations -->
   <section class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
+    
     <div class="absolute inset-0 -z-10 pointer-events-none">
       <Image
         src={background_style}

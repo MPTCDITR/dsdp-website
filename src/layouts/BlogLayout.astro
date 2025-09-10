@@ -7,8 +7,8 @@ import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header.astro";
 import Jsonld from "@/components/layout/Jsonld.astro";
 
-import { defaultLang, ui } from "@/i18n/ui";
-import { getLangFromUrl } from "@/i18n/utils";
+import { defaultLang } from "@/i18n/ui";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 interface Props {
   title: string;
@@ -17,7 +17,7 @@ interface Props {
   author: string;
 }
 const lang = getLangFromUrl(Astro.url);
-const translations = ui[lang];
+const t = useTranslations(lang);
 const locale = Astro.currentLocale ?? defaultLang;
 const navigationItems = getLocalizedRoutes(navigation, locale);
 const currentPath = Astro.url.pathname;
@@ -27,10 +27,12 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? "");
 
 const {
   title,
-  description = "DSDP Cambodia - Digital Service Delivery Platform",
-  img = "/dsdp-logo-final.svg",
-  author,
+  description = t("about.whatIsDsdp.description"),
+  img = "/logo.png",
+  author = "@DSDP_Cambodia",
 } = Astro.props;
+
+const imageUrl = new URL(img, Astro.site!);
 ---
 
 <!doctype html>
@@ -38,38 +40,38 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/dsdp-logo-final.svg" />
-    <link rel="sitemap" href="/sitemap-0.xml" />
 
-    <title>{title}</title>
+    <title>{title} | DSDP Cambodia</title>
     <meta name="description" content={description} />
-
     <meta
       name="keywords"
       content="DSDP, Cambodia, Digital, Service, Platform, Government, Public Service, Digital Transformation, សេវាឌីជីថល, កម្ពុជា, រដ្ឋាភិបាល"
     />
-    <meta name="author" content="DSDP Cambodia" />
+    <meta name="author" content={author} />
     <meta
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-0.xml" />
     <link rel="canonical" href={canonicalUrl} />
 
-    <meta property="og:locale" content={lang} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DSDP Cambodia" />
+    <meta property="og:locale" content={lang} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:image" content={img} />
+    <meta property="og:image" content={imageUrl} />
     <meta property="og:image:alt" content={title} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    {img && <meta name="twitter:image" content={img} />}
     <meta name="twitter:site" content="@dsdp_cambodia" />
-    <meta name="twitter:creator" content="@dsdp_cambodia" />
+    <meta name="twitter:creator" content={author} />
+    {img && <meta name="twitter:image" content={imageUrl} />}
 
     <Jsonld
       title={title}
@@ -77,8 +79,8 @@ const {
       siteUrl={siteUrl}
       canonicalUrl={canonicalUrl}
       defaultSiteProjectName="DSDP Cambodia"
-      image={img}
-      type={"BlogPosting"}
+      image={imageUrl}
+      type="BlogPosting"
       author={{
         name: author,
         url: siteUrl,
@@ -87,7 +89,6 @@ const {
   </head>
   <body>
     <Header
-      translations={translations}
       lang={lang}
       navigationItems={navigationItems}
       currentPath={currentPath}
@@ -95,6 +96,6 @@ const {
     <main>
       <slot />
     </main>
-    <Footer translations={translations} lang={lang} />
+    <Footer lang={lang} />
   </body>
 </html>

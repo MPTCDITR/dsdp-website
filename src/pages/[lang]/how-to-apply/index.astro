@@ -9,6 +9,9 @@ import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/layout.astro";
 import type { GetStaticPaths } from "astro";
 import { SquareUser } from "lucide-react";
+import { Image } from "astro:assets";
+import background_style from "@/assets/about/about-us/backgorund-style.svg";
+import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
 
 export const getStaticPaths = (() => {
   return Object.keys(languages).map((lang) => ({
@@ -27,18 +30,23 @@ const applyLabel = t("nav.applytitle");
   author="DSDP Cambodia"
 >
   <section
-    class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden"
-    style="
-           background-image: 
-             url('/src/assets/about/about-us/backgorund-style.svg'),
-             url('/src/assets/about/about-us/background-svg-blob.svg');
-           background-position: 
-             calc(100% - 195%) -0%,
-             5500% calc(100% - 10%);
-           background-repeat: no-repeat, no-repeat;
-           background-size: auto, auto;
-         "
-  >
+    class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+    <Image
+      src={background_style}
+      alt="top background"
+      class="absolute top-[-10%] right-[75%] w-full max-w-full h-auto select-none hidden md:block opacity-50"
+      width={1000}
+      height={1000}
+    />
+    <Image
+      src={background_svg_blob}
+      alt="bottom background"
+      class="absolute bottom-[-10%] left-[55%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
+      width={1000}
+      height={1000}
+    />
+  </div>
     <div class="container my-12">
       <section>
         <div
