@@ -22,11 +22,7 @@ const latestPosts = await getLatestPosts(lang);
 const heroPosts = await getHeroLatestPosts(lang);
 ---
 
-<Layout
-  title="ទំព័រដើម - Home"
-  description="DSDP Cambodia - Digital Service Delivery Platform"
-  author="DSDP Cambodia"
->
+<Layout title="ទំព័រដើម - Home">
   <Hero lang={lang} latestPosts={heroPosts} client:load />
   <ApplyStep lang={lang} />
   <Event lang={lang} latestPosts={latestPosts} client:load />

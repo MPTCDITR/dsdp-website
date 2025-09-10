@@ -26,7 +26,6 @@ interface NavMenuProps {
 }
 
 interface MobileNavProps {
-  translations: Record<string, string>;
   lang: string;
   navigationItems: NavMenuProps[];
   currentPath: string;

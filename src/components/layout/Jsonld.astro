@@ -4,7 +4,7 @@ type AuthorProps = {
   url?: URL;
 };
 
-type URLType = URL | string | undefined;
+export type URLType = URL | string | undefined;
 type jsondlType = "WebPage" | "BlogPosting";
 
 interface Props {
@@ -13,7 +13,7 @@ interface Props {
   siteUrl: URLType;
   canonicalUrl: URLType;
   defaultSiteProjectName: string;
-  image: string;
+  image: URLType;
   type: jsondlType;
   author: AuthorProps;
 }
@@ -25,7 +25,7 @@ const {
   canonicalUrl,
   defaultSiteProjectName,
   type,
-  image = "/dsdp-logo-final.svg",
+  image = "/favicon.svg",
   author,
 } = Astro.props;
 ---
