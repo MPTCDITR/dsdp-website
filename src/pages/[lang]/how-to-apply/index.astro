@@ -1,11 +1,11 @@
 ---
 import { LinkButton } from "@/components/ui/link-button";
 
-import documentsImg from "/public/how_to_apply/documents.gif";
-import processingImg from "/public/how_to_apply/processing.gif";
-import verifiedImg from "/public/how_to_apply/verified.gif";
 import backgroundStyle from "@/assets/about/about-us/backgorund-style.svg";
 import backgroundSvgBlob from "@/assets/about/about-us/background-svg-blob.svg";
+import documentsImg from "@/assets/how_to_apply/documents.gif";
+import processingImg from "@/assets/how_to_apply/processing.gif";
+import verifiedImg from "@/assets/how_to_apply/verified.gif";
 import { languages, type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
@@ -25,7 +25,7 @@ const t = useTranslations(lang);
 
 <Layout
   title={t("HowToApply.title_1")}
-  description={t("HowToApply.seoDescription")}
+  description={t("HowToApply.description_1")}
   author="@DSDP_Cambodia"
 >
   <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
