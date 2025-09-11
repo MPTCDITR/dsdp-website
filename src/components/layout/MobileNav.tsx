@@ -44,8 +44,7 @@ export function MobileNav({
         <SheetTrigger asChild>
           <Button
             variant="ghost"
-            size="icon"
-            className="xl:hidden size-6 rounded-md"
+            className="xl:hidden rounded-md p-4 size-10"
             aria-label="Open menu"
           >
             <MenuIcon className="size-6" />

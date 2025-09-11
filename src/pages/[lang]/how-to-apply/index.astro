@@ -24,15 +24,15 @@ const t = useTranslations(lang);
 ---
 
 <Layout
-  title={t("HowToApply.seoTitle")}
+  title={t("HowToApply.title_1")}
   description={t("HowToApply.seoDescription")}
-  author="DSDP Cambodia"
+  author="@DSDP_Cambodia"
 >
   <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
     <div class="absolute inset-0 -z-10" aria-hidden="true">
       <Image
         src={backgroundStyle}
-        alt=""
+        alt="Background style"
         class="absolute top-[-10%] right-[75%] w-full max-w-full h-auto select-none hidden md:block opacity-50"
         width={1000}
         height={1000}
@@ -42,7 +42,7 @@ const t = useTranslations(lang);
       />
       <Image
         src={backgroundSvgBlob}
-        alt=""
+        alt="Background svg blob"
         class="absolute bottom-[-10%] left-[55%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
         width={1000}
         height={1000}
@@ -52,10 +52,10 @@ const t = useTranslations(lang);
       />
     </div>
     <section aria-labelledby="how-to-apply-heading" class="container my-4">
-      <header class="text-center space-y-5 my-8 mx-auto max-w-4xl">
+      <header class="text-center space-y-5 my-10 mx-auto max-w-4xl">
         <h1
           id="how-to-apply-heading"
-          class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary"
+          class="text-3xl lg:text-4xl font-bold text-primary text-gradient"
         >
           {t("HowToApply.title_1")}
         </h1>
@@ -87,13 +87,10 @@ const t = useTranslations(lang);
           >
             <img
               src={processingImg.src}
-              alt={t("HowToApply.processingImgAlt") ||
-                "Illustration of application processing"}
+              alt={"Illustration of application processing"}
               class="w-full max-w-xs md:max-w-md"
               loading="eager"
               draggable={false}
-              width="320"
-              height="320"
               decoding="async"
             />
           </div>
@@ -107,13 +104,10 @@ const t = useTranslations(lang);
           >
             <img
               src={documentsImg.src}
-              alt={t("HowToApply.documentsImgAlt") ||
-                "Illustration of required documents"}
+              alt={"Illustration of required documents"}
               class="w-full max-w-xs md:max-w-md"
               loading="lazy"
               draggable={false}
-              width="320"
-              height="320"
               decoding="async"
             />
           </div>
@@ -187,13 +181,10 @@ const t = useTranslations(lang);
           >
             <img
               src={verifiedImg.src}
-              alt={t("HowToApply.verifiedImgAlt") ||
-                "Illustration of application verification"}
+              alt={"Illustration of application verification"}
               class="w-full max-w-xs md:max-w-md"
               loading="lazy"
               draggable={false}
-              width="320"
-              height="320"
               decoding="async"
             />
           </div>
