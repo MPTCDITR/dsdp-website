@@ -84,6 +84,6 @@ Candidates must complete the online application and attach the following documen
 \- Application deadline is from the announcement date until November 1, 2025  
 \- For more information, please contact phone number 123
 
-![image](/home_hero_section/scholarship_dsdp_form_1.jpg)
-![image](/home_hero_section/scholarship_dsdp_form_2.jpg)
-![image](/home_hero_section/scholarship_dsdp_form_3.jpg)
+![image](/home_hero_section/Scholarship_DSDP_form_1.jpg)
+![image](/home_hero_section/Scholarship_DSDP_form_2.jpg)
+![image](/home_hero_section/Scholarship_DSDP_form_3.jpg)

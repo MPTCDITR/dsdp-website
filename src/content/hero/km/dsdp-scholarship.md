@@ -84,6 +84,6 @@ tags: []
 \- កាលបរិច្ឆេទទទួលពាក្យគិតចាប់ពីថ្ងៃជូនដំណឹងនេះរហូតដល់ ថ្ងៃទី១ ខែវិច្ឆិកា ឆ្នាំ២០២៥  
 \- សម្រាប់ព័ត៌មានបន្ថែម សូមទាក់ទងតាមទូរសព្ទលេខ ១២៣។
 
-![image](/home_hero_section/scholarship_dsdp_form_1.jpg)
-![image](/home_hero_section/scholarship_dsdp_form_2.jpg)
-![image](/home_hero_section/scholarship_dsdp_form_3.jpg)
+![image](/home_hero_section/Scholarship_DSDP_form_1.jpg)
+![image](/home_hero_section/Scholarship_DSDP_form_2.jpg)
+![image](/home_hero_section/Scholarship_DSDP_form_3.jpg)

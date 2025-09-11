@@ -1,10 +1,17 @@
 ---
-import contact_team from "@/assets/about/about-team/Mailbox-rafiki.png";
+import { LinkButton } from "@/components/ui/link-button";
+
+import backgroundStyle from "@/assets/about/about-us/backgorund-style.svg";
+import backgroundSvgBlob from "@/assets/about/about-us/background-svg-blob.svg";
+import documentsImg from "@/assets/how_to_apply/documents.gif";
+import processingImg from "@/assets/how_to_apply/processing.gif";
+import verifiedImg from "@/assets/how_to_apply/verified.gif";
 import { languages, type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import type { GetStaticPaths } from "astro";
 import { Image } from "astro:assets";
+import { SquareUser } from "lucide-react";
 
 export const getStaticPaths = (() => {
   return Object.keys(languages).map((lang) => ({
@@ -17,24 +24,172 @@ const t = useTranslations(lang);
 ---
 
 <Layout
-  title="អំពីក្រុមឌីអេសឌីធី - About DSDP Team"
-  description="Meet the dedicated team behind DSDP, working together to drive our mission and make a positive impact in the community."
-  author="DSDP Cambodia"
+  title={t("HowToApply.title_1")}
+  description={t("HowToApply.description_1")}
+  author="@DSDP_Cambodia"
 >
-  <Image
-    src={contact_team}
-    alt="DSDP Team"
-    width={contact_team.width}
-    height={contact_team.height}
-    class={"lg:w-1/3 md:w-2/3 mx-auto w-full"}
-  />
-  <div
-    aria-label="How to apply"
-    class="container max-w-3xl mx-auto mb-10 space-y-5 text-primary"
-  >
-    <h1 class="md:text-4xl text-3xl font-bold text-center md:leading-relaxed">
-      {t("contact.team.title")}
-      <a href="tel:123" class="text-secondary underline">123</a>
-    </h1>
-  </div>
+  <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
+    <div class="absolute inset-0 -z-10" aria-hidden="true">
+      <Image
+        src={backgroundStyle}
+        alt="Background style"
+        class="absolute top-[-10%] right-[75%] w-full max-w-full h-auto select-none hidden md:block opacity-50"
+        width={1000}
+        height={1000}
+        loading="lazy"
+        draggable={false}
+        role="presentation"
+      />
+      <Image
+        src={backgroundSvgBlob}
+        alt="Background svg blob"
+        class="absolute bottom-[-10%] left-[55%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
+        width={1000}
+        height={1000}
+        loading="lazy"
+        draggable={false}
+        role="presentation"
+      />
+    </div>
+    <section aria-labelledby="how-to-apply-heading" class="container my-4">
+      <header class="text-center space-y-5 my-10 mx-auto max-w-4xl">
+        <h1
+          id="how-to-apply-heading"
+          class="text-3xl lg:text-4xl font-bold text-primary text-gradient"
+        >
+          {t("HowToApply.title_1")}
+        </h1>
+        <p class="md:text-base text-sm text-center justify-center">
+          {t("HowToApply.description_1")}
+        </p>
+      </header>
+
+      <section class="my-16" aria-labelledby="step1-heading">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div class="text-start grid gap-8 order-2 md:order-1">
+            <h2
+              id="step1-heading"
+              class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary"
+            >
+              {t("HowToApply.title_2")}
+            </h2>
+            <div>
+              <p>{t("HowToApply.description_2")}</p>
+              <ul class="list-disc pl-8 space-y-3 my-3">
+                <li>{t("HowToApply.description.point_1")}</li>
+                <li>{t("HowToApply.description.point_2")}</li>
+                <li>{t("HowToApply.description.point_3")}</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center h-full order-1 md:order-2"
+          >
+            <img
+              src={processingImg.src}
+              alt={"Illustration of application processing"}
+              class="w-full max-w-xs md:max-w-md"
+              loading="eager"
+              draggable={false}
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="my-16" aria-labelledby="step2-heading">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div
+            class="flex flex-col justify-center items-center h-full order-1 md:order-1"
+          >
+            <img
+              src={documentsImg.src}
+              alt={"Illustration of required documents"}
+              class="w-full max-w-xs md:max-w-md"
+              loading="lazy"
+              draggable={false}
+              decoding="async"
+            />
+          </div>
+          <div class="text-start grid gap-8 order-2 md:order-2">
+            <h2
+              id="step2-heading"
+              class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary"
+            >
+              {t("HowToApply.title_3")}
+            </h2>
+            <div>
+              <p>{t("HowToApply.description_3")}</p>
+              <ul class="list-disc pl-8 space-y-3 my-3">
+                <li>{t("HowToApply.description.point_4")}</li>
+                <li>{t("HowToApply.description.point_5")}</li>
+                <li>{t("HowToApply.description.point_6")}</li>
+                <li>{t("HowToApply.description.point_7")}</li>
+                <li>{t("HowToApply.description.point_8")}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-16" aria-labelledby="step3-heading">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div class="text-start grid gap-4 order-2 md:order-1">
+            <h2
+              id="step3-heading"
+              class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary"
+            >
+              {t("HowToApply.title_4")}
+            </h2>
+            <ul class="list-disc pl-8 space-y-2 my-3">
+              <li>
+                {t("HowToApply.description_4")}
+                <br />
+                <a
+                  href="https://go.gov.kh/mptc/dsdp-registration"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-primary hover:underline font-semibold"
+                  aria-label={t("HowToApply.description_5") +
+                    " (opens in a new tab)"}
+                >
+                  {t("HowToApply.description_5")}
+                </a>
+              </li>
+              <li>{t("HowToApply.description_6")}</li>
+              <li>{t("HowToApply.description_7")}</li>
+            </ul>
+            <LinkButton
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+              size="lg"
+              className="rounded-full text-white sm:w-fit"
+              href="https://go.gov.kh/mptc/dsdp-registration"
+              aria-label={t("nav.applytitle") + " (opens in a new tab)"}
+            >
+              <SquareUser
+                className="size-5"
+                aria-hidden="true"
+                focusable="false"
+              />
+              {t("nav.applytitle")}
+            </LinkButton>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center h-full order-1 md:order-2"
+          >
+            <img
+              src={verifiedImg.src}
+              alt={"Illustration of application verification"}
+              class="w-full max-w-xs md:max-w-md"
+              loading="lazy"
+              draggable={false}
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
 </Layout>
