@@ -33,7 +33,7 @@ const {
 } = Astro.props;
 
 const imageUrl = new URL(img, Astro.site!);
-const fullTitle = `${title} | DSDP Cambodia`;
+const ogTitle = `${title} | DSDP Cambodia`;
 ---
 
 <!doctype html>
@@ -61,21 +61,21 @@ const fullTitle = `${title} | DSDP Cambodia`;
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DSDP Cambodia" />
     <meta property="og:locale" content={lang} />
-    <meta property="og:title" content={fullTitle} />
+    <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={imageUrl} />
     <meta property="og:image:alt" content={title} />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:title" content={ogTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:site" content="@dsdp_cambodia" />
     <meta name="twitter:creator" content={author} />
     {img && <meta name="twitter:image" content={imageUrl} />}
 
     <Jsonld
-      title={fullTitle}
+      title={ogTitle}
       description={description}
       siteUrl={siteUrl}
       canonicalUrl={canonicalUrl}
