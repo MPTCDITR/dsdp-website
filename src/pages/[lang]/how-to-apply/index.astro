@@ -4,11 +4,11 @@ import { LinkButton } from "@/components/ui/link-button";
 import documentsImg from "/public/how_to_apply/documents.gif";
 import processingImg from "/public/how_to_apply/processing.gif";
 import verifiedImg from "/public/how_to_apply/verified.gif";
-import background_style from "@/assets/about/about-us/backgorund-style.svg";
-import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
+import backgroundStyle from "@/assets/about/about-us/backgorund-style.svg";
+import backgroundSvgBlob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
-import Layout from "@/layouts/layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import type { GetStaticPaths } from "astro";
 import { Image } from "astro:assets";
 import { SquareUser } from "lucide-react";
@@ -21,145 +21,184 @@ export const getStaticPaths = (() => {
 
 const { lang } = Astro.params;
 const t = useTranslations(lang);
-const applyLabel = t("nav.applytitle");
 ---
 
 <Layout
-  title="How-To-Apply"
-  description="The Digital Skill Development Program (D.S.D.P.) is a financial aid initiative (not a scholarship) aimed at providing interest-free study financing to high school graduates (Grade 12) who wish to pursue a bachelor’s degree in digital-related fields but have not received a full 100% scholarship from other educational institutions."
+  title={t("HowToApply.seoTitle")}
+  description={t("HowToApply.seoDescription")}
   author="DSDP Cambodia"
 >
-  <section class="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
-    <div class="absolute inset-0 -z-10">
+  <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
+    <div class="absolute inset-0 -z-10" aria-hidden="true">
       <Image
-        src={background_style}
-        alt="top background"
+        src={backgroundStyle}
+        alt=""
         class="absolute top-[-10%] right-[75%] w-full max-w-full h-auto select-none hidden md:block opacity-50"
         width={1000}
         height={1000}
+        loading="lazy"
+        draggable={false}
+        role="presentation"
       />
       <Image
-        src={background_svg_blob}
-        alt="bottom background"
+        src={backgroundSvgBlob}
+        alt=""
         class="absolute bottom-[-10%] left-[55%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
         width={1000}
         height={1000}
+        loading="lazy"
+        draggable={false}
+        role="presentation"
       />
     </div>
-    <div class="container my-12">
-      <section>
-        <div
-          class="container text-center mx-auto gap-8 grid py-10 leading-snug"
+    <section aria-labelledby="how-to-apply-heading" class="container my-4">
+      <header class="text-center space-y-5 my-8 mx-auto max-w-4xl">
+        <h1
+          id="how-to-apply-heading"
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary"
         >
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
-            {t("HowToApply.title_1")}
-          </h1>
-          <p class="flex gap-3 text-lg space-x-4 text-center">
-            {t("HowToApply.description_1")}
-          </p>
-        </div>
-      </section>
-      <section class="my-16">
-        <div
-          class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
-        >
-          <div
-            class="container text-start mx-auto px-4 grid gap-8 order-2 md:order-1"
-          >
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
+          {t("HowToApply.title_1")}
+        </h1>
+        <p class="md:text-base text-sm text-center justify-center">
+          {t("HowToApply.description_1")}
+        </p>
+      </header>
+
+      <section class="my-16" aria-labelledby="step1-heading">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div class="text-start grid gap-8 order-2 md:order-1">
+            <h2
+              id="step1-heading"
+              class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary"
+            >
               {t("HowToApply.title_2")}
-            </h1>
-            <p>
-              {t("HowToApply.description_2")}
-              <ul class="list-disc pl-8 space-y-3 cursor-pointer my-3">
+            </h2>
+            <div>
+              <p>{t("HowToApply.description_2")}</p>
+              <ul class="list-disc pl-8 space-y-3 my-3">
                 <li>{t("HowToApply.description.point_1")}</li>
                 <li>{t("HowToApply.description.point_2")}</li>
                 <li>{t("HowToApply.description.point_3")}</li>
               </ul>
-            </p>
+            </div>
           </div>
           <div
-            class="flex flex-col justify-between items-center h-full order-1 md:order-2"
+            class="flex flex-col justify-center items-center h-full order-1 md:order-2"
           >
-            <img src={processingImg.src} alt="Service" class="w-full" />
+            <img
+              src={processingImg.src}
+              alt={t("HowToApply.processingImgAlt") ||
+                "Illustration of application processing"}
+              class="w-full max-w-xs md:max-w-md"
+              loading="eager"
+              draggable={false}
+              width="320"
+              height="320"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
-      <section class="my-16">
-        <div
-          class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
-        >
+
+      <section class="my-16" aria-labelledby="step2-heading">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div
-            class="flex flex-col justify-between items-center h-full order-1 md:order-1"
+            class="flex flex-col justify-center items-center h-full order-1 md:order-1"
           >
             <img
               src={documentsImg.src}
-              alt="Service"
-              class="flex flex-col justify-between items-center h-full"
+              alt={t("HowToApply.documentsImgAlt") ||
+                "Illustration of required documents"}
+              class="w-full max-w-xs md:max-w-md"
+              loading="lazy"
+              draggable={false}
+              width="320"
+              height="320"
+              decoding="async"
             />
           </div>
-          <div
-            class="container text-start mx-auto px-4 grid gap-8 order-2 md:order-2"
-          >
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
+          <div class="text-start grid gap-8 order-2 md:order-2">
+            <h2
+              id="step2-heading"
+              class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary"
+            >
               {t("HowToApply.title_3")}
-            </h1>
-            <p>
-              {t("HowToApply.description_3")}
-              <ul class="list-disc pl-8 space-y-3 cursor-pointer my-3">
+            </h2>
+            <div>
+              <p>{t("HowToApply.description_3")}</p>
+              <ul class="list-disc pl-8 space-y-3 my-3">
                 <li>{t("HowToApply.description.point_4")}</li>
                 <li>{t("HowToApply.description.point_5")}</li>
                 <li>{t("HowToApply.description.point_6")}</li>
                 <li>{t("HowToApply.description.point_7")}</li>
                 <li>{t("HowToApply.description.point_8")}</li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="my-16">
-        <div
-          class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
-        >
-          <div
-            class="container text-start mx-auto px-4 grid gap-4 order-2 md:order-1"
-          >
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
+
+      <section class="my-16" aria-labelledby="step3-heading">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div class="text-start grid gap-4 order-2 md:order-1">
+            <h2
+              id="step3-heading"
+              class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary"
+            >
               {t("HowToApply.title_4")}
-            </h1>
-            <p>
-              <ul>
-                <li>{t("HowToApply.description_4")}</li>
-                <li>{t("HowToApply.description_5")}</li>
-                <li>{t("HowToApply.description_6")}</li>
-                <li>{t("HowToApply.description_7")}</li>
-              </ul>
-            </p>
-            <div class="mt-6">
-              <LinkButton
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="secondary"
-                size={"lg"}
-                className="w-40 h-11 rounded-full bg-secondary text-white text-sm font-medium text-center flex justify-center hover:bg-secondary/90 z-10"
-                href="https://go.gov.kh/mptc/dsdp-registration"
-              >
-                <SquareUser className="size-5" />
-                {applyLabel}
-              </LinkButton>
-            </div>
+            </h2>
+            <ul class="list-disc pl-8 space-y-2 my-3">
+              <li>
+                {t("HowToApply.description_4")}
+                <br />
+                <a
+                  href="https://go.gov.kh/mptc/dsdp-registration"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-primary hover:underline font-semibold"
+                  aria-label={t("HowToApply.description_5") +
+                    " (opens in a new tab)"}
+                >
+                  {t("HowToApply.description_5")}
+                </a>
+              </li>
+              <li>{t("HowToApply.description_6")}</li>
+              <li>{t("HowToApply.description_7")}</li>
+            </ul>
+            <LinkButton
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+              size="lg"
+              className="rounded-full text-white sm:w-fit"
+              href="https://go.gov.kh/mptc/dsdp-registration"
+              aria-label={t("nav.applytitle") + " (opens in a new tab)"}
+            >
+              <SquareUser
+                className="size-5"
+                aria-hidden="true"
+                focusable="false"
+              />
+              {t("nav.applytitle")}
+            </LinkButton>
           </div>
           <div
-            class="flex flex-col justify-between items-center h-full order-1 md:order-2"
+            class="flex flex-col justify-center items-center h-full order-1 md:order-2"
           >
             <img
               src={verifiedImg.src}
-              alt="Service"
-              class="flex flex-col justify-between items-center h-full"
+              alt={t("HowToApply.verifiedImgAlt") ||
+                "Illustration of application verification"}
+              class="w-full max-w-xs md:max-w-md"
+              loading="lazy"
+              draggable={false}
+              width="320"
+              height="320"
+              decoding="async"
             />
           </div>
         </div>
       </section>
-    </div>
+    </section>
   </section>
 </Layout>
