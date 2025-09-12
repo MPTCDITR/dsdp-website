@@ -465,7 +465,7 @@ export const ui: Record<string, Record<string, string>> = {
     "nav.our_partners": "ដៃគូរបស់យើង",
     "nav.how_to_apply": "របៀបដាក់ពាក្យ",
     "nav.media_hub": "មជ្ឈមណ្ឌលព័ត៌មាន",
-    "nav.video_and_media": "វីឌីអូ និង ការផ្សព្វផ្សាយ",
+    "nav.video_and_media": "វីដេអូ និង ការផ្សព្វផ្សាយ",
     "nav.news_and_events": "ព័ត៌មាន និង ​ព្រឹត្តិការណ៍",
     "nav.contact": "ទំនាក់ទំនង",
     // About Us
