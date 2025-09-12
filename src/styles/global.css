@@ -43,6 +43,11 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --breakpoint-sm: 40rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 100rem;
 }
 
 :root {
@@ -117,8 +122,10 @@
 }
 
 .text-gradient {
-  background: var(--text-gradient,
-      linear-gradient(180deg, var(--primary, #004282) 0%, #027dac 100%));
+  background: var(
+    --text-gradient,
+    linear-gradient(180deg, var(--primary, #004282) 0%, #027dac 100%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -141,7 +148,7 @@
   }
 
   .container {
-    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    @apply mx-auto px-2 sm:px-4;
   }
 
   .text-gradient-b {

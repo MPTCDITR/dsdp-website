@@ -29,7 +29,7 @@ export async function getLatestPosts(
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
   // Return the first 3 posts
-  return filteredPosts.slice(0, 3);
+  return filteredPosts.slice(0, 4);
 }
 
 export async function getRemainingBlogPosts(
