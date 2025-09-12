@@ -32,9 +32,9 @@ export function Hero({ lang, latestPosts = [] }: HeroCarouselProps) {
     const slug = slugParts.join("/");
     return {
       image:
-        typeof post.data.image === "string"
-          ? post.data.image
-          : post.data.image?.src || "",
+        typeof post.data.thumbnail === "string"
+          ? post.data.thumbnail
+          : post.data.thumbnail?.src || "",
       title: post.data.title,
       description: post.data.description,
       url: `/${lang}/media-hub/hero/${slug}`,
