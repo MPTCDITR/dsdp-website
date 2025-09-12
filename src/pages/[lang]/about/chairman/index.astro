@@ -1,0 +1,29 @@
+---
+import AboutTeam from "@/components/pages/about/AboutTeamContent.astro";
+
+import { languages } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (() => {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}) satisfies GetStaticPaths;
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+
+<Layout
+  title={t("about.team.title")}
+  description={t("about.team.name") +
+    ", " +
+    t("about.team.position") +
+    " " +
+    t("about.team.ministry")}
+  author="@DSDP_Cambodia"
+>
+  <AboutTeam lang={lang} />
+</Layout>

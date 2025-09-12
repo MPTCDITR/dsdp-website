@@ -1,0 +1,30 @@
+---
+title: Press release on the groundbreaking ceremony for the construction of community technology centers at public high schools in Takeo province
+date: 2023-11-10
+author: Ministry of Posts and Telecommunications
+description: Minister of Posts and Telecommunications, Chea Vandeth, presided over the groundbreaking ceremony for Community Technology Centers (CTCs) at Bunrany Hun Sen Bati High School in Takeo province. The event, held on November 10, 2023, was attended by over 2,000 people, including government officials, educators, and students.
+image: "public/blog/groundbreaking-community-tech-centers-takeo-2023/thumbnail.jpg"
+tags: []
+---
+
+In the morning of November 10th, 2023, at Bunrany Hun Sen Bati High School, His Excellency Chea Vandeth, Minister of Posts and Telecommunications (MPTC), presided over the groundbreaking ceremony for the construction of Community Technology Centers (CTC) in public high schools in Takeo province. The ceremony was attended by His Excellency San Vathana, Undersecretary of State for the Ministry of Education, Youth and Sports; His Excellency Ouch Phe, Governor of Takeo Provincial Government; leaders and civil servants of the MPTC; city and district governments throughout Takeo province; representatives of departments and offices of Education, Youth and Sports; teachers, students, and citizens, totaling approximately 2,068 people.
+
+![image 1](/blog/groundbreaking-community-tech-centers-takeo-2023/image-1.jpg)
+![image 2](/blog/groundbreaking-community-tech-centers-takeo-2023/image-2.jpg)
+![image 3](/blog/groundbreaking-community-tech-centers-takeo-2023/image-3.jpg)
+
+On that occasion, Ms. Hean Poline, Undersecretary of State of the Ministry of Education, Youth and Sports, introduced the objectives of the Center, including promoting the development of digital human capital, promoting digital literacy, and reducing the digital divide. At the same time, HE Ouch Phe, Governor of Takeo Provincial Government, encouraged teachers, students, and citizens to participate in maintaining and using the center to its full potential. Meanwhile, HE San Vathana, Undersecretary of State of the Ministry of Education, Youth and Sports, thanked the Ministry of Education, Youth and Sports, in collaboration with relevant parties, for establishing the Center to contribute to the promotion of digital literacy and skills and the integration of educational technology that connects relationships and partnerships between the state and the community for digital education in classrooms, schools, and the entire community.
+
+![image 4](/blog/groundbreaking-community-tech-centers-takeo-2023/image-4.jpg)
+![image 5](/blog/groundbreaking-community-tech-centers-takeo-2023/image-5.jpg)
+![image 6](/blog/groundbreaking-community-tech-centers-takeo-2023/image-6.jpg)
+
+Speaking on the occasion, HE Minister Chea Vandeth said that after receiving a high level of consensus from the Royal Government, the Ministry of Post and Telecommunications has selected high schools in cities and districts throughout Takeo Province as the first locations to build the Center. The CTC Center has four main functions: (1) providing a computer lab for training digital technology skills, providing distance learning education to public high school students, and serving as an assembly hall and a distance learning teacher training hall; (2) providing a training room for training digital technology skills to local authorities and community residents who wish to use the technology system for various purposes; (3) providing a location as a post office for receiving and sending packages and providing other services to traders, businessmen, and community residents; and (4) providing an Internet Café for community residents to access to find information related to agriculture, business, and other information related to the actual needs of residents in each community.
+
+![image 7](/blog/groundbreaking-community-tech-centers-takeo-2023/image-7.jpg)
+
+The Minister is optimistic that the launch of the C.T.C. will be a new, important, timely and targeted achievement that supports the development of digital education with a proactive spirit and an open mind towards the mission of implementing digital government, aiming to contribute to the effective implementation in accordance with the Cambodian Digital Economy and Society Policy Framework and the Cambodian Digital Government Policy, towards achieving Cambodia's Vision 2050 under the wise leadership of His Excellency Samdech Moha Borvor Thipadei Hun Manet, Prime Minister of the Kingdom of Cambodia.
+
+![image 8](/blog/groundbreaking-community-tech-centers-takeo-2023/image-8.jpg)
+![image 9](/blog/groundbreaking-community-tech-centers-takeo-2023/image-9.jpg)
+![image 10](/blog/groundbreaking-community-tech-centers-takeo-2023/image-10.jpg)

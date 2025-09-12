@@ -1,0 +1,115 @@
+---
+import { LinkButton } from "../ui/link-button";
+import Guide from "./Guide.astro";
+import step1Image from "@/assets/home/step_1.jpg";
+import step2Image from "@/assets/home/step_2.jpg";
+import step3Image from "@/assets/home/step_3.jpg";
+import step4Image from "@/assets/home/step_4.jpg";
+import step5Image from "@/assets/home/step_5.jpg";
+import type { Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
+import type { ImageMetadata } from "astro";
+import { ChevronRight } from "lucide-react";
+
+type Step = {
+  stepNumber: string;
+  title: string;
+  description: string;
+  imageUrl: ImageMetadata;
+};
+
+const steps: Step[] = [
+  {
+    stepNumber: "STEP 1",
+    title: "បំពេញពាក្យស្នើសុំ តាមប្រព័ន្ធអនឡាញ",
+    description: "ដោយភ្ជាប់មកជាមួយនូវឯកសារ ដែលតម្រូវដោយ ក.អ.ជ.ខ.",
+    imageUrl: step1Image,
+  },
+  {
+    stepNumber: "STEP 2",
+    title: "ពិនិត្យ និងវាយតម្លៃ",
+    description: "ពីក្រុមការងារត្រួតពិនិត្យ និងរាយតម្លៃ អំពីព័ត៌មានរបស់បេក្ខជន",
+    imageUrl: step2Image,
+  },
+  {
+    stepNumber: "STEP 3",
+    title: "ប្រកាសលទ្ធផល",
+    description: "លទ្ធផលនឹងត្រូវបានប្រកាសតាម ប្រព័ន្ធអនឡាញ & ទំនាក់ទំនងផ្ទាល់",
+    imageUrl: step3Image,
+  },
+  {
+    stepNumber: "STEP 4",
+    title: "បេក្ខជនបង្ហាញខ្លួន និងផ្តល់ឯកសារបន្ថែម",
+    description:
+      "ដល់ក្រុមការងារ ក.អ.ជ.ខ. ដើម្បី បញ្ជាក់ពីភាពពិតប្រាកដ និងត្រឹមត្រូវ",
+    imageUrl: step4Image,
+  },
+  {
+    stepNumber: "STEP 5",
+    title: "ទទួលថវិកាគម្រោង",
+    description:
+      "ក្រោមទម្រង់ជាអាហារូបករណ៍ ពេញលេញ និងអត្ថប្រយោជន៍ ផ្សេងៗជាច្រើនទៀត",
+    imageUrl: step5Image,
+  },
+];
+
+interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section class="container mx-auto my-12">
+  <div
+    class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8"
+  >
+    <div class="flex-1">
+      <h1 class="text-4xl text-primary font-bold mb-4">
+        {t("applyStep.title.1")}
+        <br />
+        {t("applyStep.title.2")}
+        <span class="text-secondary">{t("applyStep.title.3")}</span>
+      </h1>
+      <p class="text-pretty text-muted-foreground">
+        {t("applyStep.title.4")}
+        <br class="hidden md:block" />
+        {t("applyStep.title.5")}
+      </p>
+    </div>
+    <div class="ml-2">
+      <LinkButton
+        className="rounded-3xl hover:underline underline-offset-4"
+        size={"lg"}
+        href={`/${lang}/about/about-us`}
+      >
+        {t("applyStep.button.title")}
+        <ChevronRight className="size-4" />
+      </LinkButton>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-12 gap-6 sm:grid-rows-3">
+    {
+      steps.map((step, idx) => {
+        let gridClass = "";
+        if (idx === 0) gridClass = "md:col-span-12 lg:row-span-2 lg:col-span-7";
+        else if (idx === 1) gridClass = "md:col-span-5 lg:col-span-5";
+        else if (idx === 2) gridClass = "md:col-span-7 lg:col-span-5";
+        else if (idx === 3) gridClass = "md:col-span-6 lg:order-last";
+        else if (idx === 4) gridClass = "md:col-span-6";
+        return (
+          <div class={gridClass}>
+            <Guide
+              stepNumber={step.stepNumber}
+              title={step.title}
+              description={step.description}
+              imageUrl={step.imageUrl}
+            />
+          </div>
+        );
+      })
+    }
+  </div>
+</section>

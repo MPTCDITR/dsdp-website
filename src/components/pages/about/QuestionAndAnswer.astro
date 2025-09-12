@@ -1,0 +1,112 @@
+---
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { LinkButton } from "@/components/ui/link-button";
+import AccordionQA from "@/components/pages/about/AccordionQA";
+
+import background_style from "@/assets/about/q-and-a/background-style.svg";
+import FAQ_image from "@/assets/about/q-and-a/FAQ-Image.svg";
+import type { Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+import { BadgeAlert, SquareUser } from "lucide-react";
+
+type Props = {
+  lang: Language;
+};
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section class="container my-20" aria-labelledby="faq-main-title">
+  <header class="flex items-center justify-center">
+    <div class="w-full max-w-2xl lg:max-w-3xl flex flex-col items-center gap-3">
+      <Badge
+        className="bg-secondary/30 text-secondary rounded-full"
+        aria-label="FAQ badge"
+      >
+        <BadgeAlert aria-hidden="true" focusable="false" />
+        <span class="sr-only"
+          >{t("qa.badge.label") ?? "Questions and Answers"}</span
+        >
+        QA of DSDP
+      </Badge>
+
+      <h1
+        id="faq-main-title"
+        class="text-3xl md:text-5xl font-bold text-gradient leading-snug text-center"
+      >
+        {t("qa.title.1")}
+      </h1>
+
+      <p
+        class="text-center text-muted-foreground text-sm md:text-base max-w-5xl"
+      >
+        {t("qa.title.2")}
+      </p>
+    </div>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-6 max-w-5xl mx-auto">
+    <section class="order-2 lg:order-1" aria-labelledby="faq-questions-title">
+      <h2
+        id="faq-questions-title"
+        class="text-2xl text-primary lg:text-3xl mb-8 font-medium"
+      >
+        {t("qa.title.3")}
+      </h2>
+
+      <AccordionQA lang={lang} client:load />
+    </section>
+
+    <figure
+      class="order-1 lg:order-2 flex items-start justify-center"
+      aria-labelledby="faq-image-caption"
+    >
+      <Image
+        src={FAQ_image}
+        alt="Illustration representing frequently asked questions"
+        class="w-full max-w-md lg:max-w-lg h-auto object-cover"
+      />
+      <figcaption id="faq-image-caption" class="sr-only">
+        {t("qa.image.caption") ?? "Frequently Asked Questions illustration"}
+      </figcaption>
+    </figure>
+  </main>
+
+  <aside
+    class="gap-6 my-12 max-w-6xl mx-auto"
+    aria-labelledby="faq-contact-title"
+  >
+    <Card
+      className="relative bg-primary text-center text-white overflow-hidden px-8 py-20 md:py-18"
+      role="region"
+      aria-labelledby="faq-contact-title"
+    >
+      <Image
+        src={background_style}
+        alt="background style"
+        aria-hidden="true"
+        class="absolute inset-0 object-cover opacity-50"
+      />
+      <div class="relative z-10 max-w-4xl mx-auto">
+        <h3
+          id="faq-contact-title"
+          class="text-xl md:text-2xl lg:text-3xl font-bold mb-6 leading-relaxed text-center"
+        >
+          {t("qa.title.4")}
+        </h3>
+        <LinkButton
+          variant={"secondary"}
+          className="text-white rounded-full px-4"
+          href={`/${lang}/contact`}
+          aria-label={t("qa.btn.contact.aria") ?? "Contact us"}
+        >
+          <SquareUser aria-hidden="true" focusable="false" />
+          {t("qa.btn.contact")}
+        </LinkButton>
+      </div>
+    </Card>
+  </aside>
+</section>

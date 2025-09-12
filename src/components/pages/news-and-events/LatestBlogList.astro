@@ -1,0 +1,55 @@
+---
+import LatestBlogCard from "./LatestBlogCard.astro";
+import { useTranslations } from "@/i18n/utils";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  translations: Record<string, string>;
+  posts: CollectionEntry<"blog">[];
+  lang: string;
+}
+
+const { translations, posts, lang } = Astro.props;
+const t = useTranslations(lang);
+const gridClass = [
+  "md:col-span-3 md:row-span-2 col-span-1 row-span-1",
+  "md:col-span-2 md:row-span-1 col-span-1",
+  "md:col-span-2 md:row-span-1 col-span-1",
+];
+---
+
+{
+  !posts?.length ? (
+    <div class="space-y-8">
+      <h1>{t("newsAndEvents.title")}</h1>
+      <p class="text-muted-foreground">{t("newsAndEvents.no_posts")}</p>
+    </div>
+  ) : (
+    <div class="container mx-auto my-12">
+      <h1 class="text-4xl font-bold text-center text-gradient leading-normal mb-4">
+        {t("newsAndEvents.title")}
+      </h1>
+
+      <p class="text-center text-muted-foreground max-w-8xl mx-auto mb-12">
+        {t("newsAndEvents.short_description")}
+      </p>
+
+      <div class="grid md:grid-cols-5 md:grid-rows-2 gap-6 grid-cols-1 grid-rows-none">
+        {posts.map((post, index) => (
+          <div class={gridClass[index]}>
+            <LatestBlogCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date.toISOString()}
+              author={post.data.author}
+              image={post.data.image}
+              slug={post.slug}
+              lang={lang}
+              translations={translations}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}

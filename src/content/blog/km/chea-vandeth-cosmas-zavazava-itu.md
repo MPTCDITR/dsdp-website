@@ -1,0 +1,27 @@
+---
+title: ឯកឧត្តមរដ្ឋមន្ត្រី ជា វ៉ាន់ដេត បានអនុញ្ញាតឱ្យ លោកបណ្ឌិត Cosmas Zavazava នាយកការិយាល័យអភិវឌ្ឍន៍ទូរគមនាគមន៍ នៃសហភាពទូរគមនាគមន៍អន្តរជាតិ (International Telecommunication Union - ITU)
+date: 2024-07-22
+author: ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍
+description: ឯកឧត្តមរដ្ឋមន្ត្រី ជា វ៉ាន់ដេត បានទទួលជួបលោកបណ្ឌិត Cosmas Zavazava នាយក ITU នៅក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ កិច្ចជួបនេះមានគោលបំណងពង្រឹងកិច្ចសហប្រតិបត្តិការអន្តរជាតិនរវាងកម្ពុជា ជាមួយ ITU និងប្រទេសសមាជិកផ្សេងៗ។
+image: "public/blog/chea-vandeth-cosmas-zavazava-itu/thumbnail.jpg"
+tags: []
+---
+
+ឯកឧត្តមរដ្ឋមន្ត្រី ជា វ៉ាន់ដេត បានអនុញ្ញាតឱ្យ លោកបណ្ឌិត Cosmas Zavazava នាយកការិយាល័យអភិវឌ្ឍន៍ទូរគមនាគមន៍ នៃសហភាពទូរគមនាគមន៍អន្តរជាតិ (International Telecommunication Union - ITU) ចូលជួបសម្តែងការគួរសម និងពិភាក្សាការងារ នៅទីស្តីការក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ ក្នុងគោលបំណងពង្រឹងកិច្ចសហប្រតិបត្តិការអន្តរជាតិរវាងប្រទេសកម្ពុជា ជាមួយ ITU ព្រមទាំងបណ្តាប្រទេសសមាជិកផ្សេងៗទៀត។
+
+![image 1](/blog/chea-vandeth-cosmas-zavazava-itu/image-4.jpg)
+
+ជាមួយគ្នានេះ ថ្នាក់ដឹកនាំក្រសួង បានដឹកនាំគណៈប្រតិភូ ទៅទស្សនកិច្ចមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ (Community Tech Centre - CTC) នៅខេត្តតាកែវ និងបណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា ដើម្បីឈ្វេងយល់ពីការងារអាទិភាពក្នុងការអភិវឌ្ឍវិស័យនានារបស់ក្រសួងផងដែរ។
+
+![image 2](/blog/chea-vandeth-cosmas-zavazava-itu/image-5.jpg)
+![image 3](/blog/chea-vandeth-cosmas-zavazava-itu/image-6.jpg)
+លោកបណ្ឌិត Cosmas Zavazava បានវាយតម្លៃខ្ពស់ចំពោះកិច្ចសហប្រតិបត្តិការដ៏ល្អរវាងក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ និង ITU និងកោតសរសើរចំពោះសមទ្ធិផលដែលក្រសួងសម្រេចបាន ជាពិសេសគឺគំនិតផ្តួចផ្តើមឱ្យមានមជ្ឈមណ្ឌលបច្ចេកវិទ្យាសហគមន៍ និងថ្នាលផ្ទៀងផ្ទាត់ឯកសាររបស់រាជរដ្ឋាភិបាល verify.gov.kh។
+
+រាជធានីភ្នំពេញ | ព្រឹកថ្ងៃទី២២ កក្កដា ២០២៤
+
+![image 4](/blog/chea-vandeth-cosmas-zavazava-itu/image-2.jpg)
+![image 5](/blog/chea-vandeth-cosmas-zavazava-itu/image-3.jpg)
+![image 6](/blog/chea-vandeth-cosmas-zavazava-itu/image-1.jpg)
+![image 7](/blog/chea-vandeth-cosmas-zavazava-itu/image-7.jpg)
+![image 8](//blog/chea-vandeth-cosmas-zavazava-itu/image-8.jpg)
+![image 9](/blog/chea-vandeth-cosmas-zavazava-itu/image-9.jpg)

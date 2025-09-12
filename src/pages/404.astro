@@ -1,0 +1,44 @@
+---
+import { LinkButton } from "@/components/ui/link-button";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const homepageUrl = `/${lang}`;
+---
+
+<Layout
+  title="404 - Page Not Found"
+  description="Oops! The page you're looking for doesn't exist. Check the URL or return to the homepage."
+  author="DSDP Cambodia"
+>
+  <section class="bg-gradient-to-b from-gray-100 to-white text-center">
+    <div class="flex flex-col items-center justify-center py-10 space-y-10">
+      <div class="flex flex-col gap-6 rounded-lg">
+        <h1 class="text-[128px] font-bold text-destructive">
+          {t("404.title.1")}
+        </h1>
+        <div class="space-y-3">
+          <p class="text-2xl font-semibold text-gradient-b md:text-4xl">
+            {t("404.description.1")}
+          </p>
+          <p class="text-2xl">
+            {t("404.description.2")}
+          </p>
+          <p class="text-2xl">
+            {t("404.description.3")}
+          </p>
+        </div>
+      </div>
+      <LinkButton
+        className="rounded-3xl hover:underline underline-offset-4"
+        size={"lg"}
+        href={homepageUrl}
+      >
+        {t("404.description.4")}
+      </LinkButton>
+    </div>
+  </section>
+</Layout>

@@ -2,6 +2,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@plugin "@tailwindcss/typography";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -41,6 +43,11 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --breakpoint-sm: 40rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 100rem;
 }
 
 :root {
@@ -53,9 +60,9 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.3827 0.122777 254.2344);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.7222 0.1713 53.92);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -114,11 +121,45 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.text-gradient {
+  background: var(
+    --text-gradient,
+    linear-gradient(180deg, var(--primary, #004282) 0%, #027dac 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2em;
+}
+
+.bg-glass-white {
+  background: rgba(217, 217, 217, 0.15);
+  box-shadow: 0px -4px 9.8px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.75px);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  .container {
+    @apply mx-auto px-2 sm:px-4;
+  }
+
+  .text-gradient-b {
+    @apply bg-gradient-to-b from-[#004282] to-[#027DAC] text-transparent bg-clip-text;
+  }
+
+  .text-gradient-r {
+    @apply bg-gradient-to-r from-[#54A7F6] to-[#004282] text-transparent bg-clip-text;
+  }
+}
+
+img {
+  user-select: none;
 }

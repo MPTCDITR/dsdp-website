@@ -1,0 +1,102 @@
+---
+import "@/styles/global.css";
+
+import { getLocalizedRoutes, navigation } from "@/lib/route";
+
+import Footer from "@/components/layout/Footer.astro";
+import Header from "@/components/layout/Header.astro";
+import Jsonld from "@/components/layout/Jsonld.astro";
+
+import { defaultLang } from "@/i18n/ui";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+interface Props {
+  title: string;
+  description?: string;
+  img?: string;
+  author: string;
+}
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const locale = Astro.currentLocale ?? defaultLang;
+const navigationItems = getLocalizedRoutes(navigation, locale);
+const currentPath = Astro.url.pathname;
+
+const siteUrl = new URL(Astro.site ?? "");
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? "");
+
+const {
+  title,
+  description = t("about.whatIsDsdp.description"),
+  img = "/logo.png",
+  author = "@DSDP_Cambodia",
+} = Astro.props;
+
+const imageUrl = new URL(img, Astro.site!);
+const ogTitle = `${title} | DSDP Cambodia`;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>{ogTitle}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="DSDP, Cambodia, Digital, Service, Platform, Government, Public Service, Digital Transformation, សេវាឌីជីថល, កម្ពុជា, រដ្ឋាភិបាល"
+    />
+    <meta name="author" content={author} />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-0.xml" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DSDP Cambodia" />
+    <meta property="og:locale" content={lang} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={title} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:site" content="@dsdp_cambodia" />
+    <meta name="twitter:creator" content={author} />
+    {img && <meta name="twitter:image" content={imageUrl} />}
+
+    <Jsonld
+      title={ogTitle}
+      description={description}
+      siteUrl={siteUrl}
+      canonicalUrl={canonicalUrl}
+      defaultSiteProjectName="DSDP Cambodia"
+      image={imageUrl}
+      type="BlogPosting"
+      author={{
+        name: author,
+        url: siteUrl,
+      }}
+    />
+  </head>
+  <body>
+    <Header
+      lang={lang}
+      navigationItems={navigationItems}
+      currentPath={currentPath}
+    />
+    <main>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

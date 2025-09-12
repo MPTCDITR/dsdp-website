@@ -1,0 +1,74 @@
+---
+import DesktopNav from "@/components/layout/DesktopNav.tsx";
+import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher.tsx";
+import { MobileNav } from "@/components/layout/MobileNav.tsx";
+
+import { LinkButton } from "../ui/link-button";
+import DSDP from "@/assets/logo/dsdp-logo.svg";
+import type { Language } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+
+interface NavMenuProps {
+  href?: string;
+  label: string;
+  children?: NavMenuProps[];
+}
+
+interface Props {
+  lang: Language;
+  navigationItems: NavMenuProps[];
+  currentPath: string;
+}
+
+const { lang, navigationItems, currentPath } = Astro.props;
+const t = useTranslations(lang);
+const applyLabel = t("nav.applytitle");
+---
+
+<header
+  class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+>
+  <nav class="container flex md:p-0 md:h-20 h-16 items-center justify-between">
+    <a
+      href={`/${lang}/`}
+      class="flex-shrink-0 block md:max-w-[320px] sm:max-w-[280px] max-w-[210px] w-4/5"
+    >
+      <Image
+        src={DSDP}
+        alt="Logo"
+        width={320}
+        height={80}
+        class="h-auto xs:w-full md:w-5/6 object-contain"
+        loading="lazy"
+      />
+    </a>
+
+    <DesktopNav
+      lang={lang}
+      navigationItems={navigationItems}
+      currentPath={currentPath}
+      client:load
+    />
+
+    <div class="flex items-center gap-2 md:gap-4">
+      <LanguageSwitcher lang={lang} client:load />
+      <LinkButton
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="secondary"
+        className="rounded-full text-white hidden md:block px-4"
+        href="https://go.gov.kh/mptc/dsdp-registration"
+      >
+        {applyLabel}
+      </LinkButton>
+      <MobileNav
+        lang={lang}
+        currentPath={currentPath}
+        navigationItems={navigationItems}
+        applyLabel={t("nav.applytitle")}
+        client:load
+      />
+    </div>
+  </nav>
+</header>

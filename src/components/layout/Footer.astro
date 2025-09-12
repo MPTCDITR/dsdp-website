@@ -1,0 +1,242 @@
+---
+import style from "@/assets/footer/backgorund-style.svg";
+import Cambodia from "@/assets/footer/footerbackground.svg";
+import dsdp from "@/assets/logo/dsdp-white.svg";
+import mptc from "@/assets/logo/mptc-logo.png";
+import { HOWTOAPPLY_TABS } from "@/data/HowToApplyData";
+import { SOCIAL_MEDIA_DATA } from "@/data/SocialMedia";
+import { languages, ui } from "@/i18n/ui";
+import { Image } from "astro:assets";
+import { Mail, MapPinned, PhoneCall } from "lucide-react";
+
+const { lang } = Astro.props;
+const translations = ui[lang as keyof typeof languages];
+
+const t = (key: string) => translations[key] || key;
+
+const year = new Date().getFullYear();
+---
+
+<footer class={`bg-primary text-white relative overflow-hidden`}>
+  <div>
+    <Image
+      src={style}
+      alt="Background style"
+      class="object-fill absolute"
+      aria-hidden="true"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="absolute md:left-0 sm:right-30 right-15 bottom-0 w-full">
+    <Image
+      src={Cambodia}
+      alt="Cambodia"
+      class="object-fill md:scale-100 scale-150 md:h-[452px] sm:h-[450px] h-[300px]"
+      loading="lazy"
+    />
+  </div>
+  <div>
+    <div class="container mt-16 mb-3 relative">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <p
+            class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
+          >
+            {t("footer.title.1")}
+          </p>
+          <ul class="space-y-3 text-base">
+            <li>
+              <a
+                href={`/${lang}/about/about-us`}
+                class="hover:text-white hover:underline"
+              >
+                {t("footer.description.1")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/${lang}/about/chairman`}
+                class="hover:text-white hover:underline"
+              >
+                {t("footer.description.2")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/${lang}/about/qa`}
+                class="hover:text-white hover:underline"
+              >
+                {t("footer.description.3")}
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3
+            class="text-white text-[22px] font-semibold tracking-wider uppercase mb-6"
+          >
+            {t("footer.title.2")}
+          </h3>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href={`/${lang}/how-to-apply`}
+                class="hover:text-white hover:underline transition-colors"
+              >
+                {t("footer.description.4")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/${lang}/how-to-apply?tab=${HOWTOAPPLY_TABS.STUDENT}`}
+                class="transition-colors text-gray-300 cursor-not-allowed pointer-events-none"
+              >
+                {t("footer.description.5")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/${lang}/how-to-apply?tab=${HOWTOAPPLY_TABS.OFFICER}`}
+                class="transition-colors text-gray-300 cursor-not-allowed pointer-events-none"
+              >
+                {t("footer.description.6")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/${lang}/partnerships`}
+                class="hover:text-white hover:underline transition-colors"
+              >
+                {t("footer.description.7")}
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3
+            class="text-white text-xl font-semibold tracking-wider uppercase mb-6"
+          >
+            {t("footer.title.3")}
+          </h3>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="https://mptc.gov.kh/"
+                target="_black"
+                class="hover:text-white hover:underline transition-colors"
+              >
+                {t("footer.description.8")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://cadt.edu.kh/"
+                target="_blank"
+                class="hover:text-white hover:underline transition-colors"
+              >
+                {t("footer.description.9")}
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://go.gov.kh/mptc/dsdp-registration"
+                class="hover:text-white hover:underline transition-colors"
+              >
+                {t("footer.description.10")}
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p
+            class="text-white text-xl font-semibold tracking-wider uppercase mb-6"
+          >
+            {t("footer.title.4")}
+          </p>
+          <ul class="space-y-3" aria-labelledby="contact-us">
+            <li class="flex gap-4">
+              <MapPinned className="text-white flex-shrink-0" />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Building+%2313+Preah+Monivong+Blvd,+Srah+Chak,+Daun+Penh,+Phnom+Penh"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white transition-colors"
+              >
+                {t("footer.description.11")}
+              </a>
+            </li>
+            <li class="flex gap-4">
+              <PhoneCall className="text-white flex-shrink-0" />
+              <a
+                href={`tel:${t("footer.description.12")}`}
+                class="hover:text-white transition-colors"
+              >
+                {t("footer.description.12")}
+              </a>
+            </li>
+            <li class="flex gap-4">
+              <Mail className="text-white flex-shrink-0" />
+
+              <a
+                href={`mailto:${t("footer.description.13")}`}
+                class="leading-relaxed hover:text-white transition-colors"
+              >
+                {t("footer.description.13")}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 md:justify-between md:flex flex-row">
+        <div class="flex items-center gap-4">
+          <a
+            href="https://mptc.gov.kh/"
+            target="_blank"
+            aria-label="P.T.C. Homepage"
+          >
+            <Image src={mptc} alt="P.T.C. Logo" class="h-20 w-20" />
+          </a>
+          <a
+            href={`/${lang}/about/chairman`}
+            target="_blank"
+            aria-label="Second Logo Homepage"
+          >
+            <Image
+              src={dsdp}
+              alt="Second Organization Logo"
+              class="h-20 w-20"
+            />
+          </a>
+        </div>
+        <div class="flex items-center gap-3.5">
+          {
+            SOCIAL_MEDIA_DATA.map((item) => (
+              <a
+                target="_black"
+                href={item.href}
+                aria-label={item.label}
+                class="bg-primary hover:bg-white/20 rounded-full p-3 flex items-center justify-center transition-colors"
+              >
+                <item.icon class="w-4 h-4" />
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+    <hr class="border-t" />
+    <div
+      class="container flex flex-col-reverse md:flex-row items-center justify-between gap-6 text-sm my-8"
+    >
+      <p class="text-center md:text-left">
+        {t("footer.description.14")} @{year}
+        {t("footer.description.15")}
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,121 @@
+---
+import Advantage from "@/assets/home/advantage-img.svg";
+import background_2 from "@/assets/home/backgorund-style 4.png";
+import background_1 from "@/assets/home/background-svg-blob.png";
+import aupp from "@/assets/logo/aupp-logo.png";
+import cadt from "@/assets/logo/cadt-logo.png";
+import itc from "@/assets/logo/itc-logo.png";
+import num from "@/assets/logo/num-logo.png";
+import rupp from "@/assets/logo/rupp-logo.png";
+import { languages } from "@/i18n/ui";
+import { useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+
+const logos = [
+  {
+    src: cadt,
+    alt: "cadt Logo",
+    // Keep image sizing consistent
+    imgClass: "w-[153px] h-[179px] object-contain",
+  },
+  {
+    src: itc,
+    alt: "itc Logo",
+    imgClass: "w-[153px] h-[179px] object-contain",
+  },
+  {
+    src: num,
+    alt: "num Logo",
+    imgClass: "w-[153px] h-[179px] object-contain",
+  },
+  {
+    src: rupp,
+    alt: "rupp Logo",
+    imgClass: "w-[153px] h-[179px] object-contain",
+  },
+  {
+    src: aupp,
+    alt: "aupp Logo",
+    imgClass: "w-[153px] h-[179px] object-contain",
+  },
+];
+const lang = Astro.params.lang as keyof typeof languages;
+const t = useTranslations(lang);
+---
+
+<section class="mx-auto py-8 relative overflow-hidden">
+  <Image
+    src={background_1}
+    alt="Background"
+    class="absolute top-0 right-0 w-[800px] h-full object-cover object-right -z-10 pointer-events-none select-none hidden md:block opacity-50"
+    height={600}
+    width={800}
+  />
+  <header class="container relative">
+    <h2 class="text-2xl md:text-4xl text-primary font-bold mb-4">
+      {t("home.candidate_benefits.title")}
+    </h2>
+    <p class="text-pretty text-muted-foreground">
+      {t("home.candidate_benefits.description")}
+    </p>
+    <Advantage class="lg:w-3/4 md:w-4/5 w-full mx-auto rounded-lg" />
+  </header>
+  <div class="relative mx-auto">
+    <Image
+      src={background_2}
+      alt="Background"
+      class="absolute top-0 left-0 size-svh object-cover -z-10 pointer-events-none select-none hidden md:block opacity-50"
+      height={600}
+      width={800}
+    />
+    <div class="bg-zinc-100/40 md:py-10 py-4 mt-8 mb-12 relative">
+      <div class="flex flex-col items-center gap-4 text-center text-wrap my-11">
+        <header aria-label="Partnership">
+          <h1 class="text-2xl md:text-4xl text-primary font-bold mb-4">
+            {t("home.partnership.title")}
+          </h1>
+          <p class="text-pretty text-muted-foreground mb-8">
+            {t("home.partnership.description")}
+          </p>
+        </header>
+        <ul
+          class="container flex flex-wrap justify-center gap-x-2 md:gap-x-16"
+          aria-labelledby="trusted-by"
+        >
+          {
+            logos.map((logo) => (
+              <li
+                aria-label={logo.alt}
+                class="flex justify-center items-center
+                     w-1/2 md:w-1/5 lg:w-1/8
+                     "
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  class={logo.imgClass}
+                  loading="lazy"
+                  width={153}
+                  height={179}
+                />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="container my-12 flex items-center justify-center">
+      <div
+        class="mx-auto xl:min-w-6xl lg:min-w-4xl min-w-full flex flex-col gap-8 rounded-3xl lg:p-20 md:p-12 p-8 bg-gradient-to-r from-[#004282] via-[#05539F] to-[#002D58] items-center"
+      >
+        <h2 class="text-3xl md:text-4xl text-white font-bold mb-4 text-center">
+          {t("home.partnership.box.title")}
+        </h2>
+        <p class="text-base md:text-xl text-white text-center">
+          {t("home.partnership.box.description")}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
