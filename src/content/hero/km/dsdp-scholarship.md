@@ -4,6 +4,7 @@ description: "ក្រសួងប្រៃសណីយ៍និងទូរគ
 date: 2025-08-29
 author: ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍
 image: "public/home_hero_section/Scholarship_DSDP_Final.jpg"
+thumbnail: "src/assets/home/banner_2.png"
 tags: []
 ---
 

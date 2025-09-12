@@ -4,6 +4,7 @@ description: "The Ministry of Post and Telecommunications (MPTC) hereby informs 
 date: 2025-08-29
 author: Ministry of Post and Telecommunications
 image: "public/home_hero_section/Scholarship_DSDP_Final.jpg"
+thumbnail: "src/assets/home/banner_2.png"
 tags: []
 ---
 
