@@ -38,7 +38,7 @@ const remainingPosts = await getRemainingBlogPosts(lang);
     </div>
     <LatestBlogList
       translations={translations}
-      posts={latestPosts}
+      posts={latestPosts.slice(0, 3)}
       lang={lang}
     />
     <BlogList

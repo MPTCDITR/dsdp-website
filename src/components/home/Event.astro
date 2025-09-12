@@ -1,0 +1,41 @@
+---
+import { getLatestPosts } from "@/lib/blog";
+
+import { LinkButton } from "../ui/link-button";
+import EventCarosel from "./EventCarosel.tsx";
+import bgstyle from "@/assets/home/backgorund-style 3.png";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+import { ChevronRight } from "lucide-react";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const latestPosts = await getLatestPosts(lang);
+---
+
+<section id="event-section-latest" class="w-full relative">
+  <div class="container flex justify-between mb-6 gap-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-primary">
+      {t("event.title")}
+    </h2>
+    <LinkButton
+      href={`/${lang}/media-hub/news-and-events`}
+      className="w-fit px-4 rounded-full bg-primary text-white text-sm font-medium text-center flex items-center justify-center hover:bg-primary/90 transition-colors"
+    >
+      {t("event.btn")}
+      <ChevronRight className="w-4 h-4" />
+    </LinkButton>
+  </div>
+
+  <div>
+    <Image
+      src={bgstyle}
+      alt="background style"
+      class="absolute select-none hidden md:block opacity-50"
+      aria-hidden="true"
+    />
+  </div>
+
+  <EventCarosel lang={lang} latestPosts={latestPosts} client:load />
+</section>

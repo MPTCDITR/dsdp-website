@@ -23,7 +23,9 @@ const t = useTranslations(lang);
     ministry={t("about.team.ministry")}
     img={CardImg}
   />
-  <article class="mt-12 mb-6 text-justify leading-loose text-base">
+  <article
+    class="mt-12 mb-6 text-justify leading-loose text-base max-w-6xl mx-auto"
+  >
     <RenderHTML html={t("about.team.description1")} />
     <br />
     <RenderHTML className="font-medium" html={t("about.team.description2")} />

@@ -1,5 +1,5 @@
 ---
-import advantage from "@/assets/home/advantage-img.svg";
+import Advantage from "@/assets/home/advantage-img.svg";
 import background_2 from "@/assets/home/backgorund-style 4.png";
 import background_1 from "@/assets/home/background-svg-blob.png";
 import aupp from "@/assets/logo/aupp-logo.png";
@@ -51,22 +51,15 @@ const t = useTranslations(lang);
     height={600}
     width={800}
   />
-  <div class="mx-auto container relative z-10">
-    <h1 class="text-2xl md:text-4xl text-primary font-bold mb-4">
+  <header class="container relative">
+    <h2 class="text-2xl md:text-4xl text-primary font-bold mb-4">
       {t("home.candidate_benefits.title")}
-    </h1>
+    </h2>
     <p class="text-pretty text-muted-foreground">
       {t("home.candidate_benefits.description")}
     </p>
-    <Image
-      src={advantage}
-      alt="Partnership Benefits"
-      class="lg:w-3/4 md:w-4/5 w-full mx-auto rounded-lg"
-      loading="lazy"
-      width={1000}
-      height={800}
-    />
-  </div>
+    <Advantage class="lg:w-3/4 md:w-4/5 w-full mx-auto rounded-lg" />
+  </header>
   <div class="relative mx-auto">
     <Image
       src={background_2}
@@ -75,14 +68,16 @@ const t = useTranslations(lang);
       height={600}
       width={800}
     />
-    <div class="bg-zinc-100/40 mx-auto p-10 mt-8 mb-12 relative">
-      <div class="flex flex-col items-center text-center text-wrap my-11">
-        <h1 class="text-2xl md:text-4xl text-primary font-bold mb-4">
-          {t("home.partnership.title")}
-        </h1>
-        <p class="text-pretty text-muted-foreground mb-8">
-          {t("home.partnership.description")}
-        </p>
+    <div class="bg-zinc-100/40 md:py-10 py-4 mt-8 mb-12 relative">
+      <div class="flex flex-col items-center gap-4 text-center text-wrap my-11">
+        <header aria-label="Partnership">
+          <h1 class="text-2xl md:text-4xl text-primary font-bold mb-4">
+            {t("home.partnership.title")}
+          </h1>
+          <p class="text-pretty text-muted-foreground mb-8">
+            {t("home.partnership.description")}
+          </p>
+        </header>
         <ul
           class="container flex flex-wrap justify-center gap-x-2 md:gap-x-16"
           aria-labelledby="trusted-by"

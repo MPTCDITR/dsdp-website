@@ -22,6 +22,7 @@ const hero = defineCollection({
       date: z.date(),
       author: z.string(),
       image: image(),
+      thumbnail: image(),
       tags: z.array(z.string()).default([]),
     }),
 });
