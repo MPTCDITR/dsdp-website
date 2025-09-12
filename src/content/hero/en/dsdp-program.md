@@ -4,6 +4,7 @@ description: The program provides interest-free study financing, student counsel
 date: 2024-07-01
 author: Ministry of Posts and Telecommunications 
 image: "src/assets/home/dsdp_hero_1.png"
+thumbnail: "src/assets/home/dsdp_hero_1.png" 
 tags: []
 ---
 
