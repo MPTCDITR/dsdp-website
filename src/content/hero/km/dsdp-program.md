@@ -4,6 +4,7 @@ description: តាមរយៈការផ្តល់ថវិកាសិក�
 date: 2024-07-01
 author: ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍
 image: "src/assets/home/dsdp_hero_1.png"
+thumbnail: "src/assets/home/banner_1.png"
 tags: []
 ---
 
