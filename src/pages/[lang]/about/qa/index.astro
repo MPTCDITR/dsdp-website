@@ -1,10 +1,9 @@
 ---
 import QuestionAndAnswer from "@/components/pages/about/QuestionAndAnswer.astro";
 
-import background_svg_blob from "@/assets/about/q-and-a/background-svg-blob.svg";
+import BackgroundSvgBlob from "@/assets/about/q-and-a/background-svg-blob.svg";
 import { ui, type Language } from "@/i18n/ui";
 import Layout from "@/layouts/Layout.astro";
-import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   return (Object.keys(ui) as Language[]).map((lang) => ({
@@ -22,12 +21,8 @@ const { lang } = Astro.params;
   author="DSDP Cambodia"
 >
   <section aria-label="FAQ" class="relative overflow-hidden">
-    <Image
-      src={background_svg_blob}
-      alt="Background blob"
+    <BackgroundSvgBlob
       class="w-full h-auto object-cover absolute right-0 top-0 z-0 pointer-events-none select-none hidden md:block opacity-50"
-      loading="lazy"
-      aria-hidden="true"
     />
     <div class="relative z-10">
       <QuestionAndAnswer lang={lang} />

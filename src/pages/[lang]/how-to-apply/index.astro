@@ -2,7 +2,7 @@
 import { LinkButton } from "@/components/ui/link-button";
 
 import backgroundStyle from "@/assets/about/about-us/backgorund-style.svg";
-import backgroundSvgBlob from "@/assets/about/about-us/background-svg-blob.svg";
+import BackgroundSvgBlob from "@/assets/about/about-us/background-svg-blob.svg";
 import documentsImg from "@/assets/how_to_apply/documents.gif";
 import processingImg from "@/assets/how_to_apply/processing.gif";
 import verifiedImg from "@/assets/how_to_apply/verified.gif";
@@ -40,14 +40,8 @@ const t = useTranslations(lang);
         draggable={false}
         role="presentation"
       />
-      <Image
-        src={backgroundSvgBlob}
-        alt="Background svg blob"
+      <BackgroundSvgBlob
         class="absolute bottom-[-10%] left-[55%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
-        width={1000}
-        height={1000}
-        loading="lazy"
-        draggable={false}
         role="presentation"
       />
     </div>

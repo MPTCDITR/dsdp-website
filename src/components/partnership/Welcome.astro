@@ -1,5 +1,5 @@
 ---
-import background from "@/assets/partnership/background.svg";
+import Background from "@/assets/partnership/background.svg";
 import dbqoute from "@/assets/partnership/double_qoute.png";
 import welcome from "@/assets/partnership/Welcome.gif";
 import { type Language } from "@/i18n/ui";
@@ -61,11 +61,8 @@ const t = useTranslations(lang);
     </div>
 
     <section class="relative text-center px-2 py-10 mt-8">
-      <Image
-        src={background}
-        alt="Background"
+      <Background
         class="absolute left-1/2 top-1/2 w-[320px] h-[64px] sm:w-[410px] sm:h-[82px] md:w-[750px] md:h-[150px] object-cover z-0 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-        aria-hidden="true"
       />
 
       <Image
