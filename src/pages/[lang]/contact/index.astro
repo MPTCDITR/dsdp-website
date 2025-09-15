@@ -1,13 +1,13 @@
 ---
 import { Card } from "@/components/ui/card";
 
+import Background from "@/assets/about/about-us/background2.svg";
 import serviceImg from "@/assets/contact/contact.gif";
 import { SOCIAL_MEDIA_DATA } from "@/data/SocialMedia";
 import { languages, type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { Mail, MapPin, Phone } from "lucide-react";
-import Background from "@/assets/about/about-us/background2.svg"
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -26,7 +26,7 @@ const t = useTranslations(lang);
 >
   <div class="relative">
     <Background
-      class="absolute max-w-1/3 top-[-1.5%] right-0  h-auto select-none hidden md:block"
+      class="absolute max-w-1/3 top-[-1.5%] right-0 h-auto select-none hidden md:block"
       role="presentation"
     />
     <section class="my-10 relative z-0">

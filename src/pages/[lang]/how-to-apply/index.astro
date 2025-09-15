@@ -10,8 +10,8 @@ import { languages, type Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import type { GetStaticPaths } from "astro";
-import { SquareUser } from "lucide-react";
 import { Image } from "astro:assets";
+import { SquareUser } from "lucide-react";
 
 export const getStaticPaths = (() => {
   return Object.keys(languages).map((lang) => ({
