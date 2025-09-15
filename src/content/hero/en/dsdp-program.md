@@ -3,7 +3,8 @@ title: The Ministry of Post and Telecommunications (MPTC) has established the â€
 description: The program provides interest-free study financing, student counseling, accommodation support, collaboration with higher education institutions and relevant stakeholders, and/or the development and use of digital technologies to serve education.
 date: 2024-07-01
 author: Ministry of Posts and Telecommunications 
-image: "src/assets/home/dsdp_hero_1.png"
+image: "public/home_hero_section/dsdp_hero_1.png"
+thumbnail: "public/home_hero_section/banner_1.png"
 tags: []
 ---
 
