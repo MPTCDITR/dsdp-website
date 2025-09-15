@@ -1,7 +1,7 @@
 ---
-import style from "@/assets/footer/backgorund-style.svg";
+import Style from "@/assets/footer/backgorund-style.svg";
 import Cambodia from "@/assets/footer/footerbackground.svg";
-import dsdp from "@/assets/logo/dsdp-white.svg";
+import DSDP from "@/assets/logo/dsdp-white.svg";
 import mptc from "@/assets/logo/mptc-logo.png";
 import { HOWTOAPPLY_TABS } from "@/data/HowToApplyData";
 import { SOCIAL_MEDIA_DATA } from "@/data/SocialMedia";
@@ -19,17 +19,15 @@ const year = new Date().getFullYear();
 
 <footer class={`bg-primary text-white relative overflow-hidden`}>
   <div>
-    <Image
-      src={style}
-      alt="Background style"
+    <Style
       class="object-fill absolute"
       aria-hidden="true"
-      loading="lazy"
+
     />
   </div>
 
   <div class="absolute md:left-0 sm:right-30 right-15 bottom-0 w-full">
-    <Image
+      <Image
       src={Cambodia}
       alt="Cambodia"
       class="object-fill md:scale-100 scale-150 md:h-[452px] sm:h-[450px] h-[300px]"
@@ -206,9 +204,7 @@ const year = new Date().getFullYear();
             target="_blank"
             aria-label="Second Logo Homepage"
           >
-            <Image
-              src={dsdp}
-              alt="Second Organization Logo"
+            <DSDP
               class="h-20 w-20"
             />
           </a>
