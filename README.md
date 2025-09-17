@@ -1,47 +1,72 @@
-# Astro Starter Kit: Minimal
+# Digital Skills Development Program (DSDP)
 
-```sh
-npm create astro@latest -- --template minimal
+The **DSDP Website** is a static website that displays information about interest-free digital scholarships provided by the **Ministry of Post and Telecommunications (MPTC), Cambodia**.
+![dsdp logo](public/dsdp-logo-for-readme.svg)
+
+### Visit us here: [https://dsdp.gov.kh](https://dsdp.gov.kh)
+
+---
+
+# Tech Stack
+
+[![Node.js](https://img.shields.io/badge/node-18.20.8%20%7C%2020.3%2B%20%7C%2022%2B-brightgreen)](https://nodejs.org/)
+[![Astro](https://img.shields.io/badge/framework-Astro-FF5A03)](https://astro.build/)
+[![TailwindCSS](https://img.shields.io/badge/styling-TailwindCSS-06B6D4)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/UI-shadcn%2Fui-000000)](https://ui.shadcn.com/)
+
+**Core Frameworks**
+
+- **Astro** – static site framework
+- **React** – UI components
+- **Tailwind CSS** – styling and responsive design
+
+**UI & Animation**
+
+- **shadcn/ui** – reusable components
+- **Lucide React** – modern icon library
+- **Framer Motion** – animations
+- **Embla Carousel** – slider & autoplay
+
+---
+
+# Setting Up the Project
+
+### 1. Prerequisites
+
+Installation:
+
+- [Node.js](https://nodejs.org/) **v18.20.8**, **v20.3.0+**, or **v22.0.0+**
+
+Check versions:
+
+```bash
+node -v
+npm -v
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+### 2. Clone the Repository
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+git clone https://github.com/MPTCDITR/dsdp-website.git
+cd dsdp-website
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### 3. Install Dependencies
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+npm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+### 4. Start Development Server
 
-## 🧞 Commands
+```bash
+npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+# Branching Workflow
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `main` → Production branch
+- `dev` → Development branch
+- `feat/*` → Feature branches

@@ -3,10 +3,11 @@ import ContactUs from "@/components/partnership/ContactUs.astro";
 import University from "@/components/partnership/University.astro";
 import Welcome from "@/components/partnership/Welcome.astro";
 
-import background from "@/assets/partnership/background-svg-blob.svg";
+import Background from "@/assets/partnership/background-svg-blob.svg";
 import { languages, type Language } from "@/i18n/ui";
 import Layout from "@/layouts/Layout.astro";
-import { Image } from "astro:assets";
+
+// import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -22,12 +23,7 @@ const { lang } = Astro.params;
   description="Meet the partners whose support empowers our programs and helps us create lasting change — join us now and be part of the impact."
   author="DSDP Cambodia"
 >
-  <Image
-    src={background}
-    alt="Background"
-    class="hidden sm:absolute right-0 top-0 object-fill opacity-50"
-    loading="lazy"
-  />
+  <Background class="hidden sm:absolute right-0 top-0 object-fill opacity-50" />
   <Welcome lang={lang} />
   <University lang={lang} />
   <ContactUs lang={lang} />
