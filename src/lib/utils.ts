@@ -58,6 +58,13 @@ export function formatDate(dateString: string, lang: string = "en") {
     month: "long",
     day: "numeric",
   };
+  
+  //To not having commas after day (ex: 22,) for lang = "en"
+  const parts = new Intl.DateTimeFormat("en", options).formatToParts(date);
+
+  const day = parts.find((p) => p.type === "day")?.value || "";
+  const monthName = parts.find((p) => p.type === "month")?.value || "";
+  const year = parts.find((p) => p.type === "year")?.value || "";
 
   if (lang === "km") {
     const formattedDate = new Intl.DateTimeFormat("en", options).format(date);
@@ -67,12 +74,12 @@ export function formatDate(dateString: string, lang: string = "en") {
     const khmerMonth = convertMonthToKhmer(monthName);
 
     // Convert day and year to Khmer digits
-    const khmerDay = convertNumberToKhmer(day.replace(",", "")); // Remove comma from day
+    const khmerDay = convertNumberToKhmer(day); // Remove comma from day
     const khmerYear = convertNumberToKhmer(year);
 
-    return `${khmerMonth} ${khmerDay}, ${khmerYear}`;
+    return `${khmerDay} ${khmerMonth}, ${khmerYear}`;
   } else {
-    return new Intl.DateTimeFormat(lang, options).format(date);
+    return `${day} ${monthName}, ${year}`;
   }
 }
 
