@@ -58,7 +58,7 @@ export function formatDate(dateString: string, lang: string = "en") {
     month: "long",
     day: "numeric",
   };
-  
+
   //To not having commas after day (ex: 22,) for lang = "en"
   const parts = new Intl.DateTimeFormat("en", options).formatToParts(date);
 
