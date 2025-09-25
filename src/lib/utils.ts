@@ -73,7 +73,7 @@ export function formatDate(dateString: string, lang: string = "en") {
 
     return `${khmerDay} ${khmerMonth}, ${khmerYear}`;
   } else {
-    return format(date, "dd MMM, yyyy");
+    return format(date, "dd MMMM, yyyy");
   }
 }
 
