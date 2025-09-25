@@ -1,4 +1,5 @@
 import { clsx, type ClassValue } from "clsx";
+import { format } from "date-fns";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -59,13 +60,6 @@ export function formatDate(dateString: string, lang: string = "en") {
     day: "numeric",
   };
 
-  //To not having commas after day (ex: 22,) for lang = "en"
-  const parts = new Intl.DateTimeFormat("en", options).formatToParts(date);
-
-  const day = parts.find((p) => p.type === "day")?.value || "";
-  const monthName = parts.find((p) => p.type === "month")?.value || "";
-  const year = parts.find((p) => p.type === "year")?.value || "";
-
   if (lang === "km") {
     const formattedDate = new Intl.DateTimeFormat("en", options).format(date);
     const [monthName, day, year] = formattedDate.split(" ");
@@ -79,7 +73,7 @@ export function formatDate(dateString: string, lang: string = "en") {
 
     return `${khmerDay} ${khmerMonth}, ${khmerYear}`;
   } else {
-    return `${day} ${monthName}, ${year}`;
+    return format(date, "dd MMM, yyyy");
   }
 }
 
