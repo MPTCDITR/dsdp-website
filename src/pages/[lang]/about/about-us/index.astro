@@ -2,7 +2,7 @@
 import AboutUsComponent from "@/components/pages/about/AboutUsContent.astro";
 
 import background_style from "@/assets/about/about-us/backgorund-style.svg";
-import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
+import BackgroundSvgBlob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, type Language } from "@/i18n/ui";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
@@ -31,15 +31,11 @@ const { lang } = Astro.params;
         width={1000}
         height={1000}
       />
-      <Image
-        src={background_svg_blob}
-        alt="bottom background"
+      <BackgroundSvgBlob
         class="absolute bottom-[10%] left-[50%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1] select-none hidden md:block opacity-50"
-        width={1000}
-        height={1000}
       />
     </div>
 
-    <AboutUsComponent lang={lang} client:load />
+    <AboutUsComponent lang={lang} />
   </section>
 </Layout>

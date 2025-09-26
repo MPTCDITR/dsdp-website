@@ -3,7 +3,7 @@ import { fetchPlaylistVideos } from "@/lib/youtube";
 
 import VideoList from "@/components/pages/video-and-media/VideoList.astro";
 
-import background_svg_blob from "@/assets/about/about-us/background-svg-blob.svg";
+import BackgroundSvgBlob from "@/assets/about/about-us/background-svg-blob.svg";
 import { languages, ui } from "@/i18n/ui";
 import { getLangFromUrl } from "@/i18n/utils";
 import BlogLayout from "@/layouts/BlogLayout.astro";
@@ -31,9 +31,7 @@ const videos = await fetchPlaylistVideos(
   <!-- Background decorations -->
   <section class="relative left-1/2 -translate-x-1/2 overflow-hidden">
     <div class="absolute inset-0 -z-10 pointer-events-none">
-      <img
-        src={background_svg_blob.src}
-        alt="bottom background"
+      <BackgroundSvgBlob
         class="absolute bottom-[10%] left-[50%] w-full max-w-full h-auto rotate-[270deg] -scale-x-[1]"
       />
     </div>

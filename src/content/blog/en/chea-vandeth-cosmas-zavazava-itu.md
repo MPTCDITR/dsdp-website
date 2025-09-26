@@ -18,7 +18,7 @@ At the same time, the ministry's leaders led a delegation to visit the Community
 
 Dr. Cosmas Zavazava highly appreciated the excellent cooperation between the Ministry of Posts and Telecommunications and the ITU and praised the achievements of the ministry, especially the initiative to establish a community technology center and the government's document verification portal, verify.gov.kh.
 
-Phnom Penh, July 22nd 2024
+Phnom Penh, 22 July, 2024
 
 ![image 4](/blog/chea-vandeth-cosmas-zavazava-itu/image-2.jpg)
 ![image 5](/blog/chea-vandeth-cosmas-zavazava-itu/image-3.jpg)
