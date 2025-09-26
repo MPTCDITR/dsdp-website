@@ -1,8 +1,8 @@
 ---
-title: Press Release On The Signing Ceremony of the Memorandum of Understanding on the Establishment of Community Tech Centers at Public High Schools between the Ministry of Post and Telecommunications and the Ministry of Education, Youth and Sport
+title: Notice the provision of 500 Techo Digital Talent Scholarships for Bachelor’s Degree Programs for the Academy Year 2025–2026
 date: 2025-09-26
 author: Ministry of Posts and Telecommunications
-description: At the Ministry of Post and Telecommunications on October 9, 2023, Ministers Chea Vandeth and Hangchuon Naron signed a Memorandum of Understanding (MoU) to establish Community Tech Centers at public high schools. The signing ceremony was attended by around 270 people, including officials, educators, and members of the private sector and press.
+description: Under the constant attention and care for the future of Cambodian youth in the digital era by Samdech Moha Borvor Thipadei Hun Manet, Prime Minister of the Kingdom of Cambodia, the Techo Digital Talent Scholarship Program has been established with the goal of strengthening Cambodia’s pool of skilled digital human resources. This will form the foundation of the nation’s digital workforce, supporting the transformation of Cambodia’s economy into a digital economy.
 image: "public/blog/techo-digital-talent-scholarships/thumbnail.jpeg"
 tags: []
 ---
