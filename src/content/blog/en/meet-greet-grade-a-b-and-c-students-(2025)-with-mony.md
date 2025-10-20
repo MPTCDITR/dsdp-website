@@ -47,5 +47,5 @@ For more information, please visit the official website of the Digital Skills De
 ![image 15](/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/image-15.jpg)
 ![image 16](/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/image-16.jpg)
 ![image 17](/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/image-17.jpg)
-![image 18](/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/image-18.jpg)
-![image 19](/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/image-19.jpg)
+![image 18](/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/image-18.JPG)
+![image 19](/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/image-19.JPG)
