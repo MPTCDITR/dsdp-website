@@ -6,6 +6,7 @@ description: Phnom Penh, On the afternoon of October 18, 2025, H.E. Peng Ly Sine
 image: "public/blog/meet-greet-grade-a-b-and-c-students-(2025)-with-mony/thumbnail.jpg"
 tags: []
 ---
+
 H.E. Peng Ly Sinek, Deputy Director General and Secretary-General of the Digital Skills Development Program, was invited as a guest speaker at the event titled “Meet & Greet Grade A, B and C Students (2025) with Mony.”
 
 Phnom Penh, On the afternoon of October 18, 2025, H.E. Peng Ly Sinek, Deputy Director General and Secretary-General of the Digital Skills Development Program (DSDP), was invited as a guest speaker at the event titled “Meet & Greet Grade A, B, and C Students (2025) with Mony”, held at the American University of Phnom Penh (AUPP).
