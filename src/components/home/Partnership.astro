@@ -1,11 +1,15 @@
 ---
+import { cn } from "@/lib/utils";
+
 import Advantage from "@/assets/home/advantage-img.svg";
 import background_2 from "@/assets/home/backgorund-style 4.png";
 import background_1 from "@/assets/home/background-svg-blob.png";
+// partnership logo
 import aupp from "@/assets/logo/aupp-logo.png";
 import cadt from "@/assets/logo/cadt-logo.png";
 import itc from "@/assets/logo/itc-logo.png";
 import num from "@/assets/logo/num-logo.png";
+import paragon from "@/assets/logo/paragon-logo.png";
 import rupp from "@/assets/logo/rupp-logo.png";
 import { languages } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
@@ -16,27 +20,32 @@ const logos = [
     src: cadt,
     alt: "cadt Logo",
     // Keep image sizing consistent
-    imgClass: "w-[153px] h-[179px] object-contain",
+    imgClass: "md:w-[153px] h-[179px] object-contain",
   },
   {
     src: itc,
     alt: "itc Logo",
-    imgClass: "w-[153px] h-[179px] object-contain",
+    imgClass: "md:w-[153px] h-[179px] object-contain",
   },
   {
     src: num,
     alt: "num Logo",
-    imgClass: "w-[153px] h-[179px] object-contain",
+    imgClass: "md:w-[153px] h-[179px] object-contain",
   },
   {
     src: rupp,
     alt: "rupp Logo",
-    imgClass: "w-[153px] h-[179px] object-contain",
+    imgClass: "md:w-[153px] h-[179px] object-contain",
   },
   {
     src: aupp,
     alt: "aupp Logo",
-    imgClass: "w-[153px] h-[179px] object-contain",
+    imgClass: "md:w-[153px] h-[179px] object-contain",
+  },
+  {
+    src: paragon,
+    alt: "paragon Logo",
+    imgClass: "md:w-[253px] h-[179px] object-contain",
   },
 ];
 const lang = Astro.params.lang as keyof typeof languages;
@@ -79,24 +88,17 @@ const t = useTranslations(lang);
           </p>
         </header>
         <ul
-          class="container flex flex-wrap justify-center gap-x-2 md:gap-x-16"
+          class="container grid 2xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 grid-cols-1 justify-center gap-5 md:gap-x-16"
           aria-labelledby="trusted-by"
         >
           {
             logos.map((logo) => (
-              <li
-                aria-label={logo.alt}
-                class="flex justify-center items-center
-                     w-1/2 md:w-1/5 lg:w-1/8
-                     "
-              >
+              <li aria-label={logo.alt} class="mx-auto gap-4">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  class={logo.imgClass}
+                  class={cn(logo.imgClass, "w-full")}
                   loading="lazy"
-                  width={153}
-                  height={179}
                 />
               </li>
             ))
