@@ -884,7 +884,7 @@ export const ui: Record<string, Record<string, string>> = {
     "footer.description.10": "តំណបំពេញពាក្យស្នើសុំ",
     "footer.title.4": "ទាក់ទងតាម",
     "footer.description.11":
-      "អាគារលេខ 13, មហាវិថីព្រះមុនីវង្ស, សង្កាត់ស្រះចក, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ, កម្ពុជា, 120210",
+      "អគារលេខ 13, មហាវិថីព្រះមុនីវង្ស, សង្កាត់ស្រះចក, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ, កម្ពុជា, 120210",
     "footer.description.12": "123",
     "footer.description.13": "info@dsdp.gov.kh | partners@dsdp.gov.kh",
     "footer.description.14": "រក្សាសិទ្ធិ",
