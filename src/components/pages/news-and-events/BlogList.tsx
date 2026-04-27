@@ -19,7 +19,6 @@ import { BlogCard } from "@/components/pages/news-and-events/BlogCard";
 
 import { useTranslations } from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";
-import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface BlogListProps {
@@ -50,16 +49,6 @@ export function BlogList({ translations, posts, lang }: BlogListProps) {
 
   return (
     <div className="container mx-auto my-12">
-      <motion.h1
-        className={"text-4xl font-bold text-gradient leading-normal mb-8"}
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-      >
-        {t("newsAndEvents.sub_title")}
-      </motion.h1>
-
       <div className="space-y-4">
         {currentArticles.map((post, index) => (
           <BlogCard

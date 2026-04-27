@@ -1,4 +1,6 @@
 ---
+import { formatDate } from "@/lib/utils";
+
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
@@ -13,7 +15,7 @@ export interface Props {
   translations: Record<string, string>;
 }
 
-const { title, description, image, slug, lang } = Astro.props;
+const { title, description, date, image, slug, lang } = Astro.props;
 const urlSlug = slug.split("/").slice(1).join("/");
 ---
 
@@ -36,7 +38,7 @@ const urlSlug = slug.split("/").slice(1).join("/");
     }
 
     <div
-      class="absolute inset-0 bg-black/30 transition-colors duration-300 group-hover:bg-black/0 rounded-lg"
+      class="absolute inset-0 bg-black/30 transition-colors duration-300 rounded-lg"
       aria-hidden="true"
     >
     </div>
@@ -44,6 +46,9 @@ const urlSlug = slug.split("/").slice(1).join("/");
     <div
       class="relative z-10 bg-white/10 backdrop-blur px-4 py-3 w-full rounded-b-lg space-y-2 mt-auto"
     >
+      <time datetime={date}>
+        <span class="font-semibold text-white">{formatDate(date, lang)}</span>
+      </time>
       <h3
         id={`latest-blog-title-${urlSlug}`}
         class="text-xl font-semibold line-clamp-2"
