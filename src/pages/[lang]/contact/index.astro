@@ -1,5 +1,6 @@
 ---
 import { Card } from "@/components/ui/card";
+import { LinkButton } from "@/components/ui/link-button";
 
 import Background from "@/assets/about/about-us/background2.svg";
 import serviceImg from "@/assets/contact/contact.gif";
@@ -29,46 +30,49 @@ const t = useTranslations(lang);
       class="absolute max-w-1/3 top-[-1.5%] right-0 h-auto select-none hidden md:block"
       role="presentation"
     />
-    <section class="my-10 relative z-0">
+    <section class="my-20 relative z-0">
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
       >
         <div class="space-y-6">
           <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-b"
+            class="text-2xl leading-relaxed md:text-3xl lg:text-4xl font-bold text-gradient-b"
           >
             {t("contact.title.1")}
           </h2>
 
-          <p
-            class="flex items-start gap-3 text-gradient-b font-semibold text-lg space-x-4"
-          >
-            <Phone className="min-w-6 min-h-6 text-secondary" />
-            <span>{t("contact.description.2")}</span>
-          </p>
-          <p
-            class="flex items-center gap-2 text-gradient-b font-semibold text-lg space-x-4"
-          >
-            <Mail className="min-w-6 min-h-6 text-secondary" />
-            <span>{t("contact.description.3")}</span>
-          </p>
-          <p
-            class="flex items-start gap-2 text-gradient-b font-semibold text-lg space-x-4"
-          >
-            <MapPin className="min-w-6 min-h-6 text-secondary" />
-            <span>{t("contact.description.4")}</span>
-          </p>
+          <div class="space-y-2">
+            <p
+              class="flex items-start gap-3 text-gradient-b font-semibold text-lg space-x-4"
+            >
+              <Phone className="min-w-6 min-h-6 text-secondary" />
+              <span>{t("contact.description.2")}</span>
+            </p>
+            <p
+              class="flex items-center gap-2 text-gradient-b font-semibold text-lg space-x-4"
+            >
+              <Mail className="min-w-6 min-h-6 text-secondary" />
+              <span>{t("contact.description.3")}</span>
+            </p>
+            <p
+              class="flex items-start gap-2 text-gradient-b font-semibold text-lg space-x-4"
+            >
+              <MapPin className="min-w-6 min-h-6 text-secondary" />
+              <span>{t("contact.description.4")}</span>
+            </p>
+          </div>
           <div class="flex gap-4 mt-14">
             {
               SOCIAL_MEDIA_DATA.map((item) => (
-                <a
+                <LinkButton
                   href={item.href}
                   target="_blank"
+                  variant={"secondary"}
                   rel="noopener noreferrer"
-                  class="rounded-full bg-secondary text-white flex items-center justify-center w-10 h-10 transition hover:bg-secondary/90"
+                  className="rounded-full text-white size-10"
                 >
-                  <item.icon class="h-5 w-5" />
-                </a>
+                  <item.icon className="h-5 w-5" />
+                </LinkButton>
               ))
             }
           </div>
@@ -87,7 +91,9 @@ const t = useTranslations(lang);
 
     <section class="relative z-0">
       <div class="container mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-b">
+        <h2
+          class="text-2xl leading-relaxed md:text-3xl lg:text-4xl font-bold text-gradient-b"
+        >
           {t("contact.title.2")}
         </h2>
         <Card className="mt-4 md:mt-10 mb-10">

@@ -1,89 +1,93 @@
 import React from "react";
 
-import { Button } from "@/components/ui/button";
+import { getLocalizedRoutes, navigation } from "@/lib/route";
+import { cn } from "@/lib/utils";
+
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 import type { Language } from "@/i18n/ui";
-import { ChevronDown } from "lucide-react";
 
-interface NavMenuProps {
-  href?: string;
+export interface NavMenuProps {
+  href: string;
   label: string;
   children?: NavMenuProps[];
 }
 
 interface DesktopNavProps {
   lang: Language;
-  navigationItems: NavMenuProps[];
   currentPath: string;
 }
 
-export default function DesktopNav({
-  lang,
-  navigationItems,
-  currentPath,
-}: DesktopNavProps) {
-  const isActive = (item: NavMenuProps) => {
-    if (!item.href) {
-      return item.children
-        ? item.children.some(
-            (child) => child.href && currentPath.startsWith(child.href),
-          )
-        : false;
-    }
-    if (item.href === `/${lang}` || item.href === `/${lang}/`) {
-      return currentPath === item.href;
-    }
-    return currentPath.startsWith(item.href);
-  };
+interface ListItemProps {
+  item: NavMenuProps;
+  isActive: boolean;
+}
+
+const ListItem = ({ item, isActive }: ListItemProps) => {
+  return (
+    <NavigationMenuLink
+      className={cn(
+        isActive && "bg-accent text-primary font-medium",
+        "bg-transparent font-medium text-base",
+      )}
+      href={item.href}
+    >
+      {item.label}
+    </NavigationMenuLink>
+  );
+};
+
+export default function DesktopNav({ lang, currentPath }: DesktopNavProps) {
+  const navigationItems = getLocalizedRoutes(navigation, lang);
+
+  const isActive = (item: NavMenuProps) => currentPath.endsWith(item.href);
+  const isDropdownActive = (item: NavMenuProps) =>
+    currentPath.startsWith(item.href);
 
   return (
-    <nav className="hidden xl:flex md:gap-0 items-center">
-      {navigationItems?.map((item) =>
-        item.children ? (
-          <DropdownMenu key={item.label}>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="ghost"
-                className={`flex items-center text-base font-medium nav-link text-black ${
-                  isActive(item) ? "active" : "hover:text-primary"
-                }`}
-              >
-                {item.label} <ChevronDown className="h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              {item.children?.map((child) => (
-                <DropdownMenuItem key={child.href} asChild>
-                  <a
-                    href={child.href}
-                    className={`block rounded-md px-6 py-2 font-medium nav-link text-base transition-colors hover:bg-accent hover:text-primary text-black ${
-                      isActive(child) ? "text-primary bg-accent" : ""
-                    }`}
-                  >
-                    {child.label}
-                  </a>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        ) : (
-          <a
-            key={item.href || item.label}
-            href={item.href}
-            className={`block rounded-md xl:px-4 whitespace-nowrap lg:px-2 py-2 text-base font-medium transition-colors nav-link text-black hover:bg-accent hover:text-primary ${
-              isActive(item) ? "bg-accent text-primary" : ""
-            }`}
-          >
-            {item.label}
-          </a>
-        ),
-      )}
-    </nav>
+    <NavigationMenu viewport={false} className="hidden xl:flex items-center">
+      <NavigationMenuList>
+        {navigationItems.map((item) =>
+          item.children ? (
+            <NavigationMenuItem
+              className={cn(
+                isDropdownActive(item) && "text-primary font-semibold",
+              )}
+              key={item.label}
+            >
+              <NavigationMenuTrigger className="bg-transparent text-base">
+                {item.label}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="min-w-46">
+                {item.children.map((child) => (
+                  <ListItem
+                    item={child}
+                    isActive={isActive(child)}
+                    key={child.label}
+                  />
+                ))}
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          ) : (
+            <NavigationMenuItem
+              className={cn(
+                isActive(item) && "bg-accent text-primary font-semibold",
+                "bg-transparent",
+              )}
+              key={item.label}
+            >
+              <ListItem item={item} isActive={isActive(item)} />
+            </NavigationMenuItem>
+          ),
+        )}
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 }

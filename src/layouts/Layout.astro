@@ -1,13 +1,10 @@
 ---
 import "@/styles/global.css";
 
-import { getLocalizedRoutes, navigation } from "@/lib/route";
-
 import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header.astro";
 import Jsonld, { type URLType } from "@/components/layout/Jsonld.astro";
 
-import { defaultLang } from "@/i18n/ui";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 interface Props {
@@ -18,8 +15,6 @@ interface Props {
 }
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const locale = Astro.currentLocale ?? defaultLang;
-const navigationItems = getLocalizedRoutes(navigation, locale);
 const currentPath = Astro.url.pathname;
 
 const siteUrl = new URL(Astro.site ?? "");
@@ -88,11 +83,7 @@ const ogTitle = `${title} | DSDP Cambodia`;
     />
   </head>
   <body>
-    <Header
-      lang={lang}
-      navigationItems={navigationItems}
-      currentPath={currentPath}
-    />
+    <Header lang={lang} currentPath={currentPath} />
     <main>
       <slot />
     </main>

@@ -8,19 +8,12 @@ import DSDP from "@/assets/logo/dsdp-logo.svg";
 import type { Language } from "@/i18n/ui";
 import { useTranslations } from "@/i18n/utils";
 
-interface NavMenuProps {
-  href?: string;
-  label: string;
-  children?: NavMenuProps[];
-}
-
 interface Props {
   lang: Language;
-  navigationItems: NavMenuProps[];
   currentPath: string;
 }
 
-const { lang, navigationItems, currentPath } = Astro.props;
+const { lang, currentPath } = Astro.props;
 const t = useTranslations(lang);
 const applyLabel = t("nav.applytitle");
 ---
@@ -36,12 +29,7 @@ const applyLabel = t("nav.applytitle");
       <DSDP class="h-auto xs:w-full md:w-5/6 object-contain" />
     </a>
 
-    <DesktopNav
-      lang={lang}
-      navigationItems={navigationItems}
-      currentPath={currentPath}
-      client:load
-    />
+    <DesktopNav lang={lang} currentPath={currentPath} client:load />
 
     <div class="flex items-center gap-2 md:gap-4">
       <LanguageSwitcher lang={lang} client:load />
@@ -57,7 +45,6 @@ const applyLabel = t("nav.applytitle");
       <MobileNav
         lang={lang}
         currentPath={currentPath}
-        navigationItems={navigationItems}
         applyLabel={t("nav.applytitle")}
         client:load
       />

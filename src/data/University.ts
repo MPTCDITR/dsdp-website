@@ -19,7 +19,6 @@ export const universities: University[] = [
     alt: "RUPP Logo",
     hoverTitleKey: "RUPP.title",
     hoverItemKeys: [
-      "Uni.description",
       "RUPP.major_1",
       "RUPP.major_2",
       "RUPP.major_3",
@@ -36,20 +35,13 @@ export const universities: University[] = [
     image: num,
     alt: "NUM Logo",
     hoverTitleKey: "NUM.title",
-    hoverItemKeys: [
-      "Uni.description",
-      "NUM.major_1",
-      "NUM.major_2",
-      "NUM.major_3",
-      "NUM.major_4",
-    ],
+    hoverItemKeys: ["NUM.major_1", "NUM.major_2", "NUM.major_3", "NUM.major_4"],
   },
   {
     image: aupp,
     alt: "AUPP Logo",
     hoverTitleKey: "AUPP.title",
     hoverItemKeys: [
-      "Uni.description",
       "AUPP.major_1",
       "AUPP.major_2",
       "AUPP.major_3",
@@ -64,19 +56,13 @@ export const universities: University[] = [
     image: paragon,
     alt: "Paragon Logo",
     hoverTitleKey: "Paragon.title",
-    hoverItemKeys: [
-      "Uni.description",
-      "Paragon.major_1",
-      "Paragon.major_2",
-      "Paragon.major_3",
-    ],
+    hoverItemKeys: ["Paragon.major_1", "Paragon.major_2", "Paragon.major_3"],
   },
   {
     image: cadt,
     alt: "CADT Logo",
     hoverTitleKey: "CADT.title",
     hoverItemKeys: [
-      "Uni.description",
       "CADT.major_1",
       "CADT.major_2",
       "CADT.major_3",
