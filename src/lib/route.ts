@@ -1,10 +1,11 @@
-import { getTranslatedkey } from "@/i18n/utils";
+import { getTranslatedKeys } from "@/i18n/utils";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
-export const navigation = [
-  { label: "nav.home", href: "" },
+export const navigation: RouteType[] = [
+  { label: "nav.home", href: "/" },
   {
     label: "nav.about",
+    href: "/about",
     children: [
       { label: "nav.about_us", href: `/about/about-us` },
       { label: "nav.about_team", href: `/about/chairman` },
@@ -21,6 +22,7 @@ export const navigation = [
   },
   {
     label: "nav.media_hub",
+    href: "/media-hub",
     children: [
       { label: "nav.news_and_events", href: `/media-hub/news-and-events` },
       { label: "nav.video_and_media", href: `/media-hub/video-and-media` },
@@ -30,7 +32,7 @@ export const navigation = [
 ];
 
 interface RouteType {
-  href?: string;
+  href: string;
   label: string;
   children?: RouteType[];
 }
@@ -40,20 +42,10 @@ export function getLocalizedRoutes(
   locale: string,
 ): RouteType[] {
   return paths.map((path) => {
-    if (path.href || path.href === "") {
-      return {
-        label: getTranslatedkey(path.label, locale),
-        href: getRelativeLocaleUrl(locale, path.href),
-      };
-    }
-
-    if (path.children) {
-      return {
-        label: getTranslatedkey(path.label, locale),
-        children: getLocalizedRoutes(path.children, locale),
-      };
-    }
-
-    return path;
+    return {
+      label: getTranslatedKeys(path.label, locale),
+      href: getRelativeLocaleUrl(locale, path.href),
+      children: path.children && getLocalizedRoutes(path.children, locale),
+    };
   });
 }

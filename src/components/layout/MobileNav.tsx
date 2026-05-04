@@ -1,5 +1,8 @@
 import React from "react";
 
+import { getLocalizedRoutes, navigation } from "@/lib/route";
+import { cn } from "@/lib/utils";
+
 import {
   Accordion,
   AccordionContent,
@@ -16,28 +19,46 @@ import {
 } from "@/components/ui/sheet";
 
 import { LinkButton } from "../ui/link-button";
+import type { NavMenuProps } from "./DesktopNav";
 import { useTranslations } from "@/i18n/utils";
 import { MenuIcon } from "lucide-react";
 
-interface NavMenuProps {
-  href?: string;
-  label: string;
-  children?: NavMenuProps[];
-}
-
 interface MobileNavProps {
   lang: string;
-  navigationItems: NavMenuProps[];
   currentPath: string;
   applyLabel: string;
 }
 
-export function MobileNav({
-  navigationItems,
-  lang,
-  applyLabel,
-}: MobileNavProps) {
+interface NavMenuItemProps {
+  item: NavMenuProps;
+  isActive: boolean;
+}
+
+const NavItem = ({ item, isActive }: NavMenuItemProps) => {
+  return (
+    <LinkButton
+      variant={"ghost"}
+      key={item.href}
+      href={item.href}
+      className={cn(
+        isActive && "text-primary",
+        "block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent",
+      )}
+    >
+      {item.label}
+    </LinkButton>
+  );
+};
+
+export function MobileNav({ lang, applyLabel, currentPath }: MobileNavProps) {
   const t = useTranslations(lang);
+  const navigationItems = getLocalizedRoutes(navigation, lang);
+
+  const isDropdownActive = (item: NavMenuProps) =>
+    currentPath.startsWith(item.href);
+
+  const isActive = (item: NavMenuProps) => currentPath.endsWith(item.href);
+
   return (
     <div className="flex items-center">
       <Sheet>
@@ -54,34 +75,29 @@ export function MobileNav({
           <SheetHeader>
             <SheetTitle>{t("nav.menu")}</SheetTitle>
           </SheetHeader>
-          <nav className="flex flex-col gap-4 mt-4">
-            {navigationItems?.map((item, index) =>
+          <div className="flex flex-col gap-4 mt-4">
+            {navigationItems.map((item, index) =>
               item.children ? (
                 <Accordion
                   type="single"
                   collapsible
                   className="border-0"
-                  key={item.label}
+                  key={item.href}
                 >
-                  <AccordionItem
-                    value={`item_${index}`}
-                    className="rounded border-0 data-[state=open]:bg-accent/50"
-                  >
+                  <AccordionItem value={`item_${index}`}>
                     <AccordionTrigger
-                      className={`rounded-md bg-transparent px-4 py-2 font-medium hover:bg-accent nav-link hover:text-primary hover:no-underline text-base`}
+                      className={cn(
+                        isDropdownActive(item) && "text-primary",
+                        "rounded-md bg-transparent px-4 py-2 font-medium hover:bg-accent nav-link hover:text-primary hover:no-underline text-base",
+                      )}
                     >
                       {item.label}
                     </AccordionTrigger>
                     <AccordionContent className="border-t bg-transparent">
                       <ul>
-                        {item.children?.map((child) => (
+                        {item.children.map((child) => (
                           <li key={child.href}>
-                            <a
-                              href={child.href}
-                              className={`block rounded-md px-6 py-2 font-medium hover:text-primary nav-link hover:bg-accent text-base`}
-                            >
-                              {child.label}
-                            </a>
+                            <NavItem item={child} isActive={isActive(child)} />
                           </li>
                         ))}
                       </ul>
@@ -89,16 +105,10 @@ export function MobileNav({
                   </AccordionItem>
                 </Accordion>
               ) : (
-                <a
-                  key={item.href || item.label}
-                  href={item.href}
-                  className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent`}
-                >
-                  {item.label}
-                </a>
+                <NavItem item={item} isActive={isActive(item)} />
               ),
             )}
-          </nav>
+          </div>
           <LinkButton
             target="_blank"
             variant={"secondary"}

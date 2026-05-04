@@ -61,12 +61,14 @@ const t = useTranslations(lang);
     width={800}
   />
   <header class="container relative">
-    <h2 class="text-2xl md:text-4xl text-primary font-bold mb-4">
-      {t("home.candidate_benefits.title")}
-    </h2>
-    <p class="text-pretty text-muted-foreground">
-      {t("home.candidate_benefits.description")}
-    </p>
+    <div id="header-benefits" class="space-y-3">
+      <h2 class="text-2xl md:text-4xl text-primary font-bold">
+        {t("home.candidate_benefits.title")}
+      </h2>
+      <p class="text-pretty text-muted-foreground text-lg">
+        {t("home.candidate_benefits.description")}
+      </p>
+    </div>
     <Advantage class="lg:w-3/4 md:w-4/5 w-full mx-auto rounded-lg" />
   </header>
   <div class="relative mx-auto">
@@ -88,7 +90,7 @@ const t = useTranslations(lang);
           </p>
         </header>
         <ul
-          class="container grid 2xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 grid-cols-1 justify-center gap-5 md:gap-x-16"
+          class="container flex flex-wrap justify-center gap-8"
           aria-labelledby="trusted-by"
         >
           {
@@ -97,7 +99,7 @@ const t = useTranslations(lang);
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  class={cn(logo.imgClass, "w-full")}
+                  class={cn(logo.imgClass, "w-full flex-1")}
                   loading="lazy"
                 />
               </li>
@@ -109,9 +111,9 @@ const t = useTranslations(lang);
 
     <div class="container my-12 flex items-center justify-center">
       <div
-        class="mx-auto xl:min-w-6xl lg:min-w-4xl min-w-full flex flex-col gap-8 rounded-3xl lg:p-20 md:p-12 p-8 bg-gradient-to-r from-[#004282] via-[#05539F] to-[#002D58] items-center"
+        class="mx-auto xl:min-w-6xl lg:min-w-4xl min-w-full flex flex-col gap-4 rounded-3xl lg:p-20 md:p-12 p-8 bg-gradient-to-r from-[#004282] via-[#05539F] to-[#002D58] items-center"
       >
-        <h2 class="text-3xl md:text-4xl text-white font-bold mb-4 text-center">
+        <h2 class="text-3xl md:text-4xl text-white font-bold text-center">
           {t("home.partnership.box.title")}
         </h2>
         <p class="text-base md:text-xl text-white text-center">

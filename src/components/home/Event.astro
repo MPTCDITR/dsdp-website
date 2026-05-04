@@ -2,7 +2,7 @@
 import { getLatestPosts } from "@/lib/blog";
 
 import { LinkButton } from "../ui/link-button";
-import EventCarosel from "./EventCarosel.tsx";
+import EventCarousel from "./EventCarousel.tsx";
 import bgstyle from "@/assets/home/backgorund-style 3.png";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
@@ -37,5 +37,5 @@ const latestPosts = await getLatestPosts(lang);
     />
   </div>
 
-  <EventCarosel lang={lang} latestPosts={latestPosts} client:load />
+  <EventCarousel lang={lang} latestPosts={latestPosts} client:load />
 </section>
