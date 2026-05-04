@@ -30,16 +30,18 @@ const { stepNumber, title, description, imageUrl, className } = Astro.props;
   <div
     class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300 rounded-2xl"
   >
-    <div class="relative z-10 p-4">
+    <div class="relative z-10 p-4 space-y-4">
       <p class="font-bold text-6xl uppercase text-white/50">
         {stepNumber}
       </p>
-      <h3 class="text-2xl font-bold mt-1">
-        {title}
-      </h3>
-      <p class="text-sm mt-2 leading-relaxed text-white">
-        {description}
-      </p>
+      <div class="space-y-1">
+        <h3 class="text-2xl font-semibold">
+          {title}
+        </h3>
+        <p class="leading-relaxed text-white text-lg">
+          {description}
+        </p>
+      </div>
     </div>
   </div>
 </article>

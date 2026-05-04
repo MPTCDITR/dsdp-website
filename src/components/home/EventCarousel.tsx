@@ -12,11 +12,12 @@ import type { CollectionEntry } from "astro:content";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
 
-interface Slide {
+export interface Slide {
   image: string;
   title: string;
   description: string;
   url: string;
+  date: Date;
 }
 
 interface EventCarouselProps {
@@ -24,7 +25,10 @@ interface EventCarouselProps {
   latestPosts?: CollectionEntry<"blog">[];
 }
 
-export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
+export default function EventCarousel({
+  lang,
+  latestPosts = [],
+}: EventCarouselProps) {
   const slides: Slide[] = latestPosts.map((post) => {
     const [, ...slugParts] = post.slug.split("/");
     const slug = slugParts.join("/");
@@ -33,6 +37,7 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
       title: post.data.title,
       description: post.data.description,
       url: `/${lang}/media-hub/news-and-events/${slug}`,
+      date: post.data.date,
     };
   });
 
@@ -65,7 +70,7 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
                 key={index}
                 className="basis-full sm:basis-4/5 md:basis-3/5 lg:basis-2/5 transition-all"
               >
-                <EventCarouselItem slide={slide} />
+                <EventCarouselItem slide={slide} lang={lang} />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -74,4 +79,3 @@ export function Event({ lang, latestPosts = [] }: EventCarouselProps) {
     </motion.div>
   );
 }
-export default Event;
