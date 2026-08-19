@@ -19,7 +19,7 @@ const { title, date, author, description, image } = Astro.props;
       <Image
         src={image}
         alt={title}
-        class="rounded-lg w-full h-fit object-cover"
+        class="rounded-lg w-full aspect-video object-cover object-top"
         loading="lazy"
         width={image.width}
         height={image.height}
@@ -45,7 +45,9 @@ const { title, date, author, description, image } = Astro.props;
         <time>{date}</time>
       </span>
     </p>
-    <div class="prose md:prose-lg lg:prose-xl max-w-none text-justify">
+    <div
+      class="prose md:prose-lg lg:prose-xl max-w-none text-justify prose-img:w-full prose-img:h-auto"
+    >
       <slot />
     </div>
   </section>

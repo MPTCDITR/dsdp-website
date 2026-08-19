@@ -48,7 +48,7 @@ export function BlogCard({
             <img
               src={image?.src}
               alt={title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </figure>
           <section className="space-y-3 md:col-span-3">
